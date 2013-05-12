@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Welcome to Voice of Hugo!
-tagline: Supporting tagline
 ---
 {% include JB/setup %}
 <ul class="posts">
