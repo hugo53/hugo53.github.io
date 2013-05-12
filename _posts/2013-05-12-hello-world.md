@@ -6,4 +6,5 @@ category:
 tags: []
 ---
 {% include JB/setup %}
-Just for testing
+# Kick off. 
+## Let's start blogging!
