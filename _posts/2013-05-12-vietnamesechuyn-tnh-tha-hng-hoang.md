@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "\[Vietnamese\]Chuyện tình thủa hồng hoang"
+title: "[Vietnamese] Chuyện tình thủa hồng hoang"
 description: ""
 category: lifestyle & motivation 
 tags: [love]
