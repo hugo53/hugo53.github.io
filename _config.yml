@@ -81,7 +81,8 @@ JB :
   comments :
     provider : disqus
     disqus :
-      short_name : jekyllbootstrap
+      #short_name : jekyllbootstrap
+      short_name : hugo53
     livefyre :
       site_id : 123
     intensedebate :
