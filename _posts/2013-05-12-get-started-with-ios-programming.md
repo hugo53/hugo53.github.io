@@ -19,7 +19,7 @@ There is a fact that finding a valueable instruction is a hard task obviously. I
 
 - [Tutorials by *rnystrom* - a talent iOS application distribution](https://github.com/rnystrom/iOS-Best-Practices)
 
-- [Of course, cannot forget Coding Together: Developing Apps for iPhone and iPad by Stanford named CS193P](https://itunes.apple.com/us/course/coding-together-developing/id593208016)
+- [Of course, unforgettable Coding Together: Developing Apps for iPhone and iPad by Stanford named CS193P](https://itunes.apple.com/us/course/coding-together-developing/id593208016)
 
 
 
