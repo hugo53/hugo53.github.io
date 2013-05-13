@@ -79,8 +79,8 @@ JB :
   # Set 'provider' to false to turn commenting off globally.
   #
   comments :
-    #provider : disqus
-    provider : facebook
+    provider : disqus
+    #provider : facebook
     disqus :
       #short_name : jekyllbootstrap
       short_name : hugo53
