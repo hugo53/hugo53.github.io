@@ -6,9 +6,9 @@ title: Welcome to Voice of Hugo!
 <ul class="posts">
   {% for post in site.posts %}
     <span>{{ post.date | date_to_string }}</span>
-    <a href="{{ BASE_PATH }}{{ post.url }}">{{ ## post.title }}</a>
+    <a href="{{ BASE_PATH }}{{ post.url }}">{{ <h2>post.title</h2> }}</a>
     <div class="content">
-      {{ content }}
+      {{ post.content }}
     </div>
   {% endfor %}
 </ul>
