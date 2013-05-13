@@ -17,7 +17,7 @@ There is a fact that finding a valueable instruction is a hard task obviously. I
 
 - [Great instruction describes all of aspects that let newbies know exactly what they may need](http://looksok.wordpress.com/2012/12/22/best-iphoneios-programming-tutorials/)
 
-- [Tutorials by *rnystrom* - a talent iOS application distribution](https://github.com/rnystrom/iOS-Best-Practices)
+- [Tutorials by *rnystrom* - a talent iOS application publisher](https://github.com/rnystrom/iOS-Best-Practices)
 
 - [Of course, unforgettable Coding Together: Developing Apps for iPhone and iPad by Stanford named CS193P](https://itunes.apple.com/us/course/coding-together-developing/id593208016)
 
