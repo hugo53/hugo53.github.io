@@ -1,6 +1,6 @@
 ---
-layout: page
-title: "QuoraCorner"
+layout: post
+title: "Quora Corner"
 description: ""
 ---
 {% include JB/setup %}
