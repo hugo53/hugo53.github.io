@@ -30,36 +30,36 @@ Về cơ bản, tổng hợp của Fred đã bao quát được tương đối �
 - Quảng cáo dưới dạng nhà tài trợ (Sponsorships / Site Takeovers) -   Pandora
  
 ## Dịch vụ thương mại
-- Retailing -  Zappos
-- Marketplace -  Etsy
+- Kinh doanh bán lẻ (Retailing) -  Zappos
+- Chợ điện tử (Marketplace) -  Etsy
 - Crowdsourced Marketplace -  Threadless
-- ess Capacity Markets - Uber, AirBnB
+- Excess Capacity Markets - Uber, AirBnB
 - Vertically Integrated Commerce -  Warby Parker
 - Aggregator -  Lastminute.com
 - Flash Sales:  Gilt Groupe, Vente Privee
-- Group buying -  Groupon
-- Digital goods / downloads -  iTunes
-- Virtual goods -  Zynga
-- Training -  Cloudera (??), -> Coursera
+- Mua theo nhóm -  Groupon
+- Hàng hoá điện tử/Phần mềm/Nhạc/... (Download được) -  iTunes
+- Hàng hoá ảo -  Zynga
+- Giáo dục trực tuyến - Coursera, Udacity, KhanAcademy
 - Pay what you want -  Radiohead
 - Commission -  SharesPost
 - Commission per order -  Seamless, GrubHub
-- Auction -  eBay
+- Đấu giá trực tuyến -  eBay
 - Reverse Auction - Priceline
-- Barter for services  SwapRight
+- Barter for services - SwapRight
 
-## Phí theo dõi (Subscription)
+## Phí theo dõi/Phí thuê dịch vụ (Subscription)
 - Software as a Service (SAAS) -  Salesforce
 - Service as a Service -  Shopify
 - Content as a Service -  Spotify, Netflix
 - Infrastructure/Platform As A Service -  AWS
-- Freemium SAAS -  Dropbox
-- Donations -  Wikipedia
+- Dịch vụ lưu trữ miễn phí SAAS -  Dropbox
+- Ủng hộ (Donations) -  Wikipedia
 - Sampling - Birchbox
-- Membership Services - Amazon Prime
-- Support and Maintenance - 10gen, Red Hat
+- Phí thành viên (Membership Services) - Amazon Prime
+- Phí hỗ trợ/bảo trì - 10gen, Red Hat
 - Paywall -  NYTimes
-- Voice and video-conferencing -  Uberconference
+- Hội nghị từ xa qua Voice và video -  Uberconference
 
 ## Chia sẻ lợi nhuận ngang hàng (Peer to Peer)
 - Peer-to-Peer Lending -  Lending Club,
@@ -94,25 +94,25 @@ Về cơ bản, tổng hợp của Fred đã bao quát được tương đối �
 - Indirect Licensing -  Apple Volume Purchasing
 
 ## Kinh doanh dữ liệu
-- User data -  BlueKai
-- Business data -  Duedil
+- Kinh doanh dữ liệu người dùng -  BlueKai
+- Kinh doanh dữ liệu kinh doanh -  Duedil
 - User intelligence -  Yougov
-- Search Data -  Chango
+- Dữ liệu tìm kiếm -  Chango
 - Real-time Consumer Intent Data -  Yieldbot
 - Benchmarking services -  Comscore
-- Market research -  GLG
+- Nghiên cứu thị trường -  GLG
 
 ## Ứng dụng Mobile
-- Paid App Downloads -  WhatsApp
-- In-app purchases -  Zynga Poker
+- Ứng dụng có phí -  WhatsApp
+- Mua vật phẩm trong ứng dụng -  Zynga Poker
 - In-app subscriptions -  NY Times app
-- Advertising -  Flurry, AdMob
+- Quảng cáo trong ứng dụng -  Flurry, AdMob
 - Digital-to-physical -  Red Stamp, Postagram
-- Transactions - Hailo
+- Dịch vụ chuyển tiền trên Mobile - Hailo
 
 ## Game
-- Freemium - Free to play w/ virtual currency -  Zynga
-- Subscription-   World of Warcraft
-- Premium -  xBox games
+- Game miễn phí/Thu tiền ảo -  Zynga
+- Subscription -  World of Warcraft
+- Game có phí -  xBox games
 - DLC - (Downloadable Content)  -  Call of Duty
-- Ad Supported - - addictinggames.co
+- Quảng cáo trong game - addictinggames.co
