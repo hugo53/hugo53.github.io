@@ -7,10 +7,7 @@ tags: [monitize, revenue model]
 ---
 {% include JB/setup %}
 
-This post is inspired from [a hackpad post](https://hackpad.com/Web-And-Mobile-Revenue-Models-\(final \)-EgXuEtSibE7). In my opinion, it is extremely useful for IT man. Let learn how to monetize!
-
-()
-\(x\) 
+This post is inspired from [a hackpad post](https://hackpad.com/Web-And-Mobile-Revenue-Models-final-EgXuEtSibE7). In my opinion, it is extremely useful for IT man. Let learn how to monetize!
 
 ## Advertising
 - Display Ads - ex. Yahoo!
