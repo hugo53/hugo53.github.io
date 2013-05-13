@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Index"
+title: "QuoraCorner"
 description: ""
 ---
 {% include JB/setup %}
