@@ -23,7 +23,7 @@ As follows, several significant websites which may be helpful for many IELTS can
 
 
 ## Essential Grammar Syntax
-16 types of grammar syntax is shown. It means that you should achieve them if acquiring high IELTS score actually is your target.
+16 types of grammar syntaxes are shown below. It means that you should achieve them if acquiring high IELTS score actually is your target.
 
 1.Tense
 	* Simple present, perfect present, present continuous
