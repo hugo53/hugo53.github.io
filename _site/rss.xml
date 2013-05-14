@@ -1,14 +1,588 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <channel>
-        <title>Jekyll Bootstrap</title>
-        <description>Jekyll Bootstrap - Name Lastname</description>
-        <link>http://username.github.io</link>
-        <link>http://username.github.io</link>
-        <lastBuildDate>2013-05-12T11:10:09+07:00</lastBuildDate>
-        <pubDate>2013-05-12T11:10:09+07:00</pubDate>
+        <title>Leading Beautiful Life</title>
+        <description>Leading Beautiful Life - Hugo Nguyen</description>
+        <link>http://hugo53.github.io</link>
+        <link>http://hugo53.github.io</link>
+        <lastBuildDate>2013-05-14T14:20:28+07:00</lastBuildDate>
+        <pubDate>2013-05-14T14:20:28+07:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>Sinh viên CNTT nên và cần học gì?</title>
+                <description>&lt;p&gt;&lt;em&gt;Bài viết này dựa trên những hiểu biết hiện tại của người viết, sẽ tồn tại thiếu sót cũng như góc nhìn nhiều khi không khách quan. Bởi vậy tác giả rất mong nhận được ý kiến đóng góp của quý vị (có thể đóng góp ở phần Comment bên dưới) để bài viết được hoàn thiện hơn.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Cũng đã có rất nhiều bài viết xoay quanh tựa đề đã nêu, ví dụ &lt;a href='http://vnexpress.net/gl/ban-doc-viet/2008/05/3ba02937/'&gt;Sinh viên CNTT nên học gì?&lt;/a&gt; hay thảo luận thiên về một lĩnh vực cụ thể trong tin học &lt;a href='http://www.procul.org/blog/2012/05/02/lam-an-toan-thong-tin-thi-h%E1%BB%8Dc-gi/'&gt;Làm an toàn thông tin thì học gì?&lt;/a&gt; nhưng cũng liên quan tương đối đến chủ đề đang đề cập: &lt;em&gt;Sinh viên công nghệ thông tin, nên và cần học gì?&lt;/em&gt;. Dường như, chưa một cơ sở đào tạo nào ở Việt Nam, từ trường đại học cho tới các trung tâm đào tạo nhân lực công nghệ thông tin chỉ rõ cho sinh viên, học viên hiểu được những điều nên, và cần trau dồi trong quá trình học tập. Một hệ luỵ phổ biến là người học không biết mình đang học gì, có ứng dụng thế nào, và đáng buồn hơn cả là không biết về sau mình sẽ làm gì. Mục tiêu không rõ ràng, hoài bão chỉ quanh quẩn ở việc ra được trường và có may mắn để xin được việc thực sự đang làm lụi tàn khả năng của họ mà đáng ra có thể đóng góp nhiều hơn cho nền công nghệ nước nhà cũng như tốt hơn cho chính họ.&lt;/p&gt;
+
+&lt;h4 id='khi_qut_chung'&gt;Khái quát chung&lt;/h4&gt;
+
+&lt;p&gt;Trước hết, tựu chung về những gì mà một sinh viên CNTT nên biết, bao gồm cơ bản xử lý mức máy (byte, memory, &amp;#8230;), cơ bản hệ điều hành (Windows, Unix), các ngôn ngữ lập trình (lập trình hướng đối tượng, lập trình hàm, lập trình logic, lập trình script), thuật toán và cấu trúc dữ liệu cơ bản và cuối cùng, nơi để tìm kiếm thêm thông tin, tham gia trao đổi nâng cao kiến thức. Tuy nhiên, trong quá trình hoàn thiện mình, sinh viên CNTT nên biết thêm một vài lĩnh vực khác có thể hữu ích trong công việc cũng như trong cuộc sống sau này, có thể kể tên kinh tế học cơ bản, cơ bản quản lý (bao gồm quản lý cá nhân, quản lý công việc, sâu hơn là quản lý dự án). Nhìn chung, càng có nhiều tri thức, càng dễ bề xoay xở. Một phần không thể quên, chính là phải nắm vững kỹ thuật dating (tiếng Việt là tìm bạn khác giới). Thực trạng đáng buồn là sinh viên CNTT luôn có tỷ lệ F.A cao. Tại sao lại phải thuần thục vấn đề này sẽ được giải thích rõ hơn trong một bài viết đề cập về sự ảnh hưởng của hormone Oxytocin đến đến khả năng học tập/làm việc hiệu quả. Just kidding, but it&amp;#8217;s true!&lt;/p&gt;
+
+&lt;h4 id='ting_anh_ro_cn_ln_nht'&gt;Tiếng Anh, rào cản lớn nhất!&lt;/h4&gt;
+
+&lt;p&gt;Có thể nói rằng ngoại ngữ là rào cản lớn nhất trong quá trình rèn luyện, thu thập kiến thức của sinh viên nói chung và sinh viên CNTT nói riêng. Sở dĩ nói vậy bởi công nghệ thông tin là ngành tương đối đặc thù với các kỹ thuật phát triển nhanh và không ngừng thay đổi. Một công nghệ có thể hôm nay là thời thượng, ngày mai có thể đi vào dĩ vãng mà Yahoo là người hiểu rõ hơn cả: sự lớn mạnh của các trang mạng xã hội như Facebook đã đánh gục Blog 360 hay sự nở rộ của các phần mềm chat OTT (Over-the-top) như Viber, Whatsapp đã khiến Yahoo Messenger không còn nhiều đất diễn. Những ví dụ trên đủ cho thấy, nếu bạn là sinh viên CNTT, hãy chuẩn bị kĩ lưỡng để cập nhật thông tin công nghệ mọi lúc, mọi nơi bất kể vùng miền hay tuổi tác. Một ngày bạn ngừng cập nhật, là một ngày bạn chậm chân so với bạn đồng nghiệp, bạn đồng trang lứa. Dẫn dắt tuy dài dòng, nhưng câu hỏi chốt lại, &lt;em&gt;Tại sao phải biết tiếng Anh?&lt;/em&gt;. Như trên, tin mới nhất được diễn đạt bằng tiếng Anh. Bạn chờ nó chuyển sang tiếng Việt, là bạn chậm vài trăm ngày rồi.&lt;/p&gt;
+
+&lt;p&gt;Tuy nhiên, ở đây tác giả không chỉ đề cập tới sự cần thiết của tiếng Anh trong việc nắm bắt thông tin. Một cách đầy đủ, tiếng Anh là công cụ cần thiết bậc nhất, nếu bạn muốn thành công trong lĩnh vực tin học. Đọc thôi không đủ, bạn cần có khả năng nghe (chí ít để nghe bài giảng của các khoá học mà sẽ được nói tới ở phần &lt;a href='#mooc'&gt;Massive Online Open Course (MOOC) và tương lai của đào tạo chất lượng cao&lt;/a&gt;), bạn cần phải giao tiếp thành thục được - phòng trường hợp &lt;em&gt;phải&lt;/em&gt; làm Leader, trao đổi suốt ngày với khách hàng ngoại quốc nói tiếng Tây. Ngoài ra, bạn cũng cần có kỹ năng viết nhất định, ít nhất có thể hoàn thành được tài liệu hướng dẫn sử dụng thứ mà bạn đã dày công làm ra, khoảng trên dưới trăm trang có lẻ. Như vậy, một lần nữa khẳng định rằng tiếng Anh cực kỳ quan trọng! Dĩ nhiên, nếu bạn chỉ muốn trở thành một lập trình viên hạng xoàng thì không cần mất thời gian vào tiếng Anh làm gì, &lt;em&gt;đằng nào chả có đứa dịch cho mình, tội gì mất công học, code mấy thứ hay ho còn vui hơn&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h4 id='bn_mun_tr_thnh_ngi_nh_th_no'&gt;Bạn muốn trở thành người như thế nào?&lt;/h4&gt;
+
+&lt;h4 id='cc_lnh_vc_chnh_trong_cntt'&gt;Các lĩnh vực chính trong CNTT&lt;/h4&gt;
+
+&lt;h4 id='mooc'&gt;Massive Online Open Course (MOOC) và tương lai của đào tạo chất lượng cao&lt;/h4&gt;
+
+&lt;h4 id='quora_ni_ti_nng_bt_u'&gt;Quora, nơi tài năng bắt đầu&lt;/h4&gt;
+
+&lt;h4 id='stackoverflow_din_n_cn_bit_cho_ngi_ham_hiu_bit'&gt;StackOverflow, diễn đàn cần biết cho người ham hiểu biết&lt;/h4&gt;
+
+&lt;h4 id='tm_vic__u'&gt;Tìm việc ở đâu?&lt;/h4&gt;
+
+&lt;h4 id='mt_s_ti_liu_nn_tham_kho'&gt;Một số tài liệu nên tham khảo&lt;/h4&gt;
+
+&lt;h5 id='sch_cng_ngh_ting_anh'&gt;Sách công nghệ (Tiếng Anh)&lt;/h5&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href='http://www.amazon.com/Pragmatic-Programmer-Journeyman-Master/dp/020161622X'&gt;The Pragmatic Programmer: From Journeyman to Master&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882/ref=sr_1_1?s=books&amp;amp;ie=UTF8&amp;amp;qid=1368512907&amp;amp;sr=1-1&amp;amp;keywords=clean+code'&gt;Clean Code: A Handbook of Agile Software Craftsmanship&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://www.amazon.com/Refactoring-Improving-Design-Existing-Code/dp/0201485672/ref=sr_1_6?s=books&amp;amp;ie=UTF8&amp;amp;qid=1368512907&amp;amp;sr=1-6&amp;amp;keywords=clean+code'&gt;Refactoring: Improving the Design of Existing Code&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id='sch_khi_nghip'&gt;Sách khởi nghiệp&lt;/h5&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href='http://tiki.vn/khoi-nghiep-tinh-gon-p52702.html?ref=c316.c372.c835.c846.c1186.c1314.&amp;amp;gclid=CJCn3Y79lLcCFYyF6wodDxMApA'&gt;Khởi Nghiệp Tinh Gọn (The Lean Startup)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id='kinh_t_c_bn'&gt;Kinh tế cơ bản&lt;/h5&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href='http://cafebiz.vn/sach/dola-hay-la-nho-lot-tran-co-nang-kinh-te-hoc-2011929164333182ca56.chn'&gt;Đô-la hay lá nho? - Lột trần cô nàng kinh tế học&lt;/a&gt;.&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://tiki.vn/kinh-te-hoc-hai-huoc-tai-ban-p46333.html?ref=c316.c593.c846.c1186.c1314.c1317.&amp;amp;gclid=CMmWvOb6lLcCFc2F6wod6xcAZw'&gt;Kinh Tế Học Hài Hước&lt;/a&gt; &amp;amp; &lt;a href='http://tiki.vn/sieu-kinh-te-hoc-hai-huoc-sach-bo-tui-tai-ban-2012.html?ref=c316.c385.c593.c846.c847.'&gt;Siêu Kinh Tế Học Hài Hước&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://tiki.vn/catalogsearch/result/?q=d%E1%BA%A1y+con+l%C3%A0m+gi%C3%A0u&amp;amp;gclid=CKWgv537lLcCFYyF6wodDxMApA'&gt;Bộ sách Dạy con làm giàu&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Những sách này bạn có thể dễ dàng tìm được bản mềm (pdf, prc, epub) trên internet. Tuy nhiên, nếu có thể, hãy mua bản cứng để ủng hộ tác giả.&lt;/p&gt;</description>
+                <link>http://hugo53.github.io/opinion/2013/05/14/sinh-vien-cntt-nen-hoc-gi</link>
+                <guid>http://hugo53.github.io/opinion/2013/05/14/sinh-vien-cntt-nen-hoc-gi</guid>
+                <pubDate>2013-05-14T00:00:00+07:00</pubDate>
+        </item>
+
+        <item>
+                <title>Web And Mobile Revenue Models</title>
+                <description>&lt;p&gt;This post is inspired by &lt;a href='https://hackpad.com/Web-And-Mobile-Revenue-Models-final-EgXuEtSibE7'&gt;a hackpad post&lt;/a&gt;. In my opinion, it is extremely useful for IT man. Let learn how to monetize!&lt;/p&gt;
+
+&lt;h2 id='advertising'&gt;Advertising&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Display Ads - ex. Yahoo!&lt;/li&gt;
+
+&lt;li&gt;Search Ads - ex. Google&lt;/li&gt;
+
+&lt;li&gt;Text Ads - ex. Google&lt;/li&gt;
+
+&lt;li&gt;Video Ads - ex. Hulu&lt;/li&gt;
+
+&lt;li&gt;Audio Ads - ex. Pandora&lt;/li&gt;
+
+&lt;li&gt;Promoted Content - ex. Twitter, Tumblr&lt;/li&gt;
+
+&lt;li&gt;Paid content links - ex. Outbrain&lt;/li&gt;
+
+&lt;li&gt;Recruitment Ads - ex. LinkedIn&lt;/li&gt;
+
+&lt;li&gt;Lead Generation - ex. MoneySuperMarket, ZocDoc&lt;/li&gt;
+
+&lt;li&gt;Affiliate Fees - ex. Amazon Affiliate Program&lt;/li&gt;
+
+&lt;li&gt;Classifieds - ex. Craiglist&lt;/li&gt;
+
+&lt;li&gt;Featured listings - e.g. Yelp, Super Pages;&lt;/li&gt;
+
+&lt;li&gt;Email Ads - as done by Yahoo, MSN&lt;/li&gt;
+
+&lt;li&gt;Ad Retargeting - ex. Criteo&lt;/li&gt;
+
+&lt;li&gt;Real-time Intent Ad Delivery&lt;/li&gt;
+
+&lt;li&gt;Location-based offers - ex/ Foursquare&lt;/li&gt;
+
+&lt;li&gt;Sponsorships / Site Takeovers - ex. Pandora&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id='commerce'&gt;Commerce&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Retailing - ex. Zappos&lt;/li&gt;
+
+&lt;li&gt;Marketplace - ex. Etsy&lt;/li&gt;
+
+&lt;li&gt;Crowdsourced Marketplace - ex. Threadless&lt;/li&gt;
+
+&lt;li&gt;Excess Capacity Markets - Uber, AirBnB&lt;/li&gt;
+
+&lt;li&gt;Vertically Integrated Commerce - ex. Warby Parker&lt;/li&gt;
+
+&lt;li&gt;Aggregator - ex. Lastminute.com&lt;/li&gt;
+
+&lt;li&gt;Flash Sales: Gilt Groupe, Vente Privee&lt;/li&gt;
+
+&lt;li&gt;Group buying - ex. Groupon&lt;/li&gt;
+
+&lt;li&gt;Digital goods / downloads - ex. iTunes&lt;/li&gt;
+
+&lt;li&gt;Virtual goods - ex. Zynga&lt;/li&gt;
+
+&lt;li&gt;Training - ex. Cloudera (??), -&amp;gt; Coursera&lt;/li&gt;
+
+&lt;li&gt;Pay what you want - ex. Radiohead&lt;/li&gt;
+
+&lt;li&gt;Commission - ex. SharesPost&lt;/li&gt;
+
+&lt;li&gt;Commission per order - ex. Seamless, GrubHub&lt;/li&gt;
+
+&lt;li&gt;Auction - ex. eBay&lt;/li&gt;
+
+&lt;li&gt;Reverse Auction - ex Priceline&lt;/li&gt;
+
+&lt;li&gt;Barter for services ex. SwapRight&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id='subscription'&gt;Subscription&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Software as a Service (SAAS) - ex. Salesforce&lt;/li&gt;
+
+&lt;li&gt;Service as a Service - ex. Shopify&lt;/li&gt;
+
+&lt;li&gt;Content as a Service - ex: Spotify, Netflix&lt;/li&gt;
+
+&lt;li&gt;Infrastructure/Platform As A Service - ex. AWS&lt;/li&gt;
+
+&lt;li&gt;Freemium SAAS - ex. Dropbox&lt;/li&gt;
+
+&lt;li&gt;Donations - ex. Wikipedia&lt;/li&gt;
+
+&lt;li&gt;Sampling - ex Birchbox&lt;/li&gt;
+
+&lt;li&gt;Membership Services - ex Amazon Prime&lt;/li&gt;
+
+&lt;li&gt;Support and Maintenance - ex 10gen, Red Hat&lt;/li&gt;
+
+&lt;li&gt;Paywall - ex. NYTimes&lt;/li&gt;
+
+&lt;li&gt;Voice and video-conferencing - ex. Uberconference&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id='peer_to_peer'&gt;Peer to Peer&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Peer-to-Peer Lending - ex. Lending Club,&lt;/li&gt;
+
+&lt;li&gt;Peer-to-Peer Gambling - ex. BetFair&lt;/li&gt;
+
+&lt;li&gt;Peer-to-peer buying - ex Etsy&lt;/li&gt;
+
+&lt;li&gt;Peer-to-peer insurance/home/car - ex (??)&lt;/li&gt;
+
+&lt;li&gt;Peer-to-peer computing (CrasPlan storage, or SETI@home)&lt;/li&gt;
+
+&lt;li&gt;Peer-to-peer service - ex. Mechanical Turk, TaskRabbit&lt;/li&gt;
+
+&lt;li&gt;Peer-to-peer Mobile WiFi/Tethering - ex (??)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id='transaction_processing'&gt;Transaction processing&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Merchant Acquiring - ex. PayPal (Online / Offline), Stripe (Online), Square (Offline)&lt;/li&gt;
+
+&lt;li&gt;Intermediary - ex. IP Commerce (POS 2.0), CardSpring&lt;/li&gt;
+
+&lt;li&gt;Acquiring Processing - ex. Paymentech&lt;/li&gt;
+
+&lt;li&gt;Bank Transfer - ex. Dwolla&lt;/li&gt;
+
+&lt;li&gt;Bank Depository Offering - ex. Simple, Movenbank (spread on average deposits)&lt;/li&gt;
+
+&lt;li&gt;Bank Card Issuance - ex. Simple (interchange fee per transaction)&lt;/li&gt;
+
+&lt;li&gt;Fullfilment - ex. Amazon&lt;/li&gt;
+
+&lt;li&gt;Messaging - ex. Peer-to-Peer SMS, IM, Group Messaging&lt;/li&gt;
+
+&lt;li&gt;Telephony - ex. termination/origination in public telephony networks (skype out/in)&lt;/li&gt;
+
+&lt;li&gt;Telephony - ex. termination/origination within private telephony cloud (e.g. native skype)&lt;/li&gt;
+
+&lt;li&gt;Payment Gateways: Mobile -ex. Braintree&lt;/li&gt;
+
+&lt;li&gt;Platform Monetization (&amp;#8220;Tax&amp;#8221;) - Facebook Credits; iO6 30% cut.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id='licensing'&gt;Licensing&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Per Seat License - ex. Sencha&lt;/li&gt;
+
+&lt;li&gt;Per Device/Server License - ex. QlikView&lt;/li&gt;
+
+&lt;li&gt;Per Application instance - ex. Adobe Photoshop&lt;/li&gt;
+
+&lt;li&gt;Per Site License - ex. Private cloud on internal infrastructure&lt;/li&gt;
+
+&lt;li&gt;Patent Licensing - ex. Qualcomm&lt;/li&gt;
+
+&lt;li&gt;Brand Licensing - ex. Sesame Street&lt;/li&gt;
+
+&lt;li&gt;Indirect Licensing - ex. Apple Volume Purchasing&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id='data'&gt;Data&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;User data - ex. BlueKai&lt;/li&gt;
+
+&lt;li&gt;Business data - ex. Duedil&lt;/li&gt;
+
+&lt;li&gt;User intelligence - ex. Yougov&lt;/li&gt;
+
+&lt;li&gt;Search Data - ex. Chango&lt;/li&gt;
+
+&lt;li&gt;Real-time Consumer Intent Data - ex. Yieldbot&lt;/li&gt;
+
+&lt;li&gt;Benchmarking services - ex. Comscore&lt;/li&gt;
+
+&lt;li&gt;Market research - ex. GLG&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id='mobile'&gt;Mobile&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Paid App Downloads - ex. WhatsApp&lt;/li&gt;
+
+&lt;li&gt;In-app purchases - ex. Zynga Poker&lt;/li&gt;
+
+&lt;li&gt;In-app subscriptions - ex. NY Times app&lt;/li&gt;
+
+&lt;li&gt;Advertising - ex. Flurry, AdMob&lt;/li&gt;
+
+&lt;li&gt;Digital-to-physical - ex. Red Stamp, Postagram&lt;/li&gt;
+
+&lt;li&gt;Transactions - ex Hailo&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id='gaming'&gt;Gaming&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Freemium - Free to play w/ virtual currency - ex. Zynga&lt;/li&gt;
+
+&lt;li&gt;Subscription- ex. World of Warcraft&lt;/li&gt;
+
+&lt;li&gt;Premium - ex. xBox games&lt;/li&gt;
+
+&lt;li&gt;DLC - (Downloadable Content) - ex. Call of Duty&lt;/li&gt;
+
+&lt;li&gt;Ad Supported - ex - addictinggames.co&lt;/li&gt;
+&lt;/ul&gt;</description>
+                <link>http://hugo53.github.io/ios%20development/2013/05/13/web-and-mobile-revenue-models</link>
+                <guid>http://hugo53.github.io/ios%20development/2013/05/13/web-and-mobile-revenue-models</guid>
+                <pubDate>2013-05-13T00:00:00+07:00</pubDate>
+        </item>
+
+        <item>
+                <title>Quora Corner</title>
+                <description>&lt;p&gt;Aww, it seems very amazing when you traverse &lt;a href='http://quora.com'&gt;Quora&lt;/a&gt; to face with many curious questions. In the spare time, I usually &lt;em&gt;quora&lt;/em&gt; and sometimes I must burst into a laugh because of some stupid questions and a plenty of ridiculous answers. That is why I create this post to keep those things.&lt;/p&gt;
+
+&lt;h4 id='question_1_by_hugos_friend_leolink'&gt;Question 1 by Hugo&amp;#8217;s friend, &lt;a href='http://mrleolink.github.io/'&gt;@LeoLink&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href='http://www.quora.com/Operating-Systems/My-friend-asked-me-that-why-windows-didnt-base-on-linux-kernel-The-reason-he-gave-is-he-love-gaming-in-Windows-and-like-working-in-Linux-Any-idea-for-a-mixing-OS'&gt;&lt;em&gt;My friend asked me that why windows didn&amp;#8217;t base on linux kernel. The reason he gave is he love gaming in Windows and like working in Linux. Any idea for a mixing OS?&lt;/em&gt;&lt;/a&gt;. Of course, there is no answer till this post is published. Predictably, it will stay in no-answer status for a long time until a crazy guy feels happy to give idea.&lt;/p&gt;
+
+&lt;p&gt;(Next questions will be updated asap)&lt;/p&gt;</description>
+                <link>http://hugo53.github.io/quora/2013/05/13/quora-corner</link>
+                <guid>http://hugo53.github.io/quora/2013/05/13/quora-corner</guid>
+                <pubDate>2013-05-13T00:00:00+07:00</pubDate>
+        </item>
+
+        <item>
+                <title>Mô hình sinh lợi nhuận trong lĩnh vực Web và Mobile</title>
+                <description>&lt;p&gt;Thể theo nguyện vọng của bạn &lt;em&gt;boy2tay2sung&lt;/em&gt;, mình đưa bài viết này lên, là phiên bản tiếng Việt của bài viết &lt;em&gt;Web And Mobile Revenue Models&lt;/em&gt; vừa được post cách đây vài giờ đồng hồ. Cũng xin nói thêm một chút, nội dung của bài viết phỏng theo chia sẻ ở &lt;a href='https://hackpad.com/Web-And-Mobile-Revenue-Models-final-EgXuEtSibE7'&gt;đây&lt;/a&gt; của Fred Wilson-một nhà đầu tư, chủ tịch quỹ đầu tư Union Square Ventures. Tuy nhiên, để có được bản tổng kết này, cũng có rất nhiều nhà đầu tư, CEO đóng góp cho bản thảo không chính thức của Fred, trong đó, cũng có một vài đóng góp của người Việt (&lt;a href='https://hackpad.com/Web-and-Mobile-Revenue-Models-Ch2paBpUyIU'&gt;xem ở đây&lt;/a&gt;). Bạn có thể tìm hiểu thêm về Fred thông qua các kênh chia sẻ cá nhân của ông như &lt;a href='https://twitter.com/fredwilson'&gt;Twitter&lt;/a&gt; hoặc &lt;a href='http://www.avc.com/'&gt;blog&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Về cơ bản, tổng hợp của Fred đã bao quát được tương đối đầy đủ phương thức &lt;em&gt;kiếm tiền&lt;/em&gt; thông qua cung cấp các dịch vụ trên nền Web cũng như nền tảng Mobile. Cách tiếp cận rất đơn giản, Fred Wilson gạch đầu dòng tên phương pháp, đi kèm với một số sản phẩm, công ty đã từng áp dụng thành công. Sau đây là phần nội dung chính.&lt;/p&gt;
+
+&lt;h2 id='qung_co'&gt;Quảng cáo&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Hiện thị quảng cáo - Yahoo!&lt;/li&gt;
+
+&lt;li&gt;Quảng cáo trong kết quả tìm kiếm - Google&lt;/li&gt;
+
+&lt;li&gt;Quảng cáo dạng văn bản - Google&lt;/li&gt;
+
+&lt;li&gt;Quảng cáo dưới dạng Video - Hulu&lt;/li&gt;
+
+&lt;li&gt;Quảng cáo dưới dạng Audio - Pandora&lt;/li&gt;
+
+&lt;li&gt;Quảng cáo bên trong nội dung chia sẻ - Twitter, Tumblr&lt;/li&gt;
+
+&lt;li&gt;Paid content links - Outbrain (need more time to dig it)&lt;/li&gt;
+
+&lt;li&gt;Quảng cáo nghề nghiệp - LinkedIn&lt;/li&gt;
+
+&lt;li&gt;Lead Generation - MoneySuperMarket, ZocDoc (need more time to dig it)&lt;/li&gt;
+
+&lt;li&gt;Affiliate Fees - Amazon Affiliate Program (need more time to dig it)&lt;/li&gt;
+
+&lt;li&gt;Quảng cáo dựa trên mạng chia sẻ đồ dùng dạng phân loại (Classifieds) - Craiglist&lt;/li&gt;
+
+&lt;li&gt;Featured listings - e.g. Yelp, Super Pages;&lt;/li&gt;
+
+&lt;li&gt;Quảng cáo trong Email- Yahoo, MSN&lt;/li&gt;
+
+&lt;li&gt;Quảng cáo định hướng người dùng (Ad Retargeting) - Criteo&lt;/li&gt;
+
+&lt;li&gt;Real-time Intent Ad Delivery (need more time to dig it)&lt;/li&gt;
+
+&lt;li&gt;Quảng cáo dựa trên định vị người dùng (Location-based) - Foursquare&lt;/li&gt;
+
+&lt;li&gt;Quảng cáo dưới dạng nhà tài trợ (Sponsorships / Site Takeovers) - Pandora&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id='dch_v_thng_mi'&gt;Dịch vụ thương mại&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Kinh doanh bán lẻ (Retailing) - Zappos&lt;/li&gt;
+
+&lt;li&gt;Chợ điện tử (Marketplace) - Etsy&lt;/li&gt;
+
+&lt;li&gt;Crowdsourced Marketplace - Threadless&lt;/li&gt;
+
+&lt;li&gt;Excess Capacity Markets - Uber, AirBnB&lt;/li&gt;
+
+&lt;li&gt;Vertically Integrated Commerce - Warby Parker&lt;/li&gt;
+
+&lt;li&gt;Aggregator - Lastminute.com&lt;/li&gt;
+
+&lt;li&gt;Flash Sales: Gilt Groupe, Vente Privee&lt;/li&gt;
+
+&lt;li&gt;Mua theo nhóm - Groupon&lt;/li&gt;
+
+&lt;li&gt;Hàng hoá điện tử/Phần mềm/Nhạc/&amp;#8230; (Download được) - iTunes&lt;/li&gt;
+
+&lt;li&gt;Hàng hoá ảo - Zynga&lt;/li&gt;
+
+&lt;li&gt;Giáo dục trực tuyến - Coursera, Udacity, KhanAcademy&lt;/li&gt;
+
+&lt;li&gt;Pay what you want - Radiohead&lt;/li&gt;
+
+&lt;li&gt;Commission - SharesPost&lt;/li&gt;
+
+&lt;li&gt;Commission per order - Seamless, GrubHub&lt;/li&gt;
+
+&lt;li&gt;Đấu giá trực tuyến - eBay&lt;/li&gt;
+
+&lt;li&gt;Reverse Auction - Priceline&lt;/li&gt;
+
+&lt;li&gt;Barter for services - SwapRight&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id='ph_theo_diph_thu_dch_v_subscription'&gt;Phí theo dõi/Phí thuê dịch vụ (Subscription)&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Software as a Service (SAAS) - Salesforce&lt;/li&gt;
+
+&lt;li&gt;Service as a Service - Shopify&lt;/li&gt;
+
+&lt;li&gt;Content as a Service - Spotify, Netflix&lt;/li&gt;
+
+&lt;li&gt;Infrastructure/Platform As A Service - AWS&lt;/li&gt;
+
+&lt;li&gt;Dịch vụ lưu trữ miễn phí SAAS - Dropbox&lt;/li&gt;
+
+&lt;li&gt;Ủng hộ (Donations) - Wikipedia&lt;/li&gt;
+
+&lt;li&gt;Sampling - Birchbox&lt;/li&gt;
+
+&lt;li&gt;Phí thành viên (Membership Services) - Amazon Prime&lt;/li&gt;
+
+&lt;li&gt;Phí hỗ trợ/bảo trì - 10gen, Red Hat&lt;/li&gt;
+
+&lt;li&gt;Paywall - NYTimes&lt;/li&gt;
+
+&lt;li&gt;Hội nghị từ xa qua Voice và video - Uberconference&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id='chia_s_li_nhun_ngang_hng_peer_to_peer'&gt;Chia sẻ lợi nhuận ngang hàng (Peer to Peer)&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Peer-to-Peer Lending - Lending Club,&lt;/li&gt;
+
+&lt;li&gt;Peer-to-Peer Gambling - BetFair&lt;/li&gt;
+
+&lt;li&gt;Peer-to-peer buying - Etsy&lt;/li&gt;
+
+&lt;li&gt;Peer-to-peer insurance/home/car - (??)&lt;/li&gt;
+
+&lt;li&gt;Peer-to-peer computing (CrasPlan storage, or SETI@home)&lt;/li&gt;
+
+&lt;li&gt;Peer-to-peer service - Mechanical Turk, TaskRabbit&lt;/li&gt;
+
+&lt;li&gt;Peer-to-peer Mobile WiFi/Tethering - (??)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id='dch_v_hi_oichuyn_tin_transaction_processing'&gt;Dịch vụ hối đoái/Chuyển tiền (Transaction processing)&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Merchant Acquiring - PayPal (Online / Offline), Stripe (Online), Square (Offline)&lt;/li&gt;
+
+&lt;li&gt;Intermediary - IP Commerce (POS 2.0), CardSpring&lt;/li&gt;
+
+&lt;li&gt;Acquiring Processing - Paymentech&lt;/li&gt;
+
+&lt;li&gt;Bank Transfer - Dwolla&lt;/li&gt;
+
+&lt;li&gt;Bank Depository Offering - Simple, Movenbank (spread on average deposits)&lt;/li&gt;
+
+&lt;li&gt;Bank Card Issuance - Simple (interchange fee per transaction)&lt;/li&gt;
+
+&lt;li&gt;Fullfilment - Amazon&lt;/li&gt;
+
+&lt;li&gt;Messaging - Peer-to-Peer SMS, IM, Group Messaging&lt;/li&gt;
+
+&lt;li&gt;Telephony - termination/origination in public telephony networks (skype out/in)&lt;/li&gt;
+
+&lt;li&gt;Telephony - termination/origination within private telephony cloud (e.g. native skype)&lt;/li&gt;
+
+&lt;li&gt;Payment Gateways: Mobile - Braintree&lt;/li&gt;
+
+&lt;li&gt;Platform Monetization (&amp;#8220;Tax&amp;#8221;) - Facebook Credits; iO6 30% cut.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id='bn_giy_php_s_dng_bn_quyn_licensing'&gt;Bán giấy phép sử dụng/ Bản quyền (Licensing)&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Per Seat License - Sencha&lt;/li&gt;
+
+&lt;li&gt;Per Device/Server License - QlikView&lt;/li&gt;
+
+&lt;li&gt;Per Application instance - Adobe Photoshop&lt;/li&gt;
+
+&lt;li&gt;Per Site License - Private cloud on internal infrastructure&lt;/li&gt;
+
+&lt;li&gt;Patent Licensing - Qualcomm&lt;/li&gt;
+
+&lt;li&gt;Brand Licensing - Sesame Street&lt;/li&gt;
+
+&lt;li&gt;Indirect Licensing - Apple Volume Purchasing&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id='kinh_doanh_d_liu'&gt;Kinh doanh dữ liệu&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Kinh doanh dữ liệu người dùng - BlueKai&lt;/li&gt;
+
+&lt;li&gt;Kinh doanh dữ liệu kinh doanh - Duedil&lt;/li&gt;
+
+&lt;li&gt;User intelligence - Yougov&lt;/li&gt;
+
+&lt;li&gt;Dữ liệu tìm kiếm - Chango&lt;/li&gt;
+
+&lt;li&gt;Real-time Consumer Intent Data - Yieldbot&lt;/li&gt;
+
+&lt;li&gt;Benchmarking services - Comscore&lt;/li&gt;
+
+&lt;li&gt;Nghiên cứu thị trường - GLG&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id='ng_dng_mobile'&gt;Ứng dụng Mobile&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Ứng dụng có phí - WhatsApp&lt;/li&gt;
+
+&lt;li&gt;Mua vật phẩm trong ứng dụng - Zynga Poker&lt;/li&gt;
+
+&lt;li&gt;In-app subscriptions - NY Times app&lt;/li&gt;
+
+&lt;li&gt;Quảng cáo trong ứng dụng - Flurry, AdMob&lt;/li&gt;
+
+&lt;li&gt;Digital-to-physical - Red Stamp, Postagram&lt;/li&gt;
+
+&lt;li&gt;Dịch vụ chuyển tiền trên Mobile - Hailo&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id='game'&gt;Game&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Game miễn phí/Thu tiền ảo - Zynga&lt;/li&gt;
+
+&lt;li&gt;Subscription - World of Warcraft&lt;/li&gt;
+
+&lt;li&gt;Game có phí - xBox games&lt;/li&gt;
+
+&lt;li&gt;DLC - (Downloadable Content) - Call of Duty&lt;/li&gt;
+
+&lt;li&gt;Quảng cáo trong game - addictinggames.co&lt;/li&gt;
+&lt;/ul&gt;</description>
+                <link>http://hugo53.github.io/business%20model/2013/05/13/mo-hinh-sinh-loi-nhuan-trong-linh-vc-web-va-mobile</link>
+                <guid>http://hugo53.github.io/business%20model/2013/05/13/mo-hinh-sinh-loi-nhuan-trong-linh-vc-web-va-mobile</guid>
+                <pubDate>2013-05-13T00:00:00+07:00</pubDate>
+        </item>
+
+        <item>
+                <title>[Vietnamese] Tuổi trẻ!</title>
+                <description>&lt;p&gt;Thế là cũng đã tốt nghiệp được 1 năm! Kinh nghiệm cũng không thêm được nhiều, trình độ cũng vẫn tàng tàng hồi còn đi học, moi đi moi lại vẫn chưa ra thứ gì tốt hơn so với một năm trước. Có chăng, một chút thay đổi trong tư duy và cách nhìn nhận cuộc sống.&lt;/p&gt;
+
+&lt;p&gt;Bao đêm tự hỏi, mình là ai và mình đang làm gì? Câu trả lời vẫn quẩn quanh thực tại, một tên dev (lập trình viên) quèn, làm những thứ chẳng ai biết ấy là đâu. Điều quan trọng hơn, sự tự do với tri thức của mình vẫn quá xa vời. Muốn viết ra vài lời tâm sự mà sao khó quá. Thôi kể chuyện tán gái cho bớt buồn. Nghĩ mà cực, đường tán gái của mình long đong lận đận ghê. Biết thích khi còn tý tuổi, xoè bàn tay ra là đếm được, vậy mà &amp;#8230; giờ vẫn FA. Nói đùa chứ không phải là muốn thoát FA, mà hoàn toàn ngược lại, mình vui với tình hình hiện tại - không mệt đầu mấy chuyện gái gú yêu đương, tự do làm những gì mình nghĩ, gặp gỡ được nhiều con gái hơn, thay vì suốt ngày canh chừng ánh mắt của nàng sư tử tiềm năng. Tuy nhiên, alone cũng nhiều khi buồn, thực sự rất buồn. Lúc buồn, lại nhớ mấy năm về trước, khi còn tíu tít với mảnh tình đầu trong sáng - chỉ hơi tối một chút ;). Lại nhớ, lại nhớ, lại nhớ! Mỗi lần như vậy, mình dường như gục ngã, tâm trí rối bời và mất niềm tin vào cái thứ mơ mộng gọi là tình yêu lung linh lúng liếng. Cũng mỗi lần như vậy, lại nhấn bài &lt;em&gt;Túp lều lý tưởng&lt;/em&gt; remix để chìm đắm trong cái nỗi mộng mơ ấy. &lt;a href='http://www.youtube.com/watch?v=bzwiWMW1ty0'&gt;&lt;img alt='này' src='http://img.youtube.com/vi/bzwiWMW1ty0/0.jpg' /&gt;&lt;/a&gt;&lt;/p&gt;</description>
+                <link>http://hugo53.github.io/lifestyle%20&%20motivation/2013/05/12/vietnamesetui-tr</link>
+                <guid>http://hugo53.github.io/lifestyle%20&%20motivation/2013/05/12/vietnamesetui-tr</guid>
+                <pubDate>2013-05-12T00:00:00+07:00</pubDate>
+        </item>
+
+        <item>
+                <title>Hello World</title>
+                <description>&lt;h1 id='kick_off'&gt;Kick off.&lt;/h1&gt;
+
+&lt;h2 id='lets_start_blogging'&gt;Let&amp;#8217;s start blogging!&lt;/h2&gt;</description>
+                <link>http://hugo53.github.io/2013/05/12/hello-world</link>
+                <guid>http://hugo53.github.io/2013/05/12/hello-world</guid>
+                <pubDate>2013-05-12T00:00:00+07:00</pubDate>
+        </item>
+
+        <item>
+                <title>Get started with iOS Programming</title>
+                <description>&lt;p&gt;Recently, I had been decided what kind of software industry field which should be followed. There were actually two choices, whether Big Data belongs to Data Mining techniques or Mobile Development is with creating a large number of awesome applications for the rest. I spent a plenty of time for choosing the best of those. Finally, in the next year, I will concentrate totally on building mobile applications and even mobile games based on iOS platform. It really is difficult thought because of interesting of the former. In this post, I am willing to show my path to iOS tunnel.&lt;/p&gt;
+
+&lt;h2 id='what_about_official_tutorials_from_apple'&gt;What about official tutorials from Apple?&lt;/h2&gt;
+
+&lt;p&gt;Ahh, Nothing to say about them. Very very very amazing and extremely useful. We can find those at &lt;a href='http://developer.apple.com/library/ios/#referencelibrary/GettingStarted/RoadMapiOS/'&gt;here&lt;/a&gt;. Please pay attention to the horizontal axis where describes standard road to combat almost challenges of mobile development. A frequent question is that &lt;em&gt;What is the starting point?&lt;/em&gt;. It means that newbies doesn&amp;#8217;t know where should begin. In &lt;a href='http://developer.apple.com/library/ios/#referencelibrary/GettingStarted/RoadMapiOS/chapters/DesignYourAppwithCare/DesignYourAppWithCare/DesignYourAppWithCare.html'&gt;&lt;em&gt;App Design&lt;/em&gt;&lt;/a&gt; section, Apple suggests that developers should make clearly their ideas firstly, then make action plan that may consider many parts of creating application process such as Data Model, rough interface, type of devices: iPhone or iPad or both, version OS supported: 4 or later, 5 or later, 6 or later, so forth.&lt;/p&gt;
+
+&lt;h2 id='main_trainning_resources'&gt;Main trainning resources&lt;/h2&gt;
+
+&lt;p&gt;There is a fact that finding a valueable instruction is a hard task obviously. I usually question that what resource can be put our belief to pursue. As follows, I will list primary resources which I think they may helpful.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href='http://looksok.wordpress.com/2012/12/22/best-iphoneios-programming-tutorials/'&gt;A great instruction describes all of aspects that let newbies know exactly what they may need&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href='https://github.com/rnystrom/iOS-Best-Practices'&gt;Tutorials by &lt;em&gt;rnystrom&lt;/em&gt; - a talent iOS application publisher&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href='https://itunes.apple.com/us/course/coding-together-developing/id593208016'&gt;Of course, unforgettable Coding Together: Developing Apps for iPhone and iPad by Stanford named CS193P&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id='where_can_we_get_more_precious_knowledge_and_monetizing'&gt;Where can we get more precious knowledge and monetizing?&lt;/h2&gt;</description>
+                <link>http://hugo53.github.io/ios%20development/2013/05/12/get-started-with-ios-programming</link>
+                <guid>http://hugo53.github.io/ios%20development/2013/05/12/get-started-with-ios-programming</guid>
+                <pubDate>2013-05-12T00:00:00+07:00</pubDate>
+        </item>
 
         <item>
                 <title>Jekyll Introduction</title>
@@ -330,8 +904,8 @@ tags : [how-to, jekyll]
 &lt;h2 id='next_steps'&gt;Next Steps&lt;/h2&gt;
 
 &lt;p&gt;Please take a look at &lt;a href='' /&gt; or jump right into &lt;a href=''&gt;Usage&lt;/a&gt; if you&amp;#8217;d like.&lt;/p&gt;</description>
-                <link>http://username.github.io/lessons/2011/12/29/jekyll-introduction</link>
-                <guid>http://username.github.io/lessons/2011/12/29/jekyll-introduction</guid>
+                <link>http://hugo53.github.io/lessons/2011/12/29/jekyll-introduction</link>
+                <guid>http://hugo53.github.io/lessons/2011/12/29/jekyll-introduction</guid>
                 <pubDate>2011-12-29T00:00:00+07:00</pubDate>
         </item>
 

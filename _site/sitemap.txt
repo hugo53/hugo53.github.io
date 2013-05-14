@@ -1,11 +1,19 @@
 
-http://username.github.io/archive.html
-http://username.github.io/atom.xml
-http://username.github.io/categories.html
-http://username.github.io/index.html
-http://username.github.io/pages.html
-http://username.github.io/rss.xml
-http://username.github.io/sitemap.txt
-http://username.github.io/tags.html
+http://hugo53.github.io/archive.html
+http://hugo53.github.io/atom.xml
+http://hugo53.github.io/categories.html
+http://hugo53.github.io/index.html
+http://hugo53.github.io/pages/about.html
+http://hugo53.github.io/pages.html
+http://hugo53.github.io/rss.xml
+http://hugo53.github.io/sitemap.txt
+http://hugo53.github.io/tags.html
 
-http://username.github.io/lessons/2011/12/29/jekyll-introduction
+http://hugo53.github.io/opinion/2013/05/14/sinh-vien-cntt-nen-hoc-gi
+http://hugo53.github.io/ios%20development/2013/05/13/web-and-mobile-revenue-models
+http://hugo53.github.io/quora/2013/05/13/quora-corner
+http://hugo53.github.io/business%20model/2013/05/13/mo-hinh-sinh-loi-nhuan-trong-linh-vc-web-va-mobile
+http://hugo53.github.io/lifestyle%20&%20motivation/2013/05/12/vietnamesetui-tr
+http://hugo53.github.io/2013/05/12/hello-world
+http://hugo53.github.io/ios%20development/2013/05/12/get-started-with-ios-programming
+http://hugo53.github.io/lessons/2011/12/29/jekyll-introduction
