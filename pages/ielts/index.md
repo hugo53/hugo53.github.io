@@ -15,7 +15,7 @@ As follows, several significant websites which may be helpful for many IELTS can
 
 3. [http://www.ielts-blog.com/](http://www.ielts-blog.com/). There are many writing samples and real questions also are usually updated.
 
-4. [http://ielts-yasi.englishlab.net/index.htm](http://ielts-yasi.englishlab.net/index.htm). Some people said that it is a huge resouces  which is comprised of deverse kinds of practices. 
+4. [http://ielts-yasi.englishlab.net/index.htm](http://ielts-yasi.englishlab.net/index.htm). Some people said that it is a huge resouce which is comprised of deverse kinds of practices. 
 
 *Inspired by [VIC's post](https://www.facebook.com/VietnameseIELTSCommunity/posts/591364340887250).*
 
