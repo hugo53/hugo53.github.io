@@ -22,7 +22,10 @@ As follows, several significant websites which may be helpful for many IELTS can
 
 ## Essential Grammar Syntax
 16 types of grammar syntax is shown. It means that you should achieve them if acquiring high IELTS score actually is your target.
-1.Tense:  simple present, present perfect, simple past, simple future, present continuous, past perfect, past continuous, near future 
+1.Tense
+- Simple present, perfect present, present continuous
+- Simple past, past perfect, past continuous
+- Simple future, near future 
 2. Sentence Structure (simple, complex, compound sentence) 
 3. Article
 4. Subject - Verb Agreement 
@@ -39,4 +42,4 @@ As follows, several significant websites which may be helpful for many IELTS can
 15. Participles (present participle, past participle, perfect participle) 
 16. Punctuation
 
-*Inspired by [VIC's post](https://www.facebook.com/VietnameseIELTSCommunity/posts/590630630960621)).*
+*Inspired by [VIC's post](https://www.facebook.com/VietnameseIELTSCommunity/posts/590630630960621).*
