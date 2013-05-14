@@ -8,5 +8,3 @@ tags: []
 {% include JB/setup %}
 # Kick off. 
 ## Let's start blogging!
-
-Test OK
