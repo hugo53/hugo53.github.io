@@ -19,6 +19,12 @@ Có thể nói rằng ngoại ngữ là rào cản lớn nhất trong quá trìn
 
 Tuy nhiên, ở đây tác giả không chỉ đề cập tới sự cần thiết của tiếng Anh trong việc nắm bắt thông tin. Một cách đầy đủ, tiếng Anh là công cụ cần thiết bậc nhất, nếu bạn muốn thành công trong lĩnh vực tin học. Đọc thôi không đủ, bạn cần có khả năng nghe (chí ít để nghe bài giảng của các khoá học mà sẽ được nói tới ở phần [Massive Online Open Course (MOOC) và tương lai của đào tạo chất lượng cao](#mooc)), bạn cần phải giao tiếp thành thục được - phòng trường hợp *phải* làm Leader, trao đổi suốt ngày với khách hàng ngoại quốc nói tiếng Tây. Ngoài ra, bạn cũng cần có kỹ năng viết nhất định, ít nhất có thể hoàn thành được tài liệu hướng dẫn sử dụng thứ mà bạn đã dày công làm ra, khoảng trên dưới trăm trang có lẻ. Như vậy, một lần nữa khẳng định rằng tiếng Anh cực kỳ quan trọng! Dĩ nhiên, nếu bạn chỉ muốn trở thành một lập trình viên hạng xoàng thì không cần mất thời gian vào tiếng Anh làm gì, *đằng nào chả có đứa dịch cho mình, tội gì mất công học, code mấy thứ hay ho còn vui hơn*. 
 
+###### Bắt đầu học tiếng Anh từ đâu?
+Câu hỏi này, khó mà lại dễ! Dễ bởi, chắc đa phần chúng ta bắt đầu tiếp cận với tiếng anh ở cấp Trung học. Nghĩa là, lên tới đại học, bạn có khoảng 7 năm kinh nghiệm học tiếng Anh. Còn khó, cũng đa phần chúng ta tiếp cận sai phương pháp. Bài viết này không chỉ ra phương pháp nào là phương pháp đúng đắn nhất, bởi đơn giản, điều đó phụ thuộc mỗi người. Tuy vậy, một số phương pháp đang được sử dụng phổ biến như dưới đây.
+- [Effortless English](http://effortlessenglishclub.com/).
+- [Pimsleur](http://www.pimsleur.com/Learn-English-for-Vietnamese-Speakers).
+Ngoài ra còn rất nhiều tài nguyên trên internet nếu bạn muốn luyện các chứng chỉ quốc tế IELTS, TOEFT hay TOEIC. 
+
 #### Bạn  muốn trở thành người như thế nào?
 
 
