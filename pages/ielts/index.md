@@ -19,9 +19,7 @@ As follows, several significant websites which may be helpful for many IELTS can
 
 5. [http://www.makkarielts.com/](http://www.makkarielts.com/). Quickly update real tests.
 
-```
-*Inspired by [VIC's post](https://www.facebook.com/VietnameseIELTSCommunity/posts/591364340887250).*
-```
+> *Inspired by [VIC's post](https://www.facebook.com/VietnameseIELTSCommunity/posts/591364340887250).*
 
 
 ## Essential Grammar Syntax
@@ -47,6 +45,4 @@ As follows, several significant websites which may be helpful for many IELTS can
 15. Participles (present participle, past participle, perfect participle) 
 16. Punctuation
 
-```
-*Inspired by [VIC's post](https://www.facebook.com/VietnameseIELTSCommunity/posts/590630630960621).*
-```
+> *Inspired by [VIC's post](https://www.facebook.com/VietnameseIELTSCommunity/posts/590630630960621).*
