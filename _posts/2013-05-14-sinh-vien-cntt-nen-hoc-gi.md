@@ -50,8 +50,6 @@ Trước hết, tựu chung về những gì mà một sinh viên CNTT nên bi�
 - [Clean Code: A Handbook of Agile Software Craftsmanship](http://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882/ref=sr_1_1?s=books&ie=UTF8&qid=1368512907&sr=1-1&keywords=clean+code)
 - [Refactoring: Improving the Design of Existing Code](http://www.amazon.com/Refactoring-Improving-Design-Existing-Code/dp/0201485672/ref=sr_1_6?s=books&ie=UTF8&qid=1368512907&sr=1-6&keywords=clean+code)
 
-Những sách này bạn có thể dễ dàng tìm được bản mềm (pdf, prc, epub) trên internet. Tuy nhiên, nếu có thể, hãy ship bản hardcover để ủng hộ tác giả. 
-
 ##### Sách khởi nghiệp
 - [Khởi Nghiệp Tinh Gọn (The Lean Startup)](http://tiki.vn/khoi-nghiep-tinh-gon-p52702.html?ref=c316.c372.c835.c846.c1186.c1314.&gclid=CJCn3Y79lLcCFYyF6wodDxMApA)
 
@@ -60,3 +58,4 @@ Những sách này bạn có thể dễ dàng tìm được bản mềm (pdf, pr
 - [Kinh Tế Học Hài Hước](http://tiki.vn/kinh-te-hoc-hai-huoc-tai-ban-p46333.html?ref=c316.c593.c846.c1186.c1314.c1317.&gclid=CMmWvOb6lLcCFc2F6wod6xcAZw) & [Siêu Kinh Tế Học Hài Hước](http://tiki.vn/sieu-kinh-te-hoc-hai-huoc-sach-bo-tui-tai-ban-2012.html?ref=c316.c385.c593.c846.c847.)
 - [Bộ sách Dạy con làm giàu](http://tiki.vn/catalogsearch/result/?q=d%E1%BA%A1y+con+l%C3%A0m+gi%C3%A0u&gclid=CKWgv537lLcCFYyF6wodDxMApA)
 
+Những sách này bạn có thể dễ dàng tìm được bản mềm (pdf, prc, epub) trên internet. Tuy nhiên, nếu có thể, hãy mua bản cứng để ủng hộ tác giả.
