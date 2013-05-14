@@ -23,6 +23,7 @@ Tuy nhiên, ở đây tác giả không chỉ đề cập tới sự cần thi�
 Câu hỏi này, khó mà lại dễ! Dễ bởi, chắc đa phần chúng ta bắt đầu tiếp cận với tiếng anh ở cấp Trung học. Nghĩa là, lên tới đại học, bạn có khoảng 7 năm kinh nghiệm học tiếng Anh. Còn khó, cũng đa phần chúng ta tiếp cận sai phương pháp. Bài viết này không chỉ ra phương pháp nào là phương pháp đúng đắn nhất, bởi đơn giản, điều đó phụ thuộc mỗi người. Tuy vậy, một số phương pháp đang được sử dụng phổ biến như dưới đây.
 - [Effortless English](http://effortlessenglishclub.com/).
 - [Pimsleur](http://www.pimsleur.com/Learn-English-for-Vietnamese-Speakers).
+
 Ngoài ra còn rất nhiều tài nguyên trên internet nếu bạn muốn luyện các chứng chỉ quốc tế IELTS, TOEFT hay TOEIC. 
 
 #### Bạn  muốn trở thành người như thế nào?
