@@ -5,38 +5,72 @@
         <description>Leading Beautiful Life - Hugo Nguyen</description>
         <link>http://hugo53.github.io</link>
         <link>http://hugo53.github.io</link>
-        <lastBuildDate>2013-05-14T14:20:28+07:00</lastBuildDate>
-        <pubDate>2013-05-14T14:20:28+07:00</pubDate>
+        <lastBuildDate>2013-05-15T14:07:50+07:00</lastBuildDate>
+        <pubDate>2013-05-15T14:07:50+07:00</pubDate>
         <ttl>1800</ttl>
 
 
         <item>
                 <title>Sinh viên CNTT nên và cần học gì?</title>
-                <description>&lt;p&gt;&lt;em&gt;Bài viết này dựa trên những hiểu biết hiện tại của người viết, sẽ tồn tại thiếu sót cũng như góc nhìn nhiều khi không khách quan. Bởi vậy tác giả rất mong nhận được ý kiến đóng góp của quý vị (có thể đóng góp ở phần Comment bên dưới) để bài viết được hoàn thiện hơn.&lt;/em&gt;&lt;/p&gt;
+                <description>&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Bài viết này dựa trên những hiểu biết hiện tại của người viết, sẽ tồn tại thiếu sót cũng như góc nhìn nhiều khi không khách quan. Bởi vậy tác giả rất mong nhận được ý kiến đóng góp của quý vị (có thể đóng góp ở phần Comment bên dưới) để bài viết được hoàn thiện hơn.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;Cũng đã có rất nhiều bài viết xoay quanh tựa đề đã nêu, ví dụ &lt;a href='http://vnexpress.net/gl/ban-doc-viet/2008/05/3ba02937/'&gt;Sinh viên CNTT nên học gì?&lt;/a&gt; hay thảo luận thiên về một lĩnh vực cụ thể trong tin học &lt;a href='http://www.procul.org/blog/2012/05/02/lam-an-toan-thong-tin-thi-h%E1%BB%8Dc-gi/'&gt;Làm an toàn thông tin thì học gì?&lt;/a&gt; nhưng cũng liên quan tương đối đến chủ đề đang đề cập: &lt;em&gt;Sinh viên công nghệ thông tin, nên và cần học gì?&lt;/em&gt;. Dường như, chưa một cơ sở đào tạo nào ở Việt Nam, từ trường đại học cho tới các trung tâm đào tạo nhân lực công nghệ thông tin chỉ rõ cho sinh viên, học viên hiểu được những điều nên, và cần trau dồi trong quá trình học tập. Một hệ luỵ phổ biến là người học không biết mình đang học gì, có ứng dụng thế nào, và đáng buồn hơn cả là không biết về sau mình sẽ làm gì. Mục tiêu không rõ ràng, hoài bão chỉ quanh quẩn ở việc ra được trường và có may mắn để xin được việc thực sự đang làm lụi tàn khả năng của họ mà đáng ra có thể đóng góp nhiều hơn cho nền công nghệ nước nhà cũng như tốt hơn cho chính họ.&lt;/p&gt;
 
-&lt;h4 id='khi_qut_chung'&gt;Khái quát chung&lt;/h4&gt;
+&lt;h2 id='mc_lc'&gt;Mục lục&lt;/h2&gt;
 
-&lt;p&gt;Trước hết, tựu chung về những gì mà một sinh viên CNTT nên biết, bao gồm cơ bản xử lý mức máy (byte, memory, &amp;#8230;), cơ bản hệ điều hành (Windows, Unix), các ngôn ngữ lập trình (lập trình hướng đối tượng, lập trình hàm, lập trình logic, lập trình script), thuật toán và cấu trúc dữ liệu cơ bản và cuối cùng, nơi để tìm kiếm thêm thông tin, tham gia trao đổi nâng cao kiến thức. Tuy nhiên, trong quá trình hoàn thiện mình, sinh viên CNTT nên biết thêm một vài lĩnh vực khác có thể hữu ích trong công việc cũng như trong cuộc sống sau này, có thể kể tên kinh tế học cơ bản, cơ bản quản lý (bao gồm quản lý cá nhân, quản lý công việc, sâu hơn là quản lý dự án). Nhìn chung, càng có nhiều tri thức, càng dễ bề xoay xở. Một phần không thể quên, chính là phải nắm vững kỹ thuật dating (tiếng Việt là tìm bạn khác giới). Thực trạng đáng buồn là sinh viên CNTT luôn có tỷ lệ F.A cao. Tại sao lại phải thuần thục vấn đề này sẽ được giải thích rõ hơn trong một bài viết đề cập về sự ảnh hưởng của hormone Oxytocin đến đến khả năng học tập/làm việc hiệu quả. Just kidding, but it&amp;#8217;s true!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href='#general'&gt;Khái quát chung&lt;/a&gt;&lt;/li&gt;
 
-&lt;h4 id='ting_anh_ro_cn_ln_nht'&gt;Tiếng Anh, rào cản lớn nhất!&lt;/h4&gt;
+&lt;li&gt;&lt;a href='#barrierlanguage'&gt;Tiếng Anh, rào cản lớn nhất!&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='#person'&gt;Bạn muốn trở thành người như thế nào?&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='#itfield'&gt;Các lĩnh vực chính trong CNTT&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='#mooc'&gt;Massive Online Open Course (MOOC) và tương lai của đào tạo chất lượng cao&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='#quora'&gt;Quora, nơi tài năng bắt đầu&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='#stack'&gt;StackOverflow, diễn đàn cần biết cho người ham hiểu biết&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='#josseeking'&gt;Tìm việc ở đâu?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id='general'&gt;Khái quát chung&lt;/h4&gt;
+
+&lt;p&gt;Trước hết, tựu chung về những gì mà một sinh viên CNTT nên biết, bao gồm cơ bản xử lý mức máy (byte, memory, &amp;#8230;), cơ bản hệ điều hành (Windows, Unix), các ngôn ngữ lập trình (lập trình hướng đối tượng, lập trình hàm, lập trình logic, lập trình script), thuật toán và cấu trúc dữ liệu cơ bản và cuối cùng, nơi để tìm kiếm thêm thông tin, tham gia trao đổi nâng cao kiến thức. Tuy nhiên, trong quá trình hoàn thiện mình, sinh viên CNTT nên biết thêm một vài lĩnh vực khác có thể hữu ích trong công việc cũng như trong cuộc sống sau này, có thể kể tên kinh tế học cơ bản, cơ bản quản lý (bao gồm quản lý cá nhân, quản lý công việc, sâu hơn là quản lý dự án). Nhìn chung, càng có nhiều tri thức, càng dễ bề xoay xở. Một phần không thể quên, chính là phải nắm vững kỹ thuật dating (tiếng Việt là tìm bạn khác giới). Thực trạng đáng buồn là sinh viên CNTT luôn có tỷ lệ F.A cao. Tại sao lại phải thuần thục vấn đề này sẽ được giải thích rõ hơn trong một bài viết đề cập về sự ảnh hưởng của hormone Oxytocin đến khả năng học tập/làm việc hiệu quả. Just kidding, but it&amp;#8217;s true!&lt;/p&gt;
+
+&lt;h4 id='barrierlanguage'&gt;Tiếng Anh, rào cản lớn nhất!&lt;/h4&gt;
 
 &lt;p&gt;Có thể nói rằng ngoại ngữ là rào cản lớn nhất trong quá trình rèn luyện, thu thập kiến thức của sinh viên nói chung và sinh viên CNTT nói riêng. Sở dĩ nói vậy bởi công nghệ thông tin là ngành tương đối đặc thù với các kỹ thuật phát triển nhanh và không ngừng thay đổi. Một công nghệ có thể hôm nay là thời thượng, ngày mai có thể đi vào dĩ vãng mà Yahoo là người hiểu rõ hơn cả: sự lớn mạnh của các trang mạng xã hội như Facebook đã đánh gục Blog 360 hay sự nở rộ của các phần mềm chat OTT (Over-the-top) như Viber, Whatsapp đã khiến Yahoo Messenger không còn nhiều đất diễn. Những ví dụ trên đủ cho thấy, nếu bạn là sinh viên CNTT, hãy chuẩn bị kĩ lưỡng để cập nhật thông tin công nghệ mọi lúc, mọi nơi bất kể vùng miền hay tuổi tác. Một ngày bạn ngừng cập nhật, là một ngày bạn chậm chân so với bạn đồng nghiệp, bạn đồng trang lứa. Dẫn dắt tuy dài dòng, nhưng câu hỏi chốt lại, &lt;em&gt;Tại sao phải biết tiếng Anh?&lt;/em&gt;. Như trên, tin mới nhất được diễn đạt bằng tiếng Anh. Bạn chờ nó chuyển sang tiếng Việt, là bạn chậm vài trăm ngày rồi.&lt;/p&gt;
 
 &lt;p&gt;Tuy nhiên, ở đây tác giả không chỉ đề cập tới sự cần thiết của tiếng Anh trong việc nắm bắt thông tin. Một cách đầy đủ, tiếng Anh là công cụ cần thiết bậc nhất, nếu bạn muốn thành công trong lĩnh vực tin học. Đọc thôi không đủ, bạn cần có khả năng nghe (chí ít để nghe bài giảng của các khoá học mà sẽ được nói tới ở phần &lt;a href='#mooc'&gt;Massive Online Open Course (MOOC) và tương lai của đào tạo chất lượng cao&lt;/a&gt;), bạn cần phải giao tiếp thành thục được - phòng trường hợp &lt;em&gt;phải&lt;/em&gt; làm Leader, trao đổi suốt ngày với khách hàng ngoại quốc nói tiếng Tây. Ngoài ra, bạn cũng cần có kỹ năng viết nhất định, ít nhất có thể hoàn thành được tài liệu hướng dẫn sử dụng thứ mà bạn đã dày công làm ra, khoảng trên dưới trăm trang có lẻ. Như vậy, một lần nữa khẳng định rằng tiếng Anh cực kỳ quan trọng! Dĩ nhiên, nếu bạn chỉ muốn trở thành một lập trình viên hạng xoàng thì không cần mất thời gian vào tiếng Anh làm gì, &lt;em&gt;đằng nào chả có đứa dịch cho mình, tội gì mất công học, code mấy thứ hay ho còn vui hơn&lt;/em&gt;.&lt;/p&gt;
 
-&lt;h4 id='bn_mun_tr_thnh_ngi_nh_th_no'&gt;Bạn muốn trở thành người như thế nào?&lt;/h4&gt;
+&lt;h6 id='bt_u_hc_ting_anh_t_u'&gt;Bắt đầu học tiếng Anh từ đâu?&lt;/h6&gt;
 
-&lt;h4 id='cc_lnh_vc_chnh_trong_cntt'&gt;Các lĩnh vực chính trong CNTT&lt;/h4&gt;
+&lt;p&gt;Câu hỏi này, khó mà lại dễ! Dễ bởi, chắc đa phần chúng ta bắt đầu tiếp cận với tiếng anh ở cấp Trung học. Nghĩa là, lên tới đại học, bạn có khoảng 7 năm kinh nghiệm học tiếng Anh. Còn khó, cũng đa phần chúng ta tiếp cận sai phương pháp. Bài viết này không chỉ ra phương pháp nào là phương pháp đúng đắn nhất, bởi đơn giản, điều đó phụ thuộc mỗi người. Tuy vậy, một số phương pháp đang được sử dụng phổ biến như dưới đây.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href='http://effortlessenglishclub.com/'&gt;Effortless English&lt;/a&gt;.&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://www.pimsleur.com/Learn-English-for-Vietnamese-Speakers'&gt;Pimsleur&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Ngoài ra còn rất nhiều tài nguyên trên internet nếu bạn muốn luyện các chứng chỉ quốc tế IELTS, TOEFT hay TOEIC.&lt;/p&gt;
+
+&lt;h4 id='person'&gt;Bạn muốn trở thành người như thế nào?&lt;/h4&gt;
+
+&lt;h4 id='itfield'&gt;Các lĩnh vực chính trong CNTT&lt;/h4&gt;
 
 &lt;h4 id='mooc'&gt;Massive Online Open Course (MOOC) và tương lai của đào tạo chất lượng cao&lt;/h4&gt;
 
-&lt;h4 id='quora_ni_ti_nng_bt_u'&gt;Quora, nơi tài năng bắt đầu&lt;/h4&gt;
+&lt;h4 id='quora'&gt;Quora, nơi tài năng bắt đầu&lt;/h4&gt;
 
-&lt;h4 id='stackoverflow_din_n_cn_bit_cho_ngi_ham_hiu_bit'&gt;StackOverflow, diễn đàn cần biết cho người ham hiểu biết&lt;/h4&gt;
+&lt;h4 id='stack'&gt;StackOverflow, diễn đàn cần biết cho người ham hiểu biết&lt;/h4&gt;
 
-&lt;h4 id='tm_vic__u'&gt;Tìm việc ở đâu?&lt;/h4&gt;
+&lt;h4 id='josseeking'&gt;Tìm việc ở đâu?&lt;/h4&gt;
 
 &lt;h4 id='mt_s_ti_liu_nn_tham_kho'&gt;Một số tài liệu nên tham khảo&lt;/h4&gt;
 
@@ -536,7 +570,7 @@
                 <title>[Vietnamese] Tuổi trẻ!</title>
                 <description>&lt;p&gt;Thế là cũng đã tốt nghiệp được 1 năm! Kinh nghiệm cũng không thêm được nhiều, trình độ cũng vẫn tàng tàng hồi còn đi học, moi đi moi lại vẫn chưa ra thứ gì tốt hơn so với một năm trước. Có chăng, một chút thay đổi trong tư duy và cách nhìn nhận cuộc sống.&lt;/p&gt;
 
-&lt;p&gt;Bao đêm tự hỏi, mình là ai và mình đang làm gì? Câu trả lời vẫn quẩn quanh thực tại, một tên dev (lập trình viên) quèn, làm những thứ chẳng ai biết ấy là đâu. Điều quan trọng hơn, sự tự do với tri thức của mình vẫn quá xa vời. Muốn viết ra vài lời tâm sự mà sao khó quá. Thôi kể chuyện tán gái cho bớt buồn. Nghĩ mà cực, đường tán gái của mình long đong lận đận ghê. Biết thích khi còn tý tuổi, xoè bàn tay ra là đếm được, vậy mà &amp;#8230; giờ vẫn FA. Nói đùa chứ không phải là muốn thoát FA, mà hoàn toàn ngược lại, mình vui với tình hình hiện tại - không mệt đầu mấy chuyện gái gú yêu đương, tự do làm những gì mình nghĩ, gặp gỡ được nhiều con gái hơn, thay vì suốt ngày canh chừng ánh mắt của nàng sư tử tiềm năng. Tuy nhiên, alone cũng nhiều khi buồn, thực sự rất buồn. Lúc buồn, lại nhớ mấy năm về trước, khi còn tíu tít với mảnh tình đầu trong sáng - chỉ hơi tối một chút ;). Lại nhớ, lại nhớ, lại nhớ! Mỗi lần như vậy, mình dường như gục ngã, tâm trí rối bời và mất niềm tin vào cái thứ mơ mộng gọi là tình yêu lung linh lúng liếng. Cũng mỗi lần như vậy, lại nhấn bài &lt;em&gt;Túp lều lý tưởng&lt;/em&gt; remix để chìm đắm trong cái nỗi mộng mơ ấy. &lt;a href='http://www.youtube.com/watch?v=bzwiWMW1ty0'&gt;&lt;img alt='này' src='http://img.youtube.com/vi/bzwiWMW1ty0/0.jpg' /&gt;&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;Bao đêm tự hỏi, mình là ai và mình đang làm gì? Câu trả lời vẫn quẩn quanh thực tại, một tên dev (lập trình viên) quèn, làm những thứ chẳng ai biết ấy là đâu. Điều quan trọng hơn, sự tự do với tri thức của mình vẫn quá xa vời. Muốn viết ra vài lời tâm sự mà sao khó quá. Thôi kể chuyện tán gái cho bớt buồn. Nghĩ mà cực, đường tán gái của mình long đong lận đận ghê. Biết thích khi còn tý tuổi, xoè bàn tay ra là đếm được, vậy mà &amp;#8230; giờ vẫn FA. Nói đùa chứ không phải là muốn thoát FA, mà hoàn toàn ngược lại, mình vui với tình hình hiện tại - không mệt đầu mấy chuyện gái gú yêu đương, tự do làm những gì mình nghĩ, gặp gỡ được nhiều con gái hơn, thay vì suốt ngày canh chừng ánh mắt của nàng sư tử tiềm năng. Tuy nhiên, alone cũng nhiều khi buồn, thực sự rất buồn. Lúc buồn, lại nhớ mấy năm về trước, khi còn tíu tít với mảnh tình đầu trong sáng - chỉ hơi tối một chút ;). Lại nhớ, lại nhớ, lại nhớ! Mỗi lần như vậy, mình dường như gục ngã, tâm trí rối bời và mất niềm tin vào cái thứ mơ mộng gọi là tình yêu lung linh lúng liếng. Cũng mỗi lần như vậy, lại nhấn bài &lt;em&gt;Túp lều lý tưởng&lt;/em&gt; remix để chìm đắm trong cái nỗi mộng mơ ấy. &lt;a href='http://www.youtube.com/watch?v=bzwiWMW1ty0'&gt;&lt;img src='http://img.youtube.com/vi/bzwiWMW1ty0/0.jpg' alt='này' /&gt;&lt;/a&gt;&lt;/p&gt;</description>
                 <link>http://hugo53.github.io/lifestyle%20&%20motivation/2013/05/12/vietnamesetui-tr</link>
                 <guid>http://hugo53.github.io/lifestyle%20&%20motivation/2013/05/12/vietnamesetui-tr</guid>
                 <pubDate>2013-05-12T00:00:00+07:00</pubDate>

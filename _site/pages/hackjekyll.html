@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Quora Corner</title>
+    <title>Hackjekyll</title>
     <meta name="description" content="">
     <meta name="author" content="Hugo Nguyen">
 
@@ -119,105 +119,85 @@
       <div class="content">
         
 <div class="page-header">
-  <h1>Quora Corner </h1>
+  <h1>Hackjekyll </h1>
 </div>
 
-<div class="row-fluid post-full">
+<div class="row-fluid">
   <div class="span12">
-    <div class="date">
-      <span>13 May 2013</span>
-    </div>
-    <div class="content">
-      <p>Aww, it seems very amazing when you traverse <a href='http://quora.com'>Quora</a> to face with many curious questions. In the spare time, I usually <em>quora</em> and sometimes I must burst into a laugh because of some stupid questions and a plenty of ridiculous answers. That is why I create this post to keep those things.</p>
+    <p>Jekyll is a up-to-date blog framework in the today&#8217;s world. It is increasing as the tool come in handy for many blogger, especially developers who desire sharing their experience. This page concentrates on showing basic techniques to construct a blog for all.</p>
 
-<h4 id='question_1_by_hugos_friend_leolink'>Question 1 by Hugo&#8217;s friend, <a href='http://mrleolink.github.io/'>@LeoLink</a></h4>
+<h3 id='twitter_feed_on_jekyll_blog'>Twitter Feed on Jekyll Blog</h3>
 
-<p><a href='http://www.quora.com/Operating-Systems/My-friend-asked-me-that-why-windows-didnt-base-on-linux-kernel-The-reason-he-gave-is-he-love-gaming-in-Windows-and-like-working-in-Linux-Any-idea-for-a-mixing-OS'><em>My friend asked me that why windows didn&#8217;t base on linux kernel. The reason he gave is he love gaming in Windows and like working in Linux. Any idea for a mixing OS?</em></a>. Of course, there is no answer till this post is published. Predictably, it will stay in no-answer status for a long time until a crazy guy feels happy to give idea.</p>
+<p>Unfortunately, at the time when this page is established, there is no offical support from both Jekyll and JekyllBoostrap for adding a twitter feed box into this kind of blog. However, it is exist several works of some enthusiasm tech guys who also need to putting their tweets on Jekyll&#8217;s posts. In my site, I ulitize <a href='http://tweet.seaofclouds.com/'>this source</a> for my need.</p>
 
-<p>(Next questions will be updated asap)</p>
-    </div>
+<p>There is the way I apply for my blog.</p>
 
-  
-    <ul class="tag_box inline">
-      <li><i class="icon-folder-open"></i></li>
-      
-      
+<h5 id='download_libraries'>Download libraries</h5>
 
+<ul>
+<li>Download jquery 1.9.3v</li>
 
-  
-     
-    	<li><a href="/categories.html#quora-ref">
-    		quora <span>1</span>
-    	</a></li>
-    
-  
+<li>Download tweets library from <a href='https://github.com/seaofclouds/tweet/zipball/master'>here</a>.</li>
+</ul>
 
+<h5 id='add_custom_source_code'>Add custom source code</h5>
 
-    </ul>
-    
+<ul>
+<li>Add the below code at the end of <code>_layouts/post.html</code>.</li>
+</ul>
 
-    
+<p><code>
+&lt;script src=&quot;/assets/themes/jquery-1.9.1.min.js&quot;&gt; &lt;/script&gt;
+</code> <code>
+&lt;script src=&quot;/assets/tweetfeed/tweet/jquery.tweet.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+</code></p>
 
-    <hr>
-    <div class="pagination">
-      <ul>
-      
-        <li class="prev"><a href="/business%20model/2013/05/13/mo-hinh-sinh-loi-nhuan-trong-linh-vc-web-va-mobile" title="Mô hình sinh lợi nhuận trong lĩnh vực Web và Mobile">&larr; Previous</a></li>
-      
-        <li><a href="/archive.html">Archive</a></li>
-      
-        <li class="next"><a href="/ios%20development/2013/05/13/web-and-mobile-revenue-models" title="Web And Mobile Revenue Models">Next &rarr;</a></li>
-      
-      </ul>
-    </div>
-    <hr>
-    
+<p><code>
+&lt;
+script type=&quot;text/javascript&quot;&gt;
+jQuery(function($){
+    $(&quot;.tweet&quot;).tweet({
+          join_text: &quot;auto&quot;,
+          username: &quot;mrhoangnm&quot;,
+          avatar_size: 48,
+          count: 5,
+          auto_join_text_default: &quot; we said, &quot;,
+          auto_join_text_ed: &quot; we &quot;,
+          auto_join_text_ing: &quot; we were &quot;,
+          auto_join_text_reply: &quot; we replied &quot;,
+          auto_join_text_url: &quot; we were checking out &quot;,
+          loading_text: &quot;loading tweets...&quot;
+        });
+      });
+&lt;
+/script&gt;
+</code></p>
 
+<p><code>
+hihi\n
+haha\n
+hoho\n
+</code></p>
 
-  <div id="disqus_thread"></div>
-<script type="text/javascript">
-    
-    var disqus_shortname = 'hugo53'; // required: replace example with your forum shortname
-    
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+<p>and</p>
 
+<p><code>
+&lt;div class=&quot;tweet&quot;&gt;&lt;/div&gt;
+</code></p>
 
+<ul>
+<li>Add the below code at the <code>head</code> of <code>_includes/themes/twitter/default.html</code> (I use twitter theme for this site, you can change this path if another theme is applied).</li>
+</ul>
 
+<p><code>
+&lt;link href=&quot;/assets/tweetfeed/tweet/jquery.tweet.css&quot; media=&quot;all&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;/&gt;
+</code></p>
 
+<p>OK, well done. You already have tweet feed in your site now!</p>
   </div>
 </div>
 
 
-
-
-<script src="/assets/themes/jquery-1.9.1.min.js"></script>
-<script src="/assets/tweetfeed/tweet/jquery.tweet.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-jQuery(function($){
-    $(".tweet").tweet({
-          join_text: "auto",
-          username: "mrhoangnm",
-          avatar_size: 48,
-          count: 5,
-          auto_join_text_default: " we said, ",
-          auto_join_text_ed: " we ",
-          auto_join_text_ing: " we were ",
-          auto_join_text_reply: " we replied ",
-          auto_join_text_url: " we were checking out ",
-          loading_text: "loading tweets..."
-        });
-      });
-</script>
-<div class="tweet"></div>
       </div>
       <hr>
       <footer>

@@ -4,6 +4,8 @@ http://hugo53.github.io/atom.xml
 http://hugo53.github.io/categories.html
 http://hugo53.github.io/index.html
 http://hugo53.github.io/pages/about.html
+http://hugo53.github.io/pages/hackjekyll.html
+http://hugo53.github.io/pages/ielts/index.html
 http://hugo53.github.io/pages.html
 http://hugo53.github.io/rss.xml
 http://hugo53.github.io/sitemap.txt

@@ -19,11 +19,17 @@ There is the way I apply for my blog.
 ##### Add custom source code
 - Add the below code at the end of ``` _layouts/post.html```.
 
-``` javascript
-<script src="{{ BASE_PATH }}/assets/themes/jquery-1.9.1.min.js"></script>
-<script src="{{ BASE_PATH }}/assets/tweetfeed/tweet/jquery.tweet.js" type="text/javascript"></script>
 
-<script type="text/javascript">
+```
+<script src="{{ BASE_PATH }}/assets/themes/jquery-1.9.1.min.js"> </script>
+```
+```
+<script src="{{ BASE_PATH }}/assets/tweetfeed/tweet/jquery.tweet.js" type="text/javascript"></script>
+```
+
+```
+<
+script type="text/javascript">
 jQuery(function($){
     $(".tweet").tweet({
           join_text: "auto",
@@ -38,14 +44,27 @@ jQuery(function($){
           loading_text: "loading tweets..."
         });
       });
-</script>
+<
+/script>
+```
+
+```
+hihi
+haha
+hoho
+```
+
+and
+
+```
 <div class="tweet"></div>
 ```
 
 - Add the below code at the ``` head ``` of ```_includes/themes/twitter/default.html ``` (I use twitter theme for this site, you can change this path if another theme is applied). 
 
-``` javascript
+```
 <link href="{{ BASE_PATH }}/assets/tweetfeed/tweet/jquery.tweet.css" media="all" rel="stylesheet" type="text/css"/>
 ```
+
 
 OK, well done. You already have tweet feed in your site now!
