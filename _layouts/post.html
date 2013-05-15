@@ -4,7 +4,10 @@ layout: default
 {% include JB/setup %}
 {% include themes/twitter/post.html %}
 
+
+
 <script src="{{ BASE_PATH }}/assets/themes/jquery-1.9.1.min.js"></script>
+<script src="{{ BASE_PATH }}/assets/tweetfeed/tweet/jquery.tweet.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 jQuery(function($){
@@ -22,3 +25,4 @@ jQuery(function($){
         });
       });
 </script>
+<div class="tweet"></div>
