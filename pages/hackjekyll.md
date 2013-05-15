@@ -62,5 +62,7 @@ and
 <link href="{{ BASE_PATH }}/assets/tweetfeed/tweet/jquery.tweet.css" media="all" rel="stylesheet" type="text/css"/>
 ```
 
-
 OK, well done. You already have tweet feed in your site now!
+
+### Adding Table of Contents (TOC)
+You should follow [this post](http://brizzled.clapper.org/blog/2012/02/04/generating-a-table-of-contents-in-octopress/).
