@@ -2,6 +2,7 @@
 layout: page
 title: "Hackjekyll"
 description: ""
+tag:[hackjekyll]
 ---
 {% include JB/setup %}
 Jekyll is a up-to-date blog framework in the today's world. It is increasing as the tool come in handy for many blogger, especially developers who desire sharing their experience. This page concentrates on showing basic techniques to construct a blog for all.
