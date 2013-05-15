@@ -4,7 +4,9 @@ layout: default
 {% include JB/setup %}
 {% include themes/twitter/post.html %}
 
+<script src="{{ BASE_PATH }}/assets/themes/jquery-1.9.1.min.js"></script>
 
+<script type="text/javascript">
 jQuery(function($){
     $(".tweet").tweet({
           join_text: "auto",
@@ -19,3 +21,4 @@ jQuery(function($){
           loading_text: "loading tweets..."
         });
       });
+</script>
