@@ -15,7 +15,7 @@ A frequent question is that *What is the starting point?*. It means that newbies
 ## Main trainning resources
 There is a fact that finding a valueable instruction is a hard task obviously. I usually question that what resource can be put our belief to pursue. As follows, I will list primary resources which I think they may helpful.
 
-- [A great instruction describes all of aspects that let newbies know exactly what they may need](http://looksok.wordpress.com/2012/12/22/best-iphoneios-programming-tutorials/)
+- [A great instruction describes all of aspects that let newbies know exactly what they may need](http://looksok.wordpress.com/2012/12/22/best-iphoneios-programming-tutorials/). Especially, author of the article also listed what worthy of lectures in CS193P course (be mentioned below)for pursuing. He also uploaded his mind map which was created when he attended this course.
 
 - [Tutorials by *rnystrom* - a talent iOS application publisher](https://github.com/rnystrom/iOS-Best-Practices)
 
