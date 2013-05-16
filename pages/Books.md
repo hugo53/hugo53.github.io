@@ -14,7 +14,7 @@ Recently, I thought that reading should be reverted and I decided to buy several
 ### Technical Books (Computer Science)
 _(No book until now)_
 
-### Economix
+### Economic
 - [Economix: How Our Economy Works (and Doesn't Work), in Words and Pictures](http://www.amazon.com/dp/0810988399). In my viewpoint, it is great book because of the way of organization. It is presented in comic form, thus this book is easy to follow. 
 
 
