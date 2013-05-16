@@ -8,7 +8,7 @@ Undeniably, reading is a significant skill which people should master on the way
 
 Recently, I thought that reading should be reverted and I decided to buy several best seller books and try to read through them. Nonetheless, many books are still in waiting list because of time limited. Therefore, I will use this page to keep the list in updating status.
 
-## Books I should done
+## Books I should done and maybe you do, too!
 
 ### Economix
 
