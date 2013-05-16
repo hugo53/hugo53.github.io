@@ -10,8 +10,11 @@ Recently, I thought that reading should be reverted and I decided to buy several
 
 ## Books I should done and maybe you do, too!
 
-### Economix
 
+### Technical Books (Computer Science)
+_(No book until now)_
+
+### Economix
 - [Economix: How Our Economy Works (and Doesn't Work), in Words and Pictures](http://www.amazon.com/dp/0810988399). In my viewpoint, it is great book because of the way of organization. It is presented in comic form, thus this book is easy to follow. 
 
 
@@ -19,5 +22,9 @@ Recently, I thought that reading should be reverted and I decided to buy several
 
 ### Thinking Development
 - [Outliers: The Story of Success](http://www.amazon.com/Outliers-Story-Success-Malcolm-Gladwell/dp/0316017930). Cover many cases of successes. It is helpful for improving observation mindset.
+
+
+### Self-help
+_(No book until now)_
 
 
