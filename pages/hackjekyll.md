@@ -7,7 +7,7 @@ description: ""
 Jekyll is a up-to-date blog framework in the today's world. It is increasing as the tool come in handy for many bloggers, especially developers who desire sharing their working experience. This page concentrates on showing basic techniques to construct a blog for all zealous people.
 
 ### Twitter Feed on Jekyll Blog
-Unfortunately, at the time when this page is established, there is no offical support from both Jekyll and JekyllBoostrap for adding a twitter feed box into this kind of blog. However, it is exist several works of some enthusiasm tech guys who also need to putting their tweets on Jekyll's posts. In my site, I ulitize [this source](http://tweet.seaofclouds.com/) for my need.
+Unfortunately, at the time when this page is established, there is no offical support from both Jekyll and JekyllBoostrap for adding a twitter feed box into this kind of blog. However, it is exist several works of some enthusiasm tech guys who also need to put their tweets on posts of Jekyll. In my site, I ulitize [this source](http://tweet.seaofclouds.com/) for my need.
 
 There is the way I apply for my blog.
 

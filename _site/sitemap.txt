@@ -4,13 +4,16 @@ http://hugo53.github.io/atom.xml
 http://hugo53.github.io/categories.html
 http://hugo53.github.io/index.html
 http://hugo53.github.io/pages/about.html
+http://hugo53.github.io/pages/Books.html
 http://hugo53.github.io/pages/hackjekyll.html
 http://hugo53.github.io/pages/ielts/index.html
+http://hugo53.github.io/pages/ielts/journey.html
 http://hugo53.github.io/pages.html
 http://hugo53.github.io/rss.xml
 http://hugo53.github.io/sitemap.txt
 http://hugo53.github.io/tags.html
 
+http://hugo53.github.io/lifestyle/2013/05/19/the-first-journey-to-hometown
 http://hugo53.github.io/opinion/2013/05/14/sinh-vien-cntt-nen-hoc-gi
 http://hugo53.github.io/ios%20development/2013/05/13/web-and-mobile-revenue-models
 http://hugo53.github.io/quora/2013/05/13/quora-corner
@@ -18,4 +21,3 @@ http://hugo53.github.io/business%20model/2013/05/13/mo-hinh-sinh-loi-nhuan-trong
 http://hugo53.github.io/lifestyle%20&%20motivation/2013/05/12/vietnamesetui-tr
 http://hugo53.github.io/2013/05/12/hello-world
 http://hugo53.github.io/ios%20development/2013/05/12/get-started-with-ios-programming
-http://hugo53.github.io/lessons/2011/12/29/jekyll-introduction
