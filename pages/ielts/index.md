@@ -46,6 +46,3 @@ As follows, several significant websites which may be helpful for many IELTS can
 16. Punctuation
 
 > *Inspired by [VIC's post](https://www.facebook.com/VietnameseIELTSCommunity/posts/590630630960621).*
-
-
-Just for check it!
