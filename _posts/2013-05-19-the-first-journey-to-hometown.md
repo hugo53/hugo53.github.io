@@ -14,7 +14,7 @@ In my mind set up yesterday, I will wake up at 4.30 A.M and do prepare tasks to 
 ### Riding
 After 10 km was passed, I felt very tired on account of weight of backpack which is predicted 10 kg weight. Surprisingly, it just took 15 minutes to accomplish that length however. This record made me more confident to go.
 
-55 minutes for going off the city with 20 km length, I was coming to Thang Long Bridge which was across Hong River. Feeling of pleasantness, I confirm that wind from river is very wonđerful. However, there was a problem when I passed the bridge. I got water-bottle for drinking but when I put back, it was fallen unfortunately and the bicyle across it badly. Water was out, and I had the empty bottle right after. Unluckily! This journey is approximately 60 km length, so water is necessary extremely, especially in hot weather likes today. Consequently, I must stop to buy water two times in the rest of journey.
+55 minutes for going off the city with 20 km length, I was coming to Thang Long Bridge which was across Hong River. Feeling of pleasantness, I confirm that wind from river is very wonderful. However, there was a problem when I passed the bridge. I got water-bottle for drinking but when I put back, it was fallen unfortunately and the bicyle across it badly. Water was out, and I had the empty bottle right after. Unluckily! This journey is approximately 60 km length, so water is necessary extremely, especially in hot weather like today. Consequently, I must stop to buy water two times in the rest of journey.
 
 At kilometer 132th in the clock of bicyle, I saw a car accident. Both of cars are 30 seats. Luckily, none of passengers are injured. Continuing the journey, it remained 22 km.
 
