@@ -12,4 +12,4 @@ In addition, Google also produced many tech talk shows for several purposes such
 
 To begin with, you should subscribe [this channel](http://www.youtube.com/user/GoogleTechTalks?feature=watch). It is offical tube of Google Tech Talk and be updated daily. Next, you can browse any video which attracts you, maybe just by its title. 
 
-In this post, one of useful series is mentioned. This series is about coding method and is attached with a hot keyword _clean code_. It is [here](http://www.youtube.com/watch?feature=player_embedded&v=4F72VULWFvc). There are many kinds of coding style that may help IT students from developing countries or even students of industrialized nations impove their style when generate code.
+In this post, one of useful series is mentioned. This series is about coding method and is attached with a hot keyword _clean code_. It is [here](http://www.youtube.com/watch?feature=player_embedded&v=4F72VULWFvc). There are many kinds of coding style that may help IT students from developing countries or even students of industrialized nations improve their style when generate code.
