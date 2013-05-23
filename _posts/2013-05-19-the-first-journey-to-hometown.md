@@ -11,7 +11,7 @@ The idea of cycling to hometown came many days ago but due to several reasons, I
 ### Start
 In my mind set up yesterday, I was planning to wake up at 4.30 a.m and do prepare something to start the journey at 5.00 a.m. However, it was broken. I woke up at 5.20 a.m. It was not good job. That is why the journey was started at 6.00 a.m instead of 5.00 a.m as ideal time. This time is summer in Vietnam, so starting later means I had to face with heat when the time is 7.00 a.m or 8.00 a.m. Though it was late, I still began. 6.04 a.m, I started the journey. I also checked the meter which displayed that Sum of ridden length: 91 km, time: 6.04 a.m.  
 
-### Rid
+### Ride
 After 10 km was passed, I felt very tired on account of weight of backpack which is predicted 10 kg weight. Surprisingly, it just took 15 minutes to accomplish that length however. This record made me more confident to go.
 
 55 minutes for going off the city with 20 km length, I was coming to Thang Long Bridge which is across Hong River. Feeling of pleasantness, I confirm that wind from river is very wonderful. However, there was a problem when I passed the bridge. I got water-bottle for drinking but when I put back, it was fallen unfortunately and the bicyle across it badly. Water was out, and I had the empty bottle right after. Unluckily! This journey is approximately 60 km length, so water is necessary extremely, especially in hot weather like today. Consequently, I must stop to buy water two times in the rest of journey.
