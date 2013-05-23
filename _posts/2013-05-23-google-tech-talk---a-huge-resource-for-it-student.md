@@ -6,7 +6,7 @@ category: computer science
 tags: [google, teck talk]
 ---
 {% include JB/setup %}
-Every CS student knows that Google is a giant that is leading innovation in today's world. Plenty of its products brought extraordinary experience to human race in many aspects of life. It is possible to say that Google Search has changed totally the way people looking for information. Besides this tools, there are a large number of products which have ability to persuade billions people all over the world to be addicted them.
+Every CS student knows that Google is a giant that is leading innovation in today's world. Plenty of its products brought extraordinary experience to human race in many aspects of life. It is possible to say that Google Search has changed totally the way people looking for information. Besides this tool, there are a large number of products which have ability to persuade billions people all over the world to be addicted them.
 
 In addition, Google also produced many tech talk show for several purposes such as training its staff, promoting its working style and even helping students who can access the internet and download its video. 
 
