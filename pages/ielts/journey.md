@@ -16,7 +16,7 @@ Admittedly, grammar is one of essential parts not only in English but also in al
 
 This section is for talking about how to master grammar in three days which was experienced myself.
 
-Firstly, you must decide what documents which you are about to use. In my outlook, _Grammar for IELTS_ is a great book to achieve that purpose. However, going through the book entirely is extremely boring. Thus, I recommend that you should ultilize several optional resources which are listed as follows. 
+Firstly, you must decide what documents which you are about to use. In my outlook, _Grammar for IELTS_ is a great book to achieve that purpose. However, going through the book entirely is extremely boring. Hence, I recommend that you should ultilize several optional resources which are listed as follows. 
 
 - [Anglo-Link's Youtube Channel](http://www.youtube.com/user/MinooAngloLink?feature=watch). Watch and do all exercises. This channel is helpful actually.
 
