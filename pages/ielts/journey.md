@@ -22,4 +22,4 @@ Firstly, you must decide what documents which you are about to use. In my outloo
 
 Secondly, attempting to apply grammar rules for real situations is really necessary. Using grammar structure in your writing and speaking will help you remember those syntaxes and  produce correct sentences easily whenever you need.
 
-Additionally, knowing which grammar rules should be concentrated on is also important. You can find list of ones at [here](http://hugo53.github.io/pages/ielts/index.html/#essentialgrammar).
+Additionally, knowing which grammar rules should be concentrated on is also important. You can find list of ones at [here](http://hugo53.github.io/pages/ielts/index.html).
