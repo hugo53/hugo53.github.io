@@ -12,8 +12,8 @@ Recently, I had been decided what kind of software industry field which should b
 Ahh, Nothing to say about them. Very very very amazing and extremely useful. We can find those at [here](http://developer.apple.com/library/ios/#referencelibrary/GettingStarted/RoadMapiOS/). Please pay attention to the horizontal axis where describes standard road to combat almost challenges of mobile development.
 A frequent question is that *What is the starting point?*. It means that newbies doesn't know where should begin. In [*App Design*](http://developer.apple.com/library/ios/#referencelibrary/GettingStarted/RoadMapiOS/chapters/DesignYourAppwithCare/DesignYourAppWithCare/DesignYourAppWithCare.html) section, Apple suggests that developers should make clearly their ideas firstly, then make action plan that may consider many parts of creating application process such as Data Model, rough interface, type of devices: iPhone or iPad or both, version OS supported: 4 or later, 5 or later, 6 or later, so forth. 
 
-## Main trainning resources
-There is a fact that finding a valueable instruction is a hard task obviously. I usually question that what resource can be put our belief to pursue. As follows, I will list primary resources which I think they may helpful.
+## Main training resources
+There is a fact that finding a valuable instruction is a hard task obviously. I usually question that what resource can be put our belief to pursue. As follows, I will list primary resources which I think they may helpful.
 
 - [A great instruction describes all of aspects that let newbies know exactly what they may need](http://looksok.wordpress.com/2012/12/22/best-iphoneios-programming-tutorials/). Especially, author of the article also listed what worthy of lectures in CS193P course (be mentioned below)for pursuing. He also uploaded his mind map which was created when he attended this course.
 
@@ -25,7 +25,7 @@ There is a fact that finding a valueable instruction is a hard task obviously. I
 
 
 ## Where can we get more precious knowledge and monetizing?
-Source code and review apps with high income is [here](http://iosapptemplate.com/). For example, app _InstaInspire_ is analysed at [here](http://iosapptemplate.com/2013/05/14/instainspire-photo-app-with-audio-recorder-feature-app-template/).
+Source code and review apps with high income is [here](http://iosapptemplate.com/). For example, app _InstaInspire_ is analyzed at [here](http://iosapptemplate.com/2013/05/14/instainspire-photo-app-with-audio-recorder-feature-app-template/).
 
 - [Mobile Advertising Dictionary](http://www.amobee.com/dictionary/)
 
