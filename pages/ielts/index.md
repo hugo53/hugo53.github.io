@@ -9,7 +9,7 @@ This page supplies many pieces of crucial knowledge for taking a high IELTS scor
 ## Resource for preparing IELTS Exam
 As follows, several significant websites which may be helpful for many IELTS candidates are listed.
 
-1. [Simon's Blog](http://ielts-simon.com/). In my point of view, this is a tremendous resource. It deverses to be ranked at the first.
+1. [Simon's Blog](http://ielts-simon.com/). In my point of view, this is a tremendous resource. It deverses to be ranked at the first.m,,,,
 
 2. [http://www.dcielts.com/](http://www.dcielts.com/). Be refreshed daily and presents a plenty of good tips.
 
@@ -22,7 +22,7 @@ As follows, several significant websites which may be helpful for many IELTS can
 > *Inspired by [VIC's post](https://www.facebook.com/VietnameseIELTSCommunity/posts/591364340887250).*
 
 
-## Essential Grammar Syntax
+## Essential Grammar Syntax {#essentialgrammar}
 16 types of grammar syntaxes are shown below. It means that you should achieve them if acquiring high IELTS score actually is your target.
 
 1.Tense

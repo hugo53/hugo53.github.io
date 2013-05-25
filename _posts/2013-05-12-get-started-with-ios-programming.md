@@ -27,4 +27,6 @@ There is a fact that finding a valueable instruction is a hard task obviously. I
 ## Where can we get more precious knowledge and monetizing?
 Source code and review apps with high income is [here](http://iosapptemplate.com/). For example, app _InstaInspire_ is analysed at [here](http://iosapptemplate.com/2013/05/14/instainspire-photo-app-with-audio-recorder-feature-app-template/).
 
+- [Mobile Advertising Dictionary](http://www.amobee.com/dictionary/)
+
 
