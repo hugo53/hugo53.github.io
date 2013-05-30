@@ -26,3 +26,30 @@ Additionally, knowing which grammar rules should be concentrated on is also impo
 
 ### The way exploiting effectively academic journals for gaining vocabulary and enriching ideas
 There are two kinds of journals which can be used for learning English purpose. The first is [ScientificAmerican](http://www.scientificamerican.com/) which supplies a plenty of articles in science. The other one is [Economist](http://www.economist.com/) where we can browse many pieces of news in economics, politics and so forth.
+
+### How to prepare vocabulary for IELTS Exam?
+
+
+
+### Writing - the hardest skill
+Indeed, there are many suggestions about what books should be used for training writing skill. For example, [this article](http://ieltsvietnam.net/sach-ielts-writing-khuyen-dung/) was analysed three materials: Writing Right and two books of Gabi Duigu.
+In my opinion, there best ones of those writing books are Academic Writing, Writing Samples (by Mark Clark) and Write Right. Additionally, book of ideas called _Ideas for IELTS_ by Simon whom is ex-examiner is really useful. Four books are sufficient for obtaining band 7+ in writing test.
+
+In order to utilize those materials efficiently, I suggest that all above books should use as follows way:
+
+#### Task 1
+
+
+
+#### Task 2
+1. Sentence Structure: Writing Academic
+2. Producing right sentence to gain high band score: Write Right
+3. Enriching ideas: Ideas for IELTS
+4. Reading samples: Writing Samples.
+
+
+
+
+
+
+
