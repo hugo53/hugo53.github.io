@@ -28,6 +28,9 @@ Additionally, knowing which grammar rules should be concentrated on is also impo
 There are two kinds of journals which can be used for learning English purpose. The first is [ScientificAmerican](http://www.scientificamerican.com/) which supplies a plenty of articles in science. The other one is [Economist](http://www.economist.com/) where we can browse many pieces of news in economics, politics and so forth.
 
 ### How to prepare vocabulary for IELTS Exam?
+#### Academic Word List - A challenge must be beaten.
+
+
 
 
 
@@ -43,9 +46,17 @@ In order to utilize those materials efficiently, I suggest that all above books 
 
 #### Task 2
 1. Sentence Structure: Writing Academic
+It will tell you how many types of sentence (Part 3, Chapter 10), how a good sentence be organized (Part 3, Chapter 11, 12, 13, 14, 15).
+
 2. Producing right sentence to gain high band score: Write Right
 3. Enriching ideas: Ideas for IELTS
 4. Reading samples: Writing Samples.
+
+### Phrasal Verb - How to learn in a efficient way?
+First of all, you must have a good phrasal verb dictionary. I recommend [this page](http://www.usingenglish.com/reference/phrasal-verbs/) for looking up meaning of phrasal verbs.
+Moreover, the book called _Check your English vocabulary for phrasal verbs and idioms_ is also useful. 
+
+
 
 
 

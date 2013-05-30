@@ -9,13 +9,13 @@ This page supplies many pieces of crucial knowledge for taking a high IELTS scor
 ## Resource for preparing IELTS Exam
 As follows, several significant websites which may be helpful for many IELTS candidates are listed.
 
-1. [Simon's Blog](http://ielts-simon.com/). In my point of view, this is a tremendous resource. It deverses to be ranked at the first.m,,,,
+1. [Simon's Blog](http://ielts-simon.com/). In my point of view, this is a tremendous resource. It deserves to be ranked at the first.m,,,,
 
 2. [http://www.dcielts.com/](http://www.dcielts.com/). Be refreshed daily and presents a plenty of good tips.
 
 3. [http://www.ielts-blog.com/](http://www.ielts-blog.com/). There are many writing samples and real questions also are usually updated.
 
-4. [http://ielts-yasi.englishlab.net/index.htm](http://ielts-yasi.englishlab.net/index.htm). Some people said that it is a huge resouce which is comprised of deverse kinds of practices. 
+4. [http://ielts-yasi.englishlab.net/index.htm](http://ielts-yasi.englishlab.net/index.htm). Some people said that it is a huge resource which is comprised of diverse kinds of practices. 
 
 5. [http://www.makkarielts.com/](http://www.makkarielts.com/). Quickly update real tests.
 
@@ -46,3 +46,4 @@ As follows, several significant websites which may be helpful for many IELTS can
 16. Punctuation
 
 > *Inspired by [VIC's post](https://www.facebook.com/VietnameseIELTSCommunity/posts/590630630960621).*
+
