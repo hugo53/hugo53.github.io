@@ -24,12 +24,12 @@ Secondly, attempting to apply grammar rules for real situations is really necess
 
 Additionally, knowing which grammar rules should be concentrated on is also important. You can find list of ones at [here](http://hugo53.github.io/pages/ielts/index.html).
 
-### The way exploiting effectively academic journals for gaining vocabulary and enriching ideas
+### The way exploiting efficiently academic journals for gaining vocabulary and enriching ideas
 There are two kinds of journals which can be used for learning English purpose. The first is [ScientificAmerican](http://www.scientificamerican.com/) which supplies a plenty of articles in science. The other one is [Economist](http://www.economist.com/) where we can browse many pieces of news in economics, politics and so forth.
 
 ### How to prepare vocabulary for IELTS Exam?
-#### Academic Word List - A challenge must be beaten.
 
+#### Academic Word List - A challenge must be beaten.
 
 
 
@@ -55,12 +55,6 @@ It will tell you how many types of sentence (Part 3, Chapter 10), how a good sen
 ### Phrasal Verb - How to learn in a efficient way?
 First of all, you must have a good phrasal verb dictionary. I recommend [this page](http://www.usingenglish.com/reference/phrasal-verbs/) for looking up meaning of phrasal verbs.
 Moreover, the book called _Check your English vocabulary for phrasal verbs and idioms_ is also useful. 
-
-
-
-
-
-
 
 
 
