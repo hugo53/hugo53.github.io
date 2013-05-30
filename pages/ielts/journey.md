@@ -4,7 +4,7 @@ title: "Hugo's Journey"
 description: ""
 ---
 {% include JB/setup %}
-One month ago, I decided to leave job for preparing an exam called IELTS. Although I awared that making a detail plan is necessary extremely, this time I still do not have any suitable plan for tracking journey of acquiring high IELTS score. It is terrible! 
+One month ago, I decided to leave job for preparing an exam called IELTS. Although I was aware that making a detail plan is necessary extremely, this time I still do not have any suitable plan for tracking journey of acquiring high IELTS score. It is terrible! 
 
 Now, I think first two problems are grammar and vocabulary range. Grammar plays a vital role because it helps learners know exact meaning of statement without any difficulty. Similarly, vocabulary is highly necessary element in not only learning English but also acquiring other languages. 
 
@@ -35,7 +35,7 @@ There are two kinds of journals which can be used for learning English purpose. 
 
 
 ### Writing - the hardest skill
-Indeed, there are many suggestions about what books should be used for training writing skill. For example, [this article](http://ieltsvietnam.net/sach-ielts-writing-khuyen-dung/) was analysed three materials: Writing Right and two books of Gabi Duigu.
+Indeed, there are many suggestions about what books should be used for training writing skill. For example, [this article](http://ieltsvietnam.net/sach-ielts-writing-khuyen-dung/) was analyzed three materials: Writing Right and two books of Gabi Duigu.
 In my opinion, there best ones of those writing books are Academic Writing, Writing Samples (by Mark Clark) and Write Right. Additionally, book of ideas called _Ideas for IELTS_ by Simon whom is ex-examiner is really useful. Four books are sufficient for obtaining band 7+ in writing test.
 
 In order to utilize those materials efficiently, I suggest that all above books should use as follows way:
