@@ -22,3 +22,27 @@ If something is effective, it works _well and produces the results_ that were in
 'The only effective way to avoid hay fever at this time of the year, if you are a sufferer, is to stay indoors.'
 
 In Vietnamese, *effectiveness* means *có hiệu quả, hữu hiệu*. In other words, it refers to result of an activity. By comparison, *efficiency* means *hiệu quả, hiệu suất*. It refers to the way performing an activity. 
+
+
+### ADAPT/ADOPT & ADJUST
+
+adapt (to) • adopt • adjust (to)
+- We have adopted the same sort of assembly methods they use in Japan.
+Chúng tôi đã theo những phương pháp lắp ráp cùng kiểu được sử dụng ở Nhật Bản.
+(Không dùng “ adapted”)
+(= taken and used: chấp nhận và sử dụng)
+- We have adapted the assembly system they use in Japan to suit our circumstances here.
+Chúng tôi cải biên lại dây chuyền lắp ráp sử dụng ở Nhật Bản cho hợp với điều kiện ở đây.
+(Không dùng “ adopted”)
+(= changed it to suit our needs: thay đổi cho phù hợp với yêu cầu của chúng tôi)
+- I have found it difficult to adapt to/adjust to living in the country after living in a large city.
+Tôi thấy khó thích nghi với cuộc sống ở nông thôn sau khi đã sống ở thành phố lớn
+(Không dùng “ adjust myself to”; hay dùng hơn adapt myself to)
+(= become used to: trở nên quen với)
+- The picture is out of focus. Could you adjust it slightly please?
+Hình ảnh không rõ nét, ông có thể chỉnh lại một chút được không?
+(Không dùng “adapt”)
+(= change it in order to correct it: thay đổi để làm cho chuẩn)
+
+### Terrific versus terrible
+_It is terrific_ means the thing is very great.
