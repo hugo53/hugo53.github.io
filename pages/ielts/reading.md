@@ -79,3 +79,5 @@ Tip 7: học nhiều từ vựng vào đọc hiểu hết luôn khỏi cần bi�
 > Nguồn [Đình Long IELTS](https://www.facebook.com/photo.php?fbid=528032723901087&set=a.413157828721911.85543.409858632385164&type=1&theater)
 
 
+### Bài hướng dẫn của chị Thanh Xù Jr,
+[Here](http://ieltsvietnam.net/tips-for-reading-comprehension-ielts-reading-1/)
