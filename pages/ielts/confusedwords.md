@@ -51,3 +51,10 @@ _It is terrific_ means the thing is very great.
 Personally is an adverb, means _Với tư cách cá nhân_.
 
 Personalty is a noun, means _động sản_. Its antonym is _realty_ (*bất động sản*, please do not confuse this word with *reality*).
+
+### Reserve versus Reverse and Deserve versus Diverse
+Opps, these couples always make learners confused. 
+Firstly, reSERVE is a noun/verb, means *sự dự trữ, dự trữ* whereas reVERSE is a noun/verb/adj, means *sự đảo nghịch, đảo ngược, trái lại*.
+
+deSERVE is a verb, means *xứng đáng* while dIVERSE is an adj, means *đa dạng, nhiều loại khác nhau*.
+
