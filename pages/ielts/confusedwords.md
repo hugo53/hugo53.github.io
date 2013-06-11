@@ -50,4 +50,4 @@ _It is terrific_ means the thing is very great.
 ### Personally and Personalty
 Personally is an adverb, means _Với tư cách cá nhân_.
 
-Personalty is a noun, means _động sản_. Its antonym is _realty_ (*bất động sản*). 
+Personalty is a noun, means _động sản_. Its antonym is _realty_ (*bất động sản*, please do not confuse this word with *reality*).
