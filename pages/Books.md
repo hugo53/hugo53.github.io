@@ -22,7 +22,7 @@ _(No book until now)_
 
 ### Thinking Development
 - [Outliers: The Story of Success](http://www.amazon.com/Outliers-Story-Success-Malcolm-Gladwell/dp/0316017930). Cover many cases of successes. It is helpful for improving observation mindset.
-
+- [Start with Why]()
 
 ### Self-help
 _(No book until now)_
