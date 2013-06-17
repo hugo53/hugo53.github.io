@@ -47,7 +47,7 @@ As follows, several significant websites which may be helpful for many IELTS can
 
 > *Inspired by [VIC's post](https://www.facebook.com/VietnameseIELTSCommunity/posts/590630630960621).*
 
-## Obtaining Ideas for Speaking and Writing Exam 
+## Obtaining Ideas for Speaking and Writing
 
 _Một số kinh nghiệm học ideas cho Speaking và Writing IELTS_
  
