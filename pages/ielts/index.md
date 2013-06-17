@@ -87,5 +87,5 @@ Nguồn tiếp theo là các bài giảng – lecture – của các giáo sư t
 
 [http://goinswriter.com/](http://goinswriter.com/) - trang này là blog của một young traveler writer. Ngôn từ đơn giản, dễ hiểu, nhưng không nhiều chủ đề đa dạng lắm, ngoài ra thì mình thấy anh này có nhiều lúc có cái nhìn hơi quái và tiêu cực.
 
->> Copyright by [Duc Thang Bui](https://www.facebook.com/notes/duc-thang-bui/m%E1%BB%99t-s%E1%BB%91-kinh-nghi%E1%BB%87m-h%E1%BB%8Dc-ideas-cho-speaking-v%C3%A0-writing-ielts/616993074993044)
+> Copyright by [Duc Thang Bui](https://www.facebook.com/notes/duc-thang-bui/m%E1%BB%99t-s%E1%BB%91-kinh-nghi%E1%BB%87m-h%E1%BB%8Dc-ideas-cho-speaking-v%C3%A0-writing-ielts/616993074993044)
 
