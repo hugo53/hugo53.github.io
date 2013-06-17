@@ -23,6 +23,9 @@ There is a fact that finding a valuable instruction is a hard task obviously. I 
 
 - [Introduction iOS Design by Ben Taylor](http://taybenlor.com/2013/05/21/designing-for-ios.html). It is cutting-edge document for any iOS developer and designer. Easy to follow and clear to comprehend, this tutorial is very helpful.
 
+## UI Design
+[Listing a lot of UI model for iOS application](http://pttrns.com/)
+
 
 ## Where can we get more precious knowledge and monetizing?
 Source code and review apps with high income is [here](http://iosapptemplate.com/). For example, app _InstaInspire_ is analyzed at [here](http://iosapptemplate.com/2013/05/14/instainspire-photo-app-with-audio-recorder-feature-app-template/).
