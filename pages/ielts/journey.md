@@ -38,7 +38,7 @@ There are two kinds of journals which can be used for learning English purpose. 
 Indeed, there are many suggestions about what books should be used for training writing skill. For example, [this article](http://ieltsvietnam.net/sach-ielts-writing-khuyen-dung/) was analyzed three materials: Writing Right and two books of Gabi Duigu.
 In my opinion, there best ones of those writing books are Academic Writing, Writing Samples (by Mark Clark) and Write Right. Additionally, book of ideas called _Ideas for IELTS_ by Simon whom is ex-examiner is really useful. Four books are sufficient for obtaining band 7+ in writing test.
 
-In order to utilize those materials efficiently, I suggest that all above books should use as follows way:
+In order to utilize those materials efficiently, I suggest that all above books should use as the following way:
 
 #### Task 1
 
