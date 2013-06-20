@@ -58,3 +58,8 @@ Firstly, reSERVE is a noun/verb, means *sự dự trữ, dự trữ* whereas reV
 
 deSERVE is a verb, means *xứng đáng* while dIVERSE is an adj, means *đa dạng, nhiều loại khác nhau*.
 
+
+### Attempt or Attemption
+Not surprisingly, many people think that _attemption_ is a correct word because it seems reasonable when adds _tion_ suffix after the root word _attempt_. In fact, _attempt_ is not only a verb but also a noun. Thus, noun form of the verb _attempt_ is exactly same it. By way of conclusion, _attemption_ is absolutely wrong. Using _attempt_ for both noun and verb role makes right grammar. 
+
+
