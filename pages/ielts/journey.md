@@ -57,4 +57,8 @@ First of all, you must have a good phrasal verb dictionary. I recommend [this pa
 Moreover, the book called _Check your English vocabulary for phrasal verbs and idioms_ is also useful. 
 
 
+IELTS Listening: you don't really need a teacher
 
+It's difficult for teachers to help students with the listening test. The only 'technique' that students need to get used to is reading ahead: using the breaks to read the next section of questions before the recording starts.
+
+Apart from that, it's a matter of practice. Listen to as much English as you can, do as many of the Cambridge past papers as possible, and analyse your mistakes carefully. You don't really need a teacher for this.

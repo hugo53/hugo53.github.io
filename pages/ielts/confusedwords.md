@@ -62,4 +62,20 @@ deSERVE is a verb, means *xứng đáng* while dIVERSE is an adj, means *đa d�
 ### Attempt or Attemption
 Not surprisingly, many people think that _attemption_ is a correct word because it seems reasonable when adds _tion_ suffix after the root word _attempt_. In fact, _attempt_ is not only a verb but also a noun. Thus, noun form of the verb _attempt_ is exactly same it. By way of conclusion, _attemption_ is absolutely wrong. Using _attempt_ for both noun and verb role makes right grammar. 
 
+### Ethic and Ethnic
+_Ethic_ is a noun and is synonym of _morality_. _Ethnic_ is an adjective, means _thuộc dân tộc_. 
+
+
+
+### Some words "*evoke": revoke, invoke, evoke
+*revoke* : huỷ bỏ, thủ tiêu, rút lui (officially CANCEL)
+
+*invoke* : viện dẫn (CITE), cầu khẩn (BEG)
+
+*evoke* : gợi lên, gợi ra (BRING TO MIND), cũng là gọi hồn (evoke a spirit/deity)
+
+### Infancy is antonym of fancy? Absolutely wrong!
+*fancy* : (n, adj, v) LIKE, BELIEVE or sặc sỡ
+
+*infancy*: (n) thời kỳ ban đầu, trẻ con. _Infancy of tidal energy production_
 

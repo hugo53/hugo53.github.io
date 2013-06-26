@@ -19,7 +19,14 @@ As follows, several significant websites which may be helpful for many IELTS can
 
 5. [http://www.makkarielts.com/](http://www.makkarielts.com/). Quickly update real tests.
 
-> *Inspired by [VIC's post](https://www.facebook.com/VietnameseIELTSCommunity/posts/591364340887250).*
+> *Inspired by [VIC's post](https://www.facebook.
+com/VietnameseIELTSCommunity/posts/591364340887250).*
+
+Resources for individual skill
+
+##### Reading
+[For reading and learning vocabulary](http://education.nationalgeographic.com/education/encyclopedia/?ar_a=1). It is really helpful because of the highlighting of weird words. It is so great, great, great! I highly recommend it! You should spend your time on it first rather than on ScientificAmerican or Economist. Two last sites are for updating news, not for gathering new knowledge and new words. 
+
 
 
 ## Essential Grammar Syntax {#essentialgrammar}
@@ -88,4 +95,3 @@ Nguồn tiếp theo là các bài giảng – lecture – của các giáo sư t
 [http://goinswriter.com/](http://goinswriter.com/) - trang này là blog của một young traveler writer. Ngôn từ đơn giản, dễ hiểu, nhưng không nhiều chủ đề đa dạng lắm, ngoài ra thì mình thấy anh này có nhiều lúc có cái nhìn hơi quái và tiêu cực.
 
 > Copyright by [Duc Thang Bui](https://www.facebook.com/notes/duc-thang-bui/m%E1%BB%99t-s%E1%BB%91-kinh-nghi%E1%BB%87m-h%E1%BB%8Dc-ideas-cho-speaking-v%C3%A0-writing-ielts/616993074993044)
-
