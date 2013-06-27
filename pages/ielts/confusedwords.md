@@ -67,7 +67,7 @@ _Ethic_ is a noun and is synonym of _morality_. _Ethnic_ is an adjective, means 
 
 
 
-### Some words "*evoke": revoke, invoke, evoke
+### Some words "evoke": revoke, invoke, evoke
 *revoke* : huỷ bỏ, thủ tiêu, rút lui (officially CANCEL)
 
 *invoke* : viện dẫn (CITE), cầu khẩn (BEG)
