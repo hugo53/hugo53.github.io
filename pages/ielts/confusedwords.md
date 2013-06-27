@@ -68,15 +68,15 @@ _Ethic_ is a noun and is synonym of _morality_. _Ethnic_ is an adjective, means 
 
 
 ### Some words "evoke": revoke, invoke, evoke
-*revoke* : huỷ bỏ, thủ tiêu, rút lui (officially CANCEL)
+_revoke_ : huỷ bỏ, thủ tiêu, rút lui (officially CANCEL)
 
-*invoke* : viện dẫn (CITE), cầu khẩn (BEG)
+_invoke_ : viện dẫn (CITE), cầu khẩn (BEG)
 
-*evoke* : gợi lên, gợi ra (BRING TO MIND), cũng là gọi hồn (evoke a spirit/deity)
+_evoke_ : gợi lên, gợi ra (BRING TO MIND), cũng là gọi hồn (evoke a spirit/deity)
 
 ### Infancy is antonym of fancy? Absolutely wrong!
-*fancy* : (n, adj, v) LIKE, BELIEVE or sặc sỡ
+_fancy_ : (n, adj, v) LIKE, BELIEVE or sặc sỡ
 
-*infancy*: (n) thời kỳ ban đầu, trẻ con. _Infancy of tidal energy production_
+_infancy_: (n) thời kỳ ban đầu, trẻ con. _Infancy of tidal energy production_
 
 ### Extent, Extend, Extant, Expand, Expend
