@@ -46,7 +46,7 @@ Ngoài ra còn rất nhiều tài nguyên trên internet nếu bạn muốn luy�
 #### Massive Online Open Course (MOOC) và tương lai của đào tạo chất lượng cao #### {#mooc}
 
 Học online thế nào cho hiệu quả? Xem ở [đây](http://moocnewsandreviews.com/dont-be-a-mooc-dropout/). 
-Tham khảo thêm về MOOC [http://khalidraza9.wordpress.com/2013/04/25/what-is-mooc/]
+[Tham khảo thêm về MOOC](http://khalidraza9.wordpress.com/2013/04/25/what-is-mooc/)
 [Đây nữa](http://moocnewsandreviews.com/)
 
 
