@@ -79,3 +79,4 @@ _Ethic_ is a noun and is synonym of _morality_. _Ethnic_ is an adjective, means 
 
 *infancy*: (n) thời kỳ ban đầu, trẻ con. _Infancy of tidal energy production_
 
+### Extent, Extend, Extant, Expand, Expend
