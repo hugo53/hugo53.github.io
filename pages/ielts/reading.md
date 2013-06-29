@@ -75,7 +75,7 @@ Tip 6: nếu như bạn bị đắn đó bởi 1 câu nào đó, mà câu trư�
 
 Tip 7: học nhiều từ vựng vào đọc hiểu hết luôn khỏi cần biết tips nữa J
 
-@ các bạn dùng những tips này giải cho mình bài reading 3, note tiếp theo sẽ giải nó nhé, cảm ơn mọi người đã đọc bài.
+các bạn dùng những tips này giải cho mình bài reading 3, note tiếp theo sẽ giải nó nhé, cảm ơn mọi người đã đọc bài.
 > Nguồn [Đình Long IELTS](https://www.facebook.com/photo.php?fbid=528032723901087&set=a.413157828721911.85543.409858632385164&type=1&theater)
 
 
