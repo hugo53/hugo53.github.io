@@ -27,6 +27,21 @@ There is a fact that finding a valuable instruction is a hard task obviously. I 
 [Listing a lot of UI model for iOS application](http://pttrns.com/)
 
 
+## Advance Techniques
+- [Performance Tuning](http://developer.apple.com/library/ios/#documentation/iphone/conceptual/iphoneosprogrammingguide/PerformanceTuning/PerformanceTuning.html#//apple_ref/doc/uid/TP40007072-CH8-SW1)
+
+- [Advance App Tricks](http://developer.apple.com/library/ios/#documentation/iphone/conceptual/iphoneosprogrammingguide/AdvancedAppTricks/AdvancedAppTricks.html#//apple_ref/doc/uid/TP40007072-CH7-SW6)
+
+- [Fundamental iOS Design Patterns](http://developer.apple.com/library/ios/#documentation/iphone/conceptual/iphoneosprogrammingguide/AppDesignBasics/AppDesignBasics.html#//apple_ref/doc/uid/TP40007072-CH2-SW1)
+
+- [State Preservation and Restoration](http://developer.apple.com/library/ios/#documentation/iphone/conceptual/iphoneosprogrammingguide/StatePreservation/StatePreservation.html#//apple_ref/doc/uid/TP40007072-CH11-SW13). For showing content at the last launch. 
+
+- [Automatic Sleep Timer](http://developer.apple.com/library/ios/#documentation/iphone/conceptual/iphoneosprogrammingguide/TheiOSEnvironment/TheiOSEnvironment.html#//apple_ref/doc/uid/TP40007072-CH9-SW1). You may need to disable the sleep timer.
+
+- [Software Security](http://developer.apple.com/library/ios/#documentation/Security/Conceptual/Security_Overview/Introduction/Introduction.html#//apple_ref/doc/uid/TP30000976-CH1-SW1)
+	*[Secure Coding](http://developer.apple.com/library/ios/#documentation/Security/Conceptual/SecureCodingGuide/Introduction.html#//apple_ref/doc/uid/TP40002415)
+	*[Designing Secure User Interfaces](http://developer.apple.com/library/ios/#documentation/Security/Conceptual/SecureCodingGuide/Articles/AppInterfaces.html#//apple_ref/doc/uid/TP40002862)
+
 ## Where can we get more precious knowledge and monetizing?
 Source code and review apps with high income is [here](http://iosapptemplate.com/). For example, app _InstaInspire_ is analyzed at [here](http://iosapptemplate.com/2013/05/14/instainspire-photo-app-with-audio-recorder-feature-app-template/).
 
