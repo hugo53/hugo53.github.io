@@ -41,8 +41,7 @@ In my opinion, there best ones of those writing books are Academic Writing, Writ
 In order to utilize those materials efficiently, I suggest that all above books should use as the following way:
 
 #### Task 1
-
-
+[Great resource for Task 1](http://www.essaybuilder.net/Graphs.html)
 
 #### Task 2
 1. Sentence Structure: Writing Academic
@@ -62,3 +61,6 @@ IELTS Listening: you don't really need a teacher
 It's difficult for teachers to help students with the listening test. The only 'technique' that students need to get used to is reading ahead: using the breaks to read the next section of questions before the recording starts.
 
 Apart from that, it's a matter of practice. Listen to as much English as you can, do as many of the Cambridge past papers as possible, and analyse your mistakes carefully. You don't really need a teacher for this.
+
+
+
