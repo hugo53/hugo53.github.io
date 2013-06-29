@@ -26,6 +26,7 @@ There is a fact that finding a valuable instruction is a hard task obviously. I 
 ## UI Design
 [Listing a lot of UI model for iOS application](http://pttrns.com/)
 
+[A large number of templates](https://www.cocoacontrols.com/)
 
 ## Advance Techniques
 - [Performance Tuning](http://developer.apple.com/library/ios/#documentation/iphone/conceptual/iphoneosprogrammingguide/PerformanceTuning/PerformanceTuning.html#//apple_ref/doc/uid/TP40007072-CH8-SW1)
