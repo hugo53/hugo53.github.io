@@ -21,25 +21,27 @@ There is a fact that finding a valuable instruction is a hard task obviously. I 
 
 - [Of course, unforgettable Coding Together: Developing Apps for iPhone and iPad by Stanford named CS193P](https://itunes.apple.com/us/course/coding-together-developing/id593208016)
 
-- [Introduction iOS Design by Ben Taylor](http://taybenlor.com/2013/05/21/designing-for-ios.html). It is cutting-edge document for any iOS developer and designer. Easy to follow and clear to comprehend, this tutorial is very helpful.
+-[Great blog by an IT Guru](http://zeroheroblog.com/)
 
 ## UI Design
+[Introduction iOS Design by Ben Taylor](http://taybenlor.com/2013/05/21/designing-for-ios.html). It is cutting-edge document for any iOS developer and designer. Easy to follow and clear to comprehend, this tutorial is very helpful.
+
 [Listing a lot of UI model for iOS application](http://pttrns.com/)
 
 [A large number of templates](https://www.cocoacontrols.com/)
 
 ## Advance Techniques
-- [Performance Tuning](http://developer.apple.com/library/ios/#documentation/iphone/conceptual/iphoneosprogrammingguide/PerformanceTuning/PerformanceTuning.html#//apple_ref/doc/uid/TP40007072-CH8-SW1)
+[Performance Tuning](http://developer.apple.com/library/ios/#documentation/iphone/conceptual/iphoneosprogrammingguide/PerformanceTuning/PerformanceTuning.html#//apple_ref/doc/uid/TP40007072-CH8-SW1)
 
-- [Advance App Tricks](http://developer.apple.com/library/ios/#documentation/iphone/conceptual/iphoneosprogrammingguide/AdvancedAppTricks/AdvancedAppTricks.html#//apple_ref/doc/uid/TP40007072-CH7-SW6)
+[Advance App Tricks](http://developer.apple.com/library/ios/#documentation/iphone/conceptual/iphoneosprogrammingguide/AdvancedAppTricks/AdvancedAppTricks.html#//apple_ref/doc/uid/TP40007072-CH7-SW6)
 
-- [Fundamental iOS Design Patterns](http://developer.apple.com/library/ios/#documentation/iphone/conceptual/iphoneosprogrammingguide/AppDesignBasics/AppDesignBasics.html#//apple_ref/doc/uid/TP40007072-CH2-SW1)
+[Fundamental iOS Design Patterns](http://developer.apple.com/library/ios/#documentation/iphone/conceptual/iphoneosprogrammingguide/AppDesignBasics/AppDesignBasics.html#//apple_ref/doc/uid/TP40007072-CH2-SW1)
 
-- [State Preservation and Restoration](http://developer.apple.com/library/ios/#documentation/iphone/conceptual/iphoneosprogrammingguide/StatePreservation/StatePreservation.html#//apple_ref/doc/uid/TP40007072-CH11-SW13). For showing content at the last launch. 
+[State Preservation and Restoration](http://developer.apple.com/library/ios/#documentation/iphone/conceptual/iphoneosprogrammingguide/StatePreservation/StatePreservation.html#//apple_ref/doc/uid/TP40007072-CH11-SW13). For showing content at the last launch. 
 
-- [Automatic Sleep Timer](http://developer.apple.com/library/ios/#documentation/iphone/conceptual/iphoneosprogrammingguide/TheiOSEnvironment/TheiOSEnvironment.html#//apple_ref/doc/uid/TP40007072-CH9-SW1). You may need to disable the sleep timer.
+[Automatic Sleep Timer](http://developer.apple.com/library/ios/#documentation/iphone/conceptual/iphoneosprogrammingguide/TheiOSEnvironment/TheiOSEnvironment.html#//apple_ref/doc/uid/TP40007072-CH9-SW1). You may need to disable the sleep timer.
 
-- [Software Security](http://developer.apple.com/library/ios/#documentation/Security/Conceptual/Security_Overview/Introduction/Introduction.html#//apple_ref/doc/uid/TP30000976-CH1-SW1)
+[Software Security](http://developer.apple.com/library/ios/#documentation/Security/Conceptual/Security_Overview/Introduction/Introduction.html#//apple_ref/doc/uid/TP30000976-CH1-SW1)
 	*[Secure Coding](http://developer.apple.com/library/ios/#documentation/Security/Conceptual/SecureCodingGuide/Introduction.html#//apple_ref/doc/uid/TP40002415)
 	*[Designing Secure User Interfaces](http://developer.apple.com/library/ios/#documentation/Security/Conceptual/SecureCodingGuide/Articles/AppInterfaces.html#//apple_ref/doc/uid/TP40002862)
 
