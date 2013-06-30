@@ -57,4 +57,11 @@ Source code and review apps with high income is [here](http://iosapptemplate.com
 
 - [Mobile Advertising Dictionary](http://www.amobee.com/dictionary/)
 
+- Some advertising approaches
+	* Advertisement at the beginning or ending points. 
+	_My experience is from running a cross-promotion network called AppFlood on Android. Banners ads are pointless... the CTR is too low. If you implement a full screen interstitial correctly (at the beginning or end of a game/app) we have seen seen CTRs as high as 45%. However, we are well above the industry average for these ads which typically run 3-8% on other networks. A lot of it depends on how you integrate the advertisement._
+
+	* Full-page ads. 
+	_Based on what I see on the InMobi network, as well as my conversations with developers, average CTRs for standard  (50x300) banner ads look like this: Android: 0.50%, iPhone: 0.75%. CTRs tend to be higher for full-page interstitial ads, as well as for ads on tablets._
+
 

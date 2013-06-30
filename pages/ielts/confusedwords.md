@@ -80,3 +80,8 @@ _fancy_ : (n, adj, v) LIKE, BELIEVE or sặc sỡ
 _infancy_: (n) thời kỳ ban đầu, trẻ con. _Infancy of tidal energy production_
 
 ### Extent, Extend, Extant, Expand, Expend
+
+
+
+
+### Resident, resilent, resilience, resist
