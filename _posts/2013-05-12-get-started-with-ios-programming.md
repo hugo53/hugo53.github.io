@@ -44,12 +44,12 @@ There is a fact that finding a valuable instruction is a hard task obviously. I 
 [Automatic Sleep Timer](http://developer.apple.com/library/ios/#documentation/iphone/conceptual/iphoneosprogrammingguide/TheiOSEnvironment/TheiOSEnvironment.html#//apple_ref/doc/uid/TP40007072-CH9-SW1). You may need to disable the sleep timer.
 
 [Software Security](http://developer.apple.com/library/ios/#documentation/Security/Conceptual/Security_Overview/Introduction/Introduction.html#//apple_ref/doc/uid/TP30000976-CH1-SW1)
-	*[Secure Coding](http://developer.apple.com/library/ios/#documentation/Security/Conceptual/SecureCodingGuide/Introduction.html#//apple_ref/doc/uid/TP40002415)
-	*[Designing Secure User Interfaces](http://developer.apple.com/library/ios/#documentation/Security/Conceptual/SecureCodingGuide/Articles/AppInterfaces.html#//apple_ref/doc/uid/TP40002862)
+	* [Secure Coding](http://developer.apple.com/library/ios/#documentation/Security/Conceptual/SecureCodingGuide/Introduction.html#//apple_ref/doc/uid/TP40002415)
+	* [Designing Secure User Interfaces](http://developer.apple.com/library/ios/#documentation/Security/Conceptual/SecureCodingGuide/Articles/AppInterfaces.html#//apple_ref/doc/uid/TP40002862)
 
 [iAd Programming](http://developer.apple.com/library/ios/#documentation/UserExperience/Conceptual/iAd_Guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009881-CH1-SW1)
-	*[Banner View Best Practices](http://developer.apple.com/library/ios/#documentation/UserExperience/Conceptual/iAd_Guide/WorkingwithBannerViews/WorkingwithBannerViews.html#//apple_ref/doc/uid/TP40009881-CH4-SW3)
-	*[iAd Testing Checklist](http://developer.apple.com/library/ios/#documentation/UserExperience/Conceptual/iAd_Guide/TestingiAdApplications/TestingiAdApplications.html#//apple_ref/doc/uid/TP40009881-CH6-SW1)
+	* [Banner View Best Practices](http://developer.apple.com/library/ios/#documentation/UserExperience/Conceptual/iAd_Guide/WorkingwithBannerViews/WorkingwithBannerViews.html#//apple_ref/doc/uid/TP40009881-CH4-SW3)
+	* [iAd Testing Checklist](http://developer.apple.com/library/ios/#documentation/UserExperience/Conceptual/iAd_Guide/TestingiAdApplications/TestingiAdApplications.html#//apple_ref/doc/uid/TP40009881-CH6-SW1)
 
 
 ## Where can we get more precious knowledge and monetizing?
