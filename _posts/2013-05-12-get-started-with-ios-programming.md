@@ -31,6 +31,8 @@ There is a fact that finding a valuable instruction is a hard task obviously. I 
 [A large number of templates](https://www.cocoacontrols.com/)
 
 ## Advance Techniques
+[Keyboard Shortcut](http://developer.apple.com/library/ios/#recipes/xcode_help-keybindings_preferences/articles/viewing_keyboard_shortcuts.html#//apple_ref/doc/uid/TP40010351-CH1-SW1)
+
 [Performance Tuning](http://developer.apple.com/library/ios/#documentation/iphone/conceptual/iphoneosprogrammingguide/PerformanceTuning/PerformanceTuning.html#//apple_ref/doc/uid/TP40007072-CH8-SW1)
 
 [Advance App Tricks](http://developer.apple.com/library/ios/#documentation/iphone/conceptual/iphoneosprogrammingguide/AdvancedAppTricks/AdvancedAppTricks.html#//apple_ref/doc/uid/TP40007072-CH7-SW6)
@@ -44,6 +46,11 @@ There is a fact that finding a valuable instruction is a hard task obviously. I 
 [Software Security](http://developer.apple.com/library/ios/#documentation/Security/Conceptual/Security_Overview/Introduction/Introduction.html#//apple_ref/doc/uid/TP30000976-CH1-SW1)
 	*[Secure Coding](http://developer.apple.com/library/ios/#documentation/Security/Conceptual/SecureCodingGuide/Introduction.html#//apple_ref/doc/uid/TP40002415)
 	*[Designing Secure User Interfaces](http://developer.apple.com/library/ios/#documentation/Security/Conceptual/SecureCodingGuide/Articles/AppInterfaces.html#//apple_ref/doc/uid/TP40002862)
+
+[iAd Programming](http://developer.apple.com/library/ios/#documentation/UserExperience/Conceptual/iAd_Guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009881-CH1-SW1)
+	*[Banner View Best Practices](http://developer.apple.com/library/ios/#documentation/UserExperience/Conceptual/iAd_Guide/WorkingwithBannerViews/WorkingwithBannerViews.html#//apple_ref/doc/uid/TP40009881-CH4-SW3)
+	*[iAd Testing Checklist](http://developer.apple.com/library/ios/#documentation/UserExperience/Conceptual/iAd_Guide/TestingiAdApplications/TestingiAdApplications.html#//apple_ref/doc/uid/TP40009881-CH6-SW1)
+
 
 ## Where can we get more precious knowledge and monetizing?
 Source code and review apps with high income is [here](http://iosapptemplate.com/). For example, app _InstaInspire_ is analyzed at [here](http://iosapptemplate.com/2013/05/14/instainspire-photo-app-with-audio-recorder-feature-app-template/).
