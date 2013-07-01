@@ -45,19 +45,23 @@ There is a fact that finding a valuable instruction is a hard task obviously. I 
 
 [Software Security](http://developer.apple.com/library/ios/#documentation/Security/Conceptual/Security_Overview/Introduction/Introduction.html#//apple_ref/doc/uid/TP30000976-CH1-SW1)
 	
-	* [Secure Coding](http://developer.apple.com/library/ios/#documentation/Security/Conceptual/SecureCodingGuide/Introduction.html#//apple_ref/doc/uid/TP40002415)
+	- [Secure Coding](http://developer.apple.com/library/ios/#documentation/Security/Conceptual/SecureCodingGuide/Introduction.html#//apple_ref/doc/uid/TP40002415)
 	
-	* [Designing Secure User Interfaces](http://developer.apple.com/library/ios/#documentation/Security/Conceptual/SecureCodingGuide/Articles/AppInterfaces.html#//apple_ref/doc/uid/TP40002862)
+	- [Designing Secure User Interfaces](http://developer.apple.com/library/ios/#documentation/Security/Conceptual/SecureCodingGuide/Articles/AppInterfaces.html#//apple_ref/doc/uid/TP40002862)
 
 [iAd Programming](http://developer.apple.com/library/ios/#documentation/UserExperience/Conceptual/iAd_Guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009881-CH1-SW1)
 	
-	* [Banner View Best Practices](http://developer.apple.com/library/ios/#documentation/UserExperience/Conceptual/iAd_Guide/WorkingwithBannerViews/WorkingwithBannerViews.html#//apple_ref/doc/uid/TP40009881-CH4-SW3)
+	- [Banner View Best Practices](http://developer.apple.com/library/ios/#documentation/UserExperience/Conceptual/iAd_Guide/WorkingwithBannerViews/WorkingwithBannerViews.html#//apple_ref/doc/uid/TP40009881-CH4-SW3)
 	
-	* [iAd Testing Checklist](http://developer.apple.com/library/ios/#documentation/UserExperience/Conceptual/iAd_Guide/TestingiAdApplications/TestingiAdApplications.html#//apple_ref/doc/uid/TP40009881-CH6-SW1)
+	- [iAd Testing Checklist](http://developer.apple.com/library/ios/#documentation/UserExperience/Conceptual/iAd_Guide/TestingiAdApplications/TestingiAdApplications.html#//apple_ref/doc/uid/TP40009881-CH6-SW1)
 
 
 ## Where can we get more precious knowledge and monetizing?
 Source code and review apps with high income is [here](http://iosapptemplate.com/). For example, app _InstaInspire_ is analyzed at [here](http://iosapptemplate.com/2013/05/14/instainspire-photo-app-with-audio-recorder-feature-app-template/).
+
+- [Research Market Report](http://www.visionmobile.com/products/research/)
+
+## Advertising
 
 - [Mobile Advertising Dictionary](http://www.amobee.com/dictionary/)
 
@@ -69,4 +73,6 @@ Source code and review apps with high income is [here](http://iosapptemplate.com
 	* Full-page ads. 
 	_Based on what I see on the InMobi network, as well as my conversations with developers, average CTRs for standard  (50x300) banner ads look like this: Android: 0.50%, iPhone: 0.75%. CTRs tend to be higher for full-page interstitial ads, as well as for ads on tablets._
 
+- [How to Write a Fantastic Mobile App Description](http://mobileadvertisinghub.com/how-to-write-a-fantastic-mobile-app-description-part-2/)
 
+- [How to Use Social Media to Drive Demand for Your App](http://mobileadvertisinghub.com/how-to-use-social-media-to-drive-demand-for-your-app-part-3/)
