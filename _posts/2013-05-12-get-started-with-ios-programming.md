@@ -21,7 +21,12 @@ There is a fact that finding a valuable instruction is a hard task obviously. I 
 
 - [Of course, unforgettable Coding Together: Developing Apps for iPhone and iPad by Stanford named CS193P](https://itunes.apple.com/us/course/coding-together-developing/id593208016)
 
+#### Blog
 - [Great blog by an IT Guru](http://zeroheroblog.com/)
+- [Superb Blog](http://maniacdev.com/). Show a lot of code, sample project, design strategy, ...
+- [Template IOS](http://www.honcheng.com/applications). Several awesome templates were distributed via Github.
+
+
 
 ## UI Design
 [Introduction iOS Design by Ben Taylor](http://taybenlor.com/2013/05/21/designing-for-ios.html). It is cutting-edge document for any iOS developer and designer. Easy to follow and clear to comprehend, this tutorial is very helpful.

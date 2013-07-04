@@ -85,3 +85,11 @@ _infancy_: (n) thời kỳ ban đầu, trẻ con. _Infancy of tidal energy produ
 
 
 ### Resident, resilent, resilience, resist
+
+
+### Ingenious vs Indigenous
+Ingenious = skilful, clever
+E.x: an ingenious boy
+
+Indigenous = native
+E.x: Indigenous language, the indigenous peoples of Seberia (peoples means ethnic: dân tộc).
