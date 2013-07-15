@@ -93,3 +93,6 @@ E.x: an ingenious boy
 
 Indigenous = native
 E.x: Indigenous language, the indigenous peoples of Seberia (peoples means ethnic: dân tộc).
+
+
+### Bazzar and Bizarre

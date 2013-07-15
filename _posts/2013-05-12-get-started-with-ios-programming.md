@@ -29,6 +29,8 @@ There is a fact that finding a valuable instruction is a hard task obviously. I 
 
 
 ## UI Design
+Great great great book: _Designing the iPhone User Experience A User-Centered Approach to Sketching and Prototyping iPhone Apps_ by SUZANNE GINSBURG. This book has been using in Design Course at CMU. 
+ 
 [Introduction iOS Design by Ben Taylor](http://taybenlor.com/2013/05/21/designing-for-ios.html). It is cutting-edge document for any iOS developer and designer. Easy to follow and clear to comprehend, this tutorial is very helpful.
 
 [Listing a lot of UI model for iOS application](http://pttrns.com/)
