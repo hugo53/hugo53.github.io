@@ -83,3 +83,9 @@ Source code and review apps with high income is [here](http://iosapptemplate.com
 - [How to Write a Fantastic Mobile App Description](http://mobileadvertisinghub.com/how-to-write-a-fantastic-mobile-app-description-part-2/)
 
 - [How to Use Social Media to Drive Demand for Your App](http://mobileadvertisinghub.com/how-to-use-social-media-to-drive-demand-for-your-app-part-3/)
+
+## Great Advices from original documentation (or Great Knowledge)
+- Cocoa Design Patterns (included in  Cocoa Fundamentals Guide) : list all patterns which are used in Cocoa framework. Must go through!
+
+
+
