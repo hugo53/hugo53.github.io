@@ -71,7 +71,7 @@ Beta List
 Startup List
 Younoodle
 Hacker News
-/r/startups [Reddit]
+/r/startups in Reddit
 AngelList
 alltopstartups.com
 venturebeatprofiles.com
