@@ -16,7 +16,7 @@ tags: [startup, tool]
 
 
 
-Today, we’re gonna list all greatest tools for entrepreneurs and startups.
+Today, we are gonna list all greatest tools for entrepreneurs and startups.
 
 
 
@@ -32,7 +32,7 @@ Founders at Work by Jessica Livingstone
 
 The Art of the Start by Guy Kawasaki
 
-The Way We’re Working isn’t Working by Tony Schwartz
+The Way We are Working is not Working by Tony Schwartz
 
 War of Art by Steven Pressfield
 

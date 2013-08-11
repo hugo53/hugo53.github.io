@@ -17,7 +17,7 @@ http://hugo53.github.io/rss.xml
 http://hugo53.github.io/sitemap.txt
 http://hugo53.github.io/tags.html
 
-http://hugo53.github.io/2013/08/11/startup-toolkit
+http://hugo53.github.io/startup/2013/08/11/startup-toolkit
 http://hugo53.github.io/2013/06/18/making-money-easy-or-difficult
 http://hugo53.github.io/computer%20science/2013/05/23/google-tech-talk---a-huge-resource-for-it-student
 http://hugo53.github.io/lifestyle/2013/05/19/the-first-journey-to-hometown
