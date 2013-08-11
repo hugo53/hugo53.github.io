@@ -6,9 +6,9 @@ title: "Startup Toolkit: The Best Tools for Entrepreneurs"
 
 description: ""
 
-category: 
+category: startup
 
-tags: []
+tags: [startup, tool]
 
 ---
 
