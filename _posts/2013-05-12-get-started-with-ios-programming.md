@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Get started with iOS Programming"
-description: ""
+description: "Recently, I had been decided what kind of software industry field which should be followed. There were actually two choices, whether Big Data belongs to Data Mining techniques or Mobile Development is with creating a large number of awesome applications for the rest. I spent a plenty of time for choosing the best of those. Finally, in the next year, I will concentrate totally on building mobile applications and even mobile games based on iOS platform. It really is difficult thought because of interesting of the former. In this post, I am willing to show my path to iOS tunnel."
 category: iOS Development
 tags: [iOS, programming]
 ---
@@ -31,36 +31,30 @@ There is a fact that finding a valuable instruction is a hard task obviously. I 
 ## UI Design
 Great great great book: _Designing the iPhone User Experience A User-Centered Approach to Sketching and Prototyping iPhone Apps_ by SUZANNE GINSBURG. This book has been using in Design Course at CMU. 
  
-[Introduction iOS Design by Ben Taylor](http://taybenlor.com/2013/05/21/designing-for-ios.html). It is cutting-edge document for any iOS developer and designer. Easy to follow and clear to comprehend, this tutorial is very helpful.
+- [Introduction iOS Design by Ben Taylor](http://taybenlor.com/2013/05/21/designing-for-ios.html). It is cutting-edge document for any iOS developer and designer. Easy to follow and clear to comprehend, this tutorial is very helpful.
 
-[Listing a lot of UI model for iOS application](http://pttrns.com/)
+- [Listing a lot of UI model for iOS application](http://pttrns.com/)
 
-[A large number of templates](https://www.cocoacontrols.com/)
+- [A large number of templates](https://www.cocoacontrols.com/)
+
+- [Making Logo](http://appicontemplate.com/)
 
 ## Advance Techniques
-[Keyboard Shortcut](http://developer.apple.com/library/ios/#recipes/xcode_help-keybindings_preferences/articles/viewing_keyboard_shortcuts.html#//apple_ref/doc/uid/TP40010351-CH1-SW1)
+- [Keyboard Shortcut](http://developer.apple.com/library/ios/#recipes/xcode_help-keybindings_preferences/articles/viewing_keyboard_shortcuts.html#//apple_ref/doc/uid/TP40010351-CH1-SW1)
 
-[Performance Tuning](http://developer.apple.com/library/ios/#documentation/iphone/conceptual/iphoneosprogrammingguide/PerformanceTuning/PerformanceTuning.html#//apple_ref/doc/uid/TP40007072-CH8-SW1)
+- [Performance Tuning](http://developer.apple.com/library/ios/#documentation/iphone/conceptual/iphoneosprogrammingguide/PerformanceTuning/PerformanceTuning.html#//apple_ref/doc/uid/TP40007072-CH8-SW1)
 
-[Advance App Tricks](http://developer.apple.com/library/ios/#documentation/iphone/conceptual/iphoneosprogrammingguide/AdvancedAppTricks/AdvancedAppTricks.html#//apple_ref/doc/uid/TP40007072-CH7-SW6)
+- [Advance App Tricks](http://developer.apple.com/library/ios/#documentation/iphone/conceptual/iphoneosprogrammingguide/AdvancedAppTricks/AdvancedAppTricks.html#//apple_ref/doc/uid/TP40007072-CH7-SW6)
 
-[Fundamental iOS Design Patterns](http://developer.apple.com/library/ios/#documentation/iphone/conceptual/iphoneosprogrammingguide/AppDesignBasics/AppDesignBasics.html#//apple_ref/doc/uid/TP40007072-CH2-SW1)
+- [Fundamental iOS Design Patterns](http://developer.apple.com/library/ios/#documentation/iphone/conceptual/iphoneosprogrammingguide/AppDesignBasics/AppDesignBasics.html#//apple_ref/doc/uid/TP40007072-CH2-SW1)
 
-[State Preservation and Restoration](http://developer.apple.com/library/ios/#documentation/iphone/conceptual/iphoneosprogrammingguide/StatePreservation/StatePreservation.html#//apple_ref/doc/uid/TP40007072-CH11-SW13). For showing content at the last launch. 
+- [State Preservation and Restoration](http://developer.apple.com/library/ios/#documentation/iphone/conceptual/iphoneosprogrammingguide/StatePreservation/StatePreservation.html#//apple_ref/doc/uid/TP40007072-CH11-SW13). For showing content at the last launch. 
 
-[Automatic Sleep Timer](http://developer.apple.com/library/ios/#documentation/iphone/conceptual/iphoneosprogrammingguide/TheiOSEnvironment/TheiOSEnvironment.html#//apple_ref/doc/uid/TP40007072-CH9-SW1). You may need to disable the sleep timer.
+- [Automatic Sleep Timer](http://developer.apple.com/library/ios/#documentation/iphone/conceptual/iphoneosprogrammingguide/TheiOSEnvironment/TheiOSEnvironment.html#//apple_ref/doc/uid/TP40007072-CH9-SW1). You may need to disable the sleep timer.
 
-[Software Security](http://developer.apple.com/library/ios/#documentation/Security/Conceptual/Security_Overview/Introduction/Introduction.html#//apple_ref/doc/uid/TP30000976-CH1-SW1)
-	
-	- [Secure Coding](http://developer.apple.com/library/ios/#documentation/Security/Conceptual/SecureCodingGuide/Introduction.html#//apple_ref/doc/uid/TP40002415)
-	
-	- [Designing Secure User Interfaces](http://developer.apple.com/library/ios/#documentation/Security/Conceptual/SecureCodingGuide/Articles/AppInterfaces.html#//apple_ref/doc/uid/TP40002862)
+- [Software Security](http://developer.apple.com/library/ios/#documentation/Security/Conceptual/Security_Overview/Introduction/Introduction.html#//apple_ref/doc/uid/TP30000976-CH1-SW1): [Secure Coding](http://developer.apple.com/library/ios/#documentation/Security/Conceptual/SecureCodingGuide/Introduction.html#//apple_ref/doc/uid/TP40002415), [Designing Secure User Interfaces](http://developer.apple.com/library/ios/#documentation/Security/Conceptual/SecureCodingGuide/Articles/AppInterfaces.html#//apple_ref/doc/uid/TP40002862)
 
-[iAd Programming](http://developer.apple.com/library/ios/#documentation/UserExperience/Conceptual/iAd_Guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009881-CH1-SW1)
-	
-	1. [Banner View Best Practices](http://developer.apple.com/library/ios/#documentation/UserExperience/Conceptual/iAd_Guide/WorkingwithBannerViews/WorkingwithBannerViews.html#//apple_ref/doc/uid/TP40009881-CH4-SW3)
-	
-	2. [iAd Testing Checklist](http://developer.apple.com/library/ios/#documentation/UserExperience/Conceptual/iAd_Guide/TestingiAdApplications/TestingiAdApplications.html#//apple_ref/doc/uid/TP40009881-CH6-SW1)
+- [iAd Programming](http://developer.apple.com/library/ios/#documentation/UserExperience/Conceptual/iAd_Guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009881-CH1-SW1): [Banner View Best Practices](http://developer.apple.com/library/ios/#documentation/UserExperience/Conceptual/iAd_Guide/WorkingwithBannerViews/WorkingwithBannerViews.html#//apple_ref/doc/uid/TP40009881-CH4-SW3), [iAd Testing Checklist](http://developer.apple.com/library/ios/#documentation/UserExperience/Conceptual/iAd_Guide/TestingiAdApplications/TestingiAdApplications.html#//apple_ref/doc/uid/TP40009881-CH6-SW1)
 
 
 ## Where can we get more precious knowledge and monetizing?

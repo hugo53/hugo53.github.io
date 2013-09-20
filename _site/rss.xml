@@ -5,8 +5,8 @@
         <description>Leading Beautiful Life - Hugo Nguyen</description>
         <link>http://hugo53.github.io</link>
         <link>http://hugo53.github.io</link>
-        <lastBuildDate>2013-09-20T13:23:26+07:00</lastBuildDate>
-        <pubDate>2013-09-20T13:23:26+07:00</pubDate>
+        <lastBuildDate>2013-09-20T13:34:36+07:00</lastBuildDate>
+        <pubDate>2013-09-20T13:34:36+07:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -1172,37 +1172,59 @@
 
 &lt;p&gt;Great great great book: &lt;em&gt;Designing the iPhone User Experience A User-Centered Approach to Sketching and Prototyping iPhone Apps&lt;/em&gt; by SUZANNE GINSBURG. This book has been using in Design Course at CMU.&lt;/p&gt;
 
+&lt;ul&gt;
+&lt;li&gt;
 &lt;p&gt;&lt;a href='http://taybenlor.com/2013/05/21/designing-for-ios.html'&gt;Introduction iOS Design by Ben Taylor&lt;/a&gt;. It is cutting-edge document for any iOS developer and designer. Easy to follow and clear to comprehend, this tutorial is very helpful.&lt;/p&gt;
+&lt;/li&gt;
 
+&lt;li&gt;
 &lt;p&gt;&lt;a href='http://pttrns.com/'&gt;Listing a lot of UI model for iOS application&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 
+&lt;li&gt;
 &lt;p&gt;&lt;a href='https://www.cocoacontrols.com/'&gt;A large number of templates&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href='http://appicontemplate.com/'&gt;Making Logo&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h2 id='advance_techniques'&gt;Advance Techniques&lt;/h2&gt;
 
+&lt;ul&gt;
+&lt;li&gt;
 &lt;p&gt;&lt;a href='http://developer.apple.com/library/ios/#recipes/xcode_help-keybindings_preferences/articles/viewing_keyboard_shortcuts.html#//apple_ref/doc/uid/TP40010351-CH1-SW1'&gt;Keyboard Shortcut&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 
+&lt;li&gt;
 &lt;p&gt;&lt;a href='http://developer.apple.com/library/ios/#documentation/iphone/conceptual/iphoneosprogrammingguide/PerformanceTuning/PerformanceTuning.html#//apple_ref/doc/uid/TP40007072-CH8-SW1'&gt;Performance Tuning&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 
+&lt;li&gt;
 &lt;p&gt;&lt;a href='http://developer.apple.com/library/ios/#documentation/iphone/conceptual/iphoneosprogrammingguide/AdvancedAppTricks/AdvancedAppTricks.html#//apple_ref/doc/uid/TP40007072-CH7-SW6'&gt;Advance App Tricks&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 
+&lt;li&gt;
 &lt;p&gt;&lt;a href='http://developer.apple.com/library/ios/#documentation/iphone/conceptual/iphoneosprogrammingguide/AppDesignBasics/AppDesignBasics.html#//apple_ref/doc/uid/TP40007072-CH2-SW1'&gt;Fundamental iOS Design Patterns&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 
+&lt;li&gt;
 &lt;p&gt;&lt;a href='http://developer.apple.com/library/ios/#documentation/iphone/conceptual/iphoneosprogrammingguide/StatePreservation/StatePreservation.html#//apple_ref/doc/uid/TP40007072-CH11-SW13'&gt;State Preservation and Restoration&lt;/a&gt;. For showing content at the last launch.&lt;/p&gt;
+&lt;/li&gt;
 
+&lt;li&gt;
 &lt;p&gt;&lt;a href='http://developer.apple.com/library/ios/#documentation/iphone/conceptual/iphoneosprogrammingguide/TheiOSEnvironment/TheiOSEnvironment.html#//apple_ref/doc/uid/TP40007072-CH9-SW1'&gt;Automatic Sleep Timer&lt;/a&gt;. You may need to disable the sleep timer.&lt;/p&gt;
+&lt;/li&gt;
 
-&lt;p&gt;&lt;a href='http://developer.apple.com/library/ios/#documentation/Security/Conceptual/Security_Overview/Introduction/Introduction.html#//apple_ref/doc/uid/TP30000976-CH1-SW1'&gt;Software Security&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href='http://developer.apple.com/library/ios/#documentation/Security/Conceptual/Security_Overview/Introduction/Introduction.html#//apple_ref/doc/uid/TP30000976-CH1-SW1'&gt;Software Security&lt;/a&gt;: &lt;a href='http://developer.apple.com/library/ios/#documentation/Security/Conceptual/SecureCodingGuide/Introduction.html#//apple_ref/doc/uid/TP40002415'&gt;Secure Coding&lt;/a&gt;, &lt;a href='http://developer.apple.com/library/ios/#documentation/Security/Conceptual/SecureCodingGuide/Articles/AppInterfaces.html#//apple_ref/doc/uid/TP40002862'&gt;Designing Secure User Interfaces&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 
-&lt;pre&gt;&lt;code&gt;1. [Secure Coding](http://developer.apple.com/library/ios/#documentation/Security/Conceptual/SecureCodingGuide/Introduction.html#//apple_ref/doc/uid/TP40002415)
-
-2. [Designing Secure User Interfaces](http://developer.apple.com/library/ios/#documentation/Security/Conceptual/SecureCodingGuide/Articles/AppInterfaces.html#//apple_ref/doc/uid/TP40002862)&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;a href='http://developer.apple.com/library/ios/#documentation/UserExperience/Conceptual/iAd_Guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009881-CH1-SW1'&gt;iAd Programming&lt;/a&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;1. [Banner View Best Practices](http://developer.apple.com/library/ios/#documentation/UserExperience/Conceptual/iAd_Guide/WorkingwithBannerViews/WorkingwithBannerViews.html#//apple_ref/doc/uid/TP40009881-CH4-SW3)
-
-2. [iAd Testing Checklist](http://developer.apple.com/library/ios/#documentation/UserExperience/Conceptual/iAd_Guide/TestingiAdApplications/TestingiAdApplications.html#//apple_ref/doc/uid/TP40009881-CH6-SW1)&lt;/code&gt;&lt;/pre&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href='http://developer.apple.com/library/ios/#documentation/UserExperience/Conceptual/iAd_Guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009881-CH1-SW1'&gt;iAd Programming&lt;/a&gt;: &lt;a href='http://developer.apple.com/library/ios/#documentation/UserExperience/Conceptual/iAd_Guide/WorkingwithBannerViews/WorkingwithBannerViews.html#//apple_ref/doc/uid/TP40009881-CH4-SW3'&gt;Banner View Best Practices&lt;/a&gt;, &lt;a href='http://developer.apple.com/library/ios/#documentation/UserExperience/Conceptual/iAd_Guide/TestingiAdApplications/TestingiAdApplications.html#//apple_ref/doc/uid/TP40009881-CH6-SW1'&gt;iAd Testing Checklist&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h2 id='where_can_we_get_more_precious_knowledge_and_monetizing'&gt;Where can we get more precious knowledge and monetizing?&lt;/h2&gt;
 
