@@ -52,9 +52,9 @@ Great great great book: _Designing the iPhone User Experience A User-Centered Ap
 
 [Software Security](http://developer.apple.com/library/ios/#documentation/Security/Conceptual/Security_Overview/Introduction/Introduction.html#//apple_ref/doc/uid/TP30000976-CH1-SW1)
 	
-	1. [Secure Coding](http://developer.apple.com/library/ios/#documentation/Security/Conceptual/SecureCodingGuide/Introduction.html#//apple_ref/doc/uid/TP40002415)
+	- [Secure Coding](http://developer.apple.com/library/ios/#documentation/Security/Conceptual/SecureCodingGuide/Introduction.html#//apple_ref/doc/uid/TP40002415)
 	
-	2. [Designing Secure User Interfaces](http://developer.apple.com/library/ios/#documentation/Security/Conceptual/SecureCodingGuide/Articles/AppInterfaces.html#//apple_ref/doc/uid/TP40002862)
+	- [Designing Secure User Interfaces](http://developer.apple.com/library/ios/#documentation/Security/Conceptual/SecureCodingGuide/Articles/AppInterfaces.html#//apple_ref/doc/uid/TP40002862)
 
 [iAd Programming](http://developer.apple.com/library/ios/#documentation/UserExperience/Conceptual/iAd_Guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009881-CH1-SW1)
 	
