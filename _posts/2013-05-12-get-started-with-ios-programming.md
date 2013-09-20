@@ -1,6 +1,7 @@
 ---
 layout: post
-title: ""
+title: "Get started with iOS Programming"
+description: ""
 category: iOS Development
 tags: [iOS, programming]
 ---
