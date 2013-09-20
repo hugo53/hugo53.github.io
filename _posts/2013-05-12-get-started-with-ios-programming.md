@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Get started with iOS Programming"
-description: ""
+description: "Recently, I had been decided what kind of software industry field which should be followed. There were actually two choices, whether Big Data belongs to Data Mining techniques or Mobile Development is with creating a large number of awesome applications for the rest."
 category: iOS Development
 tags: [iOS, programming]
 ---
