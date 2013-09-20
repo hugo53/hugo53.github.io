@@ -4,7 +4,7 @@
  <title>Leading Beautiful Life</title>
  <link href="http://hugo53.github.io/" rel="self"/>
  <link href="http://hugo53.github.io"/>
- <updated>2013-09-20T12:50:29+07:00</updated>
+ <updated>2013-09-20T12:52:08+07:00</updated>
  <id>http://hugo53.github.io</id>
  <author>
    <name>Hugo Nguyen</name>
@@ -665,7 +665,121 @@
    <link href="http://hugo53.github.io/ios%20development/2013/05/12/get-started-with-ios-programming"/>
    <updated>2013-05-12T00:00:00+07:00</updated>
    <id>http://hugo53.github.io/ios%20development/2013/05/12/get-started-with-ios-programming</id>
-   <content type="html">&lt;p&gt;Recently, I had been decided what kind of software industry field which should be followed. There were actually two choices, whether Big Data belongs to Data Mining techniques or Mobile Development is with creating a large number of awesome applications for the rest. I spent a plenty of time for choosing the best of those. Finally, in the next year, I will concentrate totally on building mobile applications and even mobile games based on iOS platform. It really is difficult thought because of interesting of the former. In this post, I am willing to show my path to iOS tunnel.&lt;/p&gt;</content>
+   <content type="html">&lt;p&gt;Recently, I had been decided what kind of software industry field which should be followed. There were actually two choices, whether Big Data belongs to Data Mining techniques or Mobile Development is with creating a large number of awesome applications for the rest. I spent a plenty of time for choosing the best of those. Finally, in the next year, I will concentrate totally on building mobile applications and even mobile games based on iOS platform. It really is difficult thought because of interesting of the former. In this post, I am willing to show my path to iOS tunnel.&lt;/p&gt;
+
+&lt;h2 id='what_about_official_tutorials_from_apple'&gt;What about official tutorials from Apple?&lt;/h2&gt;
+
+&lt;p&gt;Ahh, Nothing to say about them. Very very very amazing and extremely useful. We can find those at &lt;a href='http://developer.apple.com/library/ios/#referencelibrary/GettingStarted/RoadMapiOS/'&gt;here&lt;/a&gt;. Please pay attention to the horizontal axis where describes standard road to combat almost challenges of mobile development. A frequent question is that &lt;em&gt;What is the starting point?&lt;/em&gt;. It means that newbies doesn&amp;#8217;t know where should begin. In &lt;a href='http://developer.apple.com/library/ios/#referencelibrary/GettingStarted/RoadMapiOS/chapters/DesignYourAppwithCare/DesignYourAppWithCare/DesignYourAppWithCare.html'&gt;&lt;em&gt;App Design&lt;/em&gt;&lt;/a&gt; section, Apple suggests that developers should make clearly their ideas firstly, then make action plan that may consider many parts of creating application process such as Data Model, rough interface, type of devices: iPhone or iPad or both, version OS supported: 4 or later, 5 or later, 6 or later, so forth.&lt;/p&gt;
+
+&lt;h2 id='main_training_resources'&gt;Main training resources&lt;/h2&gt;
+
+&lt;p&gt;There is a fact that finding a valuable instruction is a hard task obviously. I usually question that what resource can be put our belief to pursue. As follows, I will list primary resources which I think they may helpful.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href='http://looksok.wordpress.com/2012/12/22/best-iphoneios-programming-tutorials/'&gt;A great instruction describes all of aspects that let newbies know exactly what they may need&lt;/a&gt;. Especially, author of the article also listed what worthy of lectures in CS193P course (be mentioned below)for pursuing. He also uploaded his mind map which was created when he attended this course.&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href='https://github.com/rnystrom/iOS-Best-Practices'&gt;Tutorials by &lt;em&gt;rnystrom&lt;/em&gt; - a talent iOS application publisher&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href='https://itunes.apple.com/us/course/coding-together-developing/id593208016'&gt;Of course, unforgettable Coding Together: Developing Apps for iPhone and iPad by Stanford named CS193P&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id='blog'&gt;Blog&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href='http://zeroheroblog.com/'&gt;Great blog by an IT Guru&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://maniacdev.com/'&gt;Superb Blog&lt;/a&gt;. Show a lot of code, sample project, design strategy, &amp;#8230;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://www.honcheng.com/applications'&gt;Template IOS&lt;/a&gt;. Several awesome templates were distributed via Github.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id='ui_design'&gt;UI Design&lt;/h2&gt;
+
+&lt;p&gt;Great great great book: &lt;em&gt;Designing the iPhone User Experience A User-Centered Approach to Sketching and Prototyping iPhone Apps&lt;/em&gt; by SUZANNE GINSBURG. This book has been using in Design Course at CMU.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href='http://taybenlor.com/2013/05/21/designing-for-ios.html'&gt;Introduction iOS Design by Ben Taylor&lt;/a&gt;. It is cutting-edge document for any iOS developer and designer. Easy to follow and clear to comprehend, this tutorial is very helpful.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href='http://pttrns.com/'&gt;Listing a lot of UI model for iOS application&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href='https://www.cocoacontrols.com/'&gt;A large number of templates&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id='advance_techniques'&gt;Advance Techniques&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href='http://developer.apple.com/library/ios/#recipes/xcode_help-keybindings_preferences/articles/viewing_keyboard_shortcuts.html#//apple_ref/doc/uid/TP40010351-CH1-SW1'&gt;Keyboard Shortcut&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href='http://developer.apple.com/library/ios/#documentation/iphone/conceptual/iphoneosprogrammingguide/PerformanceTuning/PerformanceTuning.html#//apple_ref/doc/uid/TP40007072-CH8-SW1'&gt;Performance Tuning&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href='http://developer.apple.com/library/ios/#documentation/iphone/conceptual/iphoneosprogrammingguide/AdvancedAppTricks/AdvancedAppTricks.html#//apple_ref/doc/uid/TP40007072-CH7-SW6'&gt;Advance App Tricks&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href='http://developer.apple.com/library/ios/#documentation/iphone/conceptual/iphoneosprogrammingguide/AppDesignBasics/AppDesignBasics.html#//apple_ref/doc/uid/TP40007072-CH2-SW1'&gt;Fundamental iOS Design Patterns&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href='http://developer.apple.com/library/ios/#documentation/iphone/conceptual/iphoneosprogrammingguide/StatePreservation/StatePreservation.html#//apple_ref/doc/uid/TP40007072-CH11-SW13'&gt;State Preservation and Restoration&lt;/a&gt;. For showing content at the last launch.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href='http://developer.apple.com/library/ios/#documentation/iphone/conceptual/iphoneosprogrammingguide/TheiOSEnvironment/TheiOSEnvironment.html#//apple_ref/doc/uid/TP40007072-CH9-SW1'&gt;Automatic Sleep Timer&lt;/a&gt;. You may need to disable the sleep timer.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href='http://developer.apple.com/library/ios/#documentation/Security/Conceptual/Security_Overview/Introduction/Introduction.html#//apple_ref/doc/uid/TP30000976-CH1-SW1'&gt;Software Security&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;1. [Secure Coding](http://developer.apple.com/library/ios/#documentation/Security/Conceptual/SecureCodingGuide/Introduction.html#//apple_ref/doc/uid/TP40002415)
+
+2. [Designing Secure User Interfaces](http://developer.apple.com/library/ios/#documentation/Security/Conceptual/SecureCodingGuide/Articles/AppInterfaces.html#//apple_ref/doc/uid/TP40002862)&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a href='http://developer.apple.com/library/ios/#documentation/UserExperience/Conceptual/iAd_Guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009881-CH1-SW1'&gt;iAd Programming&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;1. [Banner View Best Practices](http://developer.apple.com/library/ios/#documentation/UserExperience/Conceptual/iAd_Guide/WorkingwithBannerViews/WorkingwithBannerViews.html#//apple_ref/doc/uid/TP40009881-CH4-SW3)
+
+2. [iAd Testing Checklist](http://developer.apple.com/library/ios/#documentation/UserExperience/Conceptual/iAd_Guide/TestingiAdApplications/TestingiAdApplications.html#//apple_ref/doc/uid/TP40009881-CH6-SW1)&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id='where_can_we_get_more_precious_knowledge_and_monetizing'&gt;Where can we get more precious knowledge and monetizing?&lt;/h2&gt;
+
+&lt;p&gt;Source code and review apps with high income is &lt;a href='http://iosapptemplate.com/'&gt;here&lt;/a&gt;. For example, app &lt;em&gt;InstaInspire&lt;/em&gt; is analyzed at &lt;a href='http://iosapptemplate.com/2013/05/14/instainspire-photo-app-with-audio-recorder-feature-app-template/'&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href='http://www.visionmobile.com/products/research/'&gt;Research Market Report&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id='advertising'&gt;Advertising&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href='http://www.amobee.com/dictionary/'&gt;Mobile Advertising Dictionary&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Some advertising approaches&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Advertisement at the beginning or ending points. &lt;em&gt;My experience is from running a cross-promotion network called AppFlood on Android. Banners ads are pointless&amp;#8230; the CTR is too low. If you implement a full screen interstitial correctly (at the beginning or end of a game/app) we have seen seen CTRs as high as 45%. However, we are well above the industry average for these ads which typically run 3-8% on other networks. A lot of it depends on how you integrate the advertisement.&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Full-page ads. &lt;em&gt;Based on what I see on the InMobi network, as well as my conversations with developers, average CTRs for standard (50x300) banner ads look like this: Android: 0.50%, iPhone: 0.75%. CTRs tend to be higher for full-page interstitial ads, as well as for ads on tablets.&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href='http://mobileadvertisinghub.com/how-to-write-a-fantastic-mobile-app-description-part-2/'&gt;How to Write a Fantastic Mobile App Description&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href='http://mobileadvertisinghub.com/how-to-use-social-media-to-drive-demand-for-your-app-part-3/'&gt;How to Use Social Media to Drive Demand for Your App&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id='great_advices_from_original_documentation_or_great_knowledge'&gt;Great Advices from original documentation (or Great Knowledge)&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Cocoa Design Patterns (included in Cocoa Fundamentals Guide) : list all patterns which are used in Cocoa framework. Must go through!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;hehee for test&lt;/p&gt;</content>
  </entry>
  
  
