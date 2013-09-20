@@ -2,7 +2,7 @@
 layout: post
 title: "[Vietnamese] Tuổi trẻ!"
 description: ""
-category: lifestyle & motivation 
+category: lifestyle and motivation 
 tags: [motivation]
 ---
 {% include JB/setup %}
