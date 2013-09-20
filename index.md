@@ -9,8 +9,8 @@ title: Welcome to Voice of Hugo!
     <span><a href="{{ BASE_PATH }}{{ post.url }}"><h3> <b> {{ post.title }} </b></h3></a></span>
     
 <div class="post-content-truncate">
-  {% if post.content contains "<!-- more -->" %}
-    {{ post.content | split:"<!-- more -->" | first % }}
+  {% if post.description != empty %}
+    {{ post.description }}
   {% else %}
     {{ post.content | strip_html | truncatewords:100 }}
   {% endif %}

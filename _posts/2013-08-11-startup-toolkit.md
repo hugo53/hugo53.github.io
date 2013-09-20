@@ -4,7 +4,7 @@ layout: post
 
 title: "Startup Toolkit: The Best Tools for Entrepreneurs"
 
-description: ""
+description: "Today, we are gonna list all greatest tools for entrepreneurs and startups."
 
 category: startup
 
@@ -17,7 +17,6 @@ tags: [startup, tool]
 
 
 Today, we are gonna list all greatest tools for entrepreneurs and startups.
-<!-- more -->
 
 
 ## Books to read
