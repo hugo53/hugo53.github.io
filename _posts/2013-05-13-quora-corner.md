@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Quora Corner"
-description: ""
+description: "Aww, it seems very amazing when you traverse Quora to face with many curious questions. In the spare time, I usually *quora* and sometimes I must burst into a laugh because of some stupid questions and a plenty of ridiculous answers. That is why I create this post to keep those things."
 category: quora
 tags: []
 ---

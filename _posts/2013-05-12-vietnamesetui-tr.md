@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[Vietnamese] Tuổi trẻ!"
-description: ""
+description: "Thế là cũng đã tốt nghiệp được 1 năm! Kinh nghiệm cũng không thêm được nhiều, trình độ cũng vẫn tàng tàng hồi còn đi học, moi đi moi lại vẫn chưa ra thứ gì tốt hơn so với một năm trước. Có chăng, một chút thay đổi trong tư duy và cách nhìn nhận cuộc sống."
 category: lifestyle and motivation 
 tags: [motivation]
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The first journey to hometown"
-description: ""
+description: "The idea of cycling to hometown came many days ago but due to several reasons, I could not perform this awesome plan immediately. However, today - a beautiful day, I decided to come back home by riding using my second lover - Columbia 18x (it is MTB bicycle). Although there were some issues in my road, it was still wonderful experience to me. That means I will continue this plan, go back Hanoi (our capital city) and come back my village again, utilizing Columbia in both cases."
 category: lifestyle
 tags: [lifestyle, cycling]
 ---

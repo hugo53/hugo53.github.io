@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Google Tech Talk - A huge resource for IT Student"
-description: ""
+description: "Almost CS students have known that Google is a giant leading innovation in today's world. A plenty of its products brought extraordinary experience to human race in many aspects of life. It is possible to say that Google Search Engine has changed totally the way people looking for information. Besides this tool, there are a large number of products which have ability to persuade billions people all over the world to be addicted them."
 category: computer science
 tags: [google, tech talk]
 ---

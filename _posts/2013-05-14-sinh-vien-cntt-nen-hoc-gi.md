@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Sinh viên CNTT nên và cần học gì?"
-description: "Some viewpoints about Computer Science Training"
+description: "Dường như, chưa một cơ sở đào tạo nào ở Việt Nam, từ trường đại học cho tới các trung tâm đào tạo nhân lực công nghệ thông tin chỉ rõ cho sinh viên, học viên hiểu được những điều nên, và cần trau dồi trong quá trình học tập. Một hệ luỵ phổ biến là người học không biết mình đang học gì, có ứng dụng thế nào, và đáng buồn hơn cả là không biết về sau mình sẽ làm gì. Mục tiêu không rõ ràng, hoài bão chỉ quanh quẩn ở việc ra được trường và có may mắn để xin được việc thực sự đang làm lụi tàn khả năng của họ mà đáng ra có thể đóng góp nhiều hơn cho nền công nghệ nước nhà cũng như tốt hơn cho chính họ."
 category: opinion 
 tags: [student, sinh viên, Computer Science, CNTT]
 ---

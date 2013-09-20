@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Web And Mobile Revenue Models"
-description: ""
+description: "This post is inspired by a hackpad post. In my opinion, it is extremely useful for IT man. Let learn how to monetize!"
 category: ios development
 tags: [monitize, revenue model]
 ---
