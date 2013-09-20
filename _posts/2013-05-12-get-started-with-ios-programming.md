@@ -80,6 +80,3 @@ Source code and review apps with high income is [here](http://iosapptemplate.com
 
 ## Great Advices from original documentation (or Great Knowledge)
 - Cocoa Design Patterns (included in  Cocoa Fundamentals Guide) : list all patterns which are used in Cocoa framework. Must go through!
-
-
-lksajfdkljlksjlkdfgjslj
