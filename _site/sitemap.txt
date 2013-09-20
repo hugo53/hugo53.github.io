@@ -18,7 +18,7 @@ http://hugo53.github.io/sitemap.txt
 http://hugo53.github.io/tags.html
 
 http://hugo53.github.io/startup/2013/08/11/startup-toolkit
-http://hugo53.github.io/2013/06/18/making-money-easy-or-difficult
+http://hugo53.github.io/business%20model/2013/06/18/making-money-easy-or-difficult
 http://hugo53.github.io/computer%20science/2013/05/23/google-tech-talk---a-huge-resource-for-it-student
 http://hugo53.github.io/lifestyle/2013/05/19/the-first-journey-to-hometown
 http://hugo53.github.io/opinion/2013/05/14/sinh-vien-cntt-nen-hoc-gi
@@ -26,5 +26,5 @@ http://hugo53.github.io/ios%20development/2013/05/13/web-and-mobile-revenue-mode
 http://hugo53.github.io/quora/2013/05/13/quora-corner
 http://hugo53.github.io/business%20model/2013/05/13/mo-hinh-sinh-loi-nhuan-trong-linh-vc-web-va-mobile
 http://hugo53.github.io/lifestyle%20and%20motivation/2013/05/12/vietnamesetui-tr
-http://hugo53.github.io/2013/05/12/hello-world
 http://hugo53.github.io/ios%20development/2013/05/12/get-started-with-ios-programming
+http://hugo53.github.io/2013/05/11/hello-world
