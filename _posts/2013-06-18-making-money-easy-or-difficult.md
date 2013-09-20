@@ -2,7 +2,7 @@
 layout: post
 title: "Making money, easy or difficult?"
 description: ""
-category: 
+category: business model
 tags: []
 ---
 {% include JB/setup %}
