@@ -6,10 +6,9 @@ description: ""
 {% include JB/setup %}
 Undeniably, reading is a significant skill which people should master on the way to be perfect. When I was a child, one of my favourite was reading books and newspapers while all of my friends loved to playing many interesting traditional games. Almost books which I had read were kind of fiction novels, and sometimes comic books were also chosen. There were a number of famous titles that should be listed here, for example _Doreamon_, _Detective Conan_ and so forth. However, when I was 13, I began reading a little and that status became worse one year after. 
 
-Recently, I thought that reading should be reverted and I decided to buy several best seller books and try to read through them. Nonetheless, many books are still in waiting list because of time limited. Therefore, I will use this page to keep the list in updating status.
+Recently, I thought that reading should be reverted and I decided to buy several best seller books and try to read through them. Nonetheless, many books are still in waiting list because of limited time. Therefore, I will use this page to keep the list in updating status.
 
 ## Books I should done and maybe you do, too!
-
 
 ### Technical Books (Computer Science)
 _(No book until now)_
