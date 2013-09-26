@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Useful command line"
-description: ""
+title: "Useful command line on Mac OS/Linux"
+description: "This post will list some useful commands which are usually used when you do with Linux/Mac OS."
 category: 
 tags: []
 ---
