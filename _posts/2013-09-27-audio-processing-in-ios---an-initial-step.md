@@ -6,7 +6,7 @@ category: iOS Development
 tags: [audio]
 ---
 {% include JB/setup %}
-> Performance with audio is always a challenge for any developer by reason of its very low level. By chance, I got some opportunities to do with audio included playing, recording and pre (and/or) post processing. This post tends to cover as much as possible basic knowledge in Audio aspect for two reasons: reminding myself and sharing with other enthusiastic guys.
+> Performing with audio is always a challenge for any developer by reason of its very low level. By chance, I got some opportunities to do with audio included playing, recording and pre (and/or) post processing. This post tends to cover as much as possible basic knowledge in Audio aspect for two reasons: reminding myself and sharing with other enthusiastic guys.
 
 In the first words, I want to warn that I am working on iOS platform at the moment. Therefore, all of knowledge appear here is of iOS or related to iOS by default. 
 
