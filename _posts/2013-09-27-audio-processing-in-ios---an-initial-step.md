@@ -13,10 +13,14 @@ In the first words, I want to warn that I am working on iOS platform at the mome
 ## Basic
 Before dig into details, we should know a litle bit about audio format, audio codec and what format is preferred in iOS. 
 
+
 #### Audio Format and Codec
-General speaking, there are two elements of an audio file. It's weird, huh? Don't worry! First, codec and second, file format. Codec is the way audio file is encoded (when record) or decoded (when playback). We must know the codec of audio file to perform some processing tasks such as uncompressing to play or mixing to make effects. The latter one, format is the way audio file is organized. 
+General speaking, there are two elements of an audio file. It's weird, huh? Don't worry! First, codec and second, file format. Codec is the way audio file is encoded (for recording) or decoded (for playback). We must know the codec of audio file to perform some processing tasks such as uncompressing to play or mixing to make effects. The latter one, format is the way audio file is organized. 
 
 #### Bit rate
+
+#### Playback
+Player must decode audio file if it want to play a song. In fact, iOS has two approach to decode audio file: software-based and hardware-assisted. The biggest difference is that the first method allows multiple files to play simutaneously whereas the second way don't. Because of that, hardware-assisted method is very fast and gives excellent performance while software-based may lead to CPU overhead state if it has to handle many sound files in the same time. As a result, if you need to maximize video frame rate (make application be more smooth), there are two ways: 1. Minimize the CPU impact of your audio playback by using uncompressed audio or the IMA4 format or 2. Use hardware-assisted decoding of your compressed audio assets.
 
 #### Preferred Audio Formats (in iOS, certainly)
 Just recall that there are two types of audio quality: uncompressed audio and compressed audio. In short words, uncompressed audio is always better than the remain kind but it is true for professional listener not for all people. Because of two these existing types, Apple also defines two preferred formats respectively. 
@@ -40,10 +44,14 @@ For less memory usage when you need to play multiple sounds simultaneously, use 
 
 
 ## References
-- [Audio Tutorial for iOS: File and Data Formats](http://www.raywenderlich.com/204/audio-tutorial-for-ios-file-and-data-formats) by RAYWENDERLICH
+- [Audio Tutorial for iOS: File and Data Formats](http://www.raywenderlich.com/204/audio-tutorial-for-ios-file-and-data-formats) by Raywenderlich
 - Apple's Docummentation
 
 ## Open sources which are mentioned above
 - [The Amazing Audio Engine](http://theamazingaudioengine.com/doc/)
-- [Open AL](http://kstenerud.github.io/ObjectAL-for-iPhone/documentation/index.html)
+- [OpenAL](http://kstenerud.github.io/ObjectAL-for-iPhone/documentation/index.html)
 - [Sound Engine - an OpenAL Example](https://github.com/alexrestrepo/SoundEngine)
+
+#Bonus: The differences between Audio Engine and OpenAL
+- OpenAL: no some functions  such as Revert (Roger Beep, Distortion, Obstruction, and Occlusion must be tested more) but Audio Engine has.
+- 
