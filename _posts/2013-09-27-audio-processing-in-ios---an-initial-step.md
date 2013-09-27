@@ -20,7 +20,10 @@ General speaking, there are two elements of an audio file. It's weird, huh? Don'
 #### Bit rate
 
 #### Playback
-Player must decode audio file if it want to play a song. In fact, iOS has two approaches to decode audio file: software-based and hardware-assisted. The biggest difference is that the first method allows multiple files to play simutaneously whereas the second way don't. Because of that, hardware-assisted method is very fast and gives excellent performance while software-based may lead to CPU overhead state if it has to handle many sound files in the same time. As a result, if you need to maximize video frame rate (make application be more smooth), there are two ways: 1. Minimize the CPU impact of your audio playback by using uncompressed audio or the IMA4 format or 2. Use hardware-assisted decoding of your compressed audio assets.
+Player must decode audio file if it want to play a song. In fact, iOS has two approaches to decode audio file: software-based and hardware-assisted. The biggest difference is that the first method allows multiple files to play simutaneously whereas the second way don't. Because of that, hardware-assisted method is very fast and gives excellent performance while software-based may lead to CPU overhead state if it has to handle many sound files in the same time. As a result, if you need to maximize video frame rate (make application be more smooth), there are two ways: 
+1. Minimize the CPU impact of your audio playback by using uncompressed audio or the IMA4 format 
+or 
+2. Use hardware-assisted decoding of your compressed audio assets.
 
 #### Preferred Audio Formats (in iOS, certainly)
 Just recall that there are two types of audio quality: uncompressed audio and compressed audio. In short words, uncompressed audio is always better than the remain kind but it is true for professional listener not for all people. Because of two these existing types, Apple also defines two preferred formats respectively. 
