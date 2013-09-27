@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Audio Processing in iOS - an initial step"
-description: "Performance with audio is always a challenge for any developer by reason of its very low level. By chance, I got some opportunities to do with audio included playing, recording and pre (and/or) post processing. This post tends to cover as much as possible basic knowledge in Audio aspect for two reasons: reminding myself and sharing with other enthusiastic guys."
+description: "Performing with audio is always a challenge for any developer by reason of its very low level. By chance, I got some opportunities to do with audio included playing, recording and pre (and/or) post processing. This post tends to cover as much as possible basic knowledge in Audio aspect for two reasons: reminding myself and sharing with other enthusiastic guys."
 category: iOS Development 
 tags: [audio]
 ---
