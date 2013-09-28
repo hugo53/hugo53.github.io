@@ -1,11 +1,14 @@
 ---
 layout: post
 title: "Making money, easy or difficult?"
-description: ""
+description: "Suddenly, I found some ways tech guys usually applied to generate money. Because I am also a technican, so I should care this problem like a obtainable options for my life. Of course, sharing is always fine. That makes me write this post. In next words, I show you several approaches to help yourself be richer, or maybe be financial freedom."
 category: business model
 tags: []
 ---
 {% include JB/setup %}
+> Suddenly, I found some ways tech guys usually applied to generate money. Because I am also a technican, so I should care this problem like a obtainable options for my life. Of course, sharing is always fine. That makes me write this post. In next words, I show you several approaches to help yourself be richer, or maybe be financial freedom.
+
+
 ### Selling Virtual Possessions
 - Premium WordPress Themes. Looking at Themeforest author sales, some of them are hitting $100k/month and they are not seasoned (at least in ThemeForest).
 
