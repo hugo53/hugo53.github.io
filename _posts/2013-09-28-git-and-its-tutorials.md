@@ -11,7 +11,7 @@ Nowadays, Git becomes very popular for managing source-code in not only IT Indus
 By the way, there are several manual books should be translated into Vietnamese (my mother tongue) due to Git's difficulty. Thus, if you are interested in this job, please contact me to make a plan for working together. I think it will be very great moment of us. 
 
 And the list is below.
-- [Git SCM Book] (http://git-scm.com/book/) and its [source](https://github.com/progit/progit) (no _vi_ folder existing until now - Sep 28, 2013). This is official document from  Git's creators. 
+- [Git SCM Book](http://git-scm.com/book/) and its [source](https://github.com/progit/progit) (no _vi_ folder existing until now - Sep 28, 2013). This is official document from  Git's creators. 
 - [Git Ready](http://gitready.com/) and its [source](https://github.com/gitready/gitready) (no _vi_ branch existing until now - Sep 28, 2013). This tutorial divides lessons into 3 levels: beginner, intermediate, advance with specific use-cases, easy to apply on real projects. 
 
-Besides, there is a book which is already in Vietnamese by contribution of [Mr. Tran Ngoc Quan](http://vnwildman.users.sourceforge.net/). It is located at [here](http://vnwildman.users.sourceforge.net/gitmagic/index.html). The original guidline is of [Ben Lynn](http://www-cs-students.stanford.edu/~blynn/gitmagic/) - a Stanford alumnus.
+Besides, there is a book which is already in Vietnamese by contribution of [Mr. Tran Ngoc Quan](http://vnwildman.users.sourceforge.net/). It is located at [here](http://vnwildman.users.sourceforge.net/gitmagic/index.html). The original guide is of [Ben Lynn](http://www-cs-students.stanford.edu/~blynn/gitmagic/) - a Stanford alumnus.
