@@ -6,7 +6,7 @@ category: business model
 tags: []
 ---
 {% include JB/setup %}
-> Suddenly, I found some ways tech guys usually applied to generate money. Because I am also a technican, so I should care this problem like a obtainable options for my life. Of course, sharing is always fine. That makes me write this post. In next words, I show you several approaches to help yourself be richer, or maybe be financial freedom.
+> Suddenly, I found some ways tech guys usually applied to generate money. Because I am also a technican, so I should care this problem like an obtainable option for my life. Of course, sharing is always fine. That makes me write this post. In next words, I show you several approaches to help yourself be richer, or maybe be financial freedom.
 
 
 ### Selling Virtual Possessions
