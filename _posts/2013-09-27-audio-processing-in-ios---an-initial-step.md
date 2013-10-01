@@ -31,6 +31,7 @@ Player must decode audio file if it want to play a song. In fact, iOS has two ap
 - Minimize the CPU impact of your audio playback by using uncompressed audio or the IMA4 format. 
 
 Or 
+
 - Use hardware-assisted decoding of your compressed audio assets.
 
 #### Preferred Audio Formats (in iOS, certainly)
