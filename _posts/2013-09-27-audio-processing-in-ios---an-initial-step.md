@@ -45,6 +45,7 @@ For **compressed audio** when playing one sound at a time, and when you do not n
 
 For **less memory usage** when you need to *play multiple sounds simultaneously*, use *IMA4 (IMA/ADPCM) compression*. This reduces file size but entails minimal CPU impact during decompression. As with linear PCM data, package IMA4 data in a *CAF* file.
 
+> Excerpt from [Preferred Audio Formats in iOS - developer.apple.com](https://developer.apple.com/library/ios/documentation/AudioVideo/Conceptual/MultimediaPG/UsingAudio/UsingAudio.html#//apple_ref/doc/uid/TP40009767-CH2-SW28).
 ## Frameworks
 
 
@@ -66,4 +67,4 @@ For **less memory usage** when you need to *play multiple sounds simultaneously*
 
 ##Bonus
 ###The differences between Audio Engine and OpenAL
-- OpenAL: no some functions  such as Reverb (Roger Beep, Distortion, Obstruction, and Occlusion must be tested more) but Audio Engine has.
+- OpenAL: no some functions such as Reverb (Roger Beep, Distortion, Obstruction, and Occlusion must be tested more) but Audio Engine has.
