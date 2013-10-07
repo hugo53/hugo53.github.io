@@ -9,6 +9,13 @@ tags: [pdf, ios]
 Operating with PDF in iOS is really low-level task. It is not just using some built-in features of iOS to create your own product. Indeed, it requires intensive knowledge at very low iOS layer and at least basic PDF definition. This post tends to supply some aspects of processing PDF in iOS which aims to help developers easy to win this hard job.
 
 ## PDF Specification
+#### Basic Definitions (mixed up Typography)
+##### Leading
+**Leading** is space between two lines. According to [Wikipedia](http://en.wikipedia.org/wiki/Leading), _In typography, leading /ˈlɛdɪŋ/ refers to the distance between the baselines of successive lines of type_
+
+##### X-height
+X-height descripts height of _X_ character in a font collection.
+
 
 - [Operator Table](http://my.safaribooksonline.com/book/office-and-productivity-applications/0321304748/operator-summary/app01)
 
