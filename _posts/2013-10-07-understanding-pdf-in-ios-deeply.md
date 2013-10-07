@@ -15,22 +15,24 @@ Operating with PDF in iOS is really low-level task. It is not just using some bu
 ## Reading PDF Flow
 
 ### Getting PDF Objects from Scanner Stack
-   * CGPDFScannerPopObject
-   * CGPDFScannerPopBoolean
-   * CGPDFScannerPopInteger
-   * CGPDFScannerPopNumber
-   * CGPDFScannerPopName		_get font's name_
-   * CGPDFScannerPopString		_get content string_
-   * CGPDFScannerPopArray
-   * CGPDFScannerPopDictionary
-   * CGPDFScannerPopStream
+	- CGPDFScannerPopObject
+	- CGPDFScannerPopBoolean
+	- CGPDFScannerPopInteger
+	- CGPDFScannerPopNumber
+	- CGPDFScannerPopName		_get font's name_
+	- CGPDFScannerPopString		_get content string_
+	- CGPDFScannerPopArray
+	- CGPDFScannerPopDictionary
+	- CGPDFScannerPopStream
 
 > Copy from [CGPDFScanner Reference](http://www.cocoachina.com/wiki/index.php?title=CGPDFScanner_Reference)
 
 ## Processing PDF content
 
 ## Some add-on elements for showing PDF
+### Annotation
 
+### Linking Media/Web Elements
 
 
 # References
