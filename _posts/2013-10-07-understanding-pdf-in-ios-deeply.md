@@ -17,22 +17,15 @@ Operating with PDF in iOS is really low-level task. It is not just using some bu
 ### Scanner Stack
 Stack is data structure to store PDF Objects when PDF file is being read. Prefix strategy is the method to read objects from object stack. Below is an example.
 
-	```
 	BT % Begin text object
-	
 	/F1 1 Tf % Set text font and size 
-
 	64 0 0 64 7.1771 2.4414 Tm % Set text matrix 
-
 	0 Tc % Set character spacing 
-
 	0 Tw % Set word spacing
-
 	ET
 
-	```
-
 Stack will be:
+
 BT -> /F1 -> 1 -> Tf(operator) -> 64 -> 0 -> 0 -> 64 -> 7.1771 -> 2.4414 -> Tm(operator) -> ... -> ET (top of stack).
 
 
