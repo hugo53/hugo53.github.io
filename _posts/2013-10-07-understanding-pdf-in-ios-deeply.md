@@ -11,15 +11,21 @@ Operating with PDF in iOS is really low-level task. It is not just using some bu
 ## PDF Specification
 #### Basic Definitions (mixed up Typography)
 ##### Leading
-**Leading** is space between two lines. According to [Wikipedia](http://en.wikipedia.org/wiki/Leading), _In typography, leading /ˈlɛdɪŋ/ refers to the distance between the baselines of successive lines of type_
+Leading is space between two lines. According to [Wikipedia](http://en.wikipedia.org/wiki/Leading), _In typography, leading /ˈlɛdɪŋ/ refers to the distance between the baselines of successive lines of type_
 
 ##### X-height
 X-height descripts height of _X_ character in a font collection.
+##### Glyph
 
+##### Descent
 
-- [Operator Table](http://my.safaribooksonline.com/book/office-and-productivity-applications/0321304748/operator-summary/app01)
+##### Ascent
+
 
 ## Reading PDF Flow
+### PDF Operator
+
+- [Operator Table](http://my.safaribooksonline.com/book/office-and-productivity-applications/0321304748/operator-summary/app01)
 
 ### Scanner Stack
 Stack is data structure to store PDF Objects when PDF file is being read. Prefix strategy is the method to read objects from object stack. Below is an example.
@@ -40,9 +46,9 @@ BT -> /F1 -> 1 -> Tf(operator) -> 64 -> 0 -> 0 -> 64 -> 7.1771 -> 2.4414 -> Tm(o
 - CGPDFScannerPopObject
 - CGPDFScannerPopBoolean
 - CGPDFScannerPopInteger
-- CGPDFScannerPopNumber
-- CGPDFScannerPopName		_get font's name_
-- CGPDFScannerPopString		_get content string_
+- CGPDFScannerPopNumber		_to get number, for example: get font's size
+- CGPDFScannerPopName		_to get name, for example: get font's name_
+- CGPDFScannerPopString		_to get content string_
 - CGPDFScannerPopArray
 - CGPDFScannerPopDictionary
 - CGPDFScannerPopStream
