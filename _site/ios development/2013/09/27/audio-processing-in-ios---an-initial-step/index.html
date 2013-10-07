@@ -3,8 +3,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Making money, easy or difficult?</title>
-    <meta name="description" content="Suddenly, I found some ways tech guys usually applied to generate money. Because I am also a technican, so I should care this problem like a obtainable options for my life. Of course, sharing is always fine. That makes me write this post. In next words, I show you several approaches to help yourself be richer, or maybe be financial freedom.">
+    <title>Audio Processing in iOS - an initial step</title>
+    <meta name="description" content="Performing with audio is always a challenge for any developer by reason of its very low level. By chance, I got some opportunities to do with audio included playing, recording and pre (and/or) post processing. This post tends to cover as much as possible basic knowledge in Audio aspect for two reasons: reminding myself and sharing with other enthusiastic guys.">
     <meta name="author" content="Hugo Nguyen">
 
     <!-- Enable responsive viewport -->
@@ -143,41 +143,99 @@
       <div class="content">
         
 <div class="page-header">
-  <h1>Making money, easy or difficult? </h1>
+  <h1>Audio Processing in iOS - an initial step </h1>
 </div>
 
 <div class="row-fluid post-full">
   <div class="span12">
     <div class="date">
-      <span>18 June 2013</span>
+      <span>27 September 2013</span>
     </div>
     <div class="content">
       <blockquote>
-<p>Suddenly, I found some ways tech guys usually applied to generate money. Because I am also a technican, so I should care this problem like an obtainable option for my life. Of course, sharing is always fine. That makes me write this post. In next words, I show you several approaches to help yourself be richer, or maybe be financial freedom.</p>
+<p>Performing with audio is always a challenge for any developer by reason of its very low level. By chance, I got some opportunities to do with audio included playing, recording and pre (and/or) post processing. This post tends to cover as much as possible basic knowledge in Audio aspect for two reasons: reminding myself and sharing with other enthusiastic guys.</p>
 </blockquote>
 
-<h3 id='selling_virtual_possessions'>Selling Virtual Possessions</h3>
+<p>In the first words, I want to warn that I am working on iOS platform at the moment. Therefore, all of knowledge appear here is of iOS or related to iOS by default.</p>
+
+<h2 id='basic'>Basic</h2>
+
+<p>Before dig into details, we should know a litle bit about audio format, audio codec and what format is preferred in iOS.</p>
+
+<h4 id='audio_format_and_codec'>Audio Format and Codec</h4>
+
+<p>General speaking, there are two elements of an audio file. It&#8217;s weird, huh? Don&#8217;t worry! First, codec and second, file format. Codec is the way audio file is encoded (for recording) or decoded (for playback). We must know the codec of audio file to perform some processing tasks such as uncompressing to play or mixing to make effects. The latter one, format is the way audio file is organized.</p>
+
+<h5 id='audio_format'>Audio Format</h5>
+
+<h5 id='audio_codec'>Audio Codec</h5>
+
+<h4 id='bit_rate'>Bit rate</h4>
+
+<p>(hook)</p>
+
+<h4 id='playback'>Playback</h4>
+
+<p>Player must decode audio file if it want to play a song. In fact, iOS has two approaches to decode audio file: software-based and hardware-assisted. The biggest difference is that the first method allows multiple files to play simutaneously whereas the second way don&#8217;t. Because of that, hardware-assisted method is very fast and gives excellent performance while software-based may lead to CPU overhead state if it has to handle many sound files in the same time. As a result, if you need to maximize video frame rate (make application be more smooth), there are two ways:</p>
 
 <ul>
-<li>
-<p>Premium WordPress Themes. Looking at Themeforest author sales, some of them are hitting $100k/month and they are not seasoned (at least in ThemeForest).</p>
-</li>
-
-<li>
-<p>Premium WordPress Plugins. <a href='https://tri.be/wordpress-events-calendar/'>These guys</a> used to sell on CodeCanyon and it looks like their product took off quite well (selling $20K/month last year)</p>
-</li>
+<li>Minimize the CPU impact of your audio playback by using uncompressed audio or the IMA4 format.</li>
 </ul>
 
-<h3 id='blogging'>Blogging</h3>
+<p>Or</p>
 
 <ul>
-<li>
-<p><a href='http://goinswriter.com/get-paid-passion/'>http://goinswriter.com/get-paid-passion/</a>. I built the audience first. I’d heard stories of people like Brian Clark who built their audiences long before they tried to sell , and I thought that sounded smart. For more than a year, I wrote a LOT of free, helpful content (i.e. eBooks, newsletters, blog posts, guest posts, webinars, and more) and shared it with my audience. The result was a tremendous amount of trust — to the point that people started begging me to sell them something. I asked my audience what they wanted. Sean Platt told me to do this, recommending a survey to ask people what they’d buy from me, even how much I should charge them. Over 1000 people responded, many indicating (to my utter shock) they would indeed pay for something I created. That gave me the confidence to try something. I experimented with an initial offering. My first product was a $2.99 eBook (which I seriously doubted people would buy). Based on the concept of a minimum viable product, I put together an offering that required minimal effort to create and then put it out there to see if people would buy it. The money I made from the first weekend it was released paid for my email marketing service for an entire year (about $1500). After that, everything changed. A hobby became a business. I learned how to launch things. After that first eBook, I released another eBook but with three different price points (based on Chris Guillebeau’s advice) and a few other tweaks. This generate ten times the sales that the first product did — in a matter of a few weeks. It also taught me how to harness the power of an online product launch (which I’ve since used on my book and online course). Learning how to launch was the golden nugget I was missing that led to sustainable, repeatable success in my business.</p>
-</li>
+<li>Use hardware-assisted decoding of your compressed audio assets.</li>
+</ul>
 
-<li>
-<p><a href='http://goinswriter.com/make-money-blogging/'>http://goinswriter.com/make-money-blogging/</a>. Affiliate marketing: Selling other people’s products for them and earning a commission on each sale. My Amazon story is an example of this. I’m also starting to see some fruit from promoting other products I believe in, like 31 Days to Build a Better Blog. Product sales: Sell your own products (eBooks, webinars, iPhone apps, whatever). I’m working on a few of these myself. The trick is delivering value and only giving your community what they want. Advertising: If you have decent traffic, you can sell ad space. (I’ve just started exploring this, but so far it’s been fruitful. Recently, to jump-start my advertising, I offered a 50% discount on Cyber Monday.) Market your own services: If selling stuff makes your skin crawl, you can use a blog to build an online presence and brand and then use it to land consulting or freelance services. (I’ve had several people contact me about things like writing an eBook, SEO, and other topics I’ve written about.)</p>
-</li>
+<h4 id='preferred_audio_formats_in_ios_certainly'>Preferred Audio Formats (in iOS, certainly)</h4>
+
+<p>Just recall that there are two types of audio quality: uncompressed audio and compressed audio. In short words, uncompressed audio is always better than the remaining kind but it is true for professional listener not for all people. Because of two these existing types, Apple also defines two preferred formats respectively.</p>
+
+<p>For <strong>uncompressed audio</strong> (highest quality), use <em>16-bit</em>, <em>little endian</em>, <em>linear PCM</em> audio data packaged in a <em>CAF</em> file. You can convert an audio file to this format in Mac OS X using the afconvert command-line tool, as shown here:</p>
+
+<blockquote>
+<p>/usr/bin/afconvert -f caff -d LEI16 {INPUT} {OUTPUT}</p>
+</blockquote>
+
+<p>For <strong>compressed audio</strong> when playing one sound at a time, and when you do not need to play audio simultaneously with the iPod application, use the <em>AAC</em> format packaged in a <em>CAF</em> or <em>m4a</em> file.</p>
+
+<p>For <strong>less memory usage</strong> when you need to <em>play multiple sounds simultaneously</em>, use <em>IMA4 (IMA/ADPCM) compression</em>. This reduces file size but entails minimal CPU impact during decompression. As with linear PCM data, package IMA4 data in a <em>CAF</em> file.</p>
+
+<blockquote>
+<p>Excerpt from <a href='https://developer.apple.com/library/ios/documentation/AudioVideo/Conceptual/MultimediaPG/UsingAudio/UsingAudio.html#//apple_ref/doc/uid/TP40009767-CH2-SW28'>Preferred Audio Formats in iOS - developer.apple.com</a>.</p>
+</blockquote>
+
+<h2 id='frameworks'>Frameworks</h2>
+
+<h2 id='libraries'>Libraries</h2>
+
+<h2 id='conclusion'>Conclusion</h2>
+
+<h2 id='references'>References</h2>
+
+<ul>
+<li><a href='http://www.raywenderlich.com/204/audio-tutorial-for-ios-file-and-data-formats'>Audio Tutorial for iOS: File and Data Formats</a> by Raywenderlich</li>
+
+<li>Apple&#8217;s Docummentation</li>
+</ul>
+
+<h2 id='open_sources_which_are_mentioned_above'>Open sources which are mentioned above</h2>
+
+<ul>
+<li><a href='http://theamazingaudioengine.com/doc/'>The Amazing Audio Engine</a></li>
+
+<li><a href='http://kstenerud.github.io/ObjectAL-for-iPhone/documentation/index.html'>OpenAL</a></li>
+
+<li><a href='https://github.com/alexrestrepo/SoundEngine'>Sound Engine - an OpenAL Example</a></li>
+</ul>
+
+<h2 id='bonus'>Bonus</h2>
+
+<h3 id='the_differences_between_audio_engine_and_openal'>The differences between Audio Engine and OpenAL</h3>
+
+<ul>
+<li>OpenAL: no some functions such as Reverb (Roger Beep, Distortion, Obstruction, and Occlusion must be tested more) but Audio Engine has.</li>
 </ul>
     </div>
 
@@ -190,8 +248,8 @@
 
   
      
-    	<li><a href="/categories.html#business model-ref">
-    		business model <span>2</span>
+    	<li><a href="/categories.html#ios development-ref">
+    		ios development <span>3</span>
     	</a></li>
     
   
@@ -200,17 +258,33 @@
     </ul>
     
 
+  
+    <ul class="tag_box inline">
+      <li><i class="icon-tags"></i></li>
+      
+      
+
+
+  
+     
+    	<li><a href="/tags.html#audio-ref">audio <span>1</span></a></li>
+    
+  
+
+
+
+    </ul>
     
 
     <hr>
     <div class="pagination">
       <ul>
       
-        <li class="prev"><a href="/computer%20science/2013/05/23/google-tech-talk---a-huge-resource-for-it-student" title="Google Tech Talk - A huge resource for IT Student">&larr; Previous</a></li>
+        <li class="prev"><a href="/2013/09/25/useful-command-line" title="Useful command line on Mac OS/Linux">&larr; Previous</a></li>
       
         <li><a href="/archive.html">Archive</a></li>
       
-        <li class="next"><a href="/startup/2013/08/11/startup-toolkit" title="Startup Toolkit: The Best Tools for Entrepreneurs">Next &rarr;</a></li>
+        <li class="next"><a href="/tool/2013/09/28/git-and-its-tutorials" title="Git and its tutorials">Next &rarr;</a></li>
       
       </ul>
     </div>

@@ -17,6 +17,11 @@ http://hugo53.github.io/rss.xml
 http://hugo53.github.io/sitemap.txt
 http://hugo53.github.io/tags.html
 
+http://hugo53.github.io/2013/10/07/understanding-pdf-in-ios-deeply
+http://hugo53.github.io/tool/2013/09/28/git-and-its-tutorials
+http://hugo53.github.io/ios%20development/2013/09/27/audio-processing-in-ios---an-initial-step
+http://hugo53.github.io/2013/09/25/useful-command-line
+http://hugo53.github.io/data%20mining/2013/09/24/bat-dau-voi-data-mining
 http://hugo53.github.io/startup/2013/08/11/startup-toolkit
 http://hugo53.github.io/business%20model/2013/06/18/making-money-easy-or-difficult
 http://hugo53.github.io/computer%20science/2013/05/23/google-tech-talk---a-huge-resource-for-it-student

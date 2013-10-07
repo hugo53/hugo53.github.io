@@ -46,7 +46,7 @@ BT -> /F1 -> 1 -> Tf(operator) -> 64 -> 0 -> 0 -> 64 -> 7.1771 -> 2.4414 -> Tm(o
 - CGPDFScannerPopObject
 - CGPDFScannerPopBoolean
 - CGPDFScannerPopInteger
-- CGPDFScannerPopNumber		_to get number, for example: get font's size
+- CGPDFScannerPopNumber		_to get number, for example: get font's size_
 - CGPDFScannerPopName		_to get name, for example: get font's name_
 - CGPDFScannerPopString		_to get content string_
 - CGPDFScannerPopArray

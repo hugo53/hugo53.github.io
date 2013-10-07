@@ -4,13 +4,250 @@
  <title>Leading Beautiful Life</title>
  <link href="http://hugo53.github.io/" rel="self"/>
  <link href="http://hugo53.github.io"/>
- <updated>2013-09-21T00:48:52+07:00</updated>
+ <updated>2013-10-07T22:51:53+07:00</updated>
  <id>http://hugo53.github.io</id>
  <author>
    <name>Hugo Nguyen</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Understanding PDF in iOS Deeply</title>
+   <link href="http://hugo53.github.io/2013/10/07/understanding-pdf-in-ios-deeply"/>
+   <updated>2013-10-07T00:00:00+07:00</updated>
+   <id>http://hugo53.github.io/2013/10/07/understanding-pdf-in-ios-deeply</id>
+   <content type="html">&lt;p&gt;Operating with PDF in iOS is really low-level task. It is not just using some built-in features of iOS to create your own product. Indeed, it requires intensive knowledge at very low iOS layer and at least basic PDF definition. This post tends to supply some aspects of processing PDF in iOS which aims to help developers easy to win this hard job.&lt;/p&gt;
+
+&lt;h2 id='pdf_specification'&gt;PDF Specification&lt;/h2&gt;
+
+&lt;h4 id='basic_definitions_mixed_up_typography'&gt;Basic Definitions (mixed up Typography)&lt;/h4&gt;
+
+&lt;h5 id='leading'&gt;Leading&lt;/h5&gt;
+
+&lt;p&gt;Leading is space between two lines. According to &lt;a href='http://en.wikipedia.org/wiki/Leading'&gt;Wikipedia&lt;/a&gt;, &lt;em&gt;In typography, leading /ˈlɛdɪŋ/ refers to the distance between the baselines of successive lines of type&lt;/em&gt;&lt;/p&gt;
+
+&lt;h5 id='xheight'&gt;X-height&lt;/h5&gt;
+
+&lt;p&gt;X-height describes height of &lt;strong&gt;X&lt;/strong&gt; character in a font collection.&lt;/p&gt;
+
+&lt;h5 id='glyph'&gt;Glyph&lt;/h5&gt;
+
+&lt;h5 id='descent'&gt;Descent&lt;/h5&gt;
+
+&lt;h5 id='ascent'&gt;Ascent&lt;/h5&gt;
+
+&lt;h2 id='reading_pdf_flow'&gt;Reading PDF Flow&lt;/h2&gt;
+
+&lt;h3 id='pdf_operator'&gt;PDF Operator&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href='http://my.safaribooksonline.com/book/office-and-productivity-applications/0321304748/operator-summary/app01'&gt;Operator Table&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id='scanner_stack'&gt;Scanner Stack&lt;/h3&gt;
+
+&lt;p&gt;Stack is data structure to store PDF Objects when PDF file is being read. Prefix strategy is the method to read objects from object stack. Below is an example.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;BT % Begin text object
+/F1 1 Tf % Set text font and size 
+64 0 0 64 7.1771 2.4414 Tm % Set text matrix 
+0 Tc % Set character spacing 
+0 Tw % Set word spacing
+ET&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Stack will be:&lt;/p&gt;
+
+&lt;p&gt;BT -&amp;gt; /F1 -&amp;gt; 1 -&amp;gt; Tf(operator) -&amp;gt; 64 -&amp;gt; 0 -&amp;gt; 0 -&amp;gt; 64 -&amp;gt; 7.1771 -&amp;gt; 2.4414 -&amp;gt; Tm(operator) -&amp;gt; &amp;#8230; -&amp;gt; ET (top of stack).&lt;/p&gt;
+
+&lt;h3 id='getting_pdf_objects_from_scanner_stack'&gt;Getting PDF Objects from Scanner Stack&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;CGPDFScannerPopObject&lt;/li&gt;
+
+&lt;li&gt;CGPDFScannerPopBoolean&lt;/li&gt;
+
+&lt;li&gt;CGPDFScannerPopInteger&lt;/li&gt;
+
+&lt;li&gt;CGPDFScannerPopNumber &lt;em&gt;to get number, for example: get font&amp;#8217;s size&lt;/em&gt;&lt;/li&gt;
+
+&lt;li&gt;CGPDFScannerPopName &lt;em&gt;to get name, for example: get font&amp;#8217;s name&lt;/em&gt;&lt;/li&gt;
+
+&lt;li&gt;CGPDFScannerPopString &lt;em&gt;to get content string&lt;/em&gt;&lt;/li&gt;
+
+&lt;li&gt;CGPDFScannerPopArray&lt;/li&gt;
+
+&lt;li&gt;CGPDFScannerPopDictionary&lt;/li&gt;
+
+&lt;li&gt;CGPDFScannerPopStream&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Copy from &lt;a href='http://www.cocoachina.com/wiki/index.php?title=CGPDFScanner_Reference'&gt;CGPDFScanner Reference&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id='processing_pdf_content'&gt;Processing PDF content&lt;/h2&gt;
+
+&lt;h2 id='some_addon_elements_for_showing_pdf'&gt;Some add-on elements for showing PDF&lt;/h2&gt;
+
+&lt;h3 id='annotation'&gt;Annotation&lt;/h3&gt;
+
+&lt;h3 id='linking_mediaweb_elements'&gt;Linking Media/Web Elements&lt;/h3&gt;
+
+&lt;h1 id='references'&gt;References&lt;/h1&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Git and its tutorials</title>
+   <link href="http://hugo53.github.io/tool/2013/09/28/git-and-its-tutorials"/>
+   <updated>2013-09-28T00:00:00+07:00</updated>
+   <id>http://hugo53.github.io/tool/2013/09/28/git-and-its-tutorials</id>
+   <content type="html">&lt;p&gt;Nowadays, Git becomes very popular for managing source-code in not only IT Industry but also universities, academies. By this reason, Git is really important for all who want to work faster, smarter and in bigger projects. However, Git is not easy to control if you are not familiar with sourcecode management, even if you used to do with svn, it is still difficult. This post, I list some good tutorials for a wide range of Git&amp;#8217;s users, from newbie to intermediate to advance guys.&lt;/p&gt;
+
+&lt;p&gt;By the way, there are several manual books should be translated into Vietnamese (my mother tongue) due to Git&amp;#8217;s difficulty. Thus, if you are interested in this job, please contact me to make a plan for working together. I think it will be very great moment of us.&lt;/p&gt;
+
+&lt;p&gt;And the list is below.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href='http://git-scm.com/book/'&gt;Git SCM Book&lt;/a&gt; and its &lt;a href='https://github.com/progit/progit'&gt;source&lt;/a&gt; (no &lt;em&gt;vi&lt;/em&gt; folder existing until now - Sep 28, 2013). This is official document from Git&amp;#8217;s creators.&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://gitready.com/'&gt;Git Ready&lt;/a&gt; and its &lt;a href='https://github.com/gitready/gitready'&gt;source&lt;/a&gt; (no &lt;em&gt;vi&lt;/em&gt; branch existing until now - Sep 28, 2013). This tutorial divides lessons into 3 levels: beginner, intermediate, advance with specific use-cases, easy to apply on real projects.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Besides, there is a book which is already in Vietnamese by contribution of &lt;a href='http://vnwildman.users.sourceforge.net/'&gt;Mr. Tran Ngoc Quan&lt;/a&gt;. It is located at &lt;a href='http://vnwildman.users.sourceforge.net/gitmagic/index.html'&gt;here&lt;/a&gt;. The original guide is of &lt;a href='http://www-cs-students.stanford.edu/~blynn/gitmagic/'&gt;Ben Lynn&lt;/a&gt; - a Stanford alumnus.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Audio Processing in iOS - an initial step</title>
+   <link href="http://hugo53.github.io/ios%20development/2013/09/27/audio-processing-in-ios---an-initial-step"/>
+   <updated>2013-09-27T00:00:00+07:00</updated>
+   <id>http://hugo53.github.io/ios%20development/2013/09/27/audio-processing-in-ios---an-initial-step</id>
+   <content type="html">&lt;blockquote&gt;
+&lt;p&gt;Performing with audio is always a challenge for any developer by reason of its very low level. By chance, I got some opportunities to do with audio included playing, recording and pre (and/or) post processing. This post tends to cover as much as possible basic knowledge in Audio aspect for two reasons: reminding myself and sharing with other enthusiastic guys.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In the first words, I want to warn that I am working on iOS platform at the moment. Therefore, all of knowledge appear here is of iOS or related to iOS by default.&lt;/p&gt;
+
+&lt;h2 id='basic'&gt;Basic&lt;/h2&gt;
+
+&lt;p&gt;Before dig into details, we should know a litle bit about audio format, audio codec and what format is preferred in iOS.&lt;/p&gt;
+
+&lt;h4 id='audio_format_and_codec'&gt;Audio Format and Codec&lt;/h4&gt;
+
+&lt;p&gt;General speaking, there are two elements of an audio file. It&amp;#8217;s weird, huh? Don&amp;#8217;t worry! First, codec and second, file format. Codec is the way audio file is encoded (for recording) or decoded (for playback). We must know the codec of audio file to perform some processing tasks such as uncompressing to play or mixing to make effects. The latter one, format is the way audio file is organized.&lt;/p&gt;
+
+&lt;h5 id='audio_format'&gt;Audio Format&lt;/h5&gt;
+
+&lt;h5 id='audio_codec'&gt;Audio Codec&lt;/h5&gt;
+
+&lt;h4 id='bit_rate'&gt;Bit rate&lt;/h4&gt;
+
+&lt;p&gt;(hook)&lt;/p&gt;
+
+&lt;h4 id='playback'&gt;Playback&lt;/h4&gt;
+
+&lt;p&gt;Player must decode audio file if it want to play a song. In fact, iOS has two approaches to decode audio file: software-based and hardware-assisted. The biggest difference is that the first method allows multiple files to play simutaneously whereas the second way don&amp;#8217;t. Because of that, hardware-assisted method is very fast and gives excellent performance while software-based may lead to CPU overhead state if it has to handle many sound files in the same time. As a result, if you need to maximize video frame rate (make application be more smooth), there are two ways:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Minimize the CPU impact of your audio playback by using uncompressed audio or the IMA4 format.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Or&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Use hardware-assisted decoding of your compressed audio assets.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id='preferred_audio_formats_in_ios_certainly'&gt;Preferred Audio Formats (in iOS, certainly)&lt;/h4&gt;
+
+&lt;p&gt;Just recall that there are two types of audio quality: uncompressed audio and compressed audio. In short words, uncompressed audio is always better than the remaining kind but it is true for professional listener not for all people. Because of two these existing types, Apple also defines two preferred formats respectively.&lt;/p&gt;
+
+&lt;p&gt;For &lt;strong&gt;uncompressed audio&lt;/strong&gt; (highest quality), use &lt;em&gt;16-bit&lt;/em&gt;, &lt;em&gt;little endian&lt;/em&gt;, &lt;em&gt;linear PCM&lt;/em&gt; audio data packaged in a &lt;em&gt;CAF&lt;/em&gt; file. You can convert an audio file to this format in Mac OS X using the afconvert command-line tool, as shown here:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;/usr/bin/afconvert -f caff -d LEI16 {INPUT} {OUTPUT}&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;For &lt;strong&gt;compressed audio&lt;/strong&gt; when playing one sound at a time, and when you do not need to play audio simultaneously with the iPod application, use the &lt;em&gt;AAC&lt;/em&gt; format packaged in a &lt;em&gt;CAF&lt;/em&gt; or &lt;em&gt;m4a&lt;/em&gt; file.&lt;/p&gt;
+
+&lt;p&gt;For &lt;strong&gt;less memory usage&lt;/strong&gt; when you need to &lt;em&gt;play multiple sounds simultaneously&lt;/em&gt;, use &lt;em&gt;IMA4 (IMA/ADPCM) compression&lt;/em&gt;. This reduces file size but entails minimal CPU impact during decompression. As with linear PCM data, package IMA4 data in a &lt;em&gt;CAF&lt;/em&gt; file.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Excerpt from &lt;a href='https://developer.apple.com/library/ios/documentation/AudioVideo/Conceptual/MultimediaPG/UsingAudio/UsingAudio.html#//apple_ref/doc/uid/TP40009767-CH2-SW28'&gt;Preferred Audio Formats in iOS - developer.apple.com&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id='frameworks'&gt;Frameworks&lt;/h2&gt;
+
+&lt;h2 id='libraries'&gt;Libraries&lt;/h2&gt;
+
+&lt;h2 id='conclusion'&gt;Conclusion&lt;/h2&gt;
+
+&lt;h2 id='references'&gt;References&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href='http://www.raywenderlich.com/204/audio-tutorial-for-ios-file-and-data-formats'&gt;Audio Tutorial for iOS: File and Data Formats&lt;/a&gt; by Raywenderlich&lt;/li&gt;
+
+&lt;li&gt;Apple&amp;#8217;s Docummentation&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id='open_sources_which_are_mentioned_above'&gt;Open sources which are mentioned above&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href='http://theamazingaudioengine.com/doc/'&gt;The Amazing Audio Engine&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://kstenerud.github.io/ObjectAL-for-iPhone/documentation/index.html'&gt;OpenAL&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='https://github.com/alexrestrepo/SoundEngine'&gt;Sound Engine - an OpenAL Example&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id='bonus'&gt;Bonus&lt;/h2&gt;
+
+&lt;h3 id='the_differences_between_audio_engine_and_openal'&gt;The differences between Audio Engine and OpenAL&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;OpenAL: no some functions such as Reverb (Roger Beep, Distortion, Obstruction, and Occlusion must be tested more) but Audio Engine has.&lt;/li&gt;
+&lt;/ul&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Useful command line on Mac OS/Linux</title>
+   <link href="http://hugo53.github.io/2013/09/25/useful-command-line"/>
+   <updated>2013-09-25T00:00:00+07:00</updated>
+   <id>http://hugo53.github.io/2013/09/25/useful-command-line</id>
+   <content type="html">&lt;p&gt;This post will list some useful commands which are usually used when you do with Linux/Mac OS.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Show size of file (or files in a directory): &lt;em&gt;ls -lh file-name/folder-path&lt;/em&gt;&lt;/li&gt;
+
+&lt;li&gt;Show size of current system (included all hard disks): &lt;em&gt;df -h&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Bắt đầu với Data Mining</title>
+   <link href="http://hugo53.github.io/data%20mining/2013/09/24/bat-dau-voi-data-mining"/>
+   <updated>2013-09-24T00:00:00+07:00</updated>
+   <id>http://hugo53.github.io/data%20mining/2013/09/24/bat-dau-voi-data-mining</id>
+   <content type="html">&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;(hook)&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id='gii_thiu'&gt;Giới thiệu&lt;/h2&gt;
+
+&lt;h2 id='xc_nh_mc_tiu'&gt;Xác định mục tiêu&lt;/h2&gt;
+
+&lt;h2 id='chun_b_kin_thc'&gt;Chuẩn bị kiến thức&lt;/h2&gt;
+
+&lt;h2 id='ti_liu_tham_kho'&gt;Tài liệu tham khảo&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href='https://www.dropbox.com/s/vqdoskyhml7oq8e/dmafca.pdf'&gt;Data Mining and Analysis: Fundamental Concepts and Algorithms&lt;/a&gt; của Mohammed J. Zaki và Wagner Meira Jr.&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='https://www.dropbox.com/s/nkl3fjg2ynj5fiy/book.pdf'&gt;Mining of Massive Datasets&lt;/a&gt; của Anand Rajaraman, Jure Leskovec và Jeﬀrey D. Ullman.&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='https://www.dropbox.com/s/73d69vtl8nyeotu/whole.pdf'&gt;Machine Learning, Neural and Statistical Classiﬁcation&lt;/a&gt; của D. Michie, D.J. Spiegelhalter và C.C. Taylor.&lt;/li&gt;
+&lt;/ul&gt;</content>
+ </entry>
  
  <entry>
    <title>Startup Toolkit: The Best Tools for Entrepreneurs</title>
@@ -499,7 +736,11 @@
    <link href="http://hugo53.github.io/business%20model/2013/06/18/making-money-easy-or-difficult"/>
    <updated>2013-06-18T00:00:00+07:00</updated>
    <id>http://hugo53.github.io/business%20model/2013/06/18/making-money-easy-or-difficult</id>
-   <content type="html">&lt;h3 id='selling_virtual_possessions'&gt;Selling Virtual Possessions&lt;/h3&gt;
+   <content type="html">&lt;blockquote&gt;
+&lt;p&gt;Suddenly, I found some ways tech guys usually applied to generate money. Because I am also a technican, so I should care this problem like an obtainable option for my life. Of course, sharing is always fine. That makes me write this post. In next words, I show you several approaches to help yourself be richer, or maybe be financial freedom.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id='selling_virtual_possessions'&gt;Selling Virtual Possessions&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;
@@ -1129,7 +1370,7 @@
    <id>http://hugo53.github.io/lifestyle%20and%20motivation/2013/05/12/vietnamesetui-tr</id>
    <content type="html">&lt;p&gt;Thế là cũng đã tốt nghiệp được 1 năm! Kinh nghiệm cũng không thêm được nhiều, trình độ cũng vẫn tàng tàng hồi còn đi học, moi đi moi lại vẫn chưa ra thứ gì tốt hơn so với một năm trước. Có chăng, một chút thay đổi trong tư duy và cách nhìn nhận cuộc sống.&lt;/p&gt;
 
-&lt;p&gt;Bao đêm tự hỏi, mình là ai và mình đang làm gì? Câu trả lời vẫn quẩn quanh thực tại, một tên dev (lập trình viên) quèn, làm những thứ chẳng ai biết ấy là đâu. Điều quan trọng hơn, sự tự do với tri thức của mình vẫn quá xa vời. Muốn viết ra vài lời tâm sự mà sao khó quá. Thôi kể chuyện tán gái cho bớt buồn. Nghĩ mà cực, đường tán gái của mình long đong lận đận ghê. Biết thích khi còn tý tuổi, xoè bàn tay ra là đếm được, vậy mà &amp;#8230; giờ vẫn FA. Nói đùa chứ không phải là muốn thoát FA, mà hoàn toàn ngược lại, mình vui với tình hình hiện tại - không mệt đầu mấy chuyện gái gú yêu đương, tự do làm những gì mình nghĩ, gặp gỡ được nhiều con gái hơn, thay vì suốt ngày canh chừng ánh mắt của nàng sư tử tiềm năng. Tuy nhiên, alone cũng nhiều khi buồn, thực sự rất buồn. Lúc buồn, lại nhớ mấy năm về trước, khi còn tíu tít với mảnh tình đầu trong sáng - chỉ hơi tối một chút ;). Lại nhớ, lại nhớ, lại nhớ! Mỗi lần như vậy, mình dường như gục ngã, tâm trí rối bời và mất niềm tin vào cái thứ mơ mộng gọi là tình yêu lung linh lúng liếng. Cũng mỗi lần như vậy, lại nhấn bài &lt;em&gt;Túp lều lý tưởng&lt;/em&gt; remix để chìm đắm trong cái nỗi mộng mơ ấy. &lt;a href='http://www.youtube.com/watch?v=bzwiWMW1ty0'&gt;&lt;img alt='này' src='http://img.youtube.com/vi/bzwiWMW1ty0/0.jpg' /&gt;&lt;/a&gt;&lt;/p&gt;</content>
+&lt;p&gt;Bao đêm tự hỏi, mình là ai và mình đang làm gì? Câu trả lời vẫn quẩn quanh thực tại, một tên dev (lập trình viên) quèn, làm những thứ chẳng ai biết ấy là đâu. Điều quan trọng hơn, sự tự do với tri thức của mình vẫn quá xa vời. Muốn viết ra vài lời tâm sự mà sao khó quá. Thôi kể chuyện tán gái cho bớt buồn. Nghĩ mà cực, đường tán gái của mình long đong lận đận ghê. Biết thích khi còn tý tuổi, xoè bàn tay ra là đếm được, vậy mà &amp;#8230; giờ vẫn FA. Nói đùa chứ không phải là muốn thoát FA, mà hoàn toàn ngược lại, mình vui với tình hình hiện tại - không mệt đầu mấy chuyện gái gú yêu đương, tự do làm những gì mình nghĩ, gặp gỡ được nhiều con gái hơn, thay vì suốt ngày canh chừng ánh mắt của nàng sư tử tiềm năng. Tuy nhiên, alone cũng nhiều khi buồn, thực sự rất buồn. Lúc buồn, lại nhớ mấy năm về trước, khi còn tíu tít với mảnh tình đầu trong sáng - chỉ hơi tối một chút ;). Lại nhớ, lại nhớ, lại nhớ! Mỗi lần như vậy, mình dường như gục ngã, tâm trí rối bời và mất niềm tin vào cái thứ mơ mộng gọi là tình yêu lung linh lúng liếng. Cũng mỗi lần như vậy, lại nhấn bài &lt;em&gt;Túp lều lý tưởng&lt;/em&gt; remix để chìm đắm trong cái nỗi mộng mơ ấy. &lt;a href='http://www.youtube.com/watch?v=bzwiWMW1ty0'&gt;&lt;img src='http://img.youtube.com/vi/bzwiWMW1ty0/0.jpg' alt='này' /&gt;&lt;/a&gt;&lt;/p&gt;</content>
  </entry>
  
  <entry>
