@@ -14,7 +14,7 @@ Operating with PDF in iOS is really low-level task. It is not just using some bu
 Leading is space between two lines. According to [Wikipedia](http://en.wikipedia.org/wiki/Leading), _In typography, leading /ˈlɛdɪŋ/ refers to the distance between the baselines of successive lines of type_
 
 ##### X-height
-X-height descripts height of _X_ character in a font collection.
+X-height describes height of __X__ character in a font collection.
 ##### Glyph
 
 ##### Descent
