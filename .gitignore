@@ -1,2 +1,12 @@
 
 docbucket/PDF_Day_A_Look_Inside.pdf
+
+*.html
+
+*.txt
+
+*.pdf
+=======
+assets/tweetfeed/.gitignore
+
+*.txt
