@@ -14,7 +14,7 @@ Operating with PDF in iOS is really low-level task. It is not just using some bu
 Leading is space between two lines. According to [Wikipedia](http://en.wikipedia.org/wiki/Leading), _In typography, leading /ˈlɛdɪŋ/ refers to the distance between the baselines of successive lines of type_
 
 ##### X-height
-X-height descripts height of _X_ character in a font collection.
+X-height describes height of __X__ character in a font collection.
 ##### Glyph
 
 ##### Descent
@@ -46,7 +46,7 @@ BT -> /F1 -> 1 -> Tf(operator) -> 64 -> 0 -> 0 -> 64 -> 7.1771 -> 2.4414 -> Tm(o
 - CGPDFScannerPopObject
 - CGPDFScannerPopBoolean
 - CGPDFScannerPopInteger
-- CGPDFScannerPopNumber		_to get number, for example: get font's size
+- CGPDFScannerPopNumber		_to get number, for example: get font's size_
 - CGPDFScannerPopName		_to get name, for example: get font's name_
 - CGPDFScannerPopString		_to get content string_
 - CGPDFScannerPopArray

@@ -1,0 +1,392 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Audio Processing in iOS - an initial step</title>
+    <meta name="description" content="Performing with audio is always a challenge for any developer by reason of its very low level. By chance, I got some opportunities to do with audio included playing, recording and pre (and/or) post processing. This post tends to cover as much as possible basic knowledge in Audio aspect for two reasons: reminding myself and sharing with other enthusiastic guys.">
+    <meta name="author" content="Hugo Nguyen">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="/assets/themes/twitter/bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
+    <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+    <link href="/assets/tweetfeed/tweet/jquery.tweet.css" media="all" rel="stylesheet" type="text/css"/>
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+
+    <!-- atom & rss feed -->
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container-narrow">
+          <a class="brand" href="/">Leading Beautiful Life</a>
+          <ul class="nav">
+            
+            
+            
+
+
+  
+    
+      
+      	
+      	<li><a href="/archive.html">Archive</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/categories.html">Categories</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/pages.html">Pages</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/tags.html">Tags</a></li>
+      	
+      
+    
+  
+
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-narrow">
+
+      <div class="content">
+        
+<div class="page-header">
+  <h1>Audio Processing in iOS - an initial step </h1>
+</div>
+
+<div class="row-fluid post-full">
+  <div class="span12">
+    <div class="date">
+      <span>27 September 2013</span>
+    </div>
+    <div class="content">
+      <blockquote>
+<p>Performing with audio is always a challenge for any developer by reason of its very low level. By chance, I got some opportunities to do with audio included playing, recording and pre (and/or) post processing. This post tends to cover as much as possible basic knowledge in Audio aspect for two reasons: reminding myself and sharing with other enthusiastic guys.</p>
+</blockquote>
+
+<p>In the first words, I want to warn that I am working on iOS platform at the moment. Therefore, all of knowledge appear here is of iOS or related to iOS by default.</p>
+
+<h2 id='basic'>Basic</h2>
+
+<p>Before dig into details, we should know a litle bit about audio format, audio codec and what format is preferred in iOS.</p>
+
+<h4 id='audio_format_and_codec'>Audio Format and Codec</h4>
+
+<p>General speaking, there are two elements of an audio file. It&#8217;s weird, huh? Don&#8217;t worry! First, codec and second, file format. Codec is the way audio file is encoded (for recording) or decoded (for playback). We must know the codec of audio file to perform some processing tasks such as uncompressing to play or mixing to make effects. The latter one, format is the way audio file is organized.</p>
+
+<h5 id='audio_format'>Audio Format</h5>
+
+<h5 id='audio_codec'>Audio Codec</h5>
+
+<h4 id='bit_rate'>Bit rate</h4>
+
+<p>(hook)</p>
+
+<h4 id='playback'>Playback</h4>
+
+<p>Player must decode audio file if it want to play a song. In fact, iOS has two approaches to decode audio file: software-based and hardware-assisted. The biggest difference is that the first method allows multiple files to play simutaneously whereas the second way don&#8217;t. Because of that, hardware-assisted method is very fast and gives excellent performance while software-based may lead to CPU overhead state if it has to handle many sound files in the same time. As a result, if you need to maximize video frame rate (make application be more smooth), there are two ways:</p>
+
+<ul>
+<li>Minimize the CPU impact of your audio playback by using uncompressed audio or the IMA4 format.</li>
+</ul>
+
+<p>Or</p>
+
+<ul>
+<li>Use hardware-assisted decoding of your compressed audio assets.</li>
+</ul>
+
+<h4 id='preferred_audio_formats_in_ios_certainly'>Preferred Audio Formats (in iOS, certainly)</h4>
+
+<p>Just recall that there are two types of audio quality: uncompressed audio and compressed audio. In short words, uncompressed audio is always better than the remaining kind but it is true for professional listener not for all people. Because of two these existing types, Apple also defines two preferred formats respectively.</p>
+
+<p>For <strong>uncompressed audio</strong> (highest quality), use <em>16-bit</em>, <em>little endian</em>, <em>linear PCM</em> audio data packaged in a <em>CAF</em> file. You can convert an audio file to this format in Mac OS X using the afconvert command-line tool, as shown here:</p>
+
+<blockquote>
+<p>/usr/bin/afconvert -f caff -d LEI16 {INPUT} {OUTPUT}</p>
+</blockquote>
+
+<p>For <strong>compressed audio</strong> when playing one sound at a time, and when you do not need to play audio simultaneously with the iPod application, use the <em>AAC</em> format packaged in a <em>CAF</em> or <em>m4a</em> file.</p>
+
+<p>For <strong>less memory usage</strong> when you need to <em>play multiple sounds simultaneously</em>, use <em>IMA4 (IMA/ADPCM) compression</em>. This reduces file size but entails minimal CPU impact during decompression. As with linear PCM data, package IMA4 data in a <em>CAF</em> file.</p>
+
+<blockquote>
+<p>Excerpt from <a href='https://developer.apple.com/library/ios/documentation/AudioVideo/Conceptual/MultimediaPG/UsingAudio/UsingAudio.html#//apple_ref/doc/uid/TP40009767-CH2-SW28'>Preferred Audio Formats in iOS - developer.apple.com</a>.</p>
+</blockquote>
+
+<h2 id='frameworks'>Frameworks</h2>
+
+<h2 id='libraries'>Libraries</h2>
+
+<h2 id='conclusion'>Conclusion</h2>
+
+<h2 id='references'>References</h2>
+
+<ul>
+<li><a href='http://www.raywenderlich.com/204/audio-tutorial-for-ios-file-and-data-formats'>Audio Tutorial for iOS: File and Data Formats</a> by Raywenderlich</li>
+
+<li>Apple&#8217;s Docummentation</li>
+</ul>
+
+<h2 id='open_sources_which_are_mentioned_above'>Open sources which are mentioned above</h2>
+
+<ul>
+<li><a href='http://theamazingaudioengine.com/doc/'>The Amazing Audio Engine</a></li>
+
+<li><a href='http://kstenerud.github.io/ObjectAL-for-iPhone/documentation/index.html'>OpenAL</a></li>
+
+<li><a href='https://github.com/alexrestrepo/SoundEngine'>Sound Engine - an OpenAL Example</a></li>
+</ul>
+
+<h2 id='bonus'>Bonus</h2>
+
+<h3 id='the_differences_between_audio_engine_and_openal'>The differences between Audio Engine and OpenAL</h3>
+
+<ul>
+<li>OpenAL: no some functions such as Reverb (Roger Beep, Distortion, Obstruction, and Occlusion must be tested more) but Audio Engine has.</li>
+</ul>
+    </div>
+
+  
+    <ul class="tag_box inline">
+      <li><i class="icon-folder-open"></i></li>
+      
+      
+
+
+  
+     
+    	<li><a href="/categories.html#ios development-ref">
+    		ios development <span>3</span>
+    	</a></li>
+    
+  
+
+
+    </ul>
+    
+
+  
+    <ul class="tag_box inline">
+      <li><i class="icon-tags"></i></li>
+      
+      
+
+
+  
+     
+    	<li><a href="/tags.html#audio-ref">audio <span>1</span></a></li>
+    
+  
+
+
+
+    </ul>
+    
+
+    <hr>
+    <div class="pagination">
+      <ul>
+      
+        <li class="prev"><a href="/2013/09/25/useful-command-line" title="Useful command line on Mac OS/Linux">&larr; Previous</a></li>
+      
+        <li><a href="/archive.html">Archive</a></li>
+      
+        <li class="next"><a href="/tool/2013/09/28/git-and-its-tutorials" title="Git and its tutorials">Next &rarr;</a></li>
+      
+      </ul>
+    </div>
+    <hr>
+    
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    
+    var disqus_shortname = 'hugo53'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+  </div>
+</div>
+
+
+
+
+<script src="/assets/themes/jquery-1.9.1.min.js"></script>
+<script src="/assets/tweetfeed/tweet/jquery.tweet.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+jQuery(function($){
+    $(".tweet").tweet({
+          join_text: "auto",
+          username: "mrhoangnm",
+          avatar_size: 48,
+          count: 5,
+          auto_join_text_default: " we said, ",
+          auto_join_text_ed: " we ",
+          auto_join_text_ing: " we were ",
+          auto_join_text_reply: " we replied ",
+          auto_join_text_url: " we were checking out ",
+          loading_text: "loading tweets..."
+        });
+      });
+</script>
+<div class="tweet"></div>
+      </div>
+      <hr>
+      <footer>
+        <p>&copy; 2013 Hugo Nguyen
+          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+        </p>
+        <span>
+          <a href="https://twitter.com/mrhoangnm" target="_blank"> <img src="/images/twitter.png" width="48" height="48" /></a>
+        </span>
+        
+        <span>
+          <a href="https://github.com/hugo53" target="_blank"> <img src="/images/github2.png" width="32" height="32"/></a>
+        </span>
+        
+      </footer>
+      <center>
+        <span>        
+
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="LVE4X9BC4BD6S">
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+          </form>
+        </span>
+        <span> <b> PLEASE, BUY ME A BREAD!</b> </span>
+      </center>
+
+
+    </div>
+
+    
+
+
+  <!-- Jekyll Bootstrap Analytics -->
+<!-- hardcoded Google Analytics code -->
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-40878241-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+
+
+  </body>
+</html>
+
