@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Tăng trưởng vượt bậc về thuê bao di động ở các nước đang phát triển"
-description: ""
+description: "Tại sao các nhà sản xuất điện thoại lại đặc biệt quan tâm tới thị trường tại các quốc gia đang phát triển? Đơn giản, bởi đó là những thị trường tiềm năng, đang tăng trưởng rất mạnh mẽ về nhu cầu thiết bị di động - một nghiên cứu mới đây của Ủy ban điều tra Broadband của Liên Hợp Quốc kết luận."
 category: translation
 tags: []
 ---
