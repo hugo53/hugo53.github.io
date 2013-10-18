@@ -17,15 +17,27 @@ Leading is space between two lines. According to [Wikipedia](http://en.wikipedia
 X-height describes height of __X__ character in a font collection.
 ##### Glyph
 
+
 ##### Descent
+In typography, **Descent** is a term refer the part which is below **word baseline** (which is known as the underline of the word). For example, 
+
+![alt line](images/pdfpost/line.svg "baseline")
 
 ##### Ascent
 
 
 ## Reading PDF Flow
 ### PDF Operator
+PDF uses _operators_ to determine what kind of text will be shown based on pre-defined format. However, it is so complex to understand easily how pdf is organized. 
 
-- [Operator Table](http://my.safaribooksonline.com/book/office-and-productivity-applications/0321304748/operator-summary/app01)
+	BT % Begin text object
+	/F1 1 Tf % Set text font and size 
+	64 0 0 64 7.1771 2.4414 Tm % Set text matrix 
+	0 Tc % Set character spacing 
+	0 Tw % Set word spacing
+	ET
+
+In the above block, you can see _Tf_, _Tm_, _Tc_, _Tw_ are four operators which define how display the excerpt _Set text font and size_. In clearly words, if you want to read and do some processing task relate to pdf content such as highlight word or bolding word, you must handle as much as possible operators to get exactly text block information for making your job be accurate as your desire. You may need to check [**operator table**](http://my.safaribooksonline.com/book/office-and-productivity-applications/0321304748/operator-summary/app01) to know more about pdf operator.
 
 ### Scanner Stack
 Stack is data structure to store PDF Objects when PDF file is being read. Prefix strategy is the method to read objects from object stack. Below is an example.
