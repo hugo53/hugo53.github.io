@@ -10,3 +10,5 @@ docbucket/PDF_Day_A_Look_Inside.pdf
 assets/tweetfeed/.gitignore
 
 *.txt
+
+*.psd
