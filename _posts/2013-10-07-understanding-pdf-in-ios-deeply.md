@@ -14,17 +14,14 @@ Operating with PDF in iOS is really low-level task. It is not just using some bu
 Leading is space between two lines. According to [Wikipedia](http://en.wikipedia.org/wiki/Leading), _In typography, leading /ˈlɛdɪŋ/ refers to the distance between the baselines of successive lines of type_
 
 ##### X-height
-X-height describes height of __X__ character in a font collection.
-##### Glyph
-
-
-##### Descent
-In typography, **Descent** is a term refer the part which is below **word baseline** (which is known as the underline of the word). For example, 
+X-height describes height of __X__ character in a font collection as the image below demonstrates.
 
 ![alt text](http://hugo53.github.io/images/pdfpost/line.png "baseline")
 
-##### Ascent
+##### Descent and Ascent
+In typography, **Descent** is a term refer the part which is below **word baseline** (which is known as the underline of the word). For example, in the image above, descender is part from baseline to descent line, ascender is part from baseline to ascent line. Height of them are **descent**, **ascent** respectively.  
 
+##### Glyph
 
 ## Reading PDF Flow
 ### PDF Operator
