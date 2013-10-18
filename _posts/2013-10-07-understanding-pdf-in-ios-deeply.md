@@ -21,7 +21,7 @@ X-height describes height of __X__ character in a font collection.
 ##### Descent
 In typography, **Descent** is a term refer the part which is below **word baseline** (which is known as the underline of the word). For example, 
 
-![alt line](images/pdfpost/line.svg "baseline")
+![alt text](/images/pdfpost/line.png "baseline")
 
 ##### Ascent
 
