@@ -11,7 +11,10 @@ Operating with PDF in iOS is really low-level task. It is not just using some bu
 ## PDF Specification
 #### Basic Definitions (mixed up Typography)
 ##### Leading
-Leading is space between two lines. According to [Wikipedia](http://en.wikipedia.org/wiki/Leading), _In typography, leading /ˈlɛdɪŋ/ refers to the distance between the baselines of successive lines of type_
+Leading is space between two lines. According to [Wikipedia](http://en.wikipedia.org/wiki/Leading), _In typography, leading /ˈlɛdɪŋ/ refers to the distance between the baselines of successive lines of type_. However, there are more than one _leading_ definition. The below image shows you 3 ways _leading_ is defined.
+
+![alt text](http://hugo53.github.io/images/pdfpost/leadingoriginal.png "leading")
+
 
 ##### X-height
 X-height describes height of __X__ character in a font collection as the image below demonstrates.
