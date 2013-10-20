@@ -28,7 +28,7 @@ In typography, **Descent** is a term refer the part which is below **word baseli
 Font size is measuared by distance from ascent line to descent line. In general term, point is unit for desmonstrating font size which is equal 1/72 inch per point (1 point = 1/72 inch. That means Arial 12pt = 1/6 inch = 4.3 mm). 
 
 ##### Glyph
-(_Need more study_)
+( _Need more study_ )
 
 ## Reading PDF Flow
 ### PDF Operator
@@ -59,7 +59,7 @@ BT -> /F1 -> 1 -> Tf(operator) -> 64 -> 0 -> 0 -> 64 -> 7.1771 -> 2.4414 -> Tm(o
 
 
 ### Getting PDF Objects from Scanner Stack
-In iOS, you should implement some callback functions for several important operator to help scanner can recognize what sort of value must get for each operator when it scans through the pdf document. Fortunately, iOS supports us by supply _Pop_ functions to get our desire objects when scanner meets a specific operator. Therefor, we must know clearly the format of each operator. For example, in the above block, _Tf_ is font operator, when the value is _Tm_, scanner knows this operator and pop two most recent values: _/F1_ and _1_ by two functions: _CGPDFScannerPopString_ and _CGPDFScannerPopInteger_. 
+In iOS, you should implement some callback functions for several important operator to help scanner can recognize what sort of value must get for each operator when it scans through the pdf document. Fortunately, iOS supports us by supply _Pop_ functions to get our desire objects when scanner meets a specific operator. Therefor, we must know clearly the format of each operator. For example, in the above block, _Tf_ is font operator, when the value is _Tm_, scanner knows this operator and pop two most recent values: _/F1_ and _1_ by two functions: _CGPDFScannerPopName_ and _CGPDFScannerPopNumber_. 
 
 The following list is displayed _Pop_ functions supplied by iOS.
 - CGPDFScannerPopObject
