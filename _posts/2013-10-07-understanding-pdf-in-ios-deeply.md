@@ -25,7 +25,7 @@ X-height describes height of __X__ character in a font collection as the image b
 In typography, **Descent** is a term refer to the part which is below **word baseline** (known as the underline of the word). For example, in the image above, descender is a part from baseline to descent line, ascender is a part from baseline to ascent line. Height of them are **descent**, **ascent** respectively.  
 
 ##### Font size
-Font size is measuared by distance from ascent line to descent line. In general term, point is unit for desmonstrating font size which is equal to 1/72 inch per point (1 point = 1/72 inch. That means Arial 12pt = 1/6 inch = 4.3 mm). 
+Font size is measuared by distance from ascent line to descent line. In general term, point is unit for desmonstrating font size which is equal to 1/72 inch per point (1 point = 1/72 inch. That means Arial 12pt = 1/6 inch = 4.3 mm). In PDF specification, Font information is usually in _Resources_ dictionary which contains a _Font_ dictionary. We can open PDF file by a text editor and search for _Resources_ keyword to locate Font description.
 
 ##### Glyph
 ( _Need more study_ )
@@ -41,7 +41,7 @@ PDF uses _operators_ to determine what kind of text will be shown based on pre-d
 	0 Tw % Set word spacing
 	ET
 
-In the above block, you can see _Tf_, _Tm_, _Tc_, _Tw_ are four operators which define font (and font size), text matrix, character spacing, word spacing are used. In clearly words, if you want to read and do some processing task relating to pdf content such as highlighting word or bolding word, you must handle as much as possible operators to get exactly text block information for making your job be accurate as your desire. You may need to check [**operator table**](http://my.safaribooksonline.com/book/office-and-productivity-applications/0321304748/operator-summary/app01) to know more about pdf operator.
+In the above block, you can see _Tf_, _Tm_, _Tc_, _Tw_ are four operators which define font (and font size), text matrix, character spacing, word spacing are used. In clearly words, if you want to read and do some processing tasks relating to pdf content such as highlighting word or bolding word, you must handle with as much as possible operators to get exactly text block information for making your job be accurate as your desire. You may need to check [**operator table**](http://my.safaribooksonline.com/book/office-and-productivity-applications/0321304748/operator-summary/app01) to know more about pdf operators.
 
 ### Scanner Stack
 Stack is data structure to store PDF Objects when PDF file is being read. Prefix strategy is the method to read objects from object stack. Below is an example.
@@ -55,11 +55,11 @@ Stack is data structure to store PDF Objects when PDF file is being read. Prefix
 
 Stack will be:
 
-BT -> /F1 -> 1 -> Tf(operator) -> 64 -> 0 -> 0 -> 64 -> 7.1771 -> 2.4414 -> Tm(operator) -> ... -> ET (top of stack).
+BT -> /F1 -> 1 -> Tf(operator) -> 64 -> 0 -> 0 -> 64 -> 7.1771 -> 2.4414 -> Tm(operator) -> ... -> ET (top of the stack).
 
 
 ### Getting PDF Objects from Scanner Stack
-In iOS, you should implement some callback functions for several important operator to help scanner can recognize what sort of value must get for each operator when it scans through the pdf document. Fortunately, iOS supports us by supply _Pop_ functions to get our desire objects when scanner meets a specific operator. Therefore, we must know clearly the format of each operator. For example, in the above block, _Tf_ is font operator, when the value is _Tm_, scanner knows this operator and pop two most recent values: _/F1_ and _1_ by two functions: _CGPDFScannerPopName_ and _CGPDFScannerPopNumber_. 
+In iOS, you should implement some callback functions for several important operator to help scanner can recognize what sort of value must get for each operator when it scans through the pdf document. Fortunately, iOS supports us by supply _Pop_ functions to get our desire objects when scanner meets a specific operator. Therefore, we must know clearly the format of each operator. For example, in the above block, _Tf_ is font operator, when the value is _Tm_, scanner knows this operator and pop two most recent values: _/F1_ and _1_ by two functions: _CGPDFScannerPopName_ and _CGPDFScannerPopNumber_.
 
 The following list is displayed _Pop_ functions supplied by iOS.
 - CGPDFScannerPopObject
