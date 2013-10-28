@@ -59,9 +59,9 @@ BT -> /F1 -> 1 -> Tf(operator) -> 64 -> 0 -> 0 -> 64 -> 7.1771 -> 2.4414 -> Tm(o
 
 
 ### Getting PDF Objects from Scanner Stack
-In iOS, you should implement some callback functions for several important operator to help scanner can recognize what sort of value must get for each operator when it scans through the pdf document. Fortunately, iOS supports us by supply _Pop_ functions to get our desire objects when scanner meets a specific operator. Therefore, we must know clearly the format of each operator. For example, in the above block, _Tf_ is font operator, when the value is _Tm_, scanner knows this operator and pop two most recent values: _/F1_ and _1_ by two functions: _CGPDFScannerPopName_ and _CGPDFScannerPopNumber_.
+In iOS, you should implement some callback functions for several important operators to help scanner can recognize what sort of value must get for each operator when it scans through the pdf document. Fortunately, iOS supports us by providing _Pop_ functions to get our desire objects when scanner meets a specific operator. Therefore, we must know clearly the format of each operator. For example, in the above block, _Tf_ is font operator, when the value is _Tf_, scanner knows this operator and pop two most recent values: _/F1_ and _1_ by two functions: _CGPDFScannerPopName_ and _CGPDFScannerPopNumber_.
 
-The following list is displayed _Pop_ functions supplied by iOS.
+The following list displays _Pop_ functions supplied by iOS.
 - CGPDFScannerPopObject
 - CGPDFScannerPopBoolean
 - CGPDFScannerPopInteger
