@@ -21,16 +21,23 @@ I had an opportunity to work with audio, thus I must read documentation carefull
 Audio Unit is defined as software-plugin service which carries some low-level tasks such as mixing, filtering, splitting or digital processing services as general term. If you want to do futher than just playback audio file, you must know audio unit, and use Audio Unit framework to complete your desire.
 
 According to Apple iOS documentation,
+```
+The Audio Toolbox framework (AudioToolbox.framework) provides interfaces for the mid- and high-level services in Core Audio. In iOS, this framework includes Audio Session Services, the interface for managing your application’s audio behavior in the context of a device that functions as a mobile phone and iPod.
 
-	The Audio Toolbox framework (AudioToolbox.framework) provides interfaces for the mid- and high-level services in Core Audio. In iOS, this framework includes Audio Session Services, the interface for managing your application’s audio behavior in the context of a device that functions as a mobile phone and iPod.
-	The Audio Unit framework (AudioUnit.framework) lets applications work with audio plug-ins, including audio units and codecs.
-	The AV Foundation framework (AVFoundation.framework), available in iOS, provides the AVAudioPlayer class, a streamlined and simple Objective-C interface for audio playback.
-	The Core Audio framework (CoreAudio.framework) supplies data types used across Core Audio as well as interfaces for the low-level services.
-	The Core Audio Kit framework (CoreAudioKit.framework) provides a small API for creating user interfaces for audio units. This framework is not available in iOS.
-	The Core MIDI framework (CoreMIDI.framework) lets applications work with MIDI data and configure MIDI networks. This framework is not available in iOS.
-	The Core MIDI Server framework (CoreMIDIServer.framework) lets MIDI drivers communicate with the OS X MIDI server. This framework is not available in iOS.
-	The OpenAL framework (OpenAL.framework) provides the interfaces to work with OpenAL, an open source, positional audio technology.
+The Audio Unit framework (AudioUnit.framework) lets applications work with audio plug-ins, including audio units and codecs.
 
+The AV Foundation framework (AVFoundation.framework), available in iOS, provides the AVAudioPlayer class, a streamlined and simple Objective-C interface for audio playback.
+
+The Core Audio framework (CoreAudio.framework) supplies data types used across Core Audio as well as interfaces for the low-level services.
+
+The Core Audio Kit framework (CoreAudioKit.framework) provides a small API for creating user interfaces for audio units. This framework is not available in iOS.
+
+The Core MIDI framework (CoreMIDI.framework) lets applications work with MIDI data and configure MIDI networks. This framework is not available in iOS.
+
+The Core MIDI Server framework (CoreMIDIServer.framework) lets MIDI drivers communicate with the OS X MIDI server. This framework is not available in iOS.
+
+The OpenAL framework (OpenAL.framework) provides the interfaces to work with OpenAL, an open source, positional audio technology.
+```
 ![alt text](http://hugo53.github.io/images/core_audio_layers_2x.png "leading")
 
 
