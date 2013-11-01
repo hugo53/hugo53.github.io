@@ -26,7 +26,7 @@ Audio Service is a service which performs several specific tasks. Thus, a framew
 ![alt text](http://hugo53.github.io/images/core_audio_layers_2x.png "leading")
 
 ## Audio Framework in iOS
-If you search _audio framework_ in _Documentation and API_ in Xcode, you will get many audio frameworks which includes _Audio Toolbox_, _CoreAudio_, _OpenAL_, _AVFoundation_. So, you may be confused to determine what framework should be used. Generally, _Audio Toolbox_ is application-level service, _Core Audio_ is low-level API which used to communicate with hardware, _OpenAL_ is an opensource audio library and also an application-level API, _AVFoundation_ is an Objective-C library to play audio file.
+If you search _audio framework_ in _Documentation and API_ in Xcode, you will get many audio frameworks which includes _Audio Toolbox_, _CoreAudio_, _OpenAL_, _AVFoundation_. So, you may be confused to determine what framework should be used. Generally, _Audio Toolbox_ is an application-level service, _Core Audio_ is a low-level API which used to communicate with hardware, _OpenAL_ is an opensource audio library and also an application-level API (and plus, usually used in Game), _AVFoundation_ is an Objective-C library to play audio file.
 
 According to Apple iOS documentation:
 
