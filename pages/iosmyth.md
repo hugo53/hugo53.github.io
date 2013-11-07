@@ -13,9 +13,9 @@ To allocate an object, you send the message alloc or allocWithZone: to the objec
 
 An allocation message does other important things besides allocating memory:
 
-	- It sets the object’s retain count to one.
-	- It initializes the object’s isa instance variable to point to the object’s class, a runtime object in its own right that is compiled from the class definition.
-	- It initializes all other instance variables to zero (or to the equivalent type for zero, such as nil, NULL, and 0.0).
+- It sets the object’s retain count to one.
+- It initializes the object’s isa instance variable to point to the object’s class, a runtime object in its own right that is compiled from the class definition.
+- It initializes all other instance variables to zero (or to the equivalent type for zero, such as nil, NULL, and 0.0).
 
 An object’s isa instance variable is inherited from NSObject, so it is common to all Cocoa objects. After allocation sets isa to the object’s class, the object is integrated into the runtime’s view of the inheritance hierarchy and the current network of objects (class and instance) that constitute a program. Consequently an object can find whatever information it needs at runtime, such as another object’s place in the inheritance hierarchy, the protocols that other objects conform to, and the location of the method implementations it can perform in response to messages.
 
@@ -44,7 +44,6 @@ The hash and isEqual: methods, both declared by the NSObject protocol, are close
 Note that in all isEqualToType: methods of the Cocoa frameworks, nil is not a valid parameter and implementations of these methods may raise an exception upon receiving a nil. 
 However, for backward compatibility, isEqual: methods of the Cocoa frameworks do accept nil, returning NO. In summary, _isEqual_ accepts nil object but _isEqualToType_ is not.
 
-## 
 
 
 
