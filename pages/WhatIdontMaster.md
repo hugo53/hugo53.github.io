@@ -31,3 +31,6 @@ _@synchronized(){}_ is also a compiler directive.
 
 	- [Use NSOutputStream as NSInputStream](http://stackoverflow.com/questions/3221030/buffering-nsoutputstream-used-as-nsinputstream), and [here](http://bjhomer.blogspot.co.uk/2011/04/subclassing-nsinputstream.html)
 
+- Class Cluster
+- Class Factory Method: like +(id)dataWithContentsOfFile:(NSString *)path;
+
