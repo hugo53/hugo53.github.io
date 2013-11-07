@@ -24,18 +24,19 @@ In summary, allocation not only allocates memory for an object but initializes t
 > ALLOC: Do three tasks but object is not usable. INIT will make allocated object be usable. 
 
 ## How many introspection methods?
-- [objectX class]
-- [objectX superclass]
-- [objectX isKindOfClass]
-- [objectX isMemberOfClass]
-- [objectX respondsToSelector:(SEL)selector]
-- [objectX conformsToProtocol:@protocol(protocolName)]
-- [objectX isEqual:objectY]
+- \[objectX class\]
+- \[objectX superclass\]
+- \[objectX isKindOfClass\]
+- \[objectX isMemberOfClass\]
+- \[objectX respondsToSelector:(SEL)selector\]
+- \[objectX conformsToProtocol:@protocol(protocolName)\]
+- \[objectX isEqual:objectY\]
 
 ## isEqual and Hash
 The hash and isEqual: methods, both declared by the NSObject protocol, are closely related. The hash method must be implemented to return an integer that can be used as a table address in a hash table structure. If two objects are equal (as determined by the isEqual: method), they must have the same hash value. If your object could be included in collections such as NSSet objects, you need to define hash and verify the invariant that if two objects are equal, they return the same hash value. The default NSObject implementation of isEqual: simply checks for pointer equality.
 
 > If two objects are equal, their hashes must be equal too. But the same hash does not need to be equal. The following example will explain this case.
+
 
 	If two objects are equal (as determined by the isEqual: method), they must have the same hash value. This last point is particularly important if you define hash in a subclass and intend to put instances of that subclass into a collection.
 	If a mutable object is added to a collection that uses hash values to determine the object’s position in the collection, the value returned by the hash method of the object must not change while the object is in the collection. Therefore, either the hash method must not rely on any of the object’s internal state information or you must make sure the object’s internal state information does not change while the object is in the collection. Thus, for example, a mutable dictionary can be put in a hash table but you must not change it while it is in there. (Note that it can be difficult to know whether or not a given object is in a collection.)
