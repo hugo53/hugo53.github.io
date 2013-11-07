@@ -40,6 +40,6 @@ Padding is the practice of expanding plaintext to the correct length prior to en
 ## References
 - [Chapter 15, iOS 6 Programming Pushing the Limits](http://www.amazon.com/iOS-Programming-Pushing-Limits-Application/dp/1118449959)
 
-- [RNCryptor](https://github.com/rnapier/RNCryptor) by author of above book
+- [RNCryptor](https://github.com/rnapier/RNCryptor) by author of the above book
 
 
