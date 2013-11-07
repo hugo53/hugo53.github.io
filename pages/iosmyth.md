@@ -9,7 +9,7 @@ description: ""
 
 When you allocate an object, part of what happens is what you might expect, given the term. Cocoa allocates enough memory for the object from a region of application virtual memory. To calculate how much memory to allocate, it takes the object’s instance variables into account—including their types and order—as specified by the object’s class.
 
-To allocate an object, you send the message alloc or allocWithZone: to the object’s class. In return, you get a “raw” (uninitialized) instance of the class. The alloc variant of the method uses the application’s default zone. A zone is a page-aligned area of memory for holding related objects and data allocated by an application. See Advanced Memory Management Programming Guide for more information on zones.
+To allocate an object, you send the message alloc or allocWithZone: to the object’s class. In return, you get a _raw_ (uninitialized) instance of the class. The alloc variant of the method uses the application’s default zone. A zone is a page-aligned area of memory for holding related objects and data allocated by an application. See Advanced Memory Management Programming Guide for more information on zones.
 
 An allocation message does other important things besides allocating memory:
 
@@ -42,7 +42,7 @@ The hash and isEqual: methods, both declared by the NSObject protocol, are close
 	If a mutable object is added to a collection that uses hash values to determine the object’s position in the collection, the value returned by the hash method of the object must not change while the object is in the collection. Therefore, either the hash method must not rely on any of the object’s internal state information or you must make sure the object’s internal state information does not change while the object is in the collection. Thus, for example, a mutable dictionary can be put in a hash table but you must not change it while it is in there. (Note that it can be difficult to know whether or not a given object is in a collection.)
 
 Note that in all isEqualToType: methods of the Cocoa frameworks, nil is not a valid parameter and implementations of these methods may raise an exception upon receiving a nil. 
-However, for backward compatibility, isEqual: methods of the Cocoa frameworks do accept nil, returning NO. In summary, _isEqual accepts nil object but isEqualToType is not.
+However, for backward compatibility, isEqual: methods of the Cocoa frameworks do accept nil, returning NO. In summary, _isEqual_ accepts nil object but _isEqualToType_ is not.
 
 ## 
 
