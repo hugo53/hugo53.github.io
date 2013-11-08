@@ -5,10 +5,162 @@
         <description>Leading Beautiful Life - Hugo Nguyen</description>
         <link>http://hugo53.github.io</link>
         <link>http://hugo53.github.io</link>
-        <lastBuildDate>2013-10-07T22:51:53+07:00</lastBuildDate>
-        <pubDate>2013-10-07T22:51:53+07:00</pubDate>
+        <lastBuildDate>2013-11-08T09:37:01+07:00</lastBuildDate>
+        <pubDate>2013-11-08T09:37:01+07:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>Cryptography in iOS - How to protect your precious data?</title>
+                <description>&lt;p&gt;(Intro here, complete after)&lt;/p&gt;
+
+&lt;h2 id='basic_terminology'&gt;Basic terminology&lt;/h2&gt;
+
+&lt;p&gt;This section is for someone who is not familiar with cryptography. Some basic terms will be unleashed here.&lt;/p&gt;
+
+&lt;h4 id='symmetric_and_asymmetric_cipher'&gt;Symmetric and Asymmetric cipher&lt;/h4&gt;
+
+&lt;h4 id='key_and_salt'&gt;Key and Salt&lt;/h4&gt;
+
+&lt;p&gt;Key is not a password! If we have a password, we must convert it into a key. This key is for encrypting and decrypting document. Needless to say, the key is not public as the password. For making a key, we need a salt described as follows.&lt;/p&gt;
+
+&lt;p&gt;Salt is usually a large, random number for generating a key from a password. Because password is usually short and easy to remember, we should make a key which is long and hard to read which prevents brute-force attack. To do this task, a salt is needed. It will be combined with password, the result is a key.&lt;/p&gt;
+
+&lt;p&gt;In fact, salt is public, not need to be secret.&lt;/p&gt;
+
+&lt;h4 id='hmac_hashbased_message_authentication_code'&gt;HMAC (Hash-based Message Authentication Code)&lt;/h4&gt;
+
+&lt;h4 id='initialization_vector_iv'&gt;Initialization Vector (IV)&lt;/h4&gt;
+
+&lt;h4 id='padding'&gt;Padding&lt;/h4&gt;
+
+&lt;p&gt;Cipher-block is must be multiple of block size. Sometimes the last block may be smaller than block size. Therefore, we must add pseudo-data to the end of plaintext. This block size problem is dealt with by padding.&lt;/p&gt;
+
+&lt;p&gt;Padding is the practice of expanding plaintext to the correct length prior to encryption. It needs to be done in a way that the padding can be unambiguously removed after decryption. There are several ways to achieve this, but the only way supported by iOS is called PKCS #7 padding.&lt;/p&gt;
+
+&lt;h4 id='cipherblock_chaining'&gt;Cipher-block chaining&lt;/h4&gt;
+
+&lt;h2 id='reference'&gt;Reference&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href='http://www.amazon.com/iOS-Programming-Pushing-Limits-Application/dp/1118449959'&gt;Chapter 15, iOS 6 Programming Pushing the Limits&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href='https://github.com/rnapier/RNCryptor'&gt;RNCryptor&lt;/a&gt; by author of the above book&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
+                <link>http://hugo53.github.io/cryptography/2013/11/07/crytography-in-ios</link>
+                <guid>http://hugo53.github.io/cryptography/2013/11/07/crytography-in-ios</guid>
+                <pubDate>2013-11-07T00:00:00+07:00</pubDate>
+        </item>
+
+        <item>
+                <title>Audio Processing - The second step</title>
+                <description>&lt;p&gt;In the previous post at &lt;a href='http://hugo53.github.io/ios%20development/2013/09/27/audio-processing-in-ios---an-initial-step/'&gt;here&lt;/a&gt;, I had shown you some basic terminologies in audio processing and several libraries to handle with audio in iOS. It is just a kick off! This post, I will provide in more details principle architect of audio (in iOS, certainly!) and give you some great documents to gain more audio knowledge.&lt;/p&gt;
+
+&lt;p&gt;I had an opportunity to work with audio, thus I must read documentation carefully. However, there are plenty of notions that I have not known ever, even listening about them has never occured. What I should mention are &lt;em&gt;audio session&lt;/em&gt;, &lt;em&gt;audio unit&lt;/em&gt;, &lt;em&gt;audio category&lt;/em&gt;, and so on. One time again, we must familiar with these definitions. Here we go!&lt;/p&gt;
+
+&lt;h2 id='basic_definitions'&gt;Basic Definitions&lt;/h2&gt;
+
+&lt;h4 id='audio_session'&gt;Audio Session&lt;/h4&gt;
+
+&lt;h4 id='audio_category'&gt;Audio Category&lt;/h4&gt;
+
+&lt;h4 id='audio_queue'&gt;Audio Queue&lt;/h4&gt;
+
+&lt;h4 id='audio_unit'&gt;Audio Unit&lt;/h4&gt;
+
+&lt;p&gt;Audio Unit is defined as software-plugin service which carries some low-level tasks such as mixing, filtering, splitting or digital processing services as general term. If you want to do futher than just playback audio file, you must know audio unit, and use Audio Unit framework to complete your desire.&lt;/p&gt;
+
+&lt;h2 id='audio_services_in_ios'&gt;Audio Services in IOS&lt;/h2&gt;
+
+&lt;p&gt;Audio Service is a service which performs several specific tasks. Thus, a framework may contain more than one services. The image below shows three levels dividing services: Low-level, Mid-level and High-level (we usually do with two last levels).&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='alt text' src='http://hugo53.github.io/images/core_audio_layers_2x.png' /&gt;&lt;/p&gt;
+
+&lt;h2 id='audio_framework_in_ios'&gt;Audio Framework in iOS&lt;/h2&gt;
+
+&lt;p&gt;If you search &lt;em&gt;audio framework&lt;/em&gt; in &lt;em&gt;Documentation and API&lt;/em&gt; in Xcode, you will get many audio frameworks which includes &lt;em&gt;Audio Toolbox&lt;/em&gt;, &lt;em&gt;CoreAudio&lt;/em&gt;, &lt;em&gt;OpenAL&lt;/em&gt;, &lt;em&gt;AVFoundation&lt;/em&gt;. So, you may be confused to determine what framework should be used. Generally, &lt;em&gt;Audio Toolbox&lt;/em&gt; is an application-level service, &lt;em&gt;Core Audio&lt;/em&gt; is a low-level API which used to communicate with hardware, &lt;em&gt;OpenAL&lt;/em&gt; is an opensource audio library and also an application-level API (and plus, usually used in Game), &lt;em&gt;AVFoundation&lt;/em&gt; is an Objective-C library to play audio file.&lt;/p&gt;
+
+&lt;p&gt;According to Apple iOS documentation:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;The Audio Toolbox framework (AudioToolbox.framework) provides interfaces for the mid- and high-level services in Core Audio. In iOS, this framework includes Audio Session Services, the interface for managing your application’s audio behavior in the context of a device that functions as a mobile phone and iPod.
+
+The Audio Unit framework (AudioUnit.framework) lets applications work with audio plug-ins, including audio units and codecs.
+
+The AV Foundation framework (AVFoundation.framework), available in iOS, provides the AVAudioPlayer class, a streamlined and simple Objective-C interface for audio playback.
+
+The Core Audio framework (CoreAudio.framework) supplies data types used across Core Audio as well as interfaces for the low-level services.
+
+The Core Audio Kit framework (CoreAudioKit.framework) provides a small API for creating user interfaces for audio units. This framework is not available in iOS.
+
+The Core MIDI framework (CoreMIDI.framework) lets applications work with MIDI data and configure MIDI networks. This framework is not available in iOS.
+
+The Core MIDI Server framework (CoreMIDIServer.framework) lets MIDI drivers communicate with the OS X MIDI server. This framework is not available in iOS.
+
+The OpenAL framework (OpenAL.framework) provides the interfaces to work with OpenAL, an open source, positional audio technology.&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In summary, we should focus on three frameworks (priority descending): AVFoundation, AudioToolbox, CoreAudio for making an awesome iOS app.&lt;/p&gt;</description>
+                <link>http://hugo53.github.io/ios%20development/2013/10/28/audio-processing-the-second-step</link>
+                <guid>http://hugo53.github.io/ios%20development/2013/10/28/audio-processing-the-second-step</guid>
+                <pubDate>2013-10-28T00:00:00+07:00</pubDate>
+        </item>
+
+        <item>
+                <title>Xây dựng bộ phận phân tích dữ liệu lớn - một sự khó khăn</title>
+                <description>&lt;blockquote&gt;
+&lt;p&gt;Original post at &lt;a href='http://www.analyticbridge.com/profiles/blogs/how-to-create-a-high-performance-analytics-team'&gt;How to create a High performance Analytics team?&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Nếu bạn là CEO của một tập đoàn đa quốc gia (MNC), hoạt động trên khắp các châu lục, rất có thể, bạn sẽ cần đọc bài viết này. Nếu không, hãy giả sử như bạn là một người như thế, và bài viết dưới đây là dành cho bạn.&lt;/p&gt;
+
+&lt;p&gt;Từ vài năm trước, chắc hẳn bạn đã nghe rất nhiều về những cụm từ mĩ miều, nổi bật nói về phân tích dữ liệu cũng như hàng loạt công ty nổi lên nhờ dịch vụ phân tích dữ liệu. Tuy nhiên, ở mặt kia của vấn đề, nhiều công ty đã dồn lượng lớn về thời gian cũng như tiền bạc để tìm cơ hội với phân tích dữ liệu nhưng vẫn chưa hề có kết quả thời gian, thậm chí nhiều năm sau khi bắt đầu. Mặc dù, công ty của bạn là một công ty đa quốc gia, việc sở hữu một đội ngũ chuyên gia phân tích dữ liệu dường như là hiển nhiên nhưng, câu hỏi đặt ra là: &lt;em&gt;Tại sao các công ty đó lại thất bại trong việc tạo lợi nhuận dựa trên phân tích dữ liệu?&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Câu hỏi trên luôn thường trực, và dường như bất cứ vị CEO đều phải đối mặt nếu như anh ta có ý định về vấn đề này. Tương tự vậy, gần đây cũng có nhiều thảo luận về việc làm thế nào để bắt đầu với Big Data và ứng dụng nó vào thực tế. Bởi vậy, bài viết này sẽ hỗ trợ các leader về phân tích dữ liệu có thể dễ dàng thành lập đội ngũ cho riêng mình, sẵn sàng chinh phục miền đất hứa Big Data.&lt;/p&gt;</description>
+                <link>http://hugo53.github.io/translation/2013/10/12/how-to-create-a-high-performance-analytics-team</link>
+                <guid>http://hugo53.github.io/translation/2013/10/12/how-to-create-a-high-performance-analytics-team</guid>
+                <pubDate>2013-10-12T00:00:00+07:00</pubDate>
+        </item>
+
+        <item>
+                <title>Sản phẩm mới của chàng trai 30 triệu đô</title>
+                <description>&lt;blockquote&gt;
+&lt;p&gt;Original article at &lt;a href='http://www.businessinsider.com/alex-polvis-cool-new-company-2013-10'&gt;This 28-Year-Old Sold His First Startup For $30 Million And Is Back With A Cool New Company&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Alex Polvi, ở tuổi 25, trở nên nổi tiếng trong giới công nghệ khi Rackspace bỏ ra 30 triệu đô la để mua lại startup của anh - Cloudclick - vào năm 2010. Không dừng lại ở đó, Alex vẫn đang tiếp tục gây dựng hành trình khởi nghiệp của mình với CoreOS – tập trung xây dựng hệ điều hành cho máy chủ. Đây được coi là một startup đáng chú ý với nhiều cải tiến mang tính cách mạng.&lt;/p&gt;
+
+&lt;p&gt;Điều đầu tiên cần nói tới, CoreOS sử dụng một số công nghệ hiện đại để tự xây dựng phiên bản hệ điều hành riêng dựa trên nhân Linux giống như những gì Google đã làm để xây dựng ChromeOS. Thậm chí, trong đội ngũ nhân viên của họ cũng có những cựu nhân viên của Google, từng làm việc trong dự án ChromeOS. Về mặt cơ bản, hệ điều hành CoreOS giúp các máy chủ có thể thực thi nhiều tác vụ hơn mà sử dụng ít tài nguyên phần cứng nhằm tăng hiệu năng hoạt động đồng thời hạn chế tối đa những tác động về năng lượng của các trung tâm dữ liệu, trung tâm máy chủ tới môi trường.&lt;/p&gt;
+
+&lt;p&gt;Ngoài ra, CoreOS là một startup được ươm mầm bởi Y Combinator – tổ chức ươm mầm khởi nghiệp nổi tiếng tại Silicon Valey. Chính vì điều này, CoreOS nhận được sự hỗ trợ của nhiều nhà đầu tư nổi tiếng, có thể kể tới như Andreessen Horowitz, Sequoia Capital hay Ron Conway hoặc danh thủ bóng bầu dục Joe Montana. Trong một bài phỏng vấn mới đây với Bloomberg, Montana cho biết rất hào hứng với những ý tưởng của Polvi trình bày tại buổi pitch của Y Combinator và dường như ngay lập tức, ông đã quyết định đầu tư vào CoreOS như một sự cổ vũ và thể hiện sự tin tưởng đối với Alex.&lt;/p&gt;
+
+&lt;p&gt;Thông tin chi tiết về giá trị gọi vốn ban đầu của CoreOS không được tiết lộ, nhưng theo cây bút của TechCrunch Alex Williams, con số ấy rơi vào khoảng 1 – 5 triệu đô la. Nhưng trên hết, CoreOS đang nhận được sự trợ giúp vô cùng quý giá của một trong hai người có đóng góp nhiều nhất cho sự phát triển của hệ điều hành Linux, Greg Kroah Hartman. Người còn lại, không ai khác, chính là Linux Torvalds. Cũng giống như Linux, CoreOS là hệ điều hành miễn phí và được công khai mã nguồn. Bởi thế, mọi người, không loại trừ bất kì ai, đều có quyền tải về, sử dụng và thậm chí là thay đổi hệ điều hành này nếu như có đủ kiến thức về tin học cần thiết. Dĩ nhiên, nếu tổ chức nào muốn nhận được sự hỗ trợ từ phía CoreOS, họ cần trả một khoản phí nhất định, đây được xem là cách tạo nguồn lợi nhuận của Polvi và cộng sự.&lt;/p&gt;</description>
+                <link>http://hugo53.github.io/translation/2013/10/11/28yearsoldmanwithstartup30millionsdollar</link>
+                <guid>http://hugo53.github.io/translation/2013/10/11/28yearsoldmanwithstartup30millionsdollar</guid>
+                <pubDate>2013-10-11T00:00:00+07:00</pubDate>
+        </item>
+
+        <item>
+                <title>Tăng trưởng vượt bậc về thuê bao di động ở các nước đang phát triển</title>
+                <description>&lt;blockquote&gt;
+&lt;p&gt;Original article at &lt;a href='http://bits.blogs.nytimes.com/2013/09/26/developing-countries-surge-in-mobile-broadband-u-n-finds/'&gt;Developing Countries Surge in Mobile Broadband, U.N. Finds&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;em&gt;Tại sao các nhà sản xuất điện thoại lại đặc biệt quan tâm tới thị trường tại các quốc gia đang phát triển? Đơn giản, bởi đó là những thị trường tiềm năng, đang tăng trưởng rất mạnh mẽ về nhu cầu thiết bị di động - một nghiên cứu mới đây của Ủy ban điều tra Broadband của Liên Hợp Quốc kết luận.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Theo báo cáo nghiên cứu trên, tính tới thời điểm cuối năm 2013, số lượng thuê bao di động trên toàn thế giới sẽ đạt mức 2.1 tỷ thuê bao, gấp khoảng 3 lần so với số lượng thuê bao cố định. Tuy nhiên, mọi thứ mới chỉ bắt đầu. Trung Quốc - quốc gia đông dân nhất thế giới, mới chỉ có 17 thuê bao di động trong mỗi 100 dân (số liệu cuối năm 2012). Mặc dù vậy, Trung Quốc vẫn có tỷ lệ tăng mạnh về mức độ sử dụng Internet cũng như số lượng nhà cung cấp thiết bị di động.&lt;/p&gt;
+
+&lt;p&gt;Bên cạnh đó, hai quốc gia khác tại Châu Á là Singapore và Nhật Bản cũng dẫn đầu về tỷ lệ sử dụng thiết bị di động, lần lượt là 123/100 và 113/100. Điều này có nghĩa, nhiều người cùng một lúc sở hữu hơn một thiết bị.&lt;/p&gt;
+
+&lt;p&gt;Đặc biệt hơn nữa, một số quốc gia đang phát triển như Oman hay Kazakhstan xếp trên cả các nước như Thụy Sỹ, Đức về tỷ lệ gia tăng thuê bao di động. Sự bùng nổ của mobile Internet đã giúp cho các quốc gia này có bước nhảy vọt về số lượng thiết bị di động, đồng thời đưa các hình thức kết nối truyền thống như điện thoại cố định đi vào dĩ vãng.&lt;/p&gt;
+
+&lt;p&gt;(to be continue&amp;#8230;)&lt;/p&gt;</description>
+                <link>http://hugo53.github.io/translation/2013/10/09/broadband-in-developing-country</link>
+                <guid>http://hugo53.github.io/translation/2013/10/09/broadband-in-developing-country</guid>
+                <pubDate>2013-10-09T00:00:00+07:00</pubDate>
+        </item>
 
         <item>
                 <title>Understanding PDF in iOS Deeply</title>
@@ -20,25 +172,42 @@
 
 &lt;h5 id='leading'&gt;Leading&lt;/h5&gt;
 
-&lt;p&gt;Leading is space between two lines. According to &lt;a href='http://en.wikipedia.org/wiki/Leading'&gt;Wikipedia&lt;/a&gt;, &lt;em&gt;In typography, leading /ˈlɛdɪŋ/ refers to the distance between the baselines of successive lines of type&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Leading is space between two lines. According to &lt;a href='http://en.wikipedia.org/wiki/Leading'&gt;Wikipedia&lt;/a&gt;, &lt;em&gt;In typography, leading /ˈlɛdɪŋ/ refers to the distance between the baselines of successive lines of type&lt;/em&gt;. However, there are more than one &lt;em&gt;leading&lt;/em&gt; definition. The below image shows you 3 ways &lt;em&gt;leading&lt;/em&gt; is defined.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='alt text' src='http://hugo53.github.io/images/pdfpost/leadingoriginal.png' /&gt;&lt;/p&gt;
 
 &lt;h5 id='xheight'&gt;X-height&lt;/h5&gt;
 
-&lt;p&gt;X-height describes height of &lt;strong&gt;X&lt;/strong&gt; character in a font collection.&lt;/p&gt;
+&lt;p&gt;X-height describes height of &lt;strong&gt;X&lt;/strong&gt; character in a font collection as the image below demonstrates.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='alt text' src='http://hugo53.github.io/images/pdfpost/line.png' /&gt;&lt;/p&gt;
+
+&lt;h5 id='descent_and_ascent'&gt;Descent and Ascent&lt;/h5&gt;
+
+&lt;p&gt;In typography, &lt;strong&gt;Descent&lt;/strong&gt; is a term refer to the part which is below &lt;strong&gt;word baseline&lt;/strong&gt; (known as the underline of the word). For example, in the image above, descender is a part from baseline to descent line, ascender is a part from baseline to ascent line. Height of them are &lt;strong&gt;descent&lt;/strong&gt;, &lt;strong&gt;ascent&lt;/strong&gt; respectively.&lt;/p&gt;
+
+&lt;h5 id='font_size'&gt;Font size&lt;/h5&gt;
+
+&lt;p&gt;Font size is measuared by distance from ascent line to descent line. In general term, point is unit for desmonstrating font size which is equal to 1/72 inch per point (1 point = 1/72 inch. That means Arial 12pt = 1/6 inch = 4.3 mm). In PDF specification, Font information is usually in &lt;em&gt;Resources&lt;/em&gt; dictionary which contains a &lt;em&gt;Font&lt;/em&gt; dictionary. We can open PDF file by a text editor and search for &lt;em&gt;Resources&lt;/em&gt; keyword to locate Font description.&lt;/p&gt;
 
 &lt;h5 id='glyph'&gt;Glyph&lt;/h5&gt;
 
-&lt;h5 id='descent'&gt;Descent&lt;/h5&gt;
-
-&lt;h5 id='ascent'&gt;Ascent&lt;/h5&gt;
+&lt;p&gt;( &lt;em&gt;Need more study&lt;/em&gt; )&lt;/p&gt;
 
 &lt;h2 id='reading_pdf_flow'&gt;Reading PDF Flow&lt;/h2&gt;
 
 &lt;h3 id='pdf_operator'&gt;PDF Operator&lt;/h3&gt;
 
-&lt;ul&gt;
-&lt;li&gt;&lt;a href='http://my.safaribooksonline.com/book/office-and-productivity-applications/0321304748/operator-summary/app01'&gt;Operator Table&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;PDF uses &lt;em&gt;operators&lt;/em&gt; to determine what kind of text will be shown based on pre-defined format. However, it is so complex to understand how pdf is organized.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;BT % Begin text object
+/F1 1 Tf % Set text font and size 
+64 0 0 64 7.1771 2.4414 Tm % Set text matrix 
+0 Tc % Set character spacing 
+0 Tw % Set word spacing
+ET&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In the above block, you can see &lt;em&gt;Tf&lt;/em&gt;, &lt;em&gt;Tm&lt;/em&gt;, &lt;em&gt;Tc&lt;/em&gt;, &lt;em&gt;Tw&lt;/em&gt; are four operators which define font (and font size), text matrix, character spacing, word spacing are used. In clearly words, if you want to read and do some processing tasks relating to pdf content such as highlighting word or bolding word, you must handle with as much as possible operators to get exactly text block information for making your job be accurate as your desire. You may need to check &lt;a href='http://my.safaribooksonline.com/book/office-and-productivity-applications/0321304748/operator-summary/app01'&gt;&lt;strong&gt;operator table&lt;/strong&gt;&lt;/a&gt; to know more about pdf operators.&lt;/p&gt;
 
 &lt;h3 id='scanner_stack'&gt;Scanner Stack&lt;/h3&gt;
 
@@ -53,9 +222,13 @@ ET&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Stack will be:&lt;/p&gt;
 
-&lt;p&gt;BT -&amp;gt; /F1 -&amp;gt; 1 -&amp;gt; Tf(operator) -&amp;gt; 64 -&amp;gt; 0 -&amp;gt; 0 -&amp;gt; 64 -&amp;gt; 7.1771 -&amp;gt; 2.4414 -&amp;gt; Tm(operator) -&amp;gt; &amp;#8230; -&amp;gt; ET (top of stack).&lt;/p&gt;
+&lt;p&gt;BT -&amp;gt; /F1 -&amp;gt; 1 -&amp;gt; Tf(operator) -&amp;gt; 64 -&amp;gt; 0 -&amp;gt; 0 -&amp;gt; 64 -&amp;gt; 7.1771 -&amp;gt; 2.4414 -&amp;gt; Tm(operator) -&amp;gt; &amp;#8230; -&amp;gt; ET (top of the stack).&lt;/p&gt;
 
 &lt;h3 id='getting_pdf_objects_from_scanner_stack'&gt;Getting PDF Objects from Scanner Stack&lt;/h3&gt;
+
+&lt;p&gt;In iOS, you should implement some callback functions for several important operators to help scanner can recognize what sort of value must get for each operator when it scans through the pdf document. Fortunately, iOS supports us by providing &lt;em&gt;Pop&lt;/em&gt; functions to get our desire objects when scanner meets a specific operator. Therefore, we must know clearly the format of each operator. For example, in the above block, &lt;em&gt;Tf&lt;/em&gt; is font operator, when the value is &lt;em&gt;Tf&lt;/em&gt;, scanner knows this operator and pop two most recent values: &lt;em&gt;/F1&lt;/em&gt; and &lt;em&gt;1&lt;/em&gt; by two functions: &lt;em&gt;CGPDFScannerPopName&lt;/em&gt; and &lt;em&gt;CGPDFScannerPopNumber&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;The following list displays &lt;em&gt;Pop&lt;/em&gt; functions supplied by iOS.&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;CGPDFScannerPopObject&lt;/li&gt;
@@ -215,6 +388,8 @@ ET&lt;/code&gt;&lt;/pre&gt;
 &lt;li&gt;Show size of file (or files in a directory): &lt;em&gt;ls -lh file-name/folder-path&lt;/em&gt;&lt;/li&gt;
 
 &lt;li&gt;Show size of current system (included all hard disks): &lt;em&gt;df -h&lt;/em&gt;&lt;/li&gt;
+
+&lt;li&gt;Remove sleep image (when your boot disk is full): &lt;em&gt;sudo rm /var/vm/sleepimage&lt;/em&gt;. This command will disable Hibernate mode which is reason for sleep image existing. If you want to enable this mode, should try &lt;em&gt;sudo pmset -a hibernatemode 3&lt;/em&gt;.&lt;/li&gt;
 &lt;/ul&gt;</description>
                 <link>http://hugo53.github.io/2013/09/25/useful-command-line</link>
                 <guid>http://hugo53.github.io/2013/09/25/useful-command-line</guid>
@@ -1359,16 +1534,6 @@ ET&lt;/code&gt;&lt;/pre&gt;
                 <link>http://hugo53.github.io/business%20model/2013/05/13/mo-hinh-sinh-loi-nhuan-trong-linh-vc-web-va-mobile</link>
                 <guid>http://hugo53.github.io/business%20model/2013/05/13/mo-hinh-sinh-loi-nhuan-trong-linh-vc-web-va-mobile</guid>
                 <pubDate>2013-05-13T00:00:00+07:00</pubDate>
-        </item>
-
-        <item>
-                <title>[Vietnamese] Tuổi trẻ!</title>
-                <description>&lt;p&gt;Thế là cũng đã tốt nghiệp được 1 năm! Kinh nghiệm cũng không thêm được nhiều, trình độ cũng vẫn tàng tàng hồi còn đi học, moi đi moi lại vẫn chưa ra thứ gì tốt hơn so với một năm trước. Có chăng, một chút thay đổi trong tư duy và cách nhìn nhận cuộc sống.&lt;/p&gt;
-
-&lt;p&gt;Bao đêm tự hỏi, mình là ai và mình đang làm gì? Câu trả lời vẫn quẩn quanh thực tại, một tên dev (lập trình viên) quèn, làm những thứ chẳng ai biết ấy là đâu. Điều quan trọng hơn, sự tự do với tri thức của mình vẫn quá xa vời. Muốn viết ra vài lời tâm sự mà sao khó quá. Thôi kể chuyện tán gái cho bớt buồn. Nghĩ mà cực, đường tán gái của mình long đong lận đận ghê. Biết thích khi còn tý tuổi, xoè bàn tay ra là đếm được, vậy mà &amp;#8230; giờ vẫn FA. Nói đùa chứ không phải là muốn thoát FA, mà hoàn toàn ngược lại, mình vui với tình hình hiện tại - không mệt đầu mấy chuyện gái gú yêu đương, tự do làm những gì mình nghĩ, gặp gỡ được nhiều con gái hơn, thay vì suốt ngày canh chừng ánh mắt của nàng sư tử tiềm năng. Tuy nhiên, alone cũng nhiều khi buồn, thực sự rất buồn. Lúc buồn, lại nhớ mấy năm về trước, khi còn tíu tít với mảnh tình đầu trong sáng - chỉ hơi tối một chút ;). Lại nhớ, lại nhớ, lại nhớ! Mỗi lần như vậy, mình dường như gục ngã, tâm trí rối bời và mất niềm tin vào cái thứ mơ mộng gọi là tình yêu lung linh lúng liếng. Cũng mỗi lần như vậy, lại nhấn bài &lt;em&gt;Túp lều lý tưởng&lt;/em&gt; remix để chìm đắm trong cái nỗi mộng mơ ấy. &lt;a href='http://www.youtube.com/watch?v=bzwiWMW1ty0'&gt;&lt;img src='http://img.youtube.com/vi/bzwiWMW1ty0/0.jpg' alt='này' /&gt;&lt;/a&gt;&lt;/p&gt;</description>
-                <link>http://hugo53.github.io/lifestyle%20and%20motivation/2013/05/12/vietnamesetui-tr</link>
-                <guid>http://hugo53.github.io/lifestyle%20and%20motivation/2013/05/12/vietnamesetui-tr</guid>
-                <pubDate>2013-05-12T00:00:00+07:00</pubDate>
         </item>
 
         <item>

@@ -108,6 +108,18 @@
   
     
       
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
       	
       	<li><a href="/pages.html">Pages</a></li>
       	
@@ -158,6 +170,8 @@
 <li>Show size of file (or files in a directory): <em>ls -lh file-name/folder-path</em></li>
 
 <li>Show size of current system (included all hard disks): <em>df -h</em></li>
+
+<li>Remove sleep image (when your boot disk is full): <em>sudo rm /var/vm/sleepimage</em>. This command will disable Hibernate mode which is reason for sleep image existing. If you want to enable this mode, should try <em>sudo pmset -a hibernatemode 3</em>.</li>
 </ul>
     </div>
 

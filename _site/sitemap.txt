@@ -5,6 +5,7 @@ http://hugo53.github.io/categories.html
 http://hugo53.github.io/index.html
 http://hugo53.github.io/pages/about.html
 http://hugo53.github.io/pages/Books.html
+http://hugo53.github.io/pages/EVtranslation.html
 http://hugo53.github.io/pages/hackjekyll.html
 http://hugo53.github.io/pages/ielts/confusedwords.html
 http://hugo53.github.io/pages/ielts/index.html
@@ -12,11 +13,18 @@ http://hugo53.github.io/pages/ielts/journey.html
 http://hugo53.github.io/pages/ielts/reading.html
 http://hugo53.github.io/pages/ielts/writing.html
 http://hugo53.github.io/pages/ios/monetization.html
+http://hugo53.github.io/pages/iosmyth.html
+http://hugo53.github.io/pages/WhatIdontMaster.html
 http://hugo53.github.io/pages.html
 http://hugo53.github.io/rss.xml
 http://hugo53.github.io/sitemap.txt
 http://hugo53.github.io/tags.html
 
+http://hugo53.github.io/cryptography/2013/11/07/crytography-in-ios
+http://hugo53.github.io/ios%20development/2013/10/28/audio-processing-the-second-step
+http://hugo53.github.io/translation/2013/10/12/how-to-create-a-high-performance-analytics-team
+http://hugo53.github.io/translation/2013/10/11/28yearsoldmanwithstartup30millionsdollar
+http://hugo53.github.io/translation/2013/10/09/broadband-in-developing-country
 http://hugo53.github.io/2013/10/07/understanding-pdf-in-ios-deeply
 http://hugo53.github.io/tool/2013/09/28/git-and-its-tutorials
 http://hugo53.github.io/ios%20development/2013/09/27/audio-processing-in-ios---an-initial-step
@@ -30,6 +38,5 @@ http://hugo53.github.io/opinion/2013/05/14/sinh-vien-cntt-nen-hoc-gi
 http://hugo53.github.io/ios%20development/2013/05/13/web-and-mobile-revenue-models
 http://hugo53.github.io/quora/2013/05/13/quora-corner
 http://hugo53.github.io/business%20model/2013/05/13/mo-hinh-sinh-loi-nhuan-trong-linh-vc-web-va-mobile
-http://hugo53.github.io/lifestyle%20and%20motivation/2013/05/12/vietnamesetui-tr
 http://hugo53.github.io/ios%20development/2013/05/12/get-started-with-ios-programming
 http://hugo53.github.io/2013/05/11/hello-world

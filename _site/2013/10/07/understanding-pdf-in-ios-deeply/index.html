@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>Understanding PDF in iOS Deeply</title>
-    <meta name="description" content="Operating with PDF in iOS is really low-level task. It is not just using some built-in features of iOS to create your own product. Indeed, it requires intensive knowledge at very low iOS layer and at least basic PDF definition. This post tends to supply some aspects of processing PDF in iOS which aims to help developers easy to win this hard job.">
+    <meta name="description" content="Operating with PDF in iOS is a really low-level task. It is not just using some built-in features of iOS to create your own product. Indeed, it requires intensive knowledge at very low iOS layer and at least basic PDF definitions. This post tends to supply some aspects of processing PDF in iOS which aims to help developers easy to win this hard job.">
     <meta name="author" content="Hugo Nguyen">
 
     <!-- Enable responsive viewport -->
@@ -108,6 +108,18 @@
   
     
       
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
       	
       	<li><a href="/pages.html">Pages</a></li>
       	
@@ -160,25 +172,42 @@
 
 <h5 id='leading'>Leading</h5>
 
-<p>Leading is space between two lines. According to <a href='http://en.wikipedia.org/wiki/Leading'>Wikipedia</a>, <em>In typography, leading /ˈlɛdɪŋ/ refers to the distance between the baselines of successive lines of type</em></p>
+<p>Leading is space between two lines. According to <a href='http://en.wikipedia.org/wiki/Leading'>Wikipedia</a>, <em>In typography, leading /ˈlɛdɪŋ/ refers to the distance between the baselines of successive lines of type</em>. However, there are more than one <em>leading</em> definition. The below image shows you 3 ways <em>leading</em> is defined.</p>
+
+<p><img alt='alt text' src='http://hugo53.github.io/images/pdfpost/leadingoriginal.png' /></p>
 
 <h5 id='xheight'>X-height</h5>
 
-<p>X-height describes height of <strong>X</strong> character in a font collection.</p>
+<p>X-height describes height of <strong>X</strong> character in a font collection as the image below demonstrates.</p>
+
+<p><img alt='alt text' src='http://hugo53.github.io/images/pdfpost/line.png' /></p>
+
+<h5 id='descent_and_ascent'>Descent and Ascent</h5>
+
+<p>In typography, <strong>Descent</strong> is a term refer to the part which is below <strong>word baseline</strong> (known as the underline of the word). For example, in the image above, descender is a part from baseline to descent line, ascender is a part from baseline to ascent line. Height of them are <strong>descent</strong>, <strong>ascent</strong> respectively.</p>
+
+<h5 id='font_size'>Font size</h5>
+
+<p>Font size is measuared by distance from ascent line to descent line. In general term, point is unit for desmonstrating font size which is equal to 1/72 inch per point (1 point = 1/72 inch. That means Arial 12pt = 1/6 inch = 4.3 mm). In PDF specification, Font information is usually in <em>Resources</em> dictionary which contains a <em>Font</em> dictionary. We can open PDF file by a text editor and search for <em>Resources</em> keyword to locate Font description.</p>
 
 <h5 id='glyph'>Glyph</h5>
 
-<h5 id='descent'>Descent</h5>
-
-<h5 id='ascent'>Ascent</h5>
+<p>( <em>Need more study</em> )</p>
 
 <h2 id='reading_pdf_flow'>Reading PDF Flow</h2>
 
 <h3 id='pdf_operator'>PDF Operator</h3>
 
-<ul>
-<li><a href='http://my.safaribooksonline.com/book/office-and-productivity-applications/0321304748/operator-summary/app01'>Operator Table</a></li>
-</ul>
+<p>PDF uses <em>operators</em> to determine what kind of text will be shown based on pre-defined format. However, it is so complex to understand how pdf is organized.</p>
+
+<pre><code>BT % Begin text object
+/F1 1 Tf % Set text font and size 
+64 0 0 64 7.1771 2.4414 Tm % Set text matrix 
+0 Tc % Set character spacing 
+0 Tw % Set word spacing
+ET</code></pre>
+
+<p>In the above block, you can see <em>Tf</em>, <em>Tm</em>, <em>Tc</em>, <em>Tw</em> are four operators which define font (and font size), text matrix, character spacing, word spacing are used. In clearly words, if you want to read and do some processing tasks relating to pdf content such as highlighting word or bolding word, you must handle with as much as possible operators to get exactly text block information for making your job be accurate as your desire. You may need to check <a href='http://my.safaribooksonline.com/book/office-and-productivity-applications/0321304748/operator-summary/app01'><strong>operator table</strong></a> to know more about pdf operators.</p>
 
 <h3 id='scanner_stack'>Scanner Stack</h3>
 
@@ -193,9 +222,13 @@ ET</code></pre>
 
 <p>Stack will be:</p>
 
-<p>BT -&gt; /F1 -&gt; 1 -&gt; Tf(operator) -&gt; 64 -&gt; 0 -&gt; 0 -&gt; 64 -&gt; 7.1771 -&gt; 2.4414 -&gt; Tm(operator) -&gt; &#8230; -&gt; ET (top of stack).</p>
+<p>BT -&gt; /F1 -&gt; 1 -&gt; Tf(operator) -&gt; 64 -&gt; 0 -&gt; 0 -&gt; 64 -&gt; 7.1771 -&gt; 2.4414 -&gt; Tm(operator) -&gt; &#8230; -&gt; ET (top of the stack).</p>
 
 <h3 id='getting_pdf_objects_from_scanner_stack'>Getting PDF Objects from Scanner Stack</h3>
+
+<p>In iOS, you should implement some callback functions for several important operators to help scanner can recognize what sort of value must get for each operator when it scans through the pdf document. Fortunately, iOS supports us by providing <em>Pop</em> functions to get our desire objects when scanner meets a specific operator. Therefore, we must know clearly the format of each operator. For example, in the above block, <em>Tf</em> is font operator, when the value is <em>Tf</em>, scanner knows this operator and pop two most recent values: <em>/F1</em> and <em>1</em> by two functions: <em>CGPDFScannerPopName</em> and <em>CGPDFScannerPopNumber</em>.</p>
+
+<p>The following list displays <em>Pop</em> functions supplied by iOS.</p>
 
 <ul>
 <li>CGPDFScannerPopObject</li>
@@ -262,7 +295,7 @@ ET</code></pre>
       
         <li><a href="/archive.html">Archive</a></li>
       
-        <li class="next disabled"><a>Next &rarr;</a>
+        <li class="next"><a href="/translation/2013/10/09/broadband-in-developing-country" title="Tăng trưởng vượt bậc về thuê bao di động ở các nước đang phát triển">Next &rarr;</a></li>
       
       </ul>
     </div>

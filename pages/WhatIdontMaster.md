@@ -20,7 +20,7 @@ _@synchronized(){}_ is also a compiler directive.
 
 - [What is NSNotificationCenter?](https://developer.apple.com/library/ios/documentation/Cocoa/Reference/Foundation/Classes/NSNotificationCenter\_Class/NSNotificationCenter\_Class.pdf) and it is for what?
 
-- [Security]
+- Security
 
 	- How _CommonCrypto_ work? What are amazing task supported by Security framework?
 	- How to encrypt and decrypt a data stream?
@@ -32,5 +32,5 @@ _@synchronized(){}_ is also a compiler directive.
 	- [Use NSOutputStream as NSInputStream](http://stackoverflow.com/questions/3221030/buffering-nsoutputstream-used-as-nsinputstream), and [here](http://bjhomer.blogspot.co.uk/2011/04/subclassing-nsinputstream.html)
 
 - Class Cluster
-- Class Factory Method: like +(id)dataWithContentsOfFile:(NSString *)path;
+- Class Factory Method: like +(id)dataWithContentsOfFile:(NSString \*)path;
 
