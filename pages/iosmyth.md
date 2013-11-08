@@ -76,10 +76,12 @@ Objective-C is a very dynamic language. Its dynamism frees a program from compil
 For **dynamic typing**, Objective-C introduces the id data type, which can represent any Cocoa object. A typical use of this generic object type is shown in this part of the code example following:
 
 ```objective-c
+
 id word;
 while (word = [enm nextObject]) {
     // do something with 'word' variable....
 }
+
 ```
 
 The id data type makes it possible to substitute any type of object at runtime. You can thereby let runtime factors dictate what kind of object is to be used in your code. Dynamic typing permits associations between objects to be determined at runtime rather than forcing them to be encoded in a static design. Static type checking at compile time may ensure stricter data integrity, but in exchange for that stricter integrity, dynamic typing gives your program much greater flexibility. And through object introspection (for example, asking a dynamically typed, anonymous object what its class is) you can still verify the type of an object at runtime and thus validate its suitability for a particular operation. (Of course, you can always statically check the types of objects when you need to.)

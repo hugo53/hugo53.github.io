@@ -48,8 +48,6 @@ Fortunately, Rob Napier opens his work at [RNCryptor](https://github.com/rnapier
 
 
 
-
-
 ## Reference
 - [Chapter 15, iOS 6 Programming Pushing the Limits](http://www.amazon.com/iOS-Programming-Pushing-Limits-Application/dp/1118449959)
 
