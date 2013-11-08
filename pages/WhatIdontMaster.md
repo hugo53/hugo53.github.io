@@ -34,3 +34,6 @@ _@synchronized(){}_ is also a compiler directive.
 - Class Cluster
 - Class Factory Method: like +(id)dataWithContentsOfFile:(NSString \*)path;
 
+## 8/11/2013
+- The Layer-Based Drawing Model, Layer-Based Animations
+- Drawing model

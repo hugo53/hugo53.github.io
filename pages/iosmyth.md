@@ -5,6 +5,12 @@ description: ""
 ---
 {% include JB/setup %}
 
+# Table of Contents
+
+- [How an object is created?](#How-an-object-is-created?)
+
+
+
 ## How an object is created?
 
 When you allocate an object, part of what happens is what you might expect, given the term. Cocoa allocates enough memory for the object from a region of application virtual memory. To calculate how much memory to allocate, it takes the object’s instance variables into account—including their types and order—as specified by the object’s class.
@@ -94,6 +100,49 @@ This _lazy-loading_ of program code and resources improves overall performance b
 
 > Investigate more in Dynamic loading (with NSBundle) and Dynamic binding (Does it relate to performSelector or delegate method)
 
+## View, Frame and Bound - What is difference?
+Firstly, Frame and Bound are two of view's properties.
+
+**A view** is an object that draws itself within a rectangular area of a window and that can respond to user actions such as finger taps or mouse clicks. A view draws a visual representation of itself and presents a surface that responds to touches and input from devices. Not all views handle events, but views are more likely to handle events than other types of responder objects (that is, objects capable of responding to events). Views also provide the content for printing. _For a view to be useful, it must be situated in the view hierarchy of a window._ View  inherit, directly or indirectly, from NSView in Mac OSX or from UIView in iOS.
+
+The frame and bounds of a view define its boundaries and its relationships to other views. 
+
+**The frame** specifies the placement and size of a view within its **superview’s coordinate system**.
+
+**The bounds** of a view specifies the **local coordinate system** that a view uses for drawing itself. (Views in UIKit also have a property that locates the center of their rectangular area.)
+
+![alt text](http://hugo53.github.io/images/viewProperties.jpg "leading")
+
+#### Layer and CALayer
+In both iOS and OS X, each view is (or can be) backed by a Core Animation layer object (CALayer), which is accessible through the _layer_ property. The layer object caches a view’s drawing content, assists in the layout and rendering of that content, and can composite and animate that content.
+
+### View Hierarchy
+A view hierarchy defines the relationships of views in a window to each other. 
+
+- You can think of a view hierarchy as an **inverted tree** structure with the _window being the top node of the tree_. Under it come views structurally specified by parent-child relationships. 
+
+- **From a visual perspective**, the essential fact of a view hierarchy is enclosure: one view contains one or more other views, and the window contains them all.
+
+Each view has three properties to describe relationships with other views: _window, subviews, superview_. See the following image for details.
+
+![alt text](http://hugo53.github.io/images/viewhierarchyrelationships.jpg "leading")
+
+Note that, **in iOS, a Window is a View**. In OS X a window has a single "content view" - a background view from which, structurally, all other views in the hierarchy descend. However, in iOS applications, a window is a view (*UIWindow inherits from UIView*), and so it acts as its own content view.
 
 
+## Naming convention for accessor methods
+Because of the importance of this pattern, Cocoa defines some conventions for naming accessor methods. Given a property of type type and called name, you should typically implement accessor methods with the following form:
 
+```objective-c
+- (type)name;
+- (void)setName:(type)newName;
+```
+
+The one exception is a property that is a Boolean value. Here the getter method name may be isName. For example:
+
+```objective-c
+- (BOOL)isHidden;
+- (void)setHidden:(BOOL)newHidden;
+```
+
+> This naming convention is important because **much other functionality in Cocoa relies upon it**, in particular **key-value coding**. Cocoa does not use _getName_ because methods that start with "get" in Cocoa indicate that the method will return values by reference.
