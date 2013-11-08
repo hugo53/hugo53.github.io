@@ -37,6 +37,17 @@ Padding is the practice of expanding plaintext to the correct length prior to en
 #### Cipher-block chaining
 
 
+## Implementation in iOS
+Fortunately, Rob Napier opens his work at [RNCryptor](https://github.com/rnapier/RNCryptor). That helps us save a lots time but it is better if we know a litte bit about these techniques.
+
+
+#### Offline Security
+
+
+#### Streaming Security
+
+
+
 
 
 ## Reference
