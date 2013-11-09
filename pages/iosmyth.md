@@ -8,8 +8,8 @@ description: ""
 # Table of Contents
 
 [How an object is created?](#How-an-object-is-created?)
-[How many introspection methods?](# How-many-introspection-methods?)
-
+[How many introspection methods?](#How-many-introspection-methods?)
+[isEqual and Hash](#isEqual-and-Hash)
 
 ## How an object is created?
 
