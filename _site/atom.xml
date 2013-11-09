@@ -4,7 +4,7 @@
  <title>Leading Beautiful Life</title>
  <link href="http://hugo53.github.io/" rel="self"/>
  <link href="http://hugo53.github.io"/>
- <updated>2013-11-08T09:37:01+07:00</updated>
+ <updated>2013-11-09T13:41:50+07:00</updated>
  <id>http://hugo53.github.io</id>
  <author>
    <name>Hugo Nguyen</name>
@@ -44,6 +44,14 @@
 &lt;p&gt;Padding is the practice of expanding plaintext to the correct length prior to encryption. It needs to be done in a way that the padding can be unambiguously removed after decryption. There are several ways to achieve this, but the only way supported by iOS is called PKCS #7 padding.&lt;/p&gt;
 
 &lt;h4 id='cipherblock_chaining'&gt;Cipher-block chaining&lt;/h4&gt;
+
+&lt;h2 id='implementation_in_ios'&gt;Implementation in iOS&lt;/h2&gt;
+
+&lt;p&gt;Fortunately, Rob Napier opens his work at &lt;a href='https://github.com/rnapier/RNCryptor'&gt;RNCryptor&lt;/a&gt;. That helps us save a lots time but it is better if we know a litte bit about these techniques.&lt;/p&gt;
+
+&lt;h4 id='offline_security'&gt;Offline Security&lt;/h4&gt;
+
+&lt;h4 id='streaming_security'&gt;Streaming Security&lt;/h4&gt;
 
 &lt;h2 id='reference'&gt;Reference&lt;/h2&gt;
 
