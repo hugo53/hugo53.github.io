@@ -7,11 +7,25 @@ description: ""
 
 # Table of Contents
 
-[How an object is created?](#How-an-object-is-created?)
+[How an object is created?](#How an object is created)
+
 [How many introspection methods?](#How-many-introspection-methods?)
+
 [isEqual and Hash](#isEqual-and-Hash)
 
-## How an object is created?
+[Event Queue and how iOS manage events](#Event Queue and how iOS manage events)
+
+[The Dynamism of Objective-C](#The Dynamism of Objective-C)
+
+[View, Frame and Bound - What is difference?](#View, Frame and Bound - What is difference?)
+
+[Atomic and NonAtomic attributes](#Atomic and NonAtomic attributes)
+
+[Naming convention for accessor methods](#Naming convention for accessor methods)
+
+[Instance variable and Property](#Instance variable and Property)
+
+## How an object is created? {#How an object is created}
 
 When you allocate an object, part of what happens is what you might expect, given the term. Cocoa allocates enough memory for the object from a region of application virtual memory. To calculate how much memory to allocate, it takes the object’s instance variables into account—including their types and order—as specified by the object’s class.
 
@@ -29,7 +43,7 @@ In summary, allocation not only allocates memory for an object but initializes t
 
 > ALLOC: Do three tasks but object is not usable. INIT will make allocated object be usable. 
 
-## How many introspection methods?
+## How many introspection methods? {#How-many-introspection-methods?}
 - \[objectX class\]
 - \[objectX superclass\]
 - \[objectX isKindOfClass\]
@@ -38,22 +52,22 @@ In summary, allocation not only allocates memory for an object but initializes t
 - \[objectX conformsToProtocol:@protocol(protocolName)\]
 - \[objectX isEqual:objectY\]
 
-## isEqual and Hash
+## isEqual and Hash {#isEqual-and-Hash}
 The hash and isEqual: methods, both declared by the NSObject protocol, are closely related. The hash method must be implemented to return an integer that can be used as a table address in a hash table structure. If two objects are equal (as determined by the isEqual: method), they must have the same hash value. If your object could be included in collections such as NSSet objects, you need to define hash and verify the invariant that if two objects are equal, they return the same hash value. The default NSObject implementation of isEqual: simply checks for pointer equality.
 
 > If two objects are equal, their hashes must be equal too. But the same hash does not need to be equal. The following example will explain this case.
 
-```
-If two objects are equal (as determined by the isEqual: method), they must have the same hash value. This last point is particularly important if you define hash in a subclass and intend to put instances of that subclass into a collection.
-If a mutable object is added to a collection that uses hash values to determine the object’s position in the collection, the value returned by the hash method of the object must not change while the object is in the collection. Therefore, either the hash method must not rely on any of the object’s internal state information or you must make sure the object’s internal state information does not change while the object is in the collection. Thus, for example, a mutable dictionary can be put in a hash table but you must not change it while it is in there. (Note that it can be difficult to know whether or not a given object is in a collection.)
-```
+	If two objects are equal (as determined by the isEqual: method), they must have the same hash value. This last point is particularly important if you define hash in a subclass and intend to put instances of that subclass into a collection.
+	
+	If a mutable object is added to a collection that uses hash values to determine the object’s position in the collection, the value returned by the hash method of the object must not change while the object is in the collection. Therefore, either the hash method must not rely on any of the object’s internal state information or you must make sure the object’s internal state information does not change while the object is in the collection. Thus, for example, a mutable dictionary can be put in a hash table but you must not change it while it is in there. (Note that it can be difficult to know whether or not a given object is in a collection.)
+
 
 Note that in all isEqualToType: methods of the Cocoa frameworks, nil is not a valid parameter and implementations of these methods may raise an exception upon receiving a nil. 
 However, for backward compatibility, isEqual: methods of the Cocoa frameworks do accept nil, returning NO. In summary, _isEqual_ accepts nil object but _isEqualToType_ is not.
 
 
 
-## Event Queue and how iOS manage events
+## Event Queue and how iOS manage events {#Event Queue and how iOS manage events}
 In the main event loop, an application continuously routes incoming events to objects for handling and, as a result of that handling, updates its appearance and state. An event loop is simply a run loop: an event-processing loop for scheduling work and coordinating the receipt of events from various input sources attached to the run loop. Every thread has access to a run loop. In all but the main thread, the run loop must be configured and run manually by your code. In Cocoa applications, the run loop for the main thread—the main event loop—is run automatically by the application object. What distinguishes the main event loop is that its primary input source receives events from the operating system that are generated by user actions—for example, tapping a view or entering text using a keyboard.
 
 ####The Application Object Gets and Dispatches Events
@@ -74,7 +88,7 @@ In handling the event, the view often initiates a series of actions that modify 
 
 > Note _First Responder_ comes from here. In summary, iOS uses an event queue in main thread to manage event objects.
 
-## The Dynamism of Objective-C
+## The Dynamism of Objective-C {#The Dynamism of Objective-C}
 Objective-C is a very dynamic language. Its dynamism frees a program from compile-time and link-time constraints and shifts much of the responsibility for symbol resolution to runtime, when the user is in control. Objective-C is more dynamic than other programming languages because its dynamism springs from three sources:
 
  - Dynamic typing—determining the class of an object at runtime
@@ -102,7 +116,7 @@ This _lazy-loading_ of program code and resources improves overall performance b
 
 > Investigate more in Dynamic loading (with NSBundle) and Dynamic binding (Does it relate to performSelector or delegate method)
 
-## View, Frame and Bound - What is difference?
+## View, Frame and Bound - What is difference? {#View, Frame and Bound - What is difference?}
 Firstly, Frame and Bound are two of view's properties.
 
 **A view** is an object that draws itself within a rectangular area of a window and that can respond to user actions such as finger taps or mouse clicks. A view draws a visual representation of itself and presents a surface that responds to touches and input from devices. Not all views handle events, but views are more likely to handle events than other types of responder objects (that is, objects capable of responding to events). Views also provide the content for printing. _For a view to be useful, it must be situated in the view hierarchy of a window._ View  inherit, directly or indirectly, from NSView in Mac OSX or from UIView in iOS.
@@ -132,14 +146,14 @@ Each view has three properties to describe relationships with other views: _wind
 
 Note that, **in iOS, a Window is a View**. In OS X a window has a single "content view", a background view from which, structurally, all other views in the hierarchy descend. However, in iOS applications, a window is a view (*UIWindow inherits from UIView*), and so it acts as its own content view.
 
-## Atomic and NonAtomic attributes
+## Atomic and NonAtomic attributes {#Atomic and NonAtomic attributes}
 This means that the synthesized accessors ensure that a value is always fully retrieved by the getter method or fully set via the setter method, even if the accessors are called simultaneously from different threads.
 
 Because the internal implementation and synchronization of atomic accessor methods is private, it’s not possible to combine a synthesized accessor with an accessor method that you implement yourself. You’ll get a compiler warning if you try, for example, to provide a custom setter for an atomic, readwrite property but leave the compiler to synthesize the getter.
 
 You can use the nonatomic property attribute to specify that synthesized accessors simply set or return a value directly, with no guarantees about what happens if that same value is accessed simultaneously from different threads. For this reason, it’s faster to access a nonatomic property than an atomic one, and it’s fine to combine a synthesized setter, for example, with your own getter implementation.
 
-## Naming convention for accessor methods
+## Naming convention for accessor methods {#Naming convention for accessor methods}
 Because of the importance of this pattern, Cocoa defines some conventions for naming accessor methods. Given a property of type type and called name, you should typically implement accessor methods with the following form:
 
 	- (type)name;
@@ -155,7 +169,7 @@ The one exception is a property that is a Boolean value. Here the getter method 
 
 > This naming convention is important because **much other functionality in Cocoa relies upon it**, in particular **key-value coding**. Cocoa does not use _getName_ because methods that start with "get" in Cocoa indicate that the method will return values by reference.
 
-## Instance variable and Property
+## Instance variable and Property {#Instance variable and Property}
 By default, a _readwrite_ property will be backed by an instance variable, which will again be synthesized automatically by the compiler.
 
 An instance variable is a variable that exists and holds its value for the life of the object. The memory used for instance variables is allocated when the object is first created (through alloc), and freed when the object is deallocated.
