@@ -8,21 +8,13 @@ description: ""
 # Table of Contents
 
 [How an object is created?](#How-an-object-is-created)
-
 [How many introspection methods?](#How-many-introspection-methods?)
-
 [isEqual and Hash](#isEqual-and-Hash)
-
 [Event Queue and how iOS manage events](#Event-Queue-and-how-iOS-manage-events)
-
 [The Dynamism of Objective-C](#The-Dynamism-of-Objective-C)
-
 [View, Frame and Bound - What is difference?](#View-Frame-and-Bound-What-is-difference?)
-
 [Atomic and NonAtomic attributes](#Atomic-and-NonAtomic-attributes)
-
 [Naming convention for accessor methods](#Naming-convention-for-accessor-methods)
-
 [Instance variable and Property](#Instance-variable-and-Property)
 
 ## How an object is created? {#How-an-object-is-created}
