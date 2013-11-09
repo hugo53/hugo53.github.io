@@ -16,6 +16,8 @@ description: ""
 - [Atomic and NonAtomic attributes](#Atomic-and-NonAtomic-attributes)
 - [Naming convention for accessor methods](#Naming-convention-for-accessor-methods)
 - [Instance variable and Property](#Instance-variable-and-Property)
+- [ARC for Foundation framework but not for C-based or Core Foundation Framework](#ARC)
+- [Dont use Introspection for Mutable Data](#Dont-use-introspection-for-Mutable-Data)
 
 ## How an object is created? {#How-an-object-is-created}
 
@@ -46,6 +48,9 @@ In summary, allocation not only allocates memory for an object but initializes t
 
 ## isEqual and Hash {#isEqual-and-Hash}
 The hash and isEqual: methods, both declared by the NSObject protocol, are closely related. The hash method must be implemented to return an integer that can be used as a table address in a hash table structure. If two objects are equal (as determined by the isEqual: method), they must have the same hash value. If your object could be included in collections such as NSSet objects, you need to define hash and verify the invariant that if two objects are equal, they return the same hash value. The default NSObject implementation of isEqual: simply checks for pointer equality.
+
+### Mutable Objects in Collections
+Storing mutable objects in collection objects can cause problems. Certain collections can become invalid or even corrupt if objects they contain mutate because, by mutating, these objects can affect the way they are placed in the collection. First, the properties of objects that are keys in hashing collections such as NSDictionary objects or NSSet objects will, if changed, corrupt the collection if the changed properties affect the results of the object's **hash** or **isEqual:** methods. (If the **hash** method of the objects in the collection does not depend on their internal state, corruption is less likely.) Second, if an object in an ordered collection such as a sorted array has its properties changed, this might affect how the object compares to other objects in the array, thus rendering the ordering invalid.
 
 > If two objects are equal, their hashes must be equal too. But the same hash does not need to be equal. The following example will explain this case.
 
@@ -192,6 +197,35 @@ But, how about
 
 
 This case is for what purpose? An instance variable and a property are same name.
+
+## ARC for Foundation framework but not for C-based or Core Foundation Framework {#ARC}
+Like garbage collection, ARC ignores all objects created using _stdlib_ and Core Foundation APIs. It will not insert calls to _malloc()_ and _free()_, which are needed to create and dispose of a struct or union. Nor will it insert calls to _CFRetain()_ and _CFRelease()_ to retain or dispose of a CF object.
+
+Make sure to supply these calls yourself. Take care to balance each call to _malloc()_ with a call to _free()_ and each call to _CFRetain()_ with _CFRelease()_. 
+
+Also make sure to avoid calls to _free()_ or _CFRelease()_ twice on the same object.
+
+[ARC Documentation](https://developer.apple.com/library/ios/releasenotes/ObjectiveC/RN-TransitioningToARC/Introduction/Introduction.html)
+
+## Dont use Introspection for Mutable Data {#Dont-use-introspection-for-Mutable-Data}
+
+To determine whether it can change a received object, the receiver of a message must rely on the formal type of the return value. If it receives, for example, an array object typed as immutable, it should not attempt to mutate it. **It is not an acceptable programming practice to determine if an object is mutable based on its class membership**.For example:
+
+	if ( [anArray isKindOfClass:[NSMutableArray class]] ) {
+	    // add, remove objects from anArray
+	}
+
+For reasons related to implementation, what _isKindOfClass:_ returns in this case may not be accurate. But for reasons other than this, you should not make assumptions about whether an object is mutable based on class membership. Your decision should be guided solely by what the signature of the method vending the object says about its mutability. If you are not sure whether an object is mutable or immutable, assume it’s immutable.
+
+A couple of examples might help clarify why this guideline is important:
+
+- You read a property list from a file. When the Foundation framework processes the list, it notices that various subsets of the property list are identical, so it creates a set of objects that it shares among all those subsets. Afterward you look at the created property list objects and decide to mutate one subset. Suddenly, and without being aware of it, you’ve changed the tree in multiple places.
+
+- You ask NSView for its subviews (with the subviews method) and it returns an object that is declared to be an NSArray but which could be an NSMutableArray internally. Then you pass that array to some other code that, through introspection, determines it to be mutable and changes it. By changing this array, the code is mutating internal data structures of the NSView class.
+
+So don’t make an assumption about object mutability based on what introspection tells you about an object. Treat objects as mutable or not based on what you are handed at the API boundaries (that is, based on the return type). If you need to unambiguously mark an object as mutable or immutable when you pass it to clients, pass that information as a flag along with the object.
+
+> Dont try _isKindOfClass:_ with Mutable Data Type because it is not reliable. 
 
 
 
