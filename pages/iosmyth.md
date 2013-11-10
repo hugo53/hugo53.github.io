@@ -18,7 +18,7 @@ description: ""
 - [Instance variable and Property](#Instance-variable-and-Property)
 - [ARC for Foundation framework but not for C-based or Core Foundation Framework](#ARC)
 - [Dont use Introspection for Mutable Data](#Dont-use-introspection-for-Mutable-Data)
-
+- [Keyed and Sequential Archivers](#archivers)
 ## How an object is created? {#How-an-object-is-created}
 
 When you allocate an object, part of what happens is what you might expect, given the term. Cocoa allocates enough memory for the object from a region of application virtual memory. To calculate how much memory to allocate, it takes the object’s instance variables into account—including their types and order—as specified by the object’s class.
@@ -227,5 +227,23 @@ So don’t make an assumption about object mutability based on what introspectio
 
 > Dont try _isKindOfClass:_ with Mutable Data Type because it is not reliable. 
 
+## Keyed and Sequential Archivers {#archivers}
+The Foundation framework provides two sets of classes for archiving and unarchiving networks of objects. They include methods for initiating the archiving and unarchiving processes and for encoding and decoding the instance data of your objects. Objects of these classes are sometimes referred to as archivers and unarchivers.
 
+Keyed archivers and unarchivers (**NSKeyedArchiver** and **NSKeyedUnarchiver**). These objects use string keys as identifiers of the data to be encoded and decoded. They are the preferred objects for archiving and unarchiving objects, especially with new applications.SHOULD USE THIS WAY!
+
+Sequential archivers and unarchivers (**NSArchiver** and **NSUnarchiver**). This _old-style_ archiver encodes object state in a certain order; the unarchiver expects to decode object state in the same order. Their intended use is for legacy code; new applications should use keyed archives instead.
+
+In my case, I did not understand why a property holds the value of the other property next to after decoding. Finally, I found that I was using Sequential Archive. Therefore, the first time I encoded and wrote data to file was OK. But before load data from file, I changed order of properties. This reason made unexpected value for properties.
+
+> In summary, DONT USE **NSKeyedArchiver** and **NSKeyedUnarchiver**, because they are not safe. Instead, USE **NSKeyedArchiver** and **NSKeyedUnarchiver**
+
+### Bonus: Purpose of Archiving
+#### Definition
+Archiving is the process of converting a group of related objects to a form that can be stored or transferred between applications. The end result of archiving—an archive—is a stream of bytes that records the identity of objects, their encapsulated values, and their relationships with other objects. Unarchiving, the reverse process, takes an archive and reconstitutes an identical network of objects.
+
+If objects of a class wants to be archived, the class must **adopt the NSCoding protocol** and implement the required methods for encoding and decoding objects.
+
+#### Purpose
+The main value of archiving is that it provides a generic way to make objects persistent. Instead of writing object data out in a special file format, applications frequently store their model objects in archives that they can write out as files. An application can also transfer a network of objects—commonly known as an object graph—to another application using archiving. Applications often do this for pasteboard operations such as copy and paste.
 
