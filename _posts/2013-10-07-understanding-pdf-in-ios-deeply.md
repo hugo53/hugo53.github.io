@@ -83,4 +83,12 @@ The following list displays _Pop_ functions supplied by iOS.
 
 
 # References
+### Open Sources for iOS
+- [PDF Reader](https://github.com/vfr/Reader) and [PDFViewer](https://github.com/vfr/Viewer) by Julius Oklamcak.
+- [DTPDF - Wrapper for Scanning PDF](https://github.com/Cocoanetics/DTPDF) by Oliver Drobnik.
+- [PDFKitten - A search and highlight library](https://github.com/KurtCode/PDFKitten) by Marcus Hedenström.
+- [FastPdfKit](https://github.com/mobfarm/FastPdfKit)
+
+### Open sources for other language
+- [Mozilla PDF](https://github.com/mozilla/pdf.js)
 
