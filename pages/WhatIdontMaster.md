@@ -37,3 +37,8 @@ _@synchronized(){}_ is also a compiler directive.
 ## 8/11/2013
 - The Layer-Based Drawing Model, Layer-Based Animations
 - Drawing model
+
+## 12/11/2013
+- NSError and its benefits
+- The **copy-on-write technique** means that when data is copied through a virtual memory copy, an actual copy of the data is not made until there is an attempt to modify it.
+- [File Type Association for making "Open this file with ..."](http://www.infragistics.com/community/blogs/stevez/archive/2013/03/04/associate-a-file-type-with-your-ios-application.aspx)
