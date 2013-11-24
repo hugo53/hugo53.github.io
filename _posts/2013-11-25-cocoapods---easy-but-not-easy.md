@@ -35,7 +35,8 @@ git push origin --tags
 
 
 ## Send a pull request to [Specs](https://github.com/CocoaPods/Specs)
-After that, we must send a pull request to ```Specs``` to make the pod is visible. To do that, follow steps: 
+After that, we must send a pull request to ```Specs``` to make the pod is visible. To do that, follow these steps:
+
 - Fork [Specs](https://github.com/CocoaPods/Specs) and clone it.
 
 {% highlight bash %}
