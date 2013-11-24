@@ -24,11 +24,11 @@ s.source_files  = 'HUChart', 'HUChartDemo/HUChart/*.{h,m}'
 ## Preparing git repository
 ### Tagging
 
-```
+{% highlight bash %}
 git tag -a 1.0.0 -m "Add a tag"
 
 git push origin --tags
-```
+{% endhighlight %}
 
 ## Validation podspec
 
@@ -38,45 +38,45 @@ git push origin --tags
 After that, we must send a pull request to ```Specs``` to make the pod is visible. To do that, follow steps: 
 - Fork [Specs](https://github.com/CocoaPods/Specs) and clone it.
 
-```
+{% highlight bash %}
 git clone https://github.com/CocoaPods/Specs.git
-```
+{% endhighlight %}
 
 - Change directory (cd) to ```Specs``` folder.
 
-```
+{% highlight bash %}
 cd Specs
-```
+{% endhighlight %}
 
 - Assigns the original repo to a remote called "upstream".
 
-```
+{% highlight bash %}
 git remote add upstream git@github.com:CocoaPods/Specs.git
-```
+{% endhighlight %}
 
 - Create our own Pod folder, ex. 
 
-```
+{% highlight bash %}
 mkdir -p HUChart/1.0.0
-```
+{% endhighlight %}
 
 Note that ```1.0.0``` is version number which we set for ```s.version = "1.0.0"``` in podspec file.
 
 - Copy .podspec file which we have already made some minutes ago to the version folder. In this case, version folder is ```Specs/HUChart/1.0.0```
 
-```
+{% highlight bash %}
 cp path/to/.podspec-file Specs/HUChart/1.0.0 
-```
+{% endhighlight %}
 
 - Do git add this file and commit with a clear comment like ```Added HUChart library to draw a semi circle chart.```. After that, push it to forked Specs repository.
 
-```
+{% highlight bash %}
 git add Specs/HUChart/1.0.0/*.podspec
 
 git commit -m "Added HUChart library to draw a semi circle chart."
 
 git push origin -u master
-```
+{% endhighlight %}
 
 - Go to [Specs pull page](https://github.com/CocoaPods/Specs/pulls) and press onto ```New pull request``` and fill all require fields to create a pull request. Thereafter, wait for Specs' developers merge this request. Once they approve the request and merge it, we can use our lib as a Pod by Podfile.
 
