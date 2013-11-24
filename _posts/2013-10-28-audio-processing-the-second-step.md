@@ -29,22 +29,23 @@ Audio Service is a service which performs several specific tasks. Thus, a framew
 If you search _audio framework_ in _Documentation and API_ in Xcode, you will get many audio frameworks which includes _Audio Toolbox_, _CoreAudio_, _OpenAL_, _AVFoundation_. So, you may be confused to determine what framework should be used. Generally, _Audio Toolbox_ is an application-level service, _Core Audio_ is a low-level API which used to communicate with hardware, _OpenAL_ is an opensource audio library and also an application-level API (and plus, usually used in Game), _AVFoundation_ is an Objective-C library to play audio file.
 
 According to Apple iOS documentation:
+{% highlight text %}
+The Audio Toolbox framework (AudioToolbox.framework) provides interfaces for the mid- and high-level services in Core Audio. In iOS, this framework includes Audio Session Services, the interface for managing your application’s audio behavior in the context of a device that functions as a mobile phone and iPod.
 
-	The Audio Toolbox framework (AudioToolbox.framework) provides interfaces for the mid- and high-level services in Core Audio. In iOS, this framework includes Audio Session Services, the interface for managing your application’s audio behavior in the context of a device that functions as a mobile phone and iPod.
+The Audio Unit framework (AudioUnit.framework) lets applications work with audio plug-ins, including audio units and codecs.
 
-	The Audio Unit framework (AudioUnit.framework) lets applications work with audio plug-ins, including audio units and codecs.
+The AV Foundation framework (AVFoundation.framework), available in iOS, provides the AVAudioPlayer class, a streamlined and simple Objective-C interface for audio playback.
 
-	The AV Foundation framework (AVFoundation.framework), available in iOS, provides the AVAudioPlayer class, a streamlined and simple Objective-C interface for audio playback.
+The Core Audio framework (CoreAudio.framework) supplies data types used across Core Audio as well as interfaces for the low-level services.
 
-	The Core Audio framework (CoreAudio.framework) supplies data types used across Core Audio as well as interfaces for the low-level services.
+The Core Audio Kit framework (CoreAudioKit.framework) provides a small API for creating user interfaces for audio units. This framework is not available in iOS.
 
-	The Core Audio Kit framework (CoreAudioKit.framework) provides a small API for creating user interfaces for audio units. This framework is not available in iOS.
+The Core MIDI framework (CoreMIDI.framework) lets applications work with MIDI data and configure MIDI networks. This framework is not available in iOS.
 
-	The Core MIDI framework (CoreMIDI.framework) lets applications work with MIDI data and configure MIDI networks. This framework is not available in iOS.
+The Core MIDI Server framework (CoreMIDIServer.framework) lets MIDI drivers communicate with the OS X MIDI server. This framework is not available in iOS.
 
-	The Core MIDI Server framework (CoreMIDIServer.framework) lets MIDI drivers communicate with the OS X MIDI server. This framework is not available in iOS.
-
-	The OpenAL framework (OpenAL.framework) provides the interfaces to work with OpenAL, an open source, positional audio technology.
+The OpenAL framework (OpenAL.framework) provides the interfaces to work with OpenAL, an open source, positional audio technology.
+{% endhighlight %}
 
 In summary, we should focus on three frameworks (priority descending): AVFoundation, AudioToolbox, CoreAudio for making an awesome iOS app.
 
