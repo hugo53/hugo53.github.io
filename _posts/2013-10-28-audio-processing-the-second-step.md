@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Audio Processing - The second step"
-description: "In the previous post at _Audio Processing in iOS - an initial step_, I had shown you some basic terminologies in audio processing and several libraries to handle with audio in iOS. It is just a kick off! This post, I will provide in more details principle architect of audio (in iOS, certainly!) and give you some great documents to gain more audio knowledge."
+description: "In the previous post at Audio Processing in iOS - an initial step, I had shown you some basic terminologies in audio processing and several libraries to handle with audio in iOS. It is just a kick off! This post, I will provide in more details principle architect of audio (in iOS, certainly!) and give you some great documents to gain more audio knowledge."
 category: iOS Development 
 tags: [audio]
 ---
