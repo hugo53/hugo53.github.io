@@ -25,8 +25,7 @@ s.source_files  = 'HUChart', 'HUChartDemo/HUChart/*.{h,m}'
 ### Tagging
 
 {% highlight bash linenos %}
-git tag -a 1.0.0 -m "Add a tag"
-
+git tag -a 1.0.0 -m "Make v1.0.0"
 git push origin --tags
 {% endhighlight %}
 
@@ -73,9 +72,7 @@ cp path/to/.podspec-file Specs/HUChart/1.0.0
 
 {% highlight bash linenos %}
 git add Specs/HUChart/1.0.0/*.podspec
-
 git commit -m "Added HUChart library to draw a semi circle chart."
-
 git push origin -u master
 {% endhighlight %}
 
