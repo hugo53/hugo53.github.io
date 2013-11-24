@@ -24,7 +24,7 @@ s.source_files  = 'HUChart', 'HUChartDemo/HUChart/*.{h,m}'
 ## Preparing git repository
 ### Tagging
 
-{% highlight bash %}
+{% highlight bash linenos %}
 git tag -a 1.0.0 -m "Add a tag"
 
 git push origin --tags
@@ -71,7 +71,7 @@ cp path/to/.podspec-file Specs/HUChart/1.0.0
 
 - Do git add this file and commit with a clear comment like ```Added HUChart library to draw a semi circle chart.```. After that, push it to forked Specs repository.
 
-{% highlight bash %}
+{% highlight bash linenos %}
 git add Specs/HUChart/1.0.0/*.podspec
 
 git commit -m "Added HUChart library to draw a semi circle chart."
