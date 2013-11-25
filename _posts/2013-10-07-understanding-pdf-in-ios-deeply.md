@@ -78,7 +78,7 @@ The following list displays _Pop_ functions supplied by iOS.
 #### Get Text Rect
 [Get Text Rect](http://stackoverflow.com/questions/4255298/how-does-an-annot-cgpdfdictionary-rect-translate-to-objective-c-rect/4255586#4255586)
 
-{% highlight objective-c %}
+{% highlight smalltalk %}
 CGPDFArrayRef rectArray;
                 if(CGPDFDictionaryGetArray(annotDict, "Rect", &rectArray)) {
                     //continue;
