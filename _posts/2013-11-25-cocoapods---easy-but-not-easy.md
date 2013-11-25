@@ -22,16 +22,51 @@ s.source_files  = 'HUChart', 'HUChartDemo/HUChart/*.{h,m}'
 ```
 
 ## Preparing git repository
+### Pushing source code
+git add .
+git commit -m "Initial commit"
+git push origin -u master
+{% endhighlight %}
+
 ### Tagging
+You have to create a tag for the source because we will need tag version to config podspec file later. 
 
 {% highlight bash linenos %}
 git tag -a 1.0.0 -m "Make v1.0.0"
 git push origin --tags
 {% endhighlight %}
 
-## Validation podspec
+## Create pod
+Change directory to project which you want to create a pod. In my case, I will go to ```HUChartDemo```:
 
+{% highlight bash %}
+cd HUChartDemo
+{% endhighlight %}
 
+Next, create a podspec file:
+
+{% highlight bash %}
+pod spec create HUChart    // May need sudo
+{% endhighlight %}
+
+Now, you have to config podspec file. See [Pod specification](https://github.com/CocoaPods/CocoaPods/wiki/A-pod-specification) to get further information. Just do like the example, it is OK. Note that ```s.version``` should be set by a tag version like:
+
+```
+s.version = "1.0.0"
+```
+
+{% highlight bash %}
+open -e HUChart.podspec
+or
+vi HUChart.podspec
+{% endhighlight %}
+
+Thereafter, do a validation for podspec:
+{% highlight bash %}
+pod spec lint HUChart.podspec    // May need sudo
+{% endhighlight %}
+
+At the end of terminal screen, ```Podspec passes validation``` appears let you know that your pod is OK to publish. Otherwise, check again all fields in podspec file to ensure that all is right. Go to do the last task, send a pull request (PR).
 
 ## Send a pull request to [Specs](https://github.com/CocoaPods/Specs)
 After that, we must send a pull request to ```Specs``` to make the pod is visible. To do that, follow these steps:
