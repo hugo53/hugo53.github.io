@@ -7,7 +7,7 @@ tags: []
 ---
 {% include JB/setup %}
 
-omeone told that Cocoapods is easy to use at both aspects: integrate open third-party into own project and publish open library to community. However, for newbie or even a experience developer, at the first time, it is not easy as a pie. This post is for them!
+Someone told that Cocoapods is easy to use at both aspects: integrate open third-party into own project and publish open library to community. However, for newbie or even a experience developer, at the first time, it is not easy as a pie. This post is for them!
 
 ## Podspec Attributes
 
