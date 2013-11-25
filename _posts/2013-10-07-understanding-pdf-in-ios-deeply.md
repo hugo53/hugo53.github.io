@@ -75,6 +75,37 @@ The following list displays _Pop_ functions supplied by iOS.
 > Copy from [CGPDFScanner Reference](http://www.cocoachina.com/wiki/index.php?title=CGPDFScanner_Reference)
 
 ## Processing PDF content
+#### Get Text Rect
+[Get Text Rect](http://stackoverflow.com/questions/4255298/how-does-an-annot-cgpdfdictionary-rect-translate-to-objective-c-rect/4255586#4255586)
+
+{% highlight objective-c %}
+CGPDFArrayRef rectArray;
+                if(CGPDFDictionaryGetArray(annotDict, "Rect", &rectArray)) {
+                    //continue;
+
+                    CGPDFReal coords[4];
+
+                    for( int k = 0; k < arrayCount; ++k ) {
+
+                        CGPDFObjectRef rectObj;
+                        if(!CGPDFArrayGetObject(rectArray, k, &rectObj)) {
+                            continue;
+                        }
+
+                        CGPDFReal coord;
+                        if(!CGPDFObjectGetValue(rectObj, kCGPDFObjectTypeReal, &coord)) {
+                            continue;
+                        }
+
+                        coords[k] = coord;
+                    }      
+
+                }
+
+                //blx,bly,trx,try>tlx,tly,w,h
+
+                CGRect rect = CGRectMake(coords[0],coords[3],coords[2]-coords[0],coords[3]-coords[1]);
+{% endhighlight %}
 
 ## Some add-on elements for showing PDF
 ### Annotation
@@ -82,7 +113,9 @@ The following list displays _Pop_ functions supplied by iOS.
 ### Linking Media/Web Elements
 
 
-# References
+## References
+- [Great summary](http://stackoverflow.com/questions/3889634/fast-and-lean-pdf-viewer-for-iphone-ipad-ios-tips-and-hints?rq=1)
+
 ### Open Sources for iOS
 - [PDF Reader](https://github.com/vfr/Reader) and [PDFViewer](https://github.com/vfr/Viewer) by Julius Oklamcak.
 - [DTPDF - Wrapper for Scanning PDF](https://github.com/Cocoanetics/DTPDF) by Oliver Drobnik.
