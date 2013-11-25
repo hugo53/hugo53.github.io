@@ -112,5 +112,6 @@ git push origin -u master
 
 - Lastly, go to [Specs pull page](https://github.com/CocoaPods/Specs/pulls) and press onto ```New pull request``` and fill all require fields to create a pull request. Thereafter, wait for Specs' developers merge this request. Once they approve the request and merge it, we can use our lib as a Pod by Podfile.
 
+It is so easy, isn't it? But for me, the first time I created a pod, I wonder how pod work and how many necessary steps to make a pod successfully. Now, you have a own pod. Congratulations! Take time to share it as far as possible! 
 
 
