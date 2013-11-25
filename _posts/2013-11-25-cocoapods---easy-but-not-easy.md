@@ -1,16 +1,13 @@
 ---
 layout: post
 title: "Cocoapods - Easy but not easy"
-description: "Someone told that Cocoapods is easy to use at both aspect: integrate open third-party and publish open library for community. However, for newbie or even a experience developer, at the first time, it is not easy as a pie. This post is for them!"
+description: "Someone told that Cocoapods is easy to use at both aspects: integrate open third-party into own project and publish open library to community. However, for newbie or even a experience developer, at the first time, it is not easy as a pie. This post is for them!"
 category: ios 
 tags: []
 ---
 {% include JB/setup %}
 
-Someone told that Cocoapods is easy to use at both aspect: integrate open third-party and publish open library for community. However, for newbie or even a experience developer, at the first time, it is not easy as a pie. This post is for them!
-
-
-
+omeone told that Cocoapods is easy to use at both aspects: integrate open third-party into own project and publish open library to community. However, for newbie or even a experience developer, at the first time, it is not easy as a pie. This post is for them!
 
 ## Podspec Attributes
 
