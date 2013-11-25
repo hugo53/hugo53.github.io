@@ -23,13 +23,15 @@ s.source_files  = 'HUChart', 'HUChartDemo/HUChart/*.{h,m}'
 
 ## Preparing git repository
 ### Pushing source code
+
+{% highlight bash linenos %}
 git add .
 git commit -m "Initial commit"
 git push origin -u master
 {% endhighlight %}
 
 ### Tagging
-You have to create a tag for the source because we will need tag version to config podspec file later. 
+You have to create a tag for the source because we will need tag version to config podspec file later.
 
 {% highlight bash linenos %}
 git tag -a 1.0.0 -m "Make v1.0.0"

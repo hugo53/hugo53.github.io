@@ -5,10 +5,105 @@
         <description>Leading Beautiful Life - Hugo Nguyen</description>
         <link>http://hugo53.github.io</link>
         <link>http://hugo53.github.io</link>
-        <lastBuildDate>2013-11-10T23:41:12+07:00</lastBuildDate>
-        <pubDate>2013-11-10T23:41:12+07:00</pubDate>
+        <lastBuildDate>2013-11-25T09:24:26+07:00</lastBuildDate>
+        <pubDate>2013-11-25T09:24:26+07:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>Cocoapods - Easy but not easy</title>
+                <description>&lt;p&gt;Someone told that Cocoapods is easy to use at both aspect: integrate open third-party and publish open library for community. However, for newbie or even a experience developer, at the first time, it is not easy as a pie. This post is for them!&lt;/p&gt;
+
+&lt;h2 id='podspec_attributes'&gt;Podspec Attributes&lt;/h2&gt;
+
+&lt;h4 id='ssource_files'&gt;s.source_files&lt;/h4&gt;
+
+&lt;p&gt;It is to locate source files you want to publish. Thus, be sure that you provide the exact path for &lt;code&gt;s.source_files&lt;/code&gt; attribute. A legal path is a path from the root directory which contains &lt;code&gt;.git&lt;/code&gt; folder to destination file. For example, the below code show a path for &lt;code&gt;HUChartDemo&lt;/code&gt; project (but its repository name is &lt;a href='https://github.com/hugo53/HUChart'&gt;HUChart&lt;/a&gt;, don&amp;#8217;t be confused here, we need project&amp;#8217;s root directory, not repository name).&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+s.source_files  = &amp;#39;HUChart&amp;#39;, &amp;#39;HUChartDemo/HUChart/*.{h,m}&amp;#39;
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id='preparing_git_repository'&gt;Preparing git repository&lt;/h2&gt;
+
+&lt;h3 id='pushing_source_code'&gt;Pushing source code&lt;/h3&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='bash'&gt;&lt;span class='lineno'&gt;1&lt;/span&gt; git add .
+&lt;span class='lineno'&gt;2&lt;/span&gt; git commit -m &lt;span class='s2'&gt;&amp;quot;Initial commit&amp;quot;&lt;/span&gt;
+&lt;span class='lineno'&gt;3&lt;/span&gt; git push origin -u master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id='tagging'&gt;Tagging&lt;/h3&gt;
+
+&lt;p&gt;You have to create a tag for the source because we will need tag version to config podspec file later.&lt;/p&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='bash'&gt;&lt;span class='lineno'&gt;1&lt;/span&gt; git tag -a 1.0.0 -m &lt;span class='s2'&gt;&amp;quot;Make v1.0.0&amp;quot;&lt;/span&gt;
+&lt;span class='lineno'&gt;2&lt;/span&gt; git push origin --tags
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id='create_pod'&gt;Create pod&lt;/h2&gt;
+
+&lt;p&gt;Change directory to project which you want to create a pod. In my case, I will go to &lt;code&gt;HUChartDemo&lt;/code&gt;:&lt;/p&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='bash'&gt;&lt;span class='nb'&gt;cd &lt;/span&gt;HUChartDemo
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Next, create a podspec file:&lt;/p&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='bash'&gt;pod spec create HUChart    // May need sudo
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now, you have to config podspec file. See &lt;a href='https://github.com/CocoaPods/CocoaPods/wiki/A-pod-specification'&gt;Pod specification&lt;/a&gt; to get further information. Just do like the example, it is OK. Note that &lt;code&gt;s.version&lt;/code&gt; should be set by a tag version like:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+s.version = &amp;quot;1.0.0&amp;quot;
+&lt;/code&gt;&lt;/p&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='bash'&gt;open -e HUChart.podspec
+or
+vi HUChart.podspec
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Thereafter, do a validation for podspec:&lt;/p&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='bash'&gt;pod spec lint HUChart.podspec    // May need sudo
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;At the end of terminal screen, &lt;code&gt;Podspec passes validation&lt;/code&gt; appears let you know that your pod is OK to publish. Otherwise, check again all fields in podspec file to ensure that all is right. Go to do the last task, send a pull request (PR).&lt;/p&gt;
+
+&lt;h2 id='send_a_pull_request_to_specs'&gt;Send a pull request to &lt;a href='https://github.com/CocoaPods/Specs'&gt;Specs&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;After that, we must send a pull request to &lt;code&gt;Specs&lt;/code&gt; to make the pod is visible. To do that, follow these steps:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Fork &lt;a href='https://github.com/CocoaPods/Specs'&gt;Specs&lt;/a&gt; and clone it.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='bash'&gt;git clone https://github.com/CocoaPods/Specs.git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Change directory (cd) to &lt;code&gt;Specs&lt;/code&gt; folder.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='bash'&gt;&lt;span class='nb'&gt;cd &lt;/span&gt;Specs
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Assigns the original repo to a remote called &amp;#8220;upstream&amp;#8221;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='bash'&gt;git remote add upstream git@github.com:CocoaPods/Specs.git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Create our own Pod folder, ex.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='bash'&gt;mkdir -p HUChart/1.0.0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Note that &lt;code&gt;1.0.0&lt;/code&gt; is version number which we set for &lt;code&gt;s.version = &amp;quot;1.0.0&amp;quot;&lt;/code&gt; in podspec file.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Copy .podspec file which we have already made some minutes ago to the version folder. In this case, version folder is &lt;code&gt;Specs/HUChart/1.0.0&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='bash'&gt;cp path/to/.podspec-file Specs/HUChart/1.0.0 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Do git add this file and commit with a clear comment like &lt;code&gt;Added HUChart library to draw a semi circle chart.&lt;/code&gt;. After that, push it to forked Specs repository.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='bash'&gt;&lt;span class='lineno'&gt;1&lt;/span&gt; git add Specs/HUChart/1.0.0/*.podspec
+&lt;span class='lineno'&gt;2&lt;/span&gt; git commit -m &lt;span class='s2'&gt;&amp;quot;Added HUChart library to draw a semi circle chart.&amp;quot;&lt;/span&gt;
+&lt;span class='lineno'&gt;3&lt;/span&gt; git push origin -u master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Go to &lt;a href='https://github.com/CocoaPods/Specs/pulls'&gt;Specs pull page&lt;/a&gt; and press onto &lt;code&gt;New pull request&lt;/code&gt; and fill all require fields to create a pull request. Thereafter, wait for Specs&amp;#8217; developers merge this request. Once they approve the request and merge it, we can use our lib as a Pod by Podfile.&lt;/li&gt;
+&lt;/ul&gt;</description>
+                <link>http://hugo53.github.io/ios/2013/11/25/cocoapods---easy-but-not-easy</link>
+                <guid>http://hugo53.github.io/ios/2013/11/25/cocoapods---easy-but-not-easy</guid>
+                <pubDate>2013-11-25T00:00:00+07:00</pubDate>
+        </item>
 
         <item>
                 <title>Cryptography in iOS - How to protect your precious data?</title>
@@ -47,6 +142,10 @@
 &lt;h4 id='offline_security'&gt;Offline Security&lt;/h4&gt;
 
 &lt;h4 id='streaming_security'&gt;Streaming Security&lt;/h4&gt;
+
+&lt;h2 id='notice'&gt;Notice&lt;/h2&gt;
+
+&lt;p&gt;Firstly, do not try to encrypt a file in separate part. Normally, an encrypt algorithm will save a header in cipher text, included key (gen from password), HMAC, salt and so on. Therefor, decrypt algorithm will read the header first to get these information before decrypting. If you encrypt a file by chunking this file and encrypting each part separately, cipher text will contains many headers. That will make decrypt algorithm goes fail because it cannot know where is header and where is cipher text.&lt;/p&gt;
 
 &lt;h2 id='reference'&gt;Reference&lt;/h2&gt;
 
@@ -93,23 +192,22 @@
 &lt;p&gt;If you search &lt;em&gt;audio framework&lt;/em&gt; in &lt;em&gt;Documentation and API&lt;/em&gt; in Xcode, you will get many audio frameworks which includes &lt;em&gt;Audio Toolbox&lt;/em&gt;, &lt;em&gt;CoreAudio&lt;/em&gt;, &lt;em&gt;OpenAL&lt;/em&gt;, &lt;em&gt;AVFoundation&lt;/em&gt;. So, you may be confused to determine what framework should be used. Generally, &lt;em&gt;Audio Toolbox&lt;/em&gt; is an application-level service, &lt;em&gt;Core Audio&lt;/em&gt; is a low-level API which used to communicate with hardware, &lt;em&gt;OpenAL&lt;/em&gt; is an opensource audio library and also an application-level API (and plus, usually used in Game), &lt;em&gt;AVFoundation&lt;/em&gt; is an Objective-C library to play audio file.&lt;/p&gt;
 
 &lt;p&gt;According to Apple iOS documentation:&lt;/p&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='bash'&gt;The Audio Toolbox framework &lt;span class='o'&gt;(&lt;/span&gt;AudioToolbox.framework&lt;span class='o'&gt;)&lt;/span&gt; provides interfaces &lt;span class='k'&gt;for &lt;/span&gt;the mid- and high-level services in Core Audio. In iOS, this framework includes Audio Session Services, the interface &lt;span class='k'&gt;for &lt;/span&gt;managing your application’s audio behavior in the context of a device that functions as a mobile phone and iPod.
 
-&lt;pre&gt;&lt;code&gt;The Audio Toolbox framework (AudioToolbox.framework) provides interfaces for the mid- and high-level services in Core Audio. In iOS, this framework includes Audio Session Services, the interface for managing your application’s audio behavior in the context of a device that functions as a mobile phone and iPod.
+The Audio Unit framework &lt;span class='o'&gt;(&lt;/span&gt;AudioUnit.framework&lt;span class='o'&gt;)&lt;/span&gt; lets applications work with audio plug-ins, including audio units and codecs.
 
-The Audio Unit framework (AudioUnit.framework) lets applications work with audio plug-ins, including audio units and codecs.
+The AV Foundation framework &lt;span class='o'&gt;(&lt;/span&gt;AVFoundation.framework&lt;span class='o'&gt;)&lt;/span&gt;, available in iOS, provides the AVAudioPlayer class, a streamlined and simple Objective-C interface &lt;span class='k'&gt;for &lt;/span&gt;audio playback.
 
-The AV Foundation framework (AVFoundation.framework), available in iOS, provides the AVAudioPlayer class, a streamlined and simple Objective-C interface for audio playback.
+The Core Audio framework &lt;span class='o'&gt;(&lt;/span&gt;CoreAudio.framework&lt;span class='o'&gt;)&lt;/span&gt; supplies data types used across Core Audio as well as interfaces &lt;span class='k'&gt;for &lt;/span&gt;the low-level services.
 
-The Core Audio framework (CoreAudio.framework) supplies data types used across Core Audio as well as interfaces for the low-level services.
+The Core Audio Kit framework &lt;span class='o'&gt;(&lt;/span&gt;CoreAudioKit.framework&lt;span class='o'&gt;)&lt;/span&gt; provides a small API &lt;span class='k'&gt;for &lt;/span&gt;creating user interfaces &lt;span class='k'&gt;for &lt;/span&gt;audio units. This framework is not available in iOS.
 
-The Core Audio Kit framework (CoreAudioKit.framework) provides a small API for creating user interfaces for audio units. This framework is not available in iOS.
+The Core MIDI framework &lt;span class='o'&gt;(&lt;/span&gt;CoreMIDI.framework&lt;span class='o'&gt;)&lt;/span&gt; lets applications work with MIDI data and configure MIDI networks. This framework is not available in iOS.
 
-The Core MIDI framework (CoreMIDI.framework) lets applications work with MIDI data and configure MIDI networks. This framework is not available in iOS.
+The Core MIDI Server framework &lt;span class='o'&gt;(&lt;/span&gt;CoreMIDIServer.framework&lt;span class='o'&gt;)&lt;/span&gt; lets MIDI drivers communicate with the OS X MIDI server. This framework is not available in iOS.
 
-The Core MIDI Server framework (CoreMIDIServer.framework) lets MIDI drivers communicate with the OS X MIDI server. This framework is not available in iOS.
-
-The OpenAL framework (OpenAL.framework) provides the interfaces to work with OpenAL, an open source, positional audio technology.&lt;/code&gt;&lt;/pre&gt;
-
+The OpenAL framework &lt;span class='o'&gt;(&lt;/span&gt;OpenAL.framework&lt;span class='o'&gt;)&lt;/span&gt; provides the interfaces to work with OpenAL, an open &lt;span class='nb'&gt;source&lt;/span&gt;, positional audio technology.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;In summary, we should focus on three frameworks (priority descending): AVFoundation, AudioToolbox, CoreAudio for making an awesome iOS app.&lt;/p&gt;</description>
                 <link>http://hugo53.github.io/ios%20development/2013/10/28/audio-processing-the-second-step</link>
                 <guid>http://hugo53.github.io/ios%20development/2013/10/28/audio-processing-the-second-step</guid>
@@ -270,7 +368,25 @@ ET&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h3 id='linking_mediaweb_elements'&gt;Linking Media/Web Elements&lt;/h3&gt;
 
-&lt;h1 id='references'&gt;References&lt;/h1&gt;</description>
+&lt;h1 id='references'&gt;References&lt;/h1&gt;
+
+&lt;h3 id='open_sources_for_ios'&gt;Open Sources for iOS&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href='https://github.com/vfr/Reader'&gt;PDF Reader&lt;/a&gt; and &lt;a href='https://github.com/vfr/Viewer'&gt;PDFViewer&lt;/a&gt; by Julius Oklamcak.&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='https://github.com/Cocoanetics/DTPDF'&gt;DTPDF - Wrapper for Scanning PDF&lt;/a&gt; by Oliver Drobnik.&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='https://github.com/KurtCode/PDFKitten'&gt;PDFKitten - A search and highlight library&lt;/a&gt; by Marcus Hedenström.&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='https://github.com/mobfarm/FastPdfKit'&gt;FastPdfKit&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id='open_sources_for_other_language'&gt;Open sources for other language&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href='https://github.com/mozilla/pdf.js'&gt;Mozilla PDF&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
                 <link>http://hugo53.github.io/2013/10/07/understanding-pdf-in-ios-deeply</link>
                 <guid>http://hugo53.github.io/2013/10/07/understanding-pdf-in-ios-deeply</guid>
                 <pubDate>2013-10-07T00:00:00+07:00</pubDate>
