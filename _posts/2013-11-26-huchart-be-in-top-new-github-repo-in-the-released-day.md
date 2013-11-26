@@ -19,7 +19,7 @@ See more at [here](http://us5.campaign-archive2.com/?u=439aa16a39e4b10e0b65ff2ef
 
 -------------------------------------------------------------------
 ### FYI
-You can see HUChart at [here](https://github.com/hugo53/HUChart) and below is some screenshots.
+You can see [HUChart](https://github.com/hugo53/HUChart) at [here](https://github.com/hugo53/HUChart) and below is some screenshots.
 
 ![alt text](http://hugo53.github.io/images/huchart/semiCircleChart-example.png "huchart archive top")
 
