@@ -56,4 +56,4 @@ Firstly, do not try to encrypt a file in separate part. Normally, an encrypt alg
 
 - [RNCryptor](https://github.com/rnapier/RNCryptor) by author of the above book
 
-
+- [PDF Protecting in iAnnotate](http://www.branchfire.com/lib-web/html/_security.html)
