@@ -60,7 +60,7 @@ pod spec lint HUChart.podspec    // May need sudo
 
 At the end of terminal screen, ```Podspec passes validation``` appears let you know that your pod is OK to publish. 
 
-![alt text](http://hugo53.github.io/images/huchart/hucharPodValidation.jpg "huchart archive top")
+![alt text](http://hugo53.github.io/images/huchart/hucharPodValidation.png "pod validation top")
 
 Otherwise, check again all fields in podspec file to ensure that all is accurate. Next, go to do the last task, send a pull request (PR).
 
