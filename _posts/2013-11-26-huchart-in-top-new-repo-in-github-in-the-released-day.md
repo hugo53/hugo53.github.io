@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "HUChart be top new Github repository in the released day"
-description: ""
+description: "It was really a surprise for me because that day was the first day HUChart goes public."
 category:ios 
-tags: [HUChart]
+tags: []
 ---
 {% include JB/setup %}
 
