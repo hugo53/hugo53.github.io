@@ -16,3 +16,13 @@ Suddenly, I saw my project called [HUChart](https://github.com/hugo53/HUChart) w
 ![alt text](http://hugo53.github.io/images/huchart/huchart-topnew.png "huchart top")
 
 See more at [here](http://us5.campaign-archive2.com/?u=439aa16a39e4b10e0b65ff2ef&id=2e5c5e8e16)
+
+-------------------------------------------------------------------
+### FYI
+You can see HUChart at [here](https://github.com/hugo53/HUChart) and above are some screenshots.
+
+![alt text](http://hugo53.github.io/images/huchart/semiCircleChart-example.png "huchart archive top")
+
+![alt text](http://hugo53.github.io/images/huchart/semiCircleChartIphoneV6.png "huchart archive top")
+
+Thanks for reading!
