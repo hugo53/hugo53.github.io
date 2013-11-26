@@ -5,35 +5,41 @@
         <description>Leading Beautiful Life - Hugo Nguyen</description>
         <link>http://hugo53.github.io</link>
         <link>http://hugo53.github.io</link>
-        <lastBuildDate>2013-11-25T09:24:26+07:00</lastBuildDate>
-        <pubDate>2013-11-25T09:24:26+07:00</pubDate>
+        <lastBuildDate>2013-11-26T12:38:04+07:00</lastBuildDate>
+        <pubDate>2013-11-26T12:38:04+07:00</pubDate>
         <ttl>1800</ttl>
 
 
         <item>
+                <title>HUChart be in top new github repo in the released day</title>
+                <description>&lt;p&gt;By a chance, I reached &lt;a href='http://www.githubarchive.org'&gt;Github Archive&lt;/a&gt;, a github statistic page and suddenly, I saw my project called &lt;a href='https://github.com/hugo53/HUChart'&gt;HUChart&lt;/a&gt; was in &lt;code&gt;Top New Repositories&lt;/code&gt;. It was really a surprise for me because that day was the first day my repo goes public. Althought it received a litte bit of stars, but I hope it will help someone and of course, will get more stars and forks.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='alt text' src='http://hugo53.github.io/images/huchart/huchart-gitarchive.png' /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='alt text' src='http://hugo53.github.io/images/huchart/huchart-topnew.png' /&gt;&lt;/p&gt;
+
+&lt;p&gt;See more at &lt;a href='http://us5.campaign-archive2.com/?u=439aa16a39e4b10e0b65ff2ef&amp;amp;id=2e5c5e8e16'&gt;here&lt;/a&gt;&lt;/p&gt;</description>
+                <link>http://hugo53.github.io/ios/2013/11/26/huchart-be-in-top-new-github-repo-in-the-released-day</link>
+                <guid>http://hugo53.github.io/ios/2013/11/26/huchart-be-in-top-new-github-repo-in-the-released-day</guid>
+                <pubDate>2013-11-26T00:00:00+07:00</pubDate>
+        </item>
+
+        <item>
                 <title>Cocoapods - Easy but not easy</title>
-                <description>&lt;p&gt;Someone told that Cocoapods is easy to use at both aspect: integrate open third-party and publish open library for community. However, for newbie or even a experience developer, at the first time, it is not easy as a pie. This post is for them!&lt;/p&gt;
-
-&lt;h2 id='podspec_attributes'&gt;Podspec Attributes&lt;/h2&gt;
-
-&lt;h4 id='ssource_files'&gt;s.source_files&lt;/h4&gt;
-
-&lt;p&gt;It is to locate source files you want to publish. Thus, be sure that you provide the exact path for &lt;code&gt;s.source_files&lt;/code&gt; attribute. A legal path is a path from the root directory which contains &lt;code&gt;.git&lt;/code&gt; folder to destination file. For example, the below code show a path for &lt;code&gt;HUChartDemo&lt;/code&gt; project (but its repository name is &lt;a href='https://github.com/hugo53/HUChart'&gt;HUChart&lt;/a&gt;, don&amp;#8217;t be confused here, we need project&amp;#8217;s root directory, not repository name).&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;
-s.source_files  = &amp;#39;HUChart&amp;#39;, &amp;#39;HUChartDemo/HUChart/*.{h,m}&amp;#39;
-&lt;/code&gt;&lt;/p&gt;
+                <description>&lt;p&gt;Someone told that Cocoapods is easy to use at both aspects: integrate open third-party into own project and publish open library to community. However, for newbie or even a experience developer, at the first time, it is not easy as a pie. This post is for them. Here we go!&lt;/p&gt;
 
 &lt;h2 id='preparing_git_repository'&gt;Preparing git repository&lt;/h2&gt;
 
 &lt;h3 id='pushing_source_code'&gt;Pushing source code&lt;/h3&gt;
+
+&lt;p&gt;You should push source code to remote repository first.&lt;/p&gt;
 &lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='bash'&gt;&lt;span class='lineno'&gt;1&lt;/span&gt; git add .
 &lt;span class='lineno'&gt;2&lt;/span&gt; git commit -m &lt;span class='s2'&gt;&amp;quot;Initial commit&amp;quot;&lt;/span&gt;
 &lt;span class='lineno'&gt;3&lt;/span&gt; git push origin -u master
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h3 id='tagging'&gt;Tagging&lt;/h3&gt;
 
-&lt;p&gt;You have to create a tag for the source because we will need tag version to config podspec file later.&lt;/p&gt;
+&lt;p&gt;A tag should be created for the source code because we will need tag version to config podspec file later.&lt;/p&gt;
 &lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='bash'&gt;&lt;span class='lineno'&gt;1&lt;/span&gt; git tag -a 1.0.0 -m &lt;span class='s2'&gt;&amp;quot;Make v1.0.0&amp;quot;&lt;/span&gt;
 &lt;span class='lineno'&gt;2&lt;/span&gt; git push origin --tags
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -45,7 +51,7 @@ s.source_files  = &amp;#39;HUChart&amp;#39;, &amp;#39;HUChartDemo/HUChart/*.{h,m
 &lt;p&gt;Next, create a podspec file:&lt;/p&gt;
 &lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='bash'&gt;pod spec create HUChart    // May need sudo
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Now, you have to config podspec file. See &lt;a href='https://github.com/CocoaPods/CocoaPods/wiki/A-pod-specification'&gt;Pod specification&lt;/a&gt; to get further information. Just do like the example, it is OK. Note that &lt;code&gt;s.version&lt;/code&gt; should be set by a tag version like:&lt;/p&gt;
+&lt;p&gt;Now, it&amp;#8217;s time to config podspec file. See &lt;a href='https://github.com/CocoaPods/CocoaPods/wiki/A-pod-specification'&gt;Pod specification&lt;/a&gt; to get further information. Just do like the example, it is OK. Note that &lt;code&gt;s.version&lt;/code&gt; should be set by a tag version like:&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;
 s.version = &amp;quot;1.0.0&amp;quot;
@@ -57,8 +63,13 @@ vi HUChart.podspec
 &lt;p&gt;Thereafter, do a validation for podspec:&lt;/p&gt;
 &lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='bash'&gt;pod spec lint HUChart.podspec    // May need sudo
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;At the end of terminal screen, &lt;code&gt;Podspec passes validation&lt;/code&gt; appears let you know that your pod is OK to publish. Otherwise, check again all fields in podspec file to ensure that all is right. Go to do the last task, send a pull request (PR).&lt;/p&gt;
+&lt;p&gt;At the end of terminal screen, &lt;code&gt;Podspec passes validation&lt;/code&gt; appears let you know that your pod is OK to publish. Otherwise, check again all fields in podspec file to ensure that all is accurate. Next, go to do the last task, send a pull request (PR).&lt;/p&gt;
 
+&lt;h5 id='a_note_for_ssource_files_attribute_in_podspec_file'&gt;A note for s.source_files attribute in podspec file&lt;/h5&gt;
+
+&lt;p&gt;It is to locate source files you want to publish. Thus, be sure that you provide the exact path for &lt;code&gt;s.source_files&lt;/code&gt; attribute. A legal path is a path from the root directory which contains &lt;code&gt;.git&lt;/code&gt; folder to destination file. For example, the below code show a path for &lt;code&gt;HUChartDemo&lt;/code&gt; project (but its repository name is &lt;a href='https://github.com/hugo53/HUChart'&gt;HUChart&lt;/a&gt;, don&amp;#8217;t be confused here, we need project&amp;#8217;s root directory, not repository name).&lt;/p&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='bash'&gt;s.source_files  &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='s1'&gt;&amp;#39;HUChart&amp;#39;&lt;/span&gt;, &lt;span class='s1'&gt;&amp;#39;HUChartDemo/HUChart/*.{h,m}&amp;#39;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h2 id='send_a_pull_request_to_specs'&gt;Send a pull request to &lt;a href='https://github.com/CocoaPods/Specs'&gt;Specs&lt;/a&gt;&lt;/h2&gt;
 
 &lt;p&gt;After that, we must send a pull request to &lt;code&gt;Specs&lt;/code&gt; to make the pod is visible. To do that, follow these steps:&lt;/p&gt;
@@ -91,15 +102,17 @@ vi HUChart.podspec
 &lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='bash'&gt;cp path/to/.podspec-file Specs/HUChart/1.0.0 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;ul&gt;
-&lt;li&gt;Do git add this file and commit with a clear comment like &lt;code&gt;Added HUChart library to draw a semi circle chart.&lt;/code&gt;. After that, push it to forked Specs repository.&lt;/li&gt;
+&lt;li&gt;Do git add this file and commit with a clear comment. After that, push it to forked Specs repository.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='bash'&gt;&lt;span class='lineno'&gt;1&lt;/span&gt; git add Specs/HUChart/1.0.0/*.podspec
 &lt;span class='lineno'&gt;2&lt;/span&gt; git commit -m &lt;span class='s2'&gt;&amp;quot;Added HUChart library to draw a semi circle chart.&amp;quot;&lt;/span&gt;
 &lt;span class='lineno'&gt;3&lt;/span&gt; git push origin -u master
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;ul&gt;
-&lt;li&gt;Go to &lt;a href='https://github.com/CocoaPods/Specs/pulls'&gt;Specs pull page&lt;/a&gt; and press onto &lt;code&gt;New pull request&lt;/code&gt; and fill all require fields to create a pull request. Thereafter, wait for Specs&amp;#8217; developers merge this request. Once they approve the request and merge it, we can use our lib as a Pod by Podfile.&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;li&gt;Lastly, go to &lt;a href='https://github.com/CocoaPods/Specs/pulls'&gt;Specs pull page&lt;/a&gt; and press onto &lt;code&gt;New pull request&lt;/code&gt; and fill all require fields to create a pull request. Thereafter, wait for Specs&amp;#8217; developers merge this request. Once they approve the request and merge it, we can use our lib as a Pod by Podfile.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It is so easy, isn&amp;#8217;t it? But for me, the first time I created a pod, I wonder how pod work and how many necessary steps to make a pod successfully. Now, you have an own pod. Congratulations! Take time to share it as far as possible!&lt;/p&gt;</description>
                 <link>http://hugo53.github.io/ios/2013/11/25/cocoapods---easy-but-not-easy</link>
                 <guid>http://hugo53.github.io/ios/2013/11/25/cocoapods---easy-but-not-easy</guid>
                 <pubDate>2013-11-25T00:00:00+07:00</pubDate>
@@ -362,13 +375,47 @@ ET&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2 id='processing_pdf_content'&gt;Processing PDF content&lt;/h2&gt;
 
+&lt;h4 id='get_text_rect'&gt;Get Text Rect&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href='http://stackoverflow.com/questions/4255298/how-does-an-annot-cgpdfdictionary-rect-translate-to-objective-c-rect/4255586#4255586'&gt;Get Text Rect&lt;/a&gt;&lt;/p&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='objectivec'&gt;&lt;span class='n'&gt;CGPDFArrayRef&lt;/span&gt; &lt;span class='n'&gt;rectArray&lt;/span&gt;&lt;span class='p'&gt;;&lt;/span&gt;
+                &lt;span class='k'&gt;if&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;CGPDFDictionaryGetArray&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;annotDict&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='s'&gt;&amp;quot;Rect&amp;quot;&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='o'&gt;&amp;amp;&lt;/span&gt;&lt;span class='n'&gt;rectArray&lt;/span&gt;&lt;span class='p'&gt;))&lt;/span&gt; &lt;span class='p'&gt;{&lt;/span&gt;
+                    &lt;span class='c1'&gt;//continue;&lt;/span&gt;
+
+                    &lt;span class='n'&gt;CGPDFReal&lt;/span&gt; &lt;span class='n'&gt;coords&lt;/span&gt;&lt;span class='p'&gt;[&lt;/span&gt;&lt;span class='mi'&gt;4&lt;/span&gt;&lt;span class='p'&gt;];&lt;/span&gt;
+
+                    &lt;span class='k'&gt;for&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt; &lt;span class='kt'&gt;int&lt;/span&gt; &lt;span class='n'&gt;k&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='mi'&gt;0&lt;/span&gt;&lt;span class='p'&gt;;&lt;/span&gt; &lt;span class='n'&gt;k&lt;/span&gt; &lt;span class='o'&gt;&amp;lt;&lt;/span&gt; &lt;span class='n'&gt;arrayCount&lt;/span&gt;&lt;span class='p'&gt;;&lt;/span&gt; &lt;span class='o'&gt;++&lt;/span&gt;&lt;span class='n'&gt;k&lt;/span&gt; &lt;span class='p'&gt;)&lt;/span&gt; &lt;span class='p'&gt;{&lt;/span&gt;
+
+                        &lt;span class='n'&gt;CGPDFObjectRef&lt;/span&gt; &lt;span class='n'&gt;rectObj&lt;/span&gt;&lt;span class='p'&gt;;&lt;/span&gt;
+                        &lt;span class='k'&gt;if&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='o'&gt;!&lt;/span&gt;&lt;span class='n'&gt;CGPDFArrayGetObject&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;rectArray&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='n'&gt;k&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='o'&gt;&amp;amp;&lt;/span&gt;&lt;span class='n'&gt;rectObj&lt;/span&gt;&lt;span class='p'&gt;))&lt;/span&gt; &lt;span class='p'&gt;{&lt;/span&gt;
+                            &lt;span class='k'&gt;continue&lt;/span&gt;&lt;span class='p'&gt;;&lt;/span&gt;
+                        &lt;span class='p'&gt;}&lt;/span&gt;
+
+                        &lt;span class='n'&gt;CGPDFReal&lt;/span&gt; &lt;span class='n'&gt;coord&lt;/span&gt;&lt;span class='p'&gt;;&lt;/span&gt;
+                        &lt;span class='k'&gt;if&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='o'&gt;!&lt;/span&gt;&lt;span class='n'&gt;CGPDFObjectGetValue&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;rectObj&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='n'&gt;kCGPDFObjectTypeReal&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='o'&gt;&amp;amp;&lt;/span&gt;&lt;span class='n'&gt;coord&lt;/span&gt;&lt;span class='p'&gt;))&lt;/span&gt; &lt;span class='p'&gt;{&lt;/span&gt;
+                            &lt;span class='k'&gt;continue&lt;/span&gt;&lt;span class='p'&gt;;&lt;/span&gt;
+                        &lt;span class='p'&gt;}&lt;/span&gt;
+
+                        &lt;span class='n'&gt;coords&lt;/span&gt;&lt;span class='p'&gt;[&lt;/span&gt;&lt;span class='n'&gt;k&lt;/span&gt;&lt;span class='p'&gt;]&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='n'&gt;coord&lt;/span&gt;&lt;span class='p'&gt;;&lt;/span&gt;
+                    &lt;span class='p'&gt;}&lt;/span&gt;      
+
+                &lt;span class='p'&gt;}&lt;/span&gt;
+
+                &lt;span class='c1'&gt;//blx,bly,trx,try&amp;gt;tlx,tly,w,h&lt;/span&gt;
+
+                &lt;span class='n'&gt;CGRect&lt;/span&gt; &lt;span class='n'&gt;rect&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='n'&gt;CGRectMake&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;coords&lt;/span&gt;&lt;span class='p'&gt;[&lt;/span&gt;&lt;span class='mi'&gt;0&lt;/span&gt;&lt;span class='p'&gt;],&lt;/span&gt;&lt;span class='n'&gt;coords&lt;/span&gt;&lt;span class='p'&gt;[&lt;/span&gt;&lt;span class='mi'&gt;3&lt;/span&gt;&lt;span class='p'&gt;],&lt;/span&gt;&lt;span class='n'&gt;coords&lt;/span&gt;&lt;span class='p'&gt;[&lt;/span&gt;&lt;span class='mi'&gt;2&lt;/span&gt;&lt;span class='p'&gt;]&lt;/span&gt;&lt;span class='o'&gt;-&lt;/span&gt;&lt;span class='n'&gt;coords&lt;/span&gt;&lt;span class='p'&gt;[&lt;/span&gt;&lt;span class='mi'&gt;0&lt;/span&gt;&lt;span class='p'&gt;],&lt;/span&gt;&lt;span class='n'&gt;coords&lt;/span&gt;&lt;span class='p'&gt;[&lt;/span&gt;&lt;span class='mi'&gt;3&lt;/span&gt;&lt;span class='p'&gt;]&lt;/span&gt;&lt;span class='o'&gt;-&lt;/span&gt;&lt;span class='n'&gt;coords&lt;/span&gt;&lt;span class='p'&gt;[&lt;/span&gt;&lt;span class='mi'&gt;1&lt;/span&gt;&lt;span class='p'&gt;]);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h2 id='some_addon_elements_for_showing_pdf'&gt;Some add-on elements for showing PDF&lt;/h2&gt;
 
 &lt;h3 id='annotation'&gt;Annotation&lt;/h3&gt;
 
 &lt;h3 id='linking_mediaweb_elements'&gt;Linking Media/Web Elements&lt;/h3&gt;
 
-&lt;h1 id='references'&gt;References&lt;/h1&gt;
+&lt;h2 id='references'&gt;References&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href='http://stackoverflow.com/questions/3889634/fast-and-lean-pdf-viewer-for-iphone-ipad-ios-tips-and-hints?rq=1'&gt;Great summary&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h3 id='open_sources_for_ios'&gt;Open Sources for iOS&lt;/h3&gt;
 

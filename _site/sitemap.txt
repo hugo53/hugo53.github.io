@@ -20,6 +20,7 @@ http://hugo53.github.io/rss.xml
 http://hugo53.github.io/sitemap.txt
 http://hugo53.github.io/tags.html
 
+http://hugo53.github.io/ios/2013/11/26/huchart-be-in-top-new-github-repo-in-the-released-day
 http://hugo53.github.io/ios/2013/11/25/cocoapods---easy-but-not-easy
 http://hugo53.github.io/cryptography/2013/11/07/crytography-in-ios
 http://hugo53.github.io/ios%20development/2013/10/28/audio-processing-the-second-step
