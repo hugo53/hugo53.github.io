@@ -58,7 +58,11 @@ Thereafter, do a validation for podspec:
 pod spec lint HUChart.podspec    // May need sudo
 {% endhighlight %}
 
-At the end of terminal screen, ```Podspec passes validation``` appears let you know that your pod is OK to publish. Otherwise, check again all fields in podspec file to ensure that all is accurate. Next, go to do the last task, send a pull request (PR).
+At the end of terminal screen, ```Podspec passes validation``` appears let you know that your pod is OK to publish. 
+
+![alt text](http://hugo53.github.io/images/huchart/hucharPodValidation.jpg "huchart archive top")
+
+Otherwise, check again all fields in podspec file to ensure that all is accurate. Next, go to do the last task, send a pull request (PR).
 
 ##### A note for s.source\_files attribute in podspec file
 It is to locate source files you want to publish. Thus, be sure that you provide the exact path for ```s.source_files``` attribute. A legal path is a path from the root directory which contains ```.git``` folder to destination file. For example, the below code show a path for ```HUChartDemo``` project (but its repository name is [HUChart](https://github.com/hugo53/HUChart), don't be confused here, we need project's root directory, not repository name). 
