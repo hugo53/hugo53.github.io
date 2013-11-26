@@ -23,6 +23,6 @@ You can see HUChart at [here](https://github.com/hugo53/HUChart) and below is so
 
 ![alt text](http://hugo53.github.io/images/huchart/semiCircleChart-example.png "huchart archive top")
 
-![alt text](http://hugo53.github.io/images/huchart/semiCircleChartIphoneV6.png "huchart archive top")
+![alt text](http://hugo53.github.io/images/huchart/semiCircleChartIphoneV6.jpg "huchart archive top")
 
 Thanks for reading!
