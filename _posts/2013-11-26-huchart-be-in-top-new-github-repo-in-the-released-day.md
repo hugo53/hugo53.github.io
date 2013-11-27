@@ -19,6 +19,9 @@ See more at [here](http://us5.campaign-archive2.com/?u=439aa16a39e4b10e0b65ff2ef
 
 -------------------------------------------------------------------
 ### FYI
+
+[HUChart](https://github.com/hugo53/HUChart) is a simple chart library for iOS to draw semi-circle chart for some cases which has a LITTLE SPACE to make a full circle chart. With this library, you can customize a semi circle chart (so-called half pie chart) to make a suitable chart for available space in device screen where has not enough space to draw a full circle chart.
+
 You can see [HUChart](https://github.com/hugo53/HUChart) at [here](https://github.com/hugo53/HUChart) and below is some screenshots.
 
 ![alt text](http://hugo53.github.io/images/huchart/semiCircleChart-example.png "huchart archive top")
