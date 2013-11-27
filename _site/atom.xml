@@ -4,7 +4,7 @@
  <title>Leading Beautiful Life</title>
  <link href="http://hugo53.github.io/" rel="self"/>
  <link href="http://hugo53.github.io"/>
- <updated>2013-11-26T12:38:51+07:00</updated>
+ <updated>2013-11-27T18:32:20+07:00</updated>
  <id>http://hugo53.github.io</id>
  <author>
    <name>Hugo Nguyen</name>
@@ -17,13 +17,27 @@
    <link href="http://hugo53.github.io/ios/2013/11/26/huchart-be-in-top-new-github-repo-in-the-released-day"/>
    <updated>2013-11-26T00:00:00+07:00</updated>
    <id>http://hugo53.github.io/ios/2013/11/26/huchart-be-in-top-new-github-repo-in-the-released-day</id>
-   <content type="html">&lt;p&gt;By a chance, I reached &lt;a href='http://www.githubarchive.org'&gt;Github Archive&lt;/a&gt;, a github statistic page and suddenly, I saw my project called &lt;a href='https://github.com/hugo53/HUChart'&gt;HUChart&lt;/a&gt; was in &lt;code&gt;Top New Repositories&lt;/code&gt;. It was really a surprise for me because that day was the first day my repo goes public. Althought it received a litte bit of stars, but I hope it will help someone and of course, will get more stars and forks.&lt;/p&gt;
+   <content type="html">&lt;p&gt;By a chance, I reached &lt;a href='http://www.githubarchive.org'&gt;Github Archive&lt;/a&gt;, a github statistic page.&lt;/p&gt;
 
 &lt;p&gt;&lt;img alt='alt text' src='http://hugo53.github.io/images/huchart/huchart-gitarchive.png' /&gt;&lt;/p&gt;
 
+&lt;p&gt;Suddenly, I saw my project called &lt;a href='https://github.com/hugo53/HUChart'&gt;HUChart&lt;/a&gt; was in &lt;code&gt;Top New Repositories&lt;/code&gt;. It was really a surprise for me because that day was the first day my repo goes public. Althought it received a little bit of stars, but I hope it will help someone and of course, will get more stars and forks.&lt;/p&gt;
+
 &lt;p&gt;&lt;img alt='alt text' src='http://hugo53.github.io/images/huchart/huchart-topnew.png' /&gt;&lt;/p&gt;
 
-&lt;p&gt;See more at &lt;a href='http://us5.campaign-archive2.com/?u=439aa16a39e4b10e0b65ff2ef&amp;amp;id=2e5c5e8e16'&gt;here&lt;/a&gt;&lt;/p&gt;</content>
+&lt;p&gt;See more at &lt;a href='http://us5.campaign-archive2.com/?u=439aa16a39e4b10e0b65ff2ef&amp;amp;id=2e5c5e8e16'&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h3 id='fyi'&gt;FYI&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href='https://github.com/hugo53/HUChart'&gt;HUChart&lt;/a&gt; is a simple chart library for iOS to draw semi-circle chart for some cases which has a LITTLE SPACE to make a full circle chart. With this library, you can customize a semi circle chart (so-called half pie chart) to make a suitable chart for available space in device screen where has not enough space to draw a full circle chart.&lt;/p&gt;
+
+&lt;p&gt;You can see &lt;a href='https://github.com/hugo53/HUChart'&gt;HUChart&lt;/a&gt; at &lt;a href='https://github.com/hugo53/HUChart'&gt;here&lt;/a&gt; and below is some screenshots.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='alt text' src='http://hugo53.github.io/images/huchart/semiCircleChart-example.png' /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='alt text' src='http://hugo53.github.io/images/huchart/semiCircleChartIphoneV6.jpg' /&gt;&lt;/p&gt;
+
+&lt;p&gt;Thanks for reading!&lt;/p&gt;</content>
  </entry>
  
  <entry>
@@ -68,7 +82,13 @@ vi HUChart.podspec
 &lt;p&gt;Thereafter, do a validation for podspec:&lt;/p&gt;
 &lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='bash'&gt;pod spec lint HUChart.podspec    // May need sudo
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;At the end of terminal screen, &lt;code&gt;Podspec passes validation&lt;/code&gt; appears let you know that your pod is OK to publish. Otherwise, check again all fields in podspec file to ensure that all is accurate. Next, go to do the last task, send a pull request (PR).&lt;/p&gt;
+&lt;p&gt;At the end of terminal screen, &lt;code&gt;pod-name.podspec passes validation&lt;/code&gt; appears let you know that your pod is OK to publish.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='alt text' src='http://hugo53.github.io/images/huchart/hucharPodValidation.png' /&gt;&lt;/p&gt;
+
+&lt;p&gt;Otherwise, check again all fields in podspec file to ensure that all is accurate.&lt;/p&gt;
+
+&lt;p&gt;Next, go to do the last task, send a pull request (PR).&lt;/p&gt;
 
 &lt;h5 id='a_note_for_ssource_files_attribute_in_podspec_file'&gt;A note for s.source_files attribute in podspec file&lt;/h5&gt;
 
@@ -174,6 +194,10 @@ vi HUChart.podspec
 
 &lt;li&gt;
 &lt;p&gt;&lt;a href='https://github.com/rnapier/RNCryptor'&gt;RNCryptor&lt;/a&gt; by author of the above book&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href='http://www.branchfire.com/lib-web/html/_security.html'&gt;PDF Protecting in iAnnotate&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;</content>
  </entry>
@@ -416,10 +440,26 @@ ET&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h3 id='linking_mediaweb_elements'&gt;Linking Media/Web Elements&lt;/h3&gt;
 
+&lt;h2 id='performing_with_font_and_charset_encoding'&gt;Performing with Font and Charset Encoding&lt;/h2&gt;
+
+&lt;h4 id='problem_with_identityh_encoding'&gt;Problem with Identity-H Encoding&lt;/h4&gt;
+
+&lt;p&gt;Identity-H is a encoding which is used by Google Docs (when you export your docs to PDF file).&lt;/p&gt;
+
 &lt;h2 id='references'&gt;References&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href='http://stackoverflow.com/questions/3889634/fast-and-lean-pdf-viewer-for-iphone-ipad-ios-tips-and-hints?rq=1'&gt;Great summary&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href='http://stackoverflow.com/questions/3889634/fast-and-lean-pdf-viewer-for-iphone-ipad-ios-tips-and-hints?rq=1'&gt;Great summary&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href='http://blog.random-ideas.net/?p=184'&gt;Displaying and Searching PDF Content on iPhone&lt;/a&gt; from scratch, for the first time do with PDF in iOS. Really helpful and full of information.&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href='http://www.cocoachina.com/wiki/index.php?title=CGPDFDocument_Reference'&gt;Cocoa China docs&lt;/a&gt;. Re-write Apple đocs in easy follow way. More information than original Apple docs.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id='open_sources_for_ios'&gt;Open Sources for iOS&lt;/h3&gt;
