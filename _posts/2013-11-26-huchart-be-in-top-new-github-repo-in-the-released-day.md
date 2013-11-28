@@ -29,10 +29,11 @@ You can see [HUChart](https://github.com/hugo53/HUChart) at [here](https://githu
 ![alt text](http://hugo53.github.io/images/huchart/semiCircleChartIphoneV6.jpg "huchart archive top")
 
 Thanks for reading!
-<% highlight ruby %>
+{% highlight ruby %}
 def func
-	print "hello"
-<% endhighlight %>
+	print 'Hello'
+
+{% endhighlight %}
 
 <script data-gittip-username="mrhoangnm"
         data-gittip-widget="button"
