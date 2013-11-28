@@ -120,7 +120,11 @@ git push origin -u master
 
 It is so easy, isn't it? But for me, the first time I created a pod, I wonder how pod work and how many necessary steps to make a pod successfully. Now, you have an own pod. Congratulations! Take time to share it as far as possible! 
 
+
+> For Note: A source for setting up [a private pod](http://blog.herlein.com/wp-content/plugins/really-static/static/2013/01/private-cocoapods/)
+
 <script data-gittip-username="mrhoangnm"
         data-gittip-widget="button"
         src="//gttp.co/v1.js">
         </script>
+
