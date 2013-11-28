@@ -124,9 +124,3 @@ It is so easy, isn't it? But for me, the first time I created a pod, I wonder ho
         data-gittip-widget="button"
         src="//gttp.co/v1.js">
         </script>
-
-{% highlight ruby %}
-def func
-	print 'Hello'
-
-{% endhighlight %}
