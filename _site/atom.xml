@@ -4,7 +4,7 @@
  <title>Leading Beautiful Life</title>
  <link href="http://hugo53.github.io/" rel="self"/>
  <link href="http://hugo53.github.io"/>
- <updated>2013-11-27T18:32:20+07:00</updated>
+ <updated>2013-11-28T18:20:59+07:00</updated>
  <id>http://hugo53.github.io</id>
  <author>
    <name>Hugo Nguyen</name>
@@ -21,7 +21,7 @@
 
 &lt;p&gt;&lt;img alt='alt text' src='http://hugo53.github.io/images/huchart/huchart-gitarchive.png' /&gt;&lt;/p&gt;
 
-&lt;p&gt;Suddenly, I saw my project called &lt;a href='https://github.com/hugo53/HUChart'&gt;HUChart&lt;/a&gt; was in &lt;code&gt;Top New Repositories&lt;/code&gt;. It was really a surprise for me because that day was the first day my repo goes public. Althought it received a little bit of stars, but I hope it will help someone and of course, will get more stars and forks.&lt;/p&gt;
+&lt;p&gt;Suddenly, I saw my project called &lt;a href='https://github.com/hugo53/HUChart'&gt;HUChart&lt;/a&gt; was in &lt;code&gt;Top New Repositories&lt;/code&gt;. It was really a surprise for me because that day was the first day my repo goes public. Although it received a little bit of stars, but I hope it will help someone and of course, will get more stars and forks.&lt;/p&gt;
 
 &lt;p&gt;&lt;img alt='alt text' src='http://hugo53.github.io/images/huchart/huchart-topnew.png' /&gt;&lt;/p&gt;
 
@@ -408,31 +408,27 @@ ET&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;a href='http://stackoverflow.com/questions/4255298/how-does-an-annot-cgpdfdictionary-rect-translate-to-objective-c-rect/4255586#4255586'&gt;Get Text Rect&lt;/a&gt;&lt;/p&gt;
 &lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='objectivec'&gt;&lt;span class='n'&gt;CGPDFArrayRef&lt;/span&gt; &lt;span class='n'&gt;rectArray&lt;/span&gt;&lt;span class='p'&gt;;&lt;/span&gt;
-                &lt;span class='k'&gt;if&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;CGPDFDictionaryGetArray&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;annotDict&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='s'&gt;&amp;quot;Rect&amp;quot;&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='o'&gt;&amp;amp;&lt;/span&gt;&lt;span class='n'&gt;rectArray&lt;/span&gt;&lt;span class='p'&gt;))&lt;/span&gt; &lt;span class='p'&gt;{&lt;/span&gt;
-                    &lt;span class='c1'&gt;//continue;&lt;/span&gt;
+&lt;span class='k'&gt;if&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;CGPDFDictionaryGetArray&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;annotDict&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='s'&gt;&amp;quot;Rect&amp;quot;&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='o'&gt;&amp;amp;&lt;/span&gt;&lt;span class='n'&gt;rectArray&lt;/span&gt;&lt;span class='p'&gt;))&lt;/span&gt; &lt;span class='p'&gt;{&lt;/span&gt;
+    &lt;span class='c1'&gt;//continue;&lt;/span&gt;
+    &lt;span class='n'&gt;CGPDFReal&lt;/span&gt; &lt;span class='n'&gt;coords&lt;/span&gt;&lt;span class='p'&gt;[&lt;/span&gt;&lt;span class='mi'&gt;4&lt;/span&gt;&lt;span class='p'&gt;];&lt;/span&gt;
 
-                    &lt;span class='n'&gt;CGPDFReal&lt;/span&gt; &lt;span class='n'&gt;coords&lt;/span&gt;&lt;span class='p'&gt;[&lt;/span&gt;&lt;span class='mi'&gt;4&lt;/span&gt;&lt;span class='p'&gt;];&lt;/span&gt;
+    &lt;span class='k'&gt;for&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt; &lt;span class='kt'&gt;int&lt;/span&gt; &lt;span class='n'&gt;k&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='mi'&gt;0&lt;/span&gt;&lt;span class='p'&gt;;&lt;/span&gt; &lt;span class='n'&gt;k&lt;/span&gt; &lt;span class='o'&gt;&amp;lt;&lt;/span&gt; &lt;span class='n'&gt;arrayCount&lt;/span&gt;&lt;span class='p'&gt;;&lt;/span&gt; &lt;span class='o'&gt;++&lt;/span&gt;&lt;span class='n'&gt;k&lt;/span&gt; &lt;span class='p'&gt;)&lt;/span&gt; &lt;span class='p'&gt;{&lt;/span&gt;
+        &lt;span class='n'&gt;CGPDFObjectRef&lt;/span&gt; &lt;span class='n'&gt;rectObj&lt;/span&gt;&lt;span class='p'&gt;;&lt;/span&gt;
+        &lt;span class='k'&gt;if&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='o'&gt;!&lt;/span&gt;&lt;span class='n'&gt;CGPDFArrayGetObject&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;rectArray&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='n'&gt;k&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='o'&gt;&amp;amp;&lt;/span&gt;&lt;span class='n'&gt;rectObj&lt;/span&gt;&lt;span class='p'&gt;))&lt;/span&gt; &lt;span class='p'&gt;{&lt;/span&gt;
+            &lt;span class='k'&gt;continue&lt;/span&gt;&lt;span class='p'&gt;;&lt;/span&gt;
+        &lt;span class='p'&gt;}&lt;/span&gt;
 
-                    &lt;span class='k'&gt;for&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt; &lt;span class='kt'&gt;int&lt;/span&gt; &lt;span class='n'&gt;k&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='mi'&gt;0&lt;/span&gt;&lt;span class='p'&gt;;&lt;/span&gt; &lt;span class='n'&gt;k&lt;/span&gt; &lt;span class='o'&gt;&amp;lt;&lt;/span&gt; &lt;span class='n'&gt;arrayCount&lt;/span&gt;&lt;span class='p'&gt;;&lt;/span&gt; &lt;span class='o'&gt;++&lt;/span&gt;&lt;span class='n'&gt;k&lt;/span&gt; &lt;span class='p'&gt;)&lt;/span&gt; &lt;span class='p'&gt;{&lt;/span&gt;
+        &lt;span class='n'&gt;CGPDFReal&lt;/span&gt; &lt;span class='n'&gt;coord&lt;/span&gt;&lt;span class='p'&gt;;&lt;/span&gt;
+        &lt;span class='k'&gt;if&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='o'&gt;!&lt;/span&gt;&lt;span class='n'&gt;CGPDFObjectGetValue&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;rectObj&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='n'&gt;kCGPDFObjectTypeReal&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='o'&gt;&amp;amp;&lt;/span&gt;&lt;span class='n'&gt;coord&lt;/span&gt;&lt;span class='p'&gt;))&lt;/span&gt; &lt;span class='p'&gt;{&lt;/span&gt;
+            &lt;span class='k'&gt;continue&lt;/span&gt;&lt;span class='p'&gt;;&lt;/span&gt;
+        &lt;span class='p'&gt;}&lt;/span&gt;
 
-                        &lt;span class='n'&gt;CGPDFObjectRef&lt;/span&gt; &lt;span class='n'&gt;rectObj&lt;/span&gt;&lt;span class='p'&gt;;&lt;/span&gt;
-                        &lt;span class='k'&gt;if&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='o'&gt;!&lt;/span&gt;&lt;span class='n'&gt;CGPDFArrayGetObject&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;rectArray&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='n'&gt;k&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='o'&gt;&amp;amp;&lt;/span&gt;&lt;span class='n'&gt;rectObj&lt;/span&gt;&lt;span class='p'&gt;))&lt;/span&gt; &lt;span class='p'&gt;{&lt;/span&gt;
-                            &lt;span class='k'&gt;continue&lt;/span&gt;&lt;span class='p'&gt;;&lt;/span&gt;
-                        &lt;span class='p'&gt;}&lt;/span&gt;
+        &lt;span class='n'&gt;coords&lt;/span&gt;&lt;span class='p'&gt;[&lt;/span&gt;&lt;span class='n'&gt;k&lt;/span&gt;&lt;span class='p'&gt;]&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='n'&gt;coord&lt;/span&gt;&lt;span class='p'&gt;;&lt;/span&gt;
+    &lt;span class='p'&gt;}&lt;/span&gt;      
+&lt;span class='p'&gt;}&lt;/span&gt;
 
-                        &lt;span class='n'&gt;CGPDFReal&lt;/span&gt; &lt;span class='n'&gt;coord&lt;/span&gt;&lt;span class='p'&gt;;&lt;/span&gt;
-                        &lt;span class='k'&gt;if&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='o'&gt;!&lt;/span&gt;&lt;span class='n'&gt;CGPDFObjectGetValue&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;rectObj&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='n'&gt;kCGPDFObjectTypeReal&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='o'&gt;&amp;amp;&lt;/span&gt;&lt;span class='n'&gt;coord&lt;/span&gt;&lt;span class='p'&gt;))&lt;/span&gt; &lt;span class='p'&gt;{&lt;/span&gt;
-                            &lt;span class='k'&gt;continue&lt;/span&gt;&lt;span class='p'&gt;;&lt;/span&gt;
-                        &lt;span class='p'&gt;}&lt;/span&gt;
-
-                        &lt;span class='n'&gt;coords&lt;/span&gt;&lt;span class='p'&gt;[&lt;/span&gt;&lt;span class='n'&gt;k&lt;/span&gt;&lt;span class='p'&gt;]&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='n'&gt;coord&lt;/span&gt;&lt;span class='p'&gt;;&lt;/span&gt;
-                    &lt;span class='p'&gt;}&lt;/span&gt;      
-
-                &lt;span class='p'&gt;}&lt;/span&gt;
-
-                &lt;span class='c1'&gt;//blx,bly,trx,try&amp;gt;tlx,tly,w,h&lt;/span&gt;
-
-                &lt;span class='n'&gt;CGRect&lt;/span&gt; &lt;span class='n'&gt;rect&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='n'&gt;CGRectMake&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;coords&lt;/span&gt;&lt;span class='p'&gt;[&lt;/span&gt;&lt;span class='mi'&gt;0&lt;/span&gt;&lt;span class='p'&gt;],&lt;/span&gt;&lt;span class='n'&gt;coords&lt;/span&gt;&lt;span class='p'&gt;[&lt;/span&gt;&lt;span class='mi'&gt;3&lt;/span&gt;&lt;span class='p'&gt;],&lt;/span&gt;&lt;span class='n'&gt;coords&lt;/span&gt;&lt;span class='p'&gt;[&lt;/span&gt;&lt;span class='mi'&gt;2&lt;/span&gt;&lt;span class='p'&gt;]&lt;/span&gt;&lt;span class='o'&gt;-&lt;/span&gt;&lt;span class='n'&gt;coords&lt;/span&gt;&lt;span class='p'&gt;[&lt;/span&gt;&lt;span class='mi'&gt;0&lt;/span&gt;&lt;span class='p'&gt;],&lt;/span&gt;&lt;span class='n'&gt;coords&lt;/span&gt;&lt;span class='p'&gt;[&lt;/span&gt;&lt;span class='mi'&gt;3&lt;/span&gt;&lt;span class='p'&gt;]&lt;/span&gt;&lt;span class='o'&gt;-&lt;/span&gt;&lt;span class='n'&gt;coords&lt;/span&gt;&lt;span class='p'&gt;[&lt;/span&gt;&lt;span class='mi'&gt;1&lt;/span&gt;&lt;span class='p'&gt;]);&lt;/span&gt;
+&lt;span class='c1'&gt;//blx,bly,trx,try&amp;gt;tlx,tly,w,h&lt;/span&gt;
+&lt;span class='n'&gt;CGRect&lt;/span&gt; &lt;span class='n'&gt;rect&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='n'&gt;CGRectMake&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;coords&lt;/span&gt;&lt;span class='p'&gt;[&lt;/span&gt;&lt;span class='mi'&gt;0&lt;/span&gt;&lt;span class='p'&gt;],&lt;/span&gt;&lt;span class='n'&gt;coords&lt;/span&gt;&lt;span class='p'&gt;[&lt;/span&gt;&lt;span class='mi'&gt;3&lt;/span&gt;&lt;span class='p'&gt;],&lt;/span&gt;&lt;span class='n'&gt;coords&lt;/span&gt;&lt;span class='p'&gt;[&lt;/span&gt;&lt;span class='mi'&gt;2&lt;/span&gt;&lt;span class='p'&gt;]&lt;/span&gt;&lt;span class='o'&gt;-&lt;/span&gt;&lt;span class='n'&gt;coords&lt;/span&gt;&lt;span class='p'&gt;[&lt;/span&gt;&lt;span class='mi'&gt;0&lt;/span&gt;&lt;span class='p'&gt;],&lt;/span&gt;&lt;span class='n'&gt;coords&lt;/span&gt;&lt;span class='p'&gt;[&lt;/span&gt;&lt;span class='mi'&gt;3&lt;/span&gt;&lt;span class='p'&gt;]&lt;/span&gt;&lt;span class='o'&gt;-&lt;/span&gt;&lt;span class='n'&gt;coords&lt;/span&gt;&lt;span class='p'&gt;[&lt;/span&gt;&lt;span class='mi'&gt;1&lt;/span&gt;&lt;span class='p'&gt;]);&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h2 id='some_addon_elements_for_showing_pdf'&gt;Some add-on elements for showing PDF&lt;/h2&gt;
 

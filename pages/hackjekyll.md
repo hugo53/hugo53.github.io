@@ -66,3 +66,15 @@ OK, well done. You already have tweet feed in your site now!
 
 ### Adding Table of Contents (TOC)
 You should follow [this post](http://brizzled.clapper.org/blog/2012/02/04/generating-a-table-of-contents-in-octopress/).
+
+### Syntax Highlighting
+Use Pygments
+##### How to install it in Mac?
+Use port:
+
+sudo port install python25 py25-pygments
+
+or just 
+sudo easy_install Pygments
+
+refer http://truongtx.me/2012/12/28/jekyll-bootstrap-syntax-highlighting/

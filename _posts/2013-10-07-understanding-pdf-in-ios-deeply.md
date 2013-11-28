@@ -80,31 +80,27 @@ The following list displays _Pop_ functions supplied by iOS.
 
 {% highlight objectivec %}
 CGPDFArrayRef rectArray;
-                if(CGPDFDictionaryGetArray(annotDict, "Rect", &rectArray)) {
-                    //continue;
+if(CGPDFDictionaryGetArray(annotDict, "Rect", &rectArray)) {
+    //continue;
+    CGPDFReal coords[4];
 
-                    CGPDFReal coords[4];
+    for( int k = 0; k < arrayCount; ++k ) {
+        CGPDFObjectRef rectObj;
+        if(!CGPDFArrayGetObject(rectArray, k, &rectObj)) {
+            continue;
+        }
 
-                    for( int k = 0; k < arrayCount; ++k ) {
+        CGPDFReal coord;
+        if(!CGPDFObjectGetValue(rectObj, kCGPDFObjectTypeReal, &coord)) {
+            continue;
+        }
 
-                        CGPDFObjectRef rectObj;
-                        if(!CGPDFArrayGetObject(rectArray, k, &rectObj)) {
-                            continue;
-                        }
+        coords[k] = coord;
+    }      
+}
 
-                        CGPDFReal coord;
-                        if(!CGPDFObjectGetValue(rectObj, kCGPDFObjectTypeReal, &coord)) {
-                            continue;
-                        }
-
-                        coords[k] = coord;
-                    }      
-
-                }
-
-                //blx,bly,trx,try>tlx,tly,w,h
-
-                CGRect rect = CGRectMake(coords[0],coords[3],coords[2]-coords[0],coords[3]-coords[1]);
+//blx,bly,trx,try>tlx,tly,w,h
+CGRect rect = CGRectMake(coords[0],coords[3],coords[2]-coords[0],coords[3]-coords[1]);
 {% endhighlight %}
 
 ## Some add-on elements for showing PDF
@@ -133,4 +129,5 @@ Identity-H is a encoding which is used by Google Docs (when you export your docs
 
 ### Open sources for other language
 - [Mozilla PDF](https://github.com/mozilla/pdf.js)
+
 
