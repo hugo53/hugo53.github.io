@@ -120,4 +120,13 @@ git push origin -u master
 
 It is so easy, isn't it? But for me, the first time I created a pod, I wonder how pod work and how many necessary steps to make a pod successfully. Now, you have an own pod. Congratulations! Take time to share it as far as possible! 
 
+<script data-gittip-username="mrhoangnm"
+        data-gittip-widget="button"
+        src="//gttp.co/v1.js">
+        </script>
 
+{% highlight ruby %}
+def func
+	print 'Hello'
+
+{% endhighlight %}
