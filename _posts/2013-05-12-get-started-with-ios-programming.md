@@ -39,6 +39,12 @@ Great great great book: _Designing the iPhone User Experience A User-Centered Ap
 
 - [Making Logo](http://appicontemplate.com/)
 
+#### UI Pattern
+- [pttrns](http://pttrns.com/) Great source for iOS UI. 
+- [MOBILE PATTERNS](http://www.mobile-patterns.com/)
+- [Android Patterns](http://www.androidpatterns.com/)
+- [Theresa Neil](http://www.slideshare.net/theresaneil). Slideshare of Theresa, a great UX Designer.
+
 ## Advance Techniques
 - [Keyboard Shortcut](http://developer.apple.com/library/ios/#recipes/xcode_help-keybindings_preferences/articles/viewing_keyboard_shortcuts.html#//apple_ref/doc/uid/TP40010351-CH1-SW1)
 

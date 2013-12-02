@@ -42,3 +42,17 @@ _@synchronized(){}_ is also a compiler directive.
 - NSError and its benefits
 - The **copy-on-write technique** means that when data is copied through a virtual memory copy, an actual copy of the data is not made until there is an attempt to modify it.
 - [File Type Association for making "Open this file with ..."](http://www.infragistics.com/community/blogs/stevez/archive/2013/03/04/associate-a-file-type-with-your-ios-application.aspx)
+
+
+## 29/11/2013
+- CAShapeLayer for draw layer, it has a attribute called 'path'
+
+{% highlight objectivec linenos %}
+/* The path defining the shape to be rendered. If the path extends
+ * outside the layer bounds it will not automatically be clipped to the
+ * layer, only if the normal layer masking rules cause that. Defaults
+ * to null. Animatable. (Note that although the path property is
+ * animatable, no implicit animation will be created when the property
+ * is changed.) */
+@property CGPathRef path;
+{% endhighlight %}
