@@ -4,7 +4,7 @@
  <title>Leading Beautiful Life</title>
  <link href="http://hugo53.github.io/" rel="self"/>
  <link href="http://hugo53.github.io"/>
- <updated>2013-11-28T18:20:59+07:00</updated>
+ <updated>2013-12-04T01:41:13+07:00</updated>
  <id>http://hugo53.github.io</id>
  <author>
    <name>Hugo Nguyen</name>
@@ -137,7 +137,13 @@ vi HUChart.podspec
 &lt;li&gt;Lastly, go to &lt;a href='https://github.com/CocoaPods/Specs/pulls'&gt;Specs pull page&lt;/a&gt; and press onto &lt;code&gt;New pull request&lt;/code&gt; and fill all require fields to create a pull request. Thereafter, wait for Specs&amp;#8217; developers merge this request. Once they approve the request and merge it, we can use our lib as a Pod by Podfile.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;It is so easy, isn&amp;#8217;t it? But for me, the first time I created a pod, I wonder how pod work and how many necessary steps to make a pod successfully. Now, you have an own pod. Congratulations! Take time to share it as far as possible!&lt;/p&gt;</content>
+&lt;p&gt;It is so easy, isn&amp;#8217;t it? But for me, the first time I created a pod, I wonder how pod work and how many necessary steps to make a pod successfully. Now, you have an own pod. Congratulations! Take time to share it as far as possible!&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;For Note: A source for setting up &lt;a href='http://blog.herlein.com/wp-content/plugins/really-static/static/2013/01/private-cocoapods/'&gt;a private pod&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;script data-gittip-username='mrhoangnm' data-gittip-widget='button' src='//gttp.co/v1.js'&gt;
+        &lt;/script&gt;</content>
  </entry>
  
  <entry>
@@ -1804,6 +1810,18 @@ ET&lt;/code&gt;&lt;/pre&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href='http://appicontemplate.com/'&gt;Making Logo&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id='ui_pattern'&gt;UI Pattern&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href='http://pttrns.com/'&gt;pttrns&lt;/a&gt; Great source for iOS UI.&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://www.mobile-patterns.com/'&gt;MOBILE PATTERNS&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://www.androidpatterns.com/'&gt;Android Patterns&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://www.slideshare.net/theresaneil'&gt;Theresa Neil&lt;/a&gt;. Slideshare of Theresa, a great UX Designer.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id='advance_techniques'&gt;Advance Techniques&lt;/h2&gt;
