@@ -8,9 +8,18 @@ description: ""
 - [Introduction](#introduction)
 - [Education](#education)
 - [Working Experience](#working-experience)
+- [Grant and Award](#grant-and-award)
+- [Publication](#publication)
+- [Certification](#certification)
+- [Open Source](#open-source)
+- [Programming Language](#programming-language)
+- [Framework and Library](#framework-and-library)
+- [Tool](#tool)
+- [Language Skill](#language-skill)
+- [Other skill](#other-skill)
+- [Reference](#reference)
 
-(So on)
-
+****
 ## Introduction
 	
 
@@ -23,7 +32,7 @@ GPA: 3.12/4.0
 ****
 ## Working Experience
 
-#### 08/2013 - Now: Mobile Team, Kloon Ltd
+#### 08/2013 - Now Mobile Team, Kloon Ltd
 - **Position** Solution Engineer (iOS)
 - **Research Area** PDF Technology, Data Encryption, Bluetooth Low Energy Technology
 - **Project** PadPublisher, SmartBar
@@ -69,13 +78,15 @@ Event Extraction is a complex and interesting topic in Information Extraction th
 ## Open Source
 
 
-## Programming Language
+
+## Technical Skill
+#### Programming Language
 
 
-## Framework and Library
+#### Framework and Library
 
 
-## Tool
+#### Tool
 
 
 
