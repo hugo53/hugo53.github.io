@@ -6,25 +6,25 @@ description: ""
 {% include JB/setup %}
 
 - [Introduction](#introduction)
-	- [Short Bio](.#short bio)
+	- [Short Bio](#short-bio)
 	- [Interest](#interest)
 - [Education](#education)
-- [Working Experience](.#working experience)
-- [Grant and Award](#grant and award)
+- [Working Experience](#working-experience)
+- [Grant and Award](#grant-and-award)
 - [Publication](#publication)
 - [Certification](#certification)
-- [Open Source](#open source)
-- [Technical Skill](#technical skill)
-	- [Programming Language](#programming language)
-	- [Framework and Library](#framework and library)
+- [Open Source](#open-source)
+- [Technical Skill](#technical-skill)
+	- [Programming Language](#programming-language)
+	- [Framework and Library](#framework-and-library)
 	- [Tool](#tool)
-- [Language Skill](#language skill)
-- [Other skill](#other skill)
+- [Language Skill](#language-skill)
+- [Other skill](#other-skill)
 - [Reference](#reference)
 
 ****
 ## Introduction
-#### Short Bio
+#### Short Bio {#short-bio}
 
 #### Interest
 
@@ -34,7 +34,7 @@ description: ""
 University of Engineering and Technology, Vietnam National University, Hanoi (VNU) BSc – Information Technology.
 
 ****
-## Working Experience
+## Working Experience {#working-experience}
 
 #### 08/2013 - Now Mobile Team, Kloon Ltd
 - **Position** Solution Engineer (iOS)
@@ -69,7 +69,7 @@ Research and implement Data Mining algorithms, focusing on four sub-domains: Med
 - **Research Area** Software Verification, Software Classification
 - **Project** Building White-Box Testing Tool
 
-## Grant and Award
+## Grant and Award {#grant-and-award}
 
 
 ## Publication
@@ -79,25 +79,25 @@ Event Extraction is a complex and interesting topic in Information Extraction th
 
 ## Certification
 
-## Open Source
+## Open Source {#open-source}
 
 
 
-## Technical Skill
-#### Programming Language
+## Technical Skill {#technical-skill}
+#### Programming Language {#programming-language}
 
 
-#### Framework and Library
+#### Framework and Library {#framework-and-library}
 
 
 #### Tool
 
 
 
-## Language Skill
+## Language Skill {#language-skill}
 
 
-## Other skill
+## Other skill {#other-skill}
 
 
 ## Reference
