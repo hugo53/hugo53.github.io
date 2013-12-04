@@ -27,6 +27,11 @@ description: ""
 #### Short Bio {#short-bio}
 
 #### Interest
+- Product Development 
+- Mobile Development
+- UI/UX Analysis
+- Big Data
+- High Scalability System
 
 ****
 ## Education
@@ -70,7 +75,10 @@ Research and implement Data Mining algorithms, focusing on four sub-domains: Med
 - **Project** Building White-Box Testing Tool
 
 ## Grant and Award {#grant-and-award}
-
+- First Prize at the Annual Student Research Conference 2012, Faculty of Information Technology, UET/Coltech, VNU
+- Third Prize at the Annual Student Research Conference 2011, Faculty of Information Technology, UET/Coltech, VNU
+- Government Scholarship for Excellent Student in the Honor Program, University of Engineering and Technology (UET), VNU, Hanoi
+- Third Prize at the National Olympiad in Informatics, 19th, Vietnam Association for Information Processing (VAIP) \& Ministry of Education and Training (MOET)
 
 ## Publication
 #### [VnLoc: A Realtime News Event Extraction Framework for Vietnamese](http://ieeexplore.ieee.org/xpl/abstractAuthors.jsp?tp=&arnumber=6299414), KSE 2012
@@ -78,6 +86,8 @@ Research and implement Data Mining algorithms, focusing on four sub-domains: Med
 Event Extraction is a complex and interesting topic in Information Extraction that includes event extraction methods from free text or web data. The result of event extraction systems can be used in several fields such as risk analysis systems, online monitoring systems or decide support tools. In this paper, we introduce a method that combines lexico-semantic and machine learning to extract event from Vietnamese news. Furthermore, we concentrate to describe event online monitoring system named VnLoc based on the method that was proposed above to extract event in Vietnamese language. Besides, in experiment phase, we have evaluated this method based on precision, recall and F1 measure. At this time of experiment, we on investigated on three types of event: FIRE, CRIME and TRANSPORT ACCIDENT.
 
 ## Certification
+- Fundamental Information Technology Engineer Skill Standards (FE) by [VITEC](www.vitec.org.vn/‎)
+- IBM Certified Solution Designer, Object Oriented Analysis and Design, vUML2 by [IBM Corporation](www.ibm.com)
 
 ## Open Source {#open-source}
 
@@ -85,17 +95,37 @@ Event Extraction is a complex and interesting topic in Information Extraction th
 
 ## Technical Skill {#technical-skill}
 #### Programming Language {#programming-language}
+| Name 	       		| Self Evaluation          | 
+| ------------ 		|:-------------:|
+| Objective-C 		| 	★★★★★ 		|  						
+| Java     			| 	★★★★★ 		|					
+| Python			|	★★★★☆ 		|
+| Tex 				|	★★★★★ 		| 	
+| Markdown			|	★★★★★ 		|
 
 
 #### Framework and Library {#framework-and-library}
-
+| Name 	       		| Self Evaluation          | 
+| ------------ 		|:-------------:|
+| Objective-C 		| 	★★★★★ 		|  						
+| Java     			| 	★★★★★ 		|					
+| Python			|	★★★★☆ 		|
+| Tex 				|	★★★★★ 		| 	
+| Markdown			|	★★★★★ 		|
 
 #### Tool
 
-
+| Name 	       		| Self Evaluation          | 
+| ------------ 		|:-------------:|
+| Objective-C 		| 	★★★★★ 		|  						
+| Java     			| 	★★★★★ 		|					
+| Python			|	★★★★☆ 		|
+| Tex 				|	★★★★★ 		| 	
+| Markdown			|	★★★★★ 		|
 
 ## Language Skill {#language-skill}
-
+- **English** Professional working proficiency
+- **Vietnamese** Native or bilingual proficiency
 
 ## Other skill {#other-skill}
 
