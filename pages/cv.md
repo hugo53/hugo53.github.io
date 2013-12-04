@@ -30,9 +30,8 @@ description: ""
 
 ****
 ## Education
-#### 09/2008 – 06/2012
+#### 09/2008 – 06/2012 Bachelor Degree
 University of Engineering and Technology, Vietnam National University, Hanoi (VNU) BSc – Information Technology.
-GPA: 3.12/4.0
 
 ****
 ## Working Experience
