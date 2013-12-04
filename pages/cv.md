@@ -6,22 +6,27 @@ description: ""
 {% include JB/setup %}
 
 - [Introduction](#introduction)
+	- [Short Bio](#short-bio)
+	- [Interest](#interest)
 - [Education](#education)
 - [Working Experience](#working-experience)
 - [Grant and Award](#grant-and-award)
 - [Publication](#publication)
 - [Certification](#certification)
 - [Open Source](#open-source)
-- [Programming Language](#programming-language)
-- [Framework and Library](#framework-and-library)
-- [Tool](#tool)
+- [Technical Skill](#technical-skill)
+	- [Programming Language](#programming-language)
+	- [Framework and Library](#framework-and-library)
+	- [Tool](#tool)
 - [Language Skill](#language-skill)
 - [Other skill](#other-skill)
 - [Reference](#reference)
 
 ****
 ## Introduction
-	
+#### Short Bio
+
+#### Interest
 
 ****
 ## Education
