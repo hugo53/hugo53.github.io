@@ -90,7 +90,9 @@ Event Extraction is a complex and interesting topic in Information Extraction th
 - IBM Certified Solution Designer, Object Oriented Analysis and Design, vUML2 by [IBM Corporation](www.ibm.com)
 
 ## Open Source {#open-source}
-
+- [HUChart](https://github.com/hugo53/HUChart) A simple chart library for iOS to draw semi-circle chart for some cases which has a LITTLE SPACE to make a full circle chart.
+- [iLL](https://github.com/hugo53/iLL)iOS Library List - A useful collection for iOS developers.
+- [HUsyntactic](https://github.com/hugo53/HUsyntactic) A syntactic parser uses CYK (CKY), Earley. Best fit for English, Vietnamese.
 
 
 ## Technical Skill {#technical-skill}
