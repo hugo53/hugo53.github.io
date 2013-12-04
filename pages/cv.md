@@ -51,6 +51,7 @@ Computer Science, University of Engineering and Technology, Vietnam National Uni
 	- **Party Smart** A mobile application that allows user to see in realtime the number of men and women partying at your favorite bars.  <a href="https://itunes.apple.com/us/app/id577748463?mt=8" target="_blank"> <img src="/images/itunes.jpg" width="8%" height="8%"/></a>
 	 
 
+<br />
 #### 07/2012 - 05/2013 &nbsp;&nbsp;&nbsp; Data Mining Team, VTC Online, VTC Corporation
 Conducting Text Mining services such as Keyword Extraction, News Clustering and applying to a news aggregator system named [Go News](http://news.go.vn/). Besides, I also participated in building a film recommendation system for [Vivo](http://vivo.go.vn/).
 
@@ -60,6 +61,7 @@ Conducting Text Mining services such as Keyword Extraction, News Clustering and 
 	- **News Keywork Extraction** Extracting keywords for a piece of news. A list of keywords for the given news is extracted using a complex model which is based on some cutting-edge algorithms.
 	- **News Clustering** Building a news clustering system which aims to group some similar headlines into a bucket and help users catch the story in an easy way.
 
+<br />
 #### 10/2010 – 07/2012 &nbsp;&nbsp;&nbsp; Knowledge Technology Laboratory (KTLab)
 Research and implement Data Mining algorithms, focusing on four sub-domains: Media Mining (mainly in Image Clustering and Ranking), Data Extraction (especially Event Extraction), Social Network Analysis (concentrating on Twitter) and Applied Machine Learning.
 
@@ -69,11 +71,13 @@ Research and implement Data Mining algorithms, focusing on four sub-domains: Med
 	- **VnLoc: Vietnamese news event monitoring** A Realtime News Event Extraction Framework for Vietnamese.
 	- Clustering and Ranking Images From Result of Meta–Search Engine
 
+<br />
 #### 04/2011 – 08/2011 &nbsp;&nbsp;&nbsp; Vietnam Office of Saltlux Inc.
 - **Position** Research Assistant
 - **Research Area** Text Mining, Classification 
 - **Project** Comparing SVM, TSVM, SVM–kNN and apply on a small training data and a large unlabeled data
 
+<br />
 #### 07/2010 – 10/2010 &nbsp;&nbsp;&nbsp; A.N Lab Company
 - **Position** Research Assistant
 - **Research Area** Software Verification, Software Classification
@@ -115,7 +119,6 @@ Event Extraction is a complex and interesting topic in Information Extraction th
 | Markdown			|	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ★★★★★ 		|
 | Matlab			|	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ★★★★ 		|
 
-<br />
 <br />
 > ★★★★★ Using without any inconvenient
 >
