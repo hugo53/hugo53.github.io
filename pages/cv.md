@@ -6,10 +6,10 @@ description: ""
 {% include JB/setup %}
 
 - [Introduction](#introduction)
-	- [Short Bio](#short bio)
+	- [Short Bio](.#short bio)
 	- [Interest](#interest)
 - [Education](#education)
-- [Working Experience](#working experience)
+- [Working Experience](.#working experience)
 - [Grant and Award](#grant and award)
 - [Publication](#publication)
 - [Certification](#certification)
