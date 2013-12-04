@@ -16,8 +16,8 @@ description: ""
 - [Open Source](#open-source)
 - [Technical Skill](#technical-skill)
 	- [Programming Language](#programming-language)
-	- [Framework and Library](#framework-and-library)
-	- [Tool](#tool)
+	- [Technology](#technology)
+	- [Favourite Tool](#tool)
 - [Language Skill](#language-skill)
 - [Other skill](#other-skill)
 - [Reference](#reference)
@@ -36,15 +36,20 @@ description: ""
 ****
 ## Education
 #### 09/2008 – 06/2012 &nbsp;&nbsp;&nbsp; Bachelor Degree
-University of Engineering and Technology, Vietnam National University, Hanoi (VNU) BSc – Information Technology.
+Computer Science, University of Engineering and Technology, Vietnam National University, Hanoi (VNU)
 
 ****
 ## Working Experience {#working-experience}
 
 #### 08/2013 - Now &nbsp;&nbsp;&nbsp; Mobile Team, Kloon Ltd
 - **Position** Solution Engineer (iOS)
-- **Research Area** PDF Technology, Data Encryption, Bluetooth Low Energy Technology
-- **Project** PadPublisher, SmartBar
+- **Research Area** PDF Technology, Data Encryption, Bluetooth Low Energy Technology, Core Graphics
+- **Project**
+
+	- **PadPublisher** An application for distributing digital content, focusing on PDF Document integrated multimedia content. In this project, I contributed two functions including _Search and Highlight PDF_, _Data Encrypting (remotely and locally)_.  <a href="https://itunes.apple.com/us/app/padpublisher/id511720563?mt=8" target="_blank"> <img src="/images/itunes.jpg" width="8%" height="8%"/></a>
+
+	- **Party Smart** A mobile application that allows user to see in realtime the number of men and women partying at your favorite bars.  <a href="https://itunes.apple.com/us/app/id577748463?mt=8" target="_blank"> <img src="/images/itunes.jpg" width="8%" height="8%"/></a>
+	 
 
 #### 07/2012 - 05/2013 &nbsp;&nbsp;&nbsp; Data Mining Team, VTC Online, VTC Corporation
 Conducting Text Mining services such as Keyword Extraction, News Clustering and applying to a news aggregator system named [Go News](http://news.go.vn/). Besides, I also participated in building a film recommendation system for [Vivo](http://vivo.go.vn/).
@@ -67,7 +72,7 @@ Research and implement Data Mining algorithms, focusing on four sub-domains: Med
 #### 04/2011 – 08/2011 &nbsp;&nbsp;&nbsp; Vietnam Office of Saltlux Inc.
 - **Position** Research Assistant
 - **Research Area** Text Mining, Classification 
-- **Project** Compare SVM, TSVM, SVM–kNN and apply on the small training data and the large unlabeled data
+- **Project** Comparing SVM, TSVM, SVM–kNN and apply on a small training data and a large unlabeled data
 
 #### 07/2010 – 10/2010 &nbsp;&nbsp;&nbsp; A.N Lab Company
 - **Position** Research Assistant
@@ -79,7 +84,7 @@ Research and implement Data Mining algorithms, focusing on four sub-domains: Med
 - First Prize at the Annual Student Research Conference 2012, Faculty of Information Technology, UET/Coltech, VNU
 - Third Prize at the Annual Student Research Conference 2011, Faculty of Information Technology, UET/Coltech, VNU
 - Government Scholarship for Excellent Student in the Honor Program, University of Engineering and Technology (UET), VNU, Hanoi
-- Third Prize at the National Olympiad in Informatics, 19th, Vietnam Association for Information Processing (VAIP) \& Ministry of Education and Training (MOET)
+- Third Prize at the National Olympiad in Informatics, 19th, Vietnam Association for Information Processing (VAIP) & Ministry of Education and Training (MOET)
 
 ****
 ## Publication
@@ -102,33 +107,13 @@ Event Extraction is a complex and interesting topic in Information Extraction th
 ## Technical Skill {#technical-skill}
 #### Programming Language {#programming-language}
 |  	       			|    			| 
-| ----------------- |:-------------:|
-| Objective-C 		| 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ★★★★★ 		|  						
-| Java     			| 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ★★★★★ 		|					
+| ----------------- |:------------- |
+| Objective-C 		| 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ★★★★★ 		|  			
+| Java     			| 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ★★★★★ 		|			
 | Python			|	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ★★★★☆ 		|
 | Tex 				|	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ★★★★★ 		| 	
 | Markdown			|	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ★★★★★ 		|
-
-<br />
-#### Framework and Library {#framework-and-library}
-|  	       			|  				| 
-| ----------------- |:-------------:|
-| Objective-C 		| 	★★★★★ 		|  						
-| Java     			| 	★★★★★ 		|					
-| Python			|	★★★★☆ 		|
-| Tex 				|	★★★★★ 		| 	
-| Markdown			|	★★★★★ 		|
-
-<br />
-#### Tool
-
-| 	 	       		| 				| 
-| ----------------- |:-------------:|
-| Objective-C 		| 	★★★★★ 		|  						
-| Java     			| 	★★★★★ 		|					
-| Python			|	★★★★☆ 		|
-| Tex 				|	★★★★★ 		| 	
-| Markdown			|	★★★★★ 		|
+| Matlab			|	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ★★★★ 		|
 
 <br />
 <br />
@@ -136,9 +121,21 @@ Event Extraction is a complex and interesting topic in Information Extraction th
 >
 > ★★★★☆	Using with a little inconvenient but easy to pass any challenge
 >
-> ★★★★  
->
-> ★★★☆
+> ★★★★ Need time to solve unfamiliar problems
+
+#### Technology {#technology}
+- Signal Communication with Bluetooth Low Energy (use in iPhone 4S or later as [Misfit](http://www.misfitwearables.com/) did)
+- PDF Content Processing (Extracting, Searching, Highlighting)
+- Core Graphics for drawing or customizing UI Components
+- Database Integrated, experience with SQL (SQLite, MySQL), NoSQL (MongoDB, HBase)
+- Push Technology (Polling, Long Polling, Web Socket, Comet)
+- Data Encryption & Security (AES 128/192/256, One-time Password)
+
+
+#### Favourite Tool {#tool}
+- XCode, Tower, Balsamiq, CocoaPods
+- Sublime, Emacs
+
 
 ****
 ## Language Skill {#language-skill}
@@ -147,13 +144,16 @@ Event Extraction is a complex and interesting topic in Information Extraction th
 
 ****
 ## Other skill {#other-skill}
+- **Project Management** intermediate level with 1.5 years experience with SCRUM
+- **Scientific Research** upper–intermediate level with 2 years experience
+- **Time Management**
 
 
-****
-## Reference
 
 
 <!---
+****
+## Reference
 ****
 ## Personal Information
 
