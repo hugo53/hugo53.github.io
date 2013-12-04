@@ -91,36 +91,23 @@ Event Extraction is a complex and interesting topic in Information Extraction th
 
 ## Open Source {#open-source}
 - [HUChart](https://github.com/hugo53/HUChart) A simple chart library for iOS to draw semi-circle chart for some cases which has a LITTLE SPACE to make a full circle chart.
-- [iLL](https://github.com/hugo53/iLL)iOS Library List - A useful collection for iOS developers.
+- [iLL](https://github.com/hugo53/iLL) iOS Library List - A useful collection for iOS developers.
 - [HUsyntactic](https://github.com/hugo53/HUsyntactic) A syntactic parser uses CYK (CKY), Earley. Best fit for English, Vietnamese.
 
 
 ## Technical Skill {#technical-skill}
 #### Programming Language {#programming-language}
-| Name 	       		| Self Evaluation  | 
+|  	       			|    | 
 | ----------------- |:-------------:|
-|			Programming Language						|
 | Objective-C 		| 	★★★★★ 		|  						
 | Java     			| 	★★★★★ 		|					
 | Python			|	★★★★☆ 		|
 | Tex 				|	★★★★★ 		| 	
 | Markdown			|	★★★★★ 		|
-|				Framework and Library					|
 
-| Objective-C 		| 	★★★★★ 		|  						
-| Java     			| 	★★★★★ 		|					
-| Python			|	★★★★☆ 		|
-| Tex 				|	★★★★★ 		| 	
-| Markdown			|	★★★★★ 		|
-|				Tool					|
-| Objective-C 		| 	★★★★★ 		|  						
-| Java     			| 	★★★★★ 		|					
-| Python			|	★★★★☆ 		|
-| Tex 				|	★★★★★ 		| 	
-| Markdown			|	★★★★★ 		|
 
 #### Framework and Library {#framework-and-library}
-| Name 	       		| Self Evaluation | 
+|  	       			|  				| 
 | ----------------- |:-------------:|
 | Objective-C 		| 	★★★★★ 		|  						
 | Java     			| 	★★★★★ 		|					
@@ -130,13 +117,18 @@ Event Extraction is a complex and interesting topic in Information Extraction th
 
 #### Tool
 
-| Name 	       		| Self Evaluation | 
+| 	 	       		| 				| 
 | ----------------- |:-------------:|
 | Objective-C 		| 	★★★★★ 		|  						
 | Java     			| 	★★★★★ 		|					
 | Python			|	★★★★☆ 		|
 | Tex 				|	★★★★★ 		| 	
 | Markdown			|	★★★★★ 		|
+
+> ★★★★★ Using without any inconvenient
+> ★★★★☆	Using with a little inconvenient but easy to pass any challenge
+> ★★★★  
+> ★★★☆
 
 ## Language Skill {#language-skill}
 - **English** Professional working proficiency
