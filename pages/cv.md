@@ -95,18 +95,31 @@ Event Extraction is a complex and interesting topic in Information Extraction th
 
 ## Technical Skill {#technical-skill}
 #### Programming Language {#programming-language}
-| Name 	       		| Self Evaluation          | 
-| ------------ 		|:-------------:|
+| Name 	       		| Self Evaluation  | 
+| ----------------- |:-------------:|
+|			Programming Language						|
+| Objective-C 		| 	★★★★★ 		|  						
+| Java     			| 	★★★★★ 		|					
+| Python			|	★★★★☆ 		|
+| Tex 				|	★★★★★ 		| 	
+| Markdown			|	★★★★★ 		|
+|				Framework and Library					|
+
+| Objective-C 		| 	★★★★★ 		|  						
+| Java     			| 	★★★★★ 		|					
+| Python			|	★★★★☆ 		|
+| Tex 				|	★★★★★ 		| 	
+| Markdown			|	★★★★★ 		|
+|				Tool					|
 | Objective-C 		| 	★★★★★ 		|  						
 | Java     			| 	★★★★★ 		|					
 | Python			|	★★★★☆ 		|
 | Tex 				|	★★★★★ 		| 	
 | Markdown			|	★★★★★ 		|
 
-
 #### Framework and Library {#framework-and-library}
-| Name 	       		| Self Evaluation          | 
-| ------------ 		|:-------------:|
+| Name 	       		| Self Evaluation | 
+| ----------------- |:-------------:|
 | Objective-C 		| 	★★★★★ 		|  						
 | Java     			| 	★★★★★ 		|					
 | Python			|	★★★★☆ 		|
@@ -115,8 +128,8 @@ Event Extraction is a complex and interesting topic in Information Extraction th
 
 #### Tool
 
-| Name 	       		| Self Evaluation          | 
-| ------------ 		|:-------------:|
+| Name 	       		| Self Evaluation | 
+| ----------------- |:-------------:|
 | Objective-C 		| 	★★★★★ 		|  						
 | Java     			| 	★★★★★ 		|					
 | Python			|	★★★★☆ 		|
