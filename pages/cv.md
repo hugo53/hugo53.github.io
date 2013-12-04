@@ -97,7 +97,7 @@ Event Extraction is a complex and interesting topic in Information Extraction th
 
 ## Technical Skill {#technical-skill}
 #### Programming Language {#programming-language}
-|  	       			|    | 
+|  	       			|    			| 
 | ----------------- |:-------------:|
 | Objective-C 		| 	★★★★★ 		|  						
 | Java     			| 	★★★★★ 		|					
@@ -126,8 +126,11 @@ Event Extraction is a complex and interesting topic in Information Extraction th
 | Markdown			|	★★★★★ 		|
 
 > ★★★★★ Using without any inconvenient
+
 > ★★★★☆	Using with a little inconvenient but easy to pass any challenge
+
 > ★★★★  
+
 > ★★★☆
 
 ## Language Skill {#language-skill}
