@@ -59,7 +59,6 @@ Computer Science, University of Engineering and Technology, Vietnam National Uni
 	 
 
 <br />
-<br />
 #### 07/2012 - 05/2013 &nbsp;&nbsp;&nbsp; Data Mining Team, VTC Online, VTC Corporation
 Conducting Text Mining services such as Keyword Extraction, News Clustering and applying to a news aggregator system named [Go News](http://news.go.vn/). Besides, I also participated in building a film recommendation system for [Vivo](http://vivo.go.vn/).
 
@@ -137,10 +136,10 @@ Event Extraction is a complex and interesting topic in Information Extraction th
 #### Technology {#technology}
 - PDF Content Processing (Extracting, Searching, Highlighting)
 - Core Graphics for drawing or customizing UI Components
+- Signal Communication with Bluetooth Low Energy (using on iPhone 4S or later)
 - Database Integrated, experience in SQL (SQLite, MySQL), NoSQL (MongoDB, HBase)
 - Push Technology (Polling, Long Polling, Web Socket, Comet)
 - Data Encryption & Security (AES 128/192/256, One-time Password)
-- Signal Communication with Bluetooth Low Energy (using on iPhone 4S or later)
 
 ****
 ## Language Skill {#language-skill}
