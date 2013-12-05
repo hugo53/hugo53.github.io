@@ -6,8 +6,8 @@ description: ""
 {% include JB/setup %}
 
 - [Introduction](#introduction)
-	- [Short Bio](#short-bio)
 	- [Interest](#interest)
+	- [Information](#information)
 - [Education](#education)
 - [Working Experience](#working-experience)
 - [Grant and Award](#grant-and-award)
@@ -17,14 +17,21 @@ description: ""
 - [Technical Skill](#technical-skill)
 	- [Programming Language](#programming-language)
 	- [Technology](#technology)
-	- [Favourite Tool](#tool)
 - [Language Skill](#language-skill)
 - [Other skill](#other-skill)
 - [Reference](#reference)
 
 ****
 ## Introduction
-#### Short Bio {#short-bio}
+I am an enthusiastic IT man and an open-minded person who is willing to face with any challenge although it is difficult or needs me take time to research for giving solution. Sharing precious knowledge, making awesome products are something in my mind. With responsibility, I always tend to try my best, aim to unlimited revolution. 
+
+#### Information {#information}
+|  	       			|    			| 
+| ----------------- |:------------- |
+| **Full Name**  		| 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MINH–HOANG NGUYEN 		|  	
+| **Gender**	    			| 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Male 		|			
+| **Nationality**			|	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Vietnamese 		|
+| **Birthday** 				|	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; October 23 		| 	
 
 #### Interest
 - Product Development 
@@ -43,7 +50,7 @@ Computer Science, University of Engineering and Technology, Vietnam National Uni
 
 #### 08/2013 - Now &nbsp;&nbsp;&nbsp; Mobile Team, Kloon Ltd
 - **Position** Solution Engineer (iOS)
-- **Research Area** PDF Technology, Data Encryption, Bluetooth Low Energy Technology, Core Graphics
+- **Technology** PDF Technology, Data Encryption, Bluetooth Low Energy Technology, Core Graphics
 - **Project**
 
 	- **PadPublisher** An application for distributing digital content, focusing on PDF Document integrated multimedia content. In this project, I contributed two functions including _Search and Highlight PDF_, _Data Encrypting (remotely and locally)_.  <a href="https://itunes.apple.com/us/app/padpublisher/id511720563?mt=8" target="_blank"> <img src="/images/itunes.jpg" width="8%" height="8%"/></a>
@@ -51,6 +58,7 @@ Computer Science, University of Engineering and Technology, Vietnam National Uni
 	- **Party Smart** A mobile application that allows user to see in realtime the number of men and women partying at your favorite bars.  <a href="https://itunes.apple.com/us/app/id577748463?mt=8" target="_blank"> <img src="/images/itunes.jpg" width="8%" height="8%"/></a>
 	 
 
+<br />
 <br />
 #### 07/2012 - 05/2013 &nbsp;&nbsp;&nbsp; Data Mining Team, VTC Online, VTC Corporation
 Conducting Text Mining services such as Keyword Extraction, News Clustering and applying to a news aggregator system named [Go News](http://news.go.vn/). Besides, I also participated in building a film recommendation system for [Vivo](http://vivo.go.vn/).
@@ -68,7 +76,7 @@ Research and implement Data Mining algorithms, focusing on four sub-domains: Med
 - **Position** Research Assistant
 - **Research Area** Information Extraction, Information Retrieval, Text Mining, Image Mining, Social Network Analysis
 - **Project**
-	- **VnLoc: Vietnamese news event monitoring** A Realtime News Event Extraction Framework for Vietnamese.
+	- **[VnLoc: Vietnamese news event monitoring](http://vnloc.com)** A Realtime News Event Extraction Framework for Vietnamese.
 	- Clustering and Ranking Images From Result of Meta–Search Engine
 
 <br />
@@ -98,8 +106,8 @@ Event Extraction is a complex and interesting topic in Information Extraction th
 
 ****
 ## Certification
-- Fundamental Information Technology Engineer Skill Standards (FE) by [VITEC](www.vitec.org.vn/‎)
-- IBM Certified Solution Designer, Object Oriented Analysis and Design, vUML2 by [IBM Corporation](www.ibm.com)
+- Fundamental Information Technology Engineer Skill Standards (FE) by [VITEC](http://www.vitec.org.vn/)
+- IBM Certified Solution Designer, Object Oriented Analysis and Design, vUML2 by [IBM Corporation](http://www.ibm.com/us/en/)
 
 ****
 ## Open Source {#open-source}
@@ -124,21 +132,15 @@ Event Extraction is a complex and interesting topic in Information Extraction th
 >
 > ★★★★☆	Using with a little inconvenient but easy to pass any challenge
 >
-> ★★★★ Need time to solve unfamiliar problems
+> ★★★★ &nbsp;&nbsp; Need time to solve unfamiliar problems
 
 #### Technology {#technology}
-- Signal Communication with Bluetooth Low Energy (use in iPhone 4S or later as [Misfit](http://www.misfitwearables.com/) did)
 - PDF Content Processing (Extracting, Searching, Highlighting)
 - Core Graphics for drawing or customizing UI Components
-- Database Integrated, experience with SQL (SQLite, MySQL), NoSQL (MongoDB, HBase)
+- Database Integrated, experience in SQL (SQLite, MySQL), NoSQL (MongoDB, HBase)
 - Push Technology (Polling, Long Polling, Web Socket, Comet)
 - Data Encryption & Security (AES 128/192/256, One-time Password)
-
-
-#### Favourite Tool {#tool}
-- XCode, Tower, Balsamiq, CocoaPods
-- Sublime, Emacs
-
+- Signal Communication with Bluetooth Low Energy (using on iPhone 4S or later)
 
 ****
 ## Language Skill {#language-skill}
@@ -151,8 +153,10 @@ Event Extraction is a complex and interesting topic in Information Extraction th
 - **Scientific Research** upper–intermediate level with 2 years experience
 - **Time Management**
 
-
-
+<br />
+<br />
+<br />
+_Last update: December 05, 2013_ 
 
 <!---
 ****
@@ -170,7 +174,10 @@ Event Extraction is a complex and interesting topic in Information Extraction th
 
 **Marital Status** 				Single 					
 
-**Mobile Phone** 				+84 1689 985 956 			
+**Mobile Phone** 							
 
-**Email** 						hoangnm.53@gmail.com 	
+**Email** 						
+#### Favourite Tool {#tool}
+- XCode, Balsamiq, CocoaPods
+- Sublime, Emacs
 -->
