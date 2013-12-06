@@ -19,7 +19,6 @@ description: ""
 	- [Technology](#technology)
 - [Language Skill](#language-skill)
 - [Other skill](#other-skill)
-- [Reference](#reference)
 
 ****
 ## Introduction
