@@ -28,10 +28,10 @@ I am an enthusiastic IT man and an open-minded person who is willing to face wit
 #### Information {#information}
 |  	       			|    			| 
 | ----------------- |:------------- |
-| **Full Name**  		| 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MINH–HOANG NGUYEN 		|  	
-| **Gender**	    			| 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Male 		|			
-| **Nationality**			|	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Vietnamese 		|
-| **Birthday** 				|	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; October 23 		| 	
+| Fullname  		| 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **MINH–HOANG NGUYEN** 		|  	
+| Gender	    			| 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Male** 		|			
+| Nationality		|	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Vietnamese** 		|
+| Birthday				|	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **October 23** 		| 	
 
 #### Interest
 - Product Development 
@@ -131,14 +131,14 @@ Event Extraction is a complex and interesting topic in Information Extraction th
 >
 > ★★★★☆	Using with a little inconvenient but easy to pass any challenge
 >
-> ★★★★ &nbsp;&nbsp; Need time to solve unfamiliar problems
+> ★★★★ &nbsp;&nbsp;&nbsp; Need time to solve unfamiliar problems
 
 #### Technology {#technology}
-- PDF Content Processing (Extracting, Searching, Highlighting)
 - Core Graphics for drawing or customizing UI Components
+- PDF Content Processing (Extracting, Searching, Highlighting)
 - Signal Communication with Bluetooth Low Energy (using on iPhone 4S or later)
 - Database Integrated, experience in SQL (SQLite, MySQL), NoSQL (MongoDB, HBase)
-- Push Technology (Polling, Long Polling, Web Socket, Comet)
+- Push Technology (Polling, Long Polling, Web Socket)
 - Data Encryption & Security (AES 128/192/256, One-time Password)
 
 ****
@@ -155,7 +155,7 @@ Event Extraction is a complex and interesting topic in Information Extraction th
 <br />
 <br />
 <br />
-_Last update: December 05, 2013_ 
+_Last update: December 06, 2013_ 
 
 <!---
 ****
