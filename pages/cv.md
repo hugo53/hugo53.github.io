@@ -42,7 +42,7 @@ I am an enthusiastic IT man and an open-minded person who is willing to face wit
 
 ****
 ## Education
-#### 09/2008 – 06/2012 &nbsp;&nbsp;&nbsp; Bachelor Degree
+#### 09/2008 – 07/2012 &nbsp;&nbsp;&nbsp; Bachelor Degree
 Computer Science, University of Engineering and Technology, Vietnam National University, Hanoi (VNU)
 
 ****
@@ -59,7 +59,7 @@ Computer Science, University of Engineering and Technology, Vietnam National Uni
 	 
 
 <br />
-#### 07/2012 - 05/2013 &nbsp;&nbsp;&nbsp; Data Mining Team, VTC Online, VTC Corporation
+#### 08/2012 - 05/2013 &nbsp;&nbsp;&nbsp; Data Mining Team, VTC Online, VTC Corporation
 Conducting Text Mining services such as Keyword Extraction, News Clustering and applying to a news aggregator system named [Go News](http://news.go.vn/). Besides, I also participated in building a film recommendation system for [Vivo](http://vivo.go.vn/).
 
 - **Position** Key Developer
@@ -155,7 +155,7 @@ Event Extraction is a complex and interesting topic in Information Extraction th
 <br />
 <br />
 <br />
-_Last update: December 06, 2013_ 
+_Last updated: December 06, 2013_ 
 
 <!---
 ****
