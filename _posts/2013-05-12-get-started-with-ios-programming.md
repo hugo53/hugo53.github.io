@@ -84,5 +84,9 @@ Source code and review apps with high income is [here](http://iosapptemplate.com
 
 - [How to Use Social Media to Drive Demand for Your App](http://mobileadvertisinghub.com/how-to-use-social-media-to-drive-demand-for-your-app-part-3/)
 
+## App Evaluation
+- [How Much To Build An App](http://howmuchtobuildanapp.com/#). A tool to help you estimate the cost to develop your iPhone, iPad, Android, Windows Phone, or Web app in seconds.
+- [How much does it cost to build an iPhone app?](http://www.quora.com/How-much-does-it-cost-to-build-an-iPhone-app). A Quora question, bring us a lots knowledge.
+
 ## Great Advices from original documentation (or Great Knowledge)
 - Cocoa Design Patterns (included in  Cocoa Fundamentals Guide) : list all patterns which are used in Cocoa framework. Must go through!
