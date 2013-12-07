@@ -47,7 +47,7 @@ Computer Science, University of Engineering and Technology, Vietnam National Uni
 ****
 ## Working Experience {#working-experience}
 
-#### 08/2013 - Now &nbsp;&nbsp;&nbsp; Mobile Team, Kloon Ltd
+#### 08/2013 - Now &nbsp;&nbsp;&nbsp; Mobile Team, [Kloon Ltd](http://www.kloon.com/)
 - **Position** Solution Engineer (iOS)
 - **Technology** PDF Technology, Data Encryption, Bluetooth Low Energy Technology, Core Graphics
 - **Project**
@@ -58,7 +58,7 @@ Computer Science, University of Engineering and Technology, Vietnam National Uni
 	 
 
 <br />
-#### 08/2012 - 05/2013 &nbsp;&nbsp;&nbsp; Data Mining Team, VTC Online, VTC Corporation
+#### 08/2012 - 05/2013 &nbsp;&nbsp;&nbsp; Data Mining Team, [VTC Online, VTC Corporation](https://online.vtc.vn/index.php?lang=vi)
 Conducting Text Mining services such as Keyword Extraction, News Clustering and applying to a news aggregator system named [Go News](http://news.go.vn/). Besides, I also participated in building a film recommendation system for [Vivo](http://vivo.go.vn/).
 
 - **Position** Key Developer
@@ -68,7 +68,7 @@ Conducting Text Mining services such as Keyword Extraction, News Clustering and 
 	- **News Clustering** Building a news clustering system which aims to group some similar headlines into a bucket and help users catch the story in an easy way.
 
 <br />
-#### 10/2010 – 07/2012 &nbsp;&nbsp;&nbsp; Knowledge Technology Laboratory (KTLab)
+#### 10/2010 – 07/2012 &nbsp;&nbsp;&nbsp; [Knowledge Technology Laboratory (KTLab)](http://vnlp.net/)
 Research and implement Data Mining algorithms, focusing on four sub-domains: Media Mining (mainly in Image Clustering and Ranking), Data Extraction (especially Event Extraction), Social Network Analysis (concentrating on Twitter) and Applied Machine Learning.
 
 - **Position** Research Assistant
@@ -78,13 +78,13 @@ Research and implement Data Mining algorithms, focusing on four sub-domains: Med
 	- Clustering and Ranking Images From Result of Meta–Search Engine
 
 <br />
-#### 04/2011 – 08/2011 &nbsp;&nbsp;&nbsp; Vietnam Office of Saltlux Inc.
+#### 04/2011 – 08/2011 &nbsp;&nbsp;&nbsp; [Vietnam Office of Saltlux Inc.](http://saltlux.com/en/)
 - **Position** Research Assistant
 - **Research Area** Text Mining, Classification 
 - **Project** Comparing SVM, TSVM, SVM–kNN and apply on a small training data and a large unlabeled data
 
 <br />
-#### 07/2010 – 10/2010 &nbsp;&nbsp;&nbsp; A.N Lab Company
+#### 07/2010 – 10/2010 &nbsp;&nbsp;&nbsp; [A.N Lab Company](http://www.anlab.vn/)
 - **Position** Research Assistant
 - **Research Area** Software Verification, Software Classification
 - **Project** Building White-Box Testing Tool
