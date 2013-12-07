@@ -84,6 +84,15 @@ Source code and review apps with high income is [here](http://iosapptemplate.com
 
 - [How to Use Social Media to Drive Demand for Your App](http://mobileadvertisinghub.com/how-to-use-social-media-to-drive-demand-for-your-app-part-3/)
 
+#### App Keywords
+- [Sensor Tower](https://sensortower.com/). Get any app's keywords. Just enter the app name and get its keywords. It also provides optimizing service for optimize app keyword.
+- [App Store Optimization Tool](http://www.mobiledevhq.com/). Providing tool for ASO. Free for 1 app and charge fee if want to use for more app.
+- [Search Man](https://searchman.com/). Another ASO tool, allow tracking app and keywords.
+- [Appcodes](http://www.appcodes.com/). ASO tool, but require charging. No free!
+
+#### Market Research
+- [Xyo](http://xyo.net/). Dividing popular apps into categories such as _Keep up with news_, _Make friends_, _Game_, _Take photo_, _Find music_, ... Helpful for someone who want to see best app for a specific category.
+
 ## App Evaluation
 - [How Much To Build An App](http://howmuchtobuildanapp.com/#). A tool to help you estimate the cost to develop your iPhone, iPad, Android, Windows Phone, or Web app in seconds.
 - [How much does it cost to build an iPhone app?](http://www.quora.com/How-much-does-it-cost-to-build-an-iPhone-app). A Quora question, bring us a lots knowledge.
