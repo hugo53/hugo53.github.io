@@ -91,7 +91,7 @@ Source code and review apps with high income is [here](http://iosapptemplate.com
 - [Appcodes](http://www.appcodes.com/). ASO tool, but require charging. No free!
 
 #### Market Research
-- [Xyo](http://xyo.net/). Dividing popular apps into categories such as _Keep up with news_, _Make friends_, _Game_, _Take photo_, _Find music_, ... Helpful for someone who want to see best app for a specific category.
+- [Xyo](http://xyo.net/). Dividing popular apps into categories such as _Keep up with news_, _Make friends_, _Game_, _Take photo_, _Find music_, ... Helpful for someone who want to see best app for a specific category. 
 
 ## App Evaluation
 - [How Much To Build An App](http://howmuchtobuildanapp.com/#). A tool to help you estimate the cost to develop your iPhone, iPad, Android, Windows Phone, or Web app in seconds.

@@ -56,3 +56,11 @@ _@synchronized(){}_ is also a compiler directive.
  * is changed.) */
 @property CGPathRef path;
 {% endhighlight %}
+
+
+## 09/12/2013
+- Cocoa Data
+	- [Build A Cocoa Data App](http://cocoadevcentral.com/articles/000085.php)
+	- [iOS: Connecting to an online service and persisting data with CoreData](http://ios-blog.co.uk/tutorials/ios-connecting-to-an-online-service-and-persisting-data-with-coredata/)
+	
+- [libHN](http://ios-blog.co.uk/tutorials/libhn-cocoa-framework-for-adding-hackernews-to-your-iosmac-app/)
