@@ -19,6 +19,7 @@ description: ""
 - [ARC for Foundation framework but not for C-based or Core Foundation Framework](#ARC)
 - [Dont use Introspection for Mutable Data](#Dont-use-introspection-for-Mutable-Data)
 - [Keyed and Sequential Archivers](#archivers)
+- [Inline Method in C and ObjectiveC](#inline-method)
 ## How an object is created? {#How-an-object-is-created}
 
 When you allocate an object, part of what happens is what you might expect, given the term. Cocoa allocates enough memory for the object from a region of application virtual memory. To calculate how much memory to allocate, it takes the object’s instance variables into account—including their types and order—as specified by the object’s class.
@@ -247,3 +248,5 @@ If objects of a class wants to be archived, the class must **adopt the NSCoding 
 #### Purpose
 The main value of archiving is that it provides a generic way to make objects persistent. Instead of writing object data out in a special file format, applications frequently store their model objects in archives that they can write out as files. An application can also transfer a network of objects—commonly known as an object graph—to another application using archiving. Applications often do this for pasteboard operations such as copy and paste.
 
+## Inline Method in C and ObjectiveC {#inline-method}
+In almost cases, inline method is for tunning performance. [refer here](http://www.drdobbs.com/the-new-c-inline-functions/184401540)
