@@ -13,12 +13,12 @@ description: ""
 ## Get current orientation {#get-current-orientation}
 
 The below is not the best way. Sometimes, it may return ```UIDeviceOrientationUnknown``` value.
-{% highlight objective-c %}
+{% highlight objectivec %}
 UIDeviceOrientation orientation = [[UIDevice currentDevice] orientation];
 {% endhighlight %}
 
 Using the below is better. Based on status bar orientation, we will get current orientation more accuracy.
-{% highlight objective-c %}
+{% highlight objectivec %}
 UIInterfaceOrientation orientation = [[UIApplication sharedApplication] statusBarOrientation];
 {% endhighlight %}
 
