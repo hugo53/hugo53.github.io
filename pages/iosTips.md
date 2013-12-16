@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "IosTips"
+title: "iOS Tips and Tricks"
 description: ""
 ---
 {% include JB/setup %}

@@ -64,3 +64,10 @@ _@synchronized(){}_ is also a compiler directive.
 	- [iOS: Connecting to an online service and persisting data with CoreData](http://ios-blog.co.uk/tutorials/ios-connecting-to-an-online-service-and-persisting-data-with-coredata/)
 	
 - [libHN](http://ios-blog.co.uk/tutorials/libhn-cocoa-framework-for-adding-hackernews-to-your-iosmac-app/)
+
+## 16/12/2013
+- Core Graphics
+	- [Transformation](https://developer.apple.com/library/mac/documentation/graphicsimaging/conceptual/drawingwithquartz2d/dq_affine/dq_affine.html)
+	- [Opal](http://svn.gna.org/svn/gnustep/libs/opal/trunk/README)
+	- [Bezier Path](https://developer.apple.com/library/ios/documentation/2ddrawing/conceptual/drawingprintingios/BezierPaths/BezierPaths.html)
+	- [Drawing Overview](https://developer.apple.com/library/ios/documentation/2ddrawing/conceptual/drawingprintingios/graphicsdrawingoverview/graphicsdrawingoverview.html)
