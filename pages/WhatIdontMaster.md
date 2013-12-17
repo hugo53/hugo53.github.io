@@ -81,3 +81,7 @@ In the Core Graphics framework, there are two ways to modify the CTM.
 	- You can also create a CGAffineTransform structure, apply any transformations you want, and then concatenate that transform onto the CTM. Using an affine transform lets you group transformations and then apply them to the CTM all at once. 
 You can also evaluate and invert affine transforms and use them to modify point, size, and rectangle values in your code. For more information on using affine transforms, see Quartz 2D Programming Guide and CGAffineTransform Reference.
 
+
+#18/12/2013
+- [Event Handling](https://developer.apple.com/library/ios/documentation/EventHandling/Conceptual/EventHandlingiPhoneOS/GestureRecognizer_basics/GestureRecognizer_basics.html#//apple_ref/doc/uid/TP40009541-CH2-SW2)
+- [Great book for practice](http://www.apeth.com/iOSBook/)
