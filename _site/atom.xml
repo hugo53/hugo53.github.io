@@ -4,13 +4,62 @@
  <title>Leading Beautiful Life</title>
  <link href="http://hugo53.github.io/" rel="self"/>
  <link href="http://hugo53.github.io"/>
- <updated>2013-12-05T00:25:16+07:00</updated>
+ <updated>2013-12-18T11:29:02+07:00</updated>
  <id>http://hugo53.github.io</id>
  <author>
    <name>Hugo Nguyen</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Core Graphics - Something should be in mind</title>
+   <link href="http://hugo53.github.io/ios/2013/12/18/core-graphics-in-mind"/>
+   <updated>2013-12-18T00:00:00+07:00</updated>
+   <id>http://hugo53.github.io/ios/2013/12/18/core-graphics-in-mind</id>
+   <content type="html">&lt;blockquote&gt;
+&lt;p&gt;Core Graphics is a really low-level framework in iOS which requires more graphics background knowledge to perform drawing fluently. Because of many built-in functions and options, it is hard to catch and understand all of them. This post attempts to provide some common functions/options for very new Core Graphics Hackers.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id='table_of_contents'&gt;Table of Contents&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href='#first-glance'&gt;First Glance&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='#use-case'&gt;Use Case&lt;/a&gt; - &lt;a href='#fore-or-back-front'&gt;Drawing fore-front of back-front?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id='first-glance'&gt;First Glance&lt;/h2&gt;
+
+&lt;p&gt;Some terms we should familliar with at the first glance are &lt;code&gt;Drawing Context&lt;/code&gt;, &lt;code&gt;CTM&lt;/code&gt; (Current Transformation Matrix), &lt;code&gt;Core Graphics Coordinate&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id='use-case'&gt;Use Case&lt;/h2&gt;
+
+&lt;h4 id='fore-or-back-front'&gt;Drawing fore-front of back-front?&lt;/h4&gt;
+
+&lt;p&gt;Core Graphics provides a functions and some options to configure the next drawing action is fore-font or back-front in current context.&lt;/p&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='objectivec'&gt;&lt;span class='n'&gt;CGContextSaveGState&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;context&lt;/span&gt;&lt;span class='p'&gt;);&lt;/span&gt;
+
+&lt;span class='n'&gt;CGContextSetBlendMode&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;context&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='n'&gt;blend_option&lt;/span&gt;&lt;span class='p'&gt;);&lt;/span&gt;
+
+&lt;span class='n'&gt;CGContextRestoreGState&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;ctx&lt;/span&gt;&lt;span class='p'&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Blend Options may be:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;kCGBlendModeNormal&lt;/code&gt; next drawing is on fore-front&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img alt='alt text' src='http://hugo53.github.io/images/coregraphics/fore-front.png' /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;kCGBlendModeMultiply&lt;/code&gt; next drawing is on back-front&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img alt='alt text' src='http://hugo53.github.io/images/coregraphics/back-front.png' /&gt;&lt;/p&gt;
+
+&lt;p&gt;Besure that always saving and restoring context to avoid impact later drawing.&lt;/p&gt;</content>
+ </entry>
  
  <entry>
    <title>HUChart be in top new github repo in the released day</title>
@@ -1896,6 +1945,32 @@ ET&lt;/code&gt;&lt;/pre&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href='http://mobileadvertisinghub.com/how-to-use-social-media-to-drive-demand-for-your-app-part-3/'&gt;How to Use Social Media to Drive Demand for Your App&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id='app_keywords'&gt;App Keywords&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href='https://sensortower.com/'&gt;Sensor Tower&lt;/a&gt;. Get any app&amp;#8217;s keywords. Just enter the app name and get its keywords. It also provides optimizing service for optimize app keyword.&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://www.mobiledevhq.com/'&gt;App Store Optimization Tool&lt;/a&gt;. Providing tool for ASO. Free for 1 app and charge fee if want to use for more app.&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='https://searchman.com/'&gt;Search Man&lt;/a&gt;. Another ASO tool, allow tracking app and keywords.&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://www.appcodes.com/'&gt;Appcodes&lt;/a&gt;. ASO tool, but require charging. No free!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id='market_research'&gt;Market Research&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href='http://xyo.net/'&gt;Xyo&lt;/a&gt;. Dividing popular apps into categories such as &lt;em&gt;Keep up with news&lt;/em&gt;, &lt;em&gt;Make friends&lt;/em&gt;, &lt;em&gt;Game&lt;/em&gt;, &lt;em&gt;Take photo&lt;/em&gt;, &lt;em&gt;Find music&lt;/em&gt;, &amp;#8230; Helpful for someone who want to see best app for a specific category.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id='app_evaluation'&gt;App Evaluation&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href='http://howmuchtobuildanapp.com/#'&gt;How Much To Build An App&lt;/a&gt;. A tool to help you estimate the cost to develop your iPhone, iPad, Android, Windows Phone, or Web app in seconds.&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://www.quora.com/How-much-does-it-cost-to-build-an-iPhone-app'&gt;How much does it cost to build an iPhone app?&lt;/a&gt;. A Quora question, bring us a lots knowledge.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id='great_advices_from_original_documentation_or_great_knowledge'&gt;Great Advices from original documentation (or Great Knowledge)&lt;/h2&gt;

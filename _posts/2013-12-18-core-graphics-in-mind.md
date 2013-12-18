@@ -14,7 +14,7 @@ tags: [ios, core graphics]
 	- [Drawing fore-front of back-front?](#fore-or-back-front)
 
 ## First Glance {#first-glance}
-Some terms we should familliar with at the first glance are ```Drawing Context```, ```Current Transformation Matrix (CTM)```, ```Core Graphics Coordinate```.
+Some terms we should familliar with at the first glance are ```Drawing Context```, ```CTM``` (Current Transformation Matrix), ```Core Graphics Coordinate```.
 
 
 ## Use Case {#use-case}

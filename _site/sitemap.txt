@@ -15,12 +15,14 @@ http://hugo53.github.io/pages/ielts/reading.html
 http://hugo53.github.io/pages/ielts/writing.html
 http://hugo53.github.io/pages/ios/monetization.html
 http://hugo53.github.io/pages/iosmyth.html
+http://hugo53.github.io/pages/iosTips.html
 http://hugo53.github.io/pages/WhatIdontMaster.html
 http://hugo53.github.io/pages.html
 http://hugo53.github.io/rss.xml
 http://hugo53.github.io/sitemap.txt
 http://hugo53.github.io/tags.html
 
+http://hugo53.github.io/ios/2013/12/18/core-graphics-in-mind
 http://hugo53.github.io/ios/2013/11/26/huchart-be-in-top-new-github-repo-in-the-released-day
 http://hugo53.github.io/ios/2013/11/25/cocoapods---easy-but-not-easy
 http://hugo53.github.io/cryptography/2013/11/07/crytography-in-ios
