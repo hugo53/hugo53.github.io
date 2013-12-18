@@ -5,8 +5,8 @@
         <description>Leading Beautiful Life - Hugo Nguyen</description>
         <link>http://hugo53.github.io</link>
         <link>http://hugo53.github.io</link>
-        <lastBuildDate>2013-12-18T11:29:02+07:00</lastBuildDate>
-        <pubDate>2013-12-18T11:29:02+07:00</pubDate>
+        <lastBuildDate>2013-12-18T11:39:18+07:00</lastBuildDate>
+        <pubDate>2013-12-18T11:39:18+07:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -19,12 +19,20 @@
 &lt;h2 id='table_of_contents'&gt;Table of Contents&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href='#first-glance'&gt;First Glance&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href='#first-glance'&gt;At First Glance&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 
-&lt;li&gt;&lt;a href='#use-case'&gt;Use Case&lt;/a&gt; - &lt;a href='#fore-or-back-front'&gt;Drawing fore-front of back-front?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href='#use-case'&gt;Use Case&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href='#fore-or-back-front'&gt;Drawing fore-front of back-front?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id='first-glance'&gt;First Glance&lt;/h2&gt;
+&lt;h2 id='first-glance'&gt;At First Glance&lt;/h2&gt;
 
 &lt;p&gt;Some terms we should familliar with at the first glance are &lt;code&gt;Drawing Context&lt;/code&gt;, &lt;code&gt;CTM&lt;/code&gt; (Current Transformation Matrix), &lt;code&gt;Core Graphics Coordinate&lt;/code&gt;.&lt;/p&gt;
 

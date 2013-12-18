@@ -9,11 +9,12 @@ tags: [ios, core graphics]
 > Core Graphics is a really low-level framework in iOS which requires more graphics background knowledge to perform drawing fluently. Because of many built-in functions and options, it is hard to catch and understand all of them. This post attempts to provide some common functions/options for very new Core Graphics Hackers.
 
 ## Table of Contents
-- [First Glance](#first-glance)
+- [At First Glance](#first-glance)
 - [Use Case](#use-case)
+
 	- [Drawing fore-front of back-front?](#fore-or-back-front)
 
-## First Glance {#first-glance}
+## At First Glance {#first-glance}
 Some terms we should familliar with at the first glance are ```Drawing Context```, ```CTM``` (Current Transformation Matrix), ```Core Graphics Coordinate```.
 
 
