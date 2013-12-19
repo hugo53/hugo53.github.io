@@ -12,6 +12,8 @@ description: ""
 	- [BAD_EXEC error](#bad-exec)
 - [Core Graphics](#core-graphics)
 	- [Improving Drawing Performance](#drawing-performance)
+## Tip and Trick Document from Apple
+- [Advanced App Tricks](https://developer.apple.com/library/ios/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/AdvancedAppTricks/AdvancedAppTricks.html)
 
 ## System Functions {#system-function}
 #### Get current orientation {#get-current-orientation}
