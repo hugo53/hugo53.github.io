@@ -43,9 +43,9 @@ pod spec create HUChart    // May need sudo
 
 Now, it's time to config podspec file. See [Pod specification](https://github.com/CocoaPods/CocoaPods/wiki/A-pod-specification) to get further information. Just do like the example, it is OK. Note that ```s.version``` should be set by a tag version like:
 
-```
+{% highlight bash %}
 s.version = "1.0.0"
-```
+{% endhighlight %}
 
 {% highlight bash %}
 open -e HUChart.podspec

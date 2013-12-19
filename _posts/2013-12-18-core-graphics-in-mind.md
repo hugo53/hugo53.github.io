@@ -40,4 +40,6 @@ Blend Options may be:
 
 ![alt text](http://hugo53.github.io/images/coregraphics/back-front.png "back front")
 
+> Note: For two above images, desired color of underline is blue. The first image shows right color but the second does not. 
+
 Besure that always saving and restoring context to avoid impact later drawing. 

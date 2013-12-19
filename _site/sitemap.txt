@@ -2,10 +2,10 @@
 http://hugo53.github.io/archive.html
 http://hugo53.github.io/atom.xml
 http://hugo53.github.io/categories.html
+http://hugo53.github.io/docbucket/resume.txt
 http://hugo53.github.io/index.html
 http://hugo53.github.io/pages/about.html
 http://hugo53.github.io/pages/Books.html
-http://hugo53.github.io/pages/cv.html
 http://hugo53.github.io/pages/EVtranslation.html
 http://hugo53.github.io/pages/hackjekyll.html
 http://hugo53.github.io/pages/ielts/confusedwords.html

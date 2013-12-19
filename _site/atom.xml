@@ -4,7 +4,7 @@
  <title>Leading Beautiful Life</title>
  <link href="http://hugo53.github.io/" rel="self"/>
  <link href="http://hugo53.github.io"/>
- <updated>2013-12-19T00:32:21+07:00</updated>
+ <updated>2013-12-19T15:31:33+07:00</updated>
  <id>http://hugo53.github.io</id>
  <author>
    <name>Hugo Nguyen</name>
@@ -65,6 +65,10 @@
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;img alt='alt text' src='http://hugo53.github.io/images/coregraphics/back-front.png' /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Note: For two above images, desired color of underline is blue. The first image shows right color but the second does not.&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;Besure that always saving and restoring context to avoid impact later drawing.&lt;/p&gt;</content>
  </entry>
@@ -128,11 +132,8 @@
 &lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='bash'&gt;pod spec create HUChart    // May need sudo
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Now, it&amp;#8217;s time to config podspec file. See &lt;a href='https://github.com/CocoaPods/CocoaPods/wiki/A-pod-specification'&gt;Pod specification&lt;/a&gt; to get further information. Just do like the example, it is OK. Note that &lt;code&gt;s.version&lt;/code&gt; should be set by a tag version like:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;
-s.version = &amp;quot;1.0.0&amp;quot;
-&lt;/code&gt;&lt;/p&gt;
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='bash'&gt;open -e HUChart.podspec
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='bash'&gt;s.version &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;1.0.0&amp;quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='bash'&gt;open -e HUChart.podspec
 or
 vi HUChart.podspec
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
