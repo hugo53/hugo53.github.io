@@ -15,6 +15,8 @@ description: ""
 ## Tip and Trick Document from Apple
 - [Advanced App Tricks](https://developer.apple.com/library/ios/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/AdvancedAppTricks/AdvancedAppTricks.html)
 
+- [Great Intro App States and Multitasking](https://developer.apple.com/library/ios/documentation/iphone/conceptual/iphoneosprogrammingguide/ManagingYourApplicationsFlow/ManagingYourApplicationsFlow.html#//apple_ref/doc/uid/TP40007072-CH4-SW47). Discuss more about app launching with some first methods at the launch time. 
+
 ## System Functions {#system-function}
 #### Get current orientation {#get-current-orientation}
 
