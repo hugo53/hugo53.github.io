@@ -16,6 +16,8 @@ http://hugo53.github.io/pages/ielts/writing.html
 http://hugo53.github.io/pages/ios/monetization.html
 http://hugo53.github.io/pages/iosmyth.html
 http://hugo53.github.io/pages/iosTips.html
+http://hugo53.github.io/pages/resume.html
+http://hugo53.github.io/pages/rs.html
 http://hugo53.github.io/pages/WhatIdontMaster.html
 http://hugo53.github.io/pages.html
 http://hugo53.github.io/rss.xml
