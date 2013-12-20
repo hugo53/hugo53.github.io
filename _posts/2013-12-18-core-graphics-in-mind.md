@@ -39,15 +39,19 @@ CGAffineTransform ctm =  CGContextGetCTM(context);
 Current Transformation Context is an Affine Transformation which plays a role in transforming coordinate, including translation, rotation, scale, flip. Everytime we want to transform coordinate, we must combine desired affine transformation with CTM to make a new CTM which describes right origin and direction of the coordinate.
 
 CTM (and Affine Transformation) has 6 parameters: a, b, c, d, tx and ty at positions as below:
+
 |  	       			|    			|  			|
 | :-----------------: |:-------------: | :-------------: |
 | a  		| 	b		|  	0 |
 | c	    	| 	d		|	0 |	
-| tx		|	tx 		|	1 |
+| tx		|	ty 		|	1 |
 
-a, b, c, d is for rotation
-a, b is for translation
-tx, ty is for scale
+
+> a, b, c, d is for rotation
+>
+> a, b is for translation
+>
+> tx, ty is for scale
 
 
 ## Use Case {#use-case}

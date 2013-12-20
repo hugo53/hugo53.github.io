@@ -5,8 +5,8 @@
         <description>Leading Beautiful Life - Hugo Nguyen</description>
         <link>http://hugo53.github.io</link>
         <link>http://hugo53.github.io</link>
-        <lastBuildDate>2013-12-19T15:54:29+07:00</lastBuildDate>
-        <pubDate>2013-12-19T15:54:29+07:00</pubDate>
+        <lastBuildDate>2013-12-20T13:15:32+07:00</lastBuildDate>
+        <pubDate>2013-12-20T13:15:32+07:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -34,7 +34,41 @@
 
 &lt;h2 id='first-glance'&gt;At First Glance&lt;/h2&gt;
 
+&lt;p&gt;iOS provides two primary ways for drawing: Core Graphics and Open GL. However, there are more API types of these frameworks. It is simple for OpenGL when it has some clear API named OpenGL ES, Cocos2d. For Core Graphics framework, it may lead junior developer to a confused: Quartz, Quartz 2D or QuartzCore. Firstly, Quartz is heart of CoreGraphics, someone likes to refer Core Graphics as Quartz. Secondly, Quartz 2D is a part of Core Graphics, can refer as an API. Finally, QuartzCore (also known as Core Animation) is for animation, image processing and video image manipulation. It extends some function from Quartz (Core Graphics) but not a part of Quartz. In additional, iOS also provides us UIKit which contains some high-level implementation of Core Graphics, ex. &lt;a href='https://developer.apple.com/library/ios/documentation/uikit/reference/UIBezierPath_class/Reference/Reference.html'&gt;UIBezierPath&lt;/a&gt; is high-level implementation of &lt;a href='https://developer.apple.com/library/mac/documentation/graphicsimaging/reference/CGPath/Reference/reference.html'&gt;CGPathRef&lt;/a&gt;.&lt;/p&gt;
+
 &lt;p&gt;Some terms we should familliar with at the first glance are &lt;code&gt;Drawing Context&lt;/code&gt;, &lt;code&gt;CTM&lt;/code&gt; (Current Transformation Matrix), &lt;code&gt;Core Graphics Coordinate&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h4 id='drawing_context'&gt;Drawing Context&lt;/h4&gt;
+
+&lt;p&gt;Everytime you want to draw a path, a shape on screen, you have to know the current context of screen. It is easy to get the current context via:&lt;/p&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='objectivec'&gt;&lt;span class='n'&gt;CGContextRef&lt;/span&gt; &lt;span class='n'&gt;context&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='n'&gt;UIGraphicsGetCurrentContext&lt;/span&gt;&lt;span class='p'&gt;();&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;However, the above line code just need to be wrote when we draw using CoreGraphics framework, for UIKit with UIBezierPath, this framework gets current context for us automatically.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Current context is needed to pass to some Core Graphics function to perform painting actions.&lt;/p&gt;
+
+&lt;p&gt;In context, it has some significant properties. The most important property is CTM (which will discuss more below). We can get the CTM of current context by:&lt;/p&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='objectivec'&gt;&lt;span class='n'&gt;CGContextRef&lt;/span&gt; &lt;span class='n'&gt;context&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='n'&gt;UIGraphicsGetCurrentContext&lt;/span&gt;&lt;span class='p'&gt;();&lt;/span&gt;
+&lt;span class='n'&gt;CGAffineTransform&lt;/span&gt; &lt;span class='n'&gt;ctm&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt;  &lt;span class='n'&gt;CGContextGetCTM&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;context&lt;/span&gt;&lt;span class='p'&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4 id='ctm_current_transformation_context'&gt;CTM (Current Transformation Context)&lt;/h4&gt;
+
+&lt;p&gt;Current Transformation Context is an Affine Transformation which plays a role in transforming coordinate, including translation, rotation, scale, flip. Everytime we want to transform coordinate, we must combine desired affine transformation with CTM to make a new CTM which describes right origin and direction of the coordinate.&lt;/p&gt;
+
+&lt;p&gt;CTM (and Affine Transformation) has 6 parameters: a, b, c, d, tx and ty at positions as below:&lt;/p&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th /&gt;&lt;th /&gt;&lt;th /&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style='text-align: center;'&gt;a&lt;/td&gt;&lt;td style='text-align: center;'&gt;b&lt;/td&gt;&lt;td style='text-align: center;'&gt;0&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;&lt;td style='text-align: center;'&gt;c&lt;/td&gt;&lt;td style='text-align: center;'&gt;d&lt;/td&gt;&lt;td style='text-align: center;'&gt;0&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;&lt;td style='text-align: center;'&gt;tx&lt;/td&gt;&lt;td style='text-align: center;'&gt;ty&lt;/td&gt;&lt;td style='text-align: center;'&gt;1&lt;/td&gt;
+&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;blockquote&gt;
+&lt;p&gt;a, b, c, d is for rotation&lt;/p&gt;
+
+&lt;p&gt;a, b is for translation&lt;/p&gt;
+
+&lt;p&gt;tx, ty is for scale&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;h2 id='use-case'&gt;Use Case&lt;/h2&gt;
 
@@ -257,6 +291,10 @@ vi HUChart.podspec
 
 &lt;li&gt;
 &lt;p&gt;&lt;a href='http://www.branchfire.com/lib-web/html/_security.html'&gt;PDF Protecting in iAnnotate&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href='http://www.cs.cmu.edu/~dst/Adobe/Gallery/anon21jul01-pdf-encryption.txt'&gt;PDF Encrypting Algorithm&lt;/a&gt; (&lt;a href='https://www.dropbox.com/s/0fvg5byv9bx4lix/anon21jul01-pdf-encryption.txt'&gt;secondary link&lt;/a&gt;)&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;</description>
                 <link>http://hugo53.github.io/cryptography/2013/11/07/crytography-in-ios</link>
