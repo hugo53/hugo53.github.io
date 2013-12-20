@@ -25,7 +25,7 @@ Everytime you want to draw a path, a shape on screen, you have to know the curre
 {% highlight objectivec %}
 CGContextRef context = UIGraphicsGetCurrentContext();
 {% endhighlight %}
-> However, the above line code just need to be wrote when we draw using CoreGraphics framework, for UIKit with UIBezierPath, this framework gets current context for us automatically. 
+> However, the above line code just need to be written when we draw using CoreGraphics framework. For UIKit with UIBezierPath, this framework gets current context for us automatically. 
 
 Current context is needed to pass to some Core Graphics function to perform painting actions. 
 
@@ -43,7 +43,9 @@ CTM (and Affine Transformation) has 6 parameters: a, b, c, d, tx and ty at posit
 |  	       			|    			|  			|
 | :-----------------: |:-------------: | :-------------: |
 | a  		| 	b		|  	0 |
-| c	    	| 	d		|	0 |	
+
+| c	    	| 	d		|	0 |
+
 | tx		|	ty 		|	1 |
 
 
@@ -60,9 +62,7 @@ Core Graphics provides a functions and some options to configure the next drawin
 
 {% highlight objectivec %}
 CGContextSaveGState(context);
-
 CGContextSetBlendMode(context, blend_option);
-
 CGContextRestoreGState(ctx);
 {% endhighlight %}
 
@@ -70,10 +70,33 @@ Blend Options may be:
 
 - ```kCGBlendModeNormal``` next drawing is on fore-front
 
+{% highlight objectivec %}
+CGContextSaveGState(kCGBlendModeMultiply);
+
+CGContextSetBlendMode(context, kCGBlendModeNormal);
+drawHighlighFrame 	// Yellow frame
+
+CGContextSetBlendMode(context, kCGBlendModeNormal);
+drawUnderline		// Blue line
+
+CGContextRestoreGState(ctx);
+{% endhighlight %}
+
 ![alt text](http://hugo53.github.io/images/coregraphics/fore-front.png "fore front")
 
 - ```kCGBlendModeMultiply``` next drawing is on back-front
 
+{% highlight objectivec %}
+CGContextSaveGState(kCGBlendModeMultiply);
+
+CGContextSetBlendMode(context, kCGBlendModeNormal);
+drawHighlighFrame 	// Yellow frame
+
+// CGContextSetBlendMode(context, kCGBlendModeNormal);
+drawUnderline		// Blue line
+
+CGContextRestoreGState(ctx);
+{% endhighlight %}
 ![alt text](http://hugo53.github.io/images/coregraphics/back-front.png "back front")
 
 > Note: For two above images, desired color of underline is blue. The first image shows right color but the second does not. 
