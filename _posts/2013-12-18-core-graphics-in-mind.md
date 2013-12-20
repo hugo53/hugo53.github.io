@@ -15,7 +15,39 @@ tags: [ios, core graphics]
 	- [Drawing fore-front of back-front?](#fore-or-back-front)
 
 ## At First Glance {#first-glance}
+iOS provides two primary ways for drawing: Core Graphics and Open GL. However, there are more API types of these frameworks. It is simple for OpenGL when it has some clear API named OpenGL ES, Cocos2d. For Core Graphics framework, it may lead junior developer to a confused: Quartz, Quartz 2D or QuartzCore. Firstly, Quartz is heart of CoreGraphics, someone likes to refer Core Graphics as Quartz. Secondly, Quartz 2D is a part of Core Graphics, can refer as an API. Finally, QuartzCore (also known as Core Animation) is for animation, image processing and video image manipulation. It extends some function from Quartz (Core Graphics) but not a part of Quartz. In additional, iOS also provides us UIKit which contains some high-level implementation of Core Graphics, ex. [UIBezierPath](https://developer.apple.com/library/ios/documentation/uikit/reference/UIBezierPath_class/Reference/Reference.html) is high-level implementation of [CGPathRef](https://developer.apple.com/library/mac/documentation/graphicsimaging/reference/CGPath/Reference/reference.html). 
+
 Some terms we should familliar with at the first glance are ```Drawing Context```, ```CTM``` (Current Transformation Matrix), ```Core Graphics Coordinate```.
+
+#### Drawing Context
+Everytime you want to draw a path, a shape on screen, you have to know the current context of screen. It is easy to get the current context via:
+
+{% highlight objectivec %}
+CGContextRef context = UIGraphicsGetCurrentContext();
+{% endhighlight %}
+> However, the above line code just need to be wrote when we draw using CoreGraphics framework, for UIKit with UIBezierPath, this framework gets current context for us automatically. 
+
+Current context is needed to pass to some Core Graphics function to perform painting actions. 
+
+In context, it has some significant properties. The most important property is CTM (which will discuss more below). We can get the CTM of current context by:
+{% highlight objectivec %}
+CGContextRef context = UIGraphicsGetCurrentContext();
+CGAffineTransform ctm =  CGContextGetCTM(context);
+{% endhighlight %}
+
+#### CTM (Current Transformation Context)
+Current Transformation Context is an Affine Transformation which plays a role in transforming coordinate, including translation, rotation, scale, flip. Everytime we want to transform coordinate, we must combine desired affine transformation with CTM to make a new CTM which describes right origin and direction of the coordinate.
+
+CTM (and Affine Transformation) has 6 parameters: a, b, c, d, tx and ty at positions as below:
+|  	       			|    			|  			|
+| :-----------------: |:-------------: | :-------------: |
+| a  		| 	b		|  	0 |
+| c	    	| 	d		|	0 |	
+| tx		|	tx 		|	1 |
+
+a, b, c, d is for rotation
+a, b is for translation
+tx, ty is for scale
 
 
 ## Use Case {#use-case}

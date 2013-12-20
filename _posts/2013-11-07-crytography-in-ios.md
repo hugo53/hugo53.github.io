@@ -57,3 +57,5 @@ Firstly, do not try to encrypt a file in separate part. Normally, an encrypt alg
 - [RNCryptor](https://github.com/rnapier/RNCryptor) by author of the above book
 
 - [PDF Protecting in iAnnotate](http://www.branchfire.com/lib-web/html/_security.html)
+
+- [PDF Encrypting Algorithm](http://www.cs.cmu.edu/~dst/Adobe/Gallery/anon21jul01-pdf-encryption.txt) ([secondary link](https://www.dropbox.com/s/0fvg5byv9bx4lix/anon21jul01-pdf-encryption.txt))
