@@ -43,9 +43,7 @@ CTM (and Affine Transformation) has 6 parameters: a, b, c, d, tx and ty at posit
 |  	       			|    			|  			|
 | :-----------------: |:-------------: | :-------------: |
 | a  		| 	b		|  	0 |
-
 | c	    	| 	d		|	0 |
-
 | tx		|	ty 		|	1 |
 
 
