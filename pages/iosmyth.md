@@ -20,6 +20,9 @@ description: ""
 - [Dont use Introspection for Mutable Data](#Dont-use-introspection-for-Mutable-Data)
 - [Keyed and Sequential Archivers](#archivers)
 - [Inline Method in C and ObjectiveC](#inline-method)
+- [Key in NSDictionary](#key-nsdictionary)
+- [Objects for Collections type](#object-collection-type)
+
 ## How an object is created? {#How-an-object-is-created}
 
 When you allocate an object, part of what happens is what you might expect, given the term. Cocoa allocates enough memory for the object from a region of application virtual memory. To calculate how much memory to allocate, it takes the object’s instance variables into account—including their types and order—as specified by the object’s class.
@@ -250,3 +253,12 @@ The main value of archiving is that it provides a generic way to make objects pe
 
 ## Inline Method in C and ObjectiveC {#inline-method}
 In almost cases, inline method is for tunning performance. [refer here](http://www.drdobbs.com/the-new-c-inline-functions/184401540)
+
+## Key in NSDictionary {#key-nsdictionary}
+Beware that objects for key in NSDictionary (or NSMutableDictionary) must be members of a class which implement **hash** and **isEqual** methods. In almost cases, we use NSString as key because its **hash** is based on its character and **isEqual** is built in. 
+
+## Objects for Collections type {#object-collection-type}
+Collection types like NSArray, NSDictionary only allows insert objects into them. That means we cannot put **int**, **BOOL** or **float**, **enum**, ... or **C struct** into these collection types. As a result, iOS provides two kinds of data wrappers for this reason: **NSNumber** and **NSValue**.
+
+In short, **NSNumber** is for wrapping primitive data such as **int**, **BOOL**, **enum**. **NSValue** is for some types of data like **C-Struct**. 
+
