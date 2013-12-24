@@ -14,6 +14,8 @@ tags: [ios, core graphics]
 
 	- [Drawing fore-front of back-front?](#fore-or-back-front)
 
+- [Some notes](#some-notes)
+
 ## At First Glance {#first-glance}
 iOS provides two primary ways for drawing: Core Graphics and Open GL. However, there are more API types of these frameworks. It is simple for OpenGL when it has some clear API named OpenGL ES, Cocos2d. For Core Graphics framework, it may lead junior developer to a confused: Quartz, Quartz 2D or QuartzCore. Firstly, Quartz is heart of CoreGraphics, someone likes to refer Core Graphics as Quartz. Secondly, Quartz 2D is a part of Core Graphics, can refer as an API. Finally, QuartzCore (also known as Core Animation) is for animation, image processing and video image manipulation. It extends some function from Quartz (Core Graphics) but not a part of Quartz. In additional, iOS also provides us UIKit which contains some high-level implementation of Core Graphics, ex. [UIBezierPath](https://developer.apple.com/library/ios/documentation/uikit/reference/UIBezierPath_class/Reference/Reference.html) is high-level implementation of [CGPathRef](https://developer.apple.com/library/mac/documentation/graphicsimaging/reference/CGPath/Reference/reference.html). 
 
@@ -100,3 +102,11 @@ CGContextRestoreGState(ctx);
 > Note: For two above images, desired color of underline is blue. The first image shows right color but the second does not. 
 
 Besure that always saving and restoring context to avoid impact later drawing. 
+
+
+## Some notes {#some-notes}
+- Be careful when draw at frame's border. We may encounter **Aliasing problem** - a huge problem in digital drawing. When we set path override frame's border, then set line width. There is no space for a part of line which is a half outside. Therefore, the path is not shown as expected. See [here](http://stackoverflow.com/questions/13674118/nsbezierpath-drawing/13674460#13674460) for more information. [The other link](http://stackoverflow.com/questions/12878781/drawing-a-very-thin-line-with-cgcontextaddlinetopoint-and-cgcontextsetlinewidth) also discusses about aliasing problem when drawing a path using Core Graphics.
+
+![alt text](http://i.stack.imgur.com/K9cY5.png "aliasing-path")
+
+
