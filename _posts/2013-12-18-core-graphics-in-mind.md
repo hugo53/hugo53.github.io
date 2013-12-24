@@ -71,15 +71,15 @@ Blend Options may be:
 - ```kCGBlendModeNormal``` next drawing is on fore-front
 
 {% highlight objectivec %}
-CGContextSaveGState(kCGBlendModeMultiply);
+CGContextSaveGState(context);
 
-CGContextSetBlendMode(context, kCGBlendModeNormal);
+CGContextSetBlendMode(context, kCGBlendModeMultiply);	// To draw yellow frame but not hide the text
 drawHighlighFrame 	// Yellow frame
 
-CGContextSetBlendMode(context, kCGBlendModeNormal);
+CGContextSetBlendMode(context, kCGBlendModeNormal);		// To draw underline onto yellow frame
 drawUnderline		// Blue line
 
-CGContextRestoreGState(ctx);
+CGContextRestoreGState(context);
 {% endhighlight %}
 
 ![alt text](http://hugo53.github.io/images/coregraphics/fore-front.png "fore front")
@@ -87,15 +87,16 @@ CGContextRestoreGState(ctx);
 - ```kCGBlendModeMultiply``` next drawing is on back-front
 
 {% highlight objectivec %}
-CGContextSaveGState(kCGBlendModeMultiply);
+CGContextSaveGState(context);
 
-CGContextSetBlendMode(context, kCGBlendModeNormal);
+CGContextSetBlendMode(context, kCGBlendModeMultiply);	// To draw yellow frame but not hide the text
 drawHighlighFrame 	// Yellow frame
 
-// CGContextSetBlendMode(context, kCGBlendModeNormal);
+// CGContextSetBlendMode(context, kCGBlendModeNormal);	// This line is commented. Thus, underline is drawn behind yellow frame
+
 drawUnderline		// Blue line
 
-CGContextRestoreGState(ctx);
+CGContextRestoreGState(context);
 {% endhighlight %}
 ![alt text](http://hugo53.github.io/images/coregraphics/back-front.png "back front")
 
