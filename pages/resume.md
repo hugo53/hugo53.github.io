@@ -25,7 +25,7 @@ I am an enthusiastic IT man and an open-minded person who is willing to face wit
 
 #### Information {#information}
 
-| Tables   |      Are      |
+|    |            |
 |----------|:-------------:|
 | Fullname |  MINH HOANG NGUYEN |
 | Gender |    Male   |
