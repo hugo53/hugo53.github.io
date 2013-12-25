@@ -25,18 +25,12 @@ I am an enthusiastic IT man and an open-minded person who is willing to face wit
 
 #### Information {#information}
 
-|  	 Item			  |    Value																		| 
-|:-------------------:|:------------------------------------------------------------------------------- |
-| Fullname  		  |  MINH HOANG NGUYEN 		    |  	
-| Gender	    	  |  Male 					    |
-| Nationality		  |  Vietnamese					|
-| Birthday			  |  October 23 				| 	
-
-| Tables   |      Are      |  Cool |
-|----------|:-------------:|------:|
-| col 1 is |  left-aligned | $1600 |
-| col 2 is |    centered   |   $12 |
-| col 3 is | right-aligned |    $1 |
+| Tables   |      Are      |
+|----------|:-------------:|
+| Fullname |  MINH HOANG NGUYEN |
+| Gender |    Male   |
+| Nationality | Vietnamese |
+| Birthday | October 23 |
 
 #### Interest
 - Product Development 
