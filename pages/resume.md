@@ -26,11 +26,11 @@ I am an enthusiastic IT man and an open-minded person who is willing to face wit
 #### Information {#information}
 
 |  	 Item			  |    Value																		| 
-| :-----------------: |:------------------------------------------------------------------------------- |
-| Fullname  		  | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MINH HOANG NGUYEN 		    |  	
-| Gender	    	  | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Male 					    |
-| Nationality		  | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Vietnamese					|
-| Birthday			  | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; October 23 				| 	
+|:-------------------:|:------------------------------------------------------------------------------- |
+| Fullname  		  |  MINH HOANG NGUYEN 		    |  	
+| Gender	    	  |  Male 					    |
+| Nationality		  |  Vietnamese					|
+| Birthday			  |  October 23 				| 	
 
 | Tables   |      Are      |  Cool |
 |----------|:-------------:|------:|
