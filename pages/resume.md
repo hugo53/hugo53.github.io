@@ -24,6 +24,12 @@ description: ""
 I am an enthusiastic IT man and an open-minded person who is willing to face with any challenge although it is difficult or needs me take time to research for giving solution. Sharing precious knowledge, making awesome products are something in my mind. With responsibility, I always tend to try my best, aim to unlimited revolution. 
 
 #### Information {#information}
+|  	       			|    			| 
+| ----------------- |:------------- |
+| Fullname  		| 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **MINH–HOANG NGUYEN** 		|  	
+| Gender	    			| 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Male** 		|			
+| Nationality		|	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Vietnamese** 		|
+| Birthday				|	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **October 23** 		| 	
 
 #### Interest
 - Product Development 
