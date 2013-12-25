@@ -24,12 +24,12 @@ description: ""
 I am an enthusiastic IT man and an open-minded person who is willing to face with any challenge although it is difficult or needs me take time to research for giving solution. Sharing precious knowledge, making awesome products are something in my mind. With responsibility, I always tend to try my best, aim to unlimited revolution. 
 
 #### Information {#information}
-|  	       			|    			| 
-| ----------------- |:------------- |
-| Fullname  		| 	 **MINH–HOANG NGUYEN** 		|  	
-| Gender	    			| 	 **Male** 		|			
-| Nationality		|	 **Vietnamese** 		|
-| Birthday				|	 **October 23** 		| 	
+
+| Tables   |      Are      |  Cool |
+|----------|:-------------:|------:|
+| col 1 is |  left-aligned | $1600 |
+| col 2 is |    centered   |   $12 |
+| col 3 is | right-aligned |    $1 |
 
 #### Interest
 - Product Development 
