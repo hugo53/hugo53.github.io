@@ -116,12 +116,13 @@ Event Extraction is a complex and interesting topic in Information Extraction th
 ****
 ## Technical Skill {#technical-skill}
 #### Programming Language {#programming-language}
-|                   |               | 
+
+|                   |               |
 | ----------------- |:------------- |
-| Objective-C       |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ★★★★★|  			
-| Java              |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ★★★★★|			
+| Objective-C       |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ★★★★★|
+| Java              |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ★★★★★|
 | Python            |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ★★★★☆|
-| Tex               |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ★★★★★| 	
+| Tex               |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ★★★★★|
 | Markdown          |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ★★★★★|
 | Matlab            |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ★★★★|
 
