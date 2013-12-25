@@ -25,7 +25,7 @@ I am an enthusiastic IT man and an open-minded person who is willing to face wit
 
 #### Information {#information}
 
-|  	 &nbsp;			  |    &nbsp;																		| 
+|  	 Item			  |    Value																		| 
 | :-----------------: |:------------------------------------------------------------------------------- |
 | Fullname  		  | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; __MINH HOANG NGUYEN__ 		    |  	
 | Gender	    	  | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; __Male__ 					    |
