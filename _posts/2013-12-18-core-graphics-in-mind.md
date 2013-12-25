@@ -73,10 +73,10 @@ Blend Options may be:
 {% highlight objectivec %}
 CGContextSaveGState(context);
 
-CGContextSetBlendMode(context, kCGBlendModeMultiply);	// To draw yellow frame but not hide the text
+CGContextSetBlendMode(context, kCGBlendModeMultiply);// To draw yellow frame but not hide the text
 drawHighlighFrame 	// Yellow frame
 
-CGContextSetBlendMode(context, kCGBlendModeNormal);		// To draw underline onto yellow frame
+CGContextSetBlendMode(context, kCGBlendModeNormal);	// To draw underline onto yellow frame
 drawUnderline		// Blue line
 
 CGContextRestoreGState(context);
@@ -89,10 +89,10 @@ CGContextRestoreGState(context);
 {% highlight objectivec %}
 CGContextSaveGState(context);
 
-CGContextSetBlendMode(context, kCGBlendModeMultiply);	// To draw yellow frame but not hide the text
+CGContextSetBlendMode(context, kCGBlendModeMultiply);// To draw yellow frame but not hide the text
 drawHighlighFrame 	// Yellow frame
 
-// CGContextSetBlendMode(context, kCGBlendModeNormal);	// This line is commented. Thus, underline is drawn behind yellow frame
+// CGContextSetBlendMode(context, kCGBlendModeNormal);// This line is commented. Thus, underline is drawn behind yellow frame
 
 drawUnderline		// Blue line
 
