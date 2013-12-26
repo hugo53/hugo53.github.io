@@ -45,6 +45,14 @@ Great great great book: _Designing the iPhone User Experience A User-Centered Ap
 - [Android Patterns](http://www.androidpatterns.com/)
 - [Theresa Neil](http://www.slideshare.net/theresaneil). Slideshare of Theresa, a great UX Designer.
 
+### Where to find Awesome UI?
+- [UIKit, Icon, Background Image, everything for making an amazing app](http://graphicburger.com/)
+- [Glyphs](http://glyphs.bulb9.com/). Sharing iOS icon for using freely!
+- [Graphics Market](http://graphicriver.net/)
+- [Behance](https://www.behance.net/). Sharing a lot design, redesing for UI Mobile App.
+- [Dribble](http://dribbble.com/).
+
+
 ## Advance Techniques
 - [Keyboard Shortcut](http://developer.apple.com/library/ios/#recipes/xcode_help-keybindings_preferences/articles/viewing_keyboard_shortcuts.html#//apple_ref/doc/uid/TP40010351-CH1-SW1)
 
