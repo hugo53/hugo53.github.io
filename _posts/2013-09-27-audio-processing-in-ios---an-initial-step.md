@@ -59,11 +59,14 @@ For **less memory usage** when you need to *play multiple sounds simultaneously*
 ## References
 - [Audio Tutorial for iOS: File and Data Formats](http://www.raywenderlich.com/204/audio-tutorial-for-ios-file-and-data-formats) by Raywenderlich
 - Apple's Docummentation
+- [Learning Core Audio: A Hands-On Guide to Audio Programming for Mac and iOS](http://www.amazon.com/Learning-Core-Audio-Hands-On-Programming/dp/0321636848) by Chris Adamson and Kevin Avila.
+- [Chris Adamson slideshare](http://www.slideshare.net/invalidname/presentations). Sharing a plenty of precious knowledge.
 
 ## Open sources which are mentioned above
 - [The Amazing Audio Engine](http://theamazingaudioengine.com/doc/)
 - [OpenAL](http://kstenerud.github.io/ObjectAL-for-iPhone/documentation/index.html)
 - [Sound Engine - an OpenAL Example](https://github.com/alexrestrepo/SoundEngine)
+- [EZAudio](https://github.com/syedhali/EZAudio). For showing audio wave.
 
 ##Bonus
 ###The differences between Audio Engine and OpenAL

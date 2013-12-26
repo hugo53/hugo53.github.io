@@ -5,8 +5,8 @@ description: ""
 ---
 {% include JB/setup %}
 - [Introduction](#introduction)
-	- [Interest](#interest)
 	- [Information](#information)
+	- [Interest](#interest)
 - [Education](#education)
 - [Working Experience](#working-experience)
 - [Grant and Award](#grant-and-award)
