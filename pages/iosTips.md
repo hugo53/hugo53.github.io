@@ -46,6 +46,12 @@ When we localize our app, sometimes the localized text is wrong. So we want to s
 Product > Scheme > Edit Scheme > Run > Arguments > Arguments Passed On Launch
 ```
 
+The error will be:
+
+```
+Localizable string "networkxyz" not found in strings table "Localizable" of bundle CFBundle 0x752de50 </Users/username/Library/Application Support/iPhone Simulator/6.1/Applications/1DE47B22-FB85-4C7A-85C1-B50239FC8206/appName.app> (executable, loaded).
+```
+
 ## Core Graphics {#core-graphics}
 #### Improving Drawing Performance {#drawing-performance}
 Drawing is a relatively expensive operation on any platform, and optimizing your drawing code should always be an important step in your development process. Table [here](https://developer.apple.com/library/ios/documentation/2ddrawing/conceptual/drawingprintingios/DrawingTips/DrawingTips.html#//apple_ref/doc/uid/TP40010156-CH18-SW1) lists several tips for ensuring that your drawing code is as optimal as possible. In addition to these tips, you should always use the available performance tools to test your code and remove hotspots and redundancies.
