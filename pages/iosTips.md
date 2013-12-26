@@ -11,6 +11,7 @@ description: ""
 	- [Get current orientation](#get-current-orientation)
 - [Debugging](#debugging)
 	- [BAD_EXEC error](#bad-exec)
+	- [Find Unlocalized Strings](#find-unlocalized-string)
 - [Core Graphics](#core-graphics)
 	- [Improving Drawing Performance](#drawing-performance)
 
@@ -37,6 +38,13 @@ UIInterfaceOrientation orientation = [[UIApplication sharedApplication] statusBa
 When BAD_EXEC occurs, the best way to detect the root cause is turn on NSZoombie flag in Scheme.
 To do that: ```Product``` -> ```Scheme``` -> ```Edit Scheme``` -> ```Diagnostics``` -> Tick on ```Enable Zoombie Objects```. 
 Then, in output console, it will show us the crash cause. It usually mentions cause relating to destroyed objects.
+
+#### Find Unlocalized Strings {#find-unlocalized-string}
+When we localize our app, sometimes the localized text is wrong. So we want to show the error string. It is easy when we add ```-NSShowNonLocalizedStrings YES``` to ```Arguments Passed On Launch``` in 
+
+```
+Product > Scheme > Edit Scheme > Run > Arguments > Arguments Passed On Launch
+```
 
 ## Core Graphics {#core-graphics}
 #### Improving Drawing Performance {#drawing-performance}
