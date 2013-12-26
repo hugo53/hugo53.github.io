@@ -22,6 +22,7 @@ description: ""
 - [Inline Method in C and ObjectiveC](#inline-method)
 - [Key in NSDictionary](#key-nsdictionary)
 - [Objects for Collections type](#object-collection-type)
+- [UIView beginning](#uiview-beginning)
 
 ## How an object is created? {#How-an-object-is-created}
 
@@ -261,4 +262,8 @@ Beware that objects for key in NSDictionary (or NSMutableDictionary) must be mem
 Collection types like NSArray, NSDictionary only allows insert objects into them. That means we cannot put **int**, **BOOL** or **float**, **enum**, ... or **C struct** into these collection types. As a result, iOS provides two kinds of data wrappers for this reason: **NSNumber** and **NSValue**.
 
 In short, **NSNumber** is for wrapping primitive data such as **int**, **BOOL**, **enum**. **NSValue** is for some types of data like **C-Struct**. 
+
+## UIView beginning {#uiview-beginning}
+The best way to begin to play some fun with UIView is from [Apple Documentation](https://developer.apple.com/library/ios/documentation/WindowsViews/Conceptual/ViewPG_iPhoneOS/CreatingViews/CreatingViews.html#//apple_ref/doc/uid/TP40009503-CH5-SW15). It contains all of basic terms (but very important) to understand deeply and can build own custom View with little struggle. It defines how a view is laid out (layoutSubviews), how a view is displayed,  how to rotate, translation a view, what some properties like _opaque_, _autoresizingMask_ really means.
+Go through it before search more!
 
