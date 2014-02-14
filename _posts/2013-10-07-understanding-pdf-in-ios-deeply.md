@@ -123,6 +123,7 @@ Identity-H is a encoding which is used by Google Docs (when you export your docs
 
 - [List of limitations in performing with PDF in iOS](http://www.badrit.com/blog/2012/2/1/ios-sdk-pdf-limitations)
 
+- [Parsing table of contents](http://stackoverflow.com/questions/4495413/pdf-table-of-contents-parsing-with-ios-quartz-2d) by PSPDFKit creator.
 
 ### Open Sources for iOS
 - [PDF Reader](https://github.com/vfr/Reader) and [PDFViewer](https://github.com/vfr/Viewer) by Julius Oklamcak.
