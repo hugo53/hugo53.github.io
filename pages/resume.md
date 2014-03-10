@@ -64,7 +64,7 @@ Conducting Text Mining services such as Keyword Extraction, News Clustering and 
 - **Position** Key Developer
 - **Research Area** Recommendation System, Keyword Extraction, News Clustering, Text Processing
 - **Project**
-	- **News Keywork Extraction** Extracting keywords for a piece of news. A list of keywords for the given news is extracted using a complex model which is based on some cutting-edge algorithms.
+	- **News Keyword Extraction** Extracting keywords for a piece of news. A list of keywords for the given news is extracted using a complex model which is based on some cutting-edge algorithms.
 	- **News Clustering** Building a news clustering system which aims to group some similar headlines into a bucket and help users catch the story in an easy way.
 
 <br />
