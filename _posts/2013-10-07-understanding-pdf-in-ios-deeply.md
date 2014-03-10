@@ -101,7 +101,13 @@ $ less decompressedPDF.pdf
 
 Do that, now we can see pure PDF text specification. Hence, we can parse PDF content based on PDF Operators Specification.
 
+    By a reason that PDF stream (text content, image content, ...) is usually compressed for decreasing data size, PDF Reader and/or PDF Parser must uncompresses that stream before rendering or parsing. Almost PDF Document stream is decoded using FlateDecode filter which is based on the zlib/deflate algorithm. For getting plain text to analyze, we can use some tools to convert compressed PDF to uncompressed PDF. In my case, I utilize [pdftk](http://www.pdflabs.com/tools/pdftk-server/) with the command:
 
+    {% highlight bash linenos %}
+    pdftk compressedPDF.pdf output uncompressedPDF.pdf uncompress
+    {% endhighlight %}
+
+    Besides that, someone suggests [itextrups](http://sourceforge.net/projects/itextrups/) which is laid on iText library (written in Java). See the discussion [here](http://stackoverflow.com/questions/13368660/view-source-on-pdf-rendered-inside-a-browser). 
 
 
 
@@ -180,14 +186,6 @@ Identity-H is a encoding which is used by Google Docs (when you export your docs
 
 - [mupdf](https://github.com/yolanother/mupdf). This library is used by [librelio](http://www.librelio.com/) on [Android version](https://github.com/libreliodev/android/tree/72444610a1d02800165e04e3d70342f8e688145c/src/com/artifex/mupdf).
 
-### Exploiting PDF Content
-By a reason that PDF stream (text content, image content, ...) is usually compressed for decreasing data size, PDF Reader and/or PDF Parser must uncompresses that stream before rendering or parsing. Almost PDF Document stream is decoded using FlateDecode filter which is based on the zlib/deflate algorithm. For getting plain text to analyze, we can use some tools to convert compressed PDF to uncompressed PDF. In my case, I utilize [pdftk](http://www.pdflabs.com/tools/pdftk-server/) with the command:
-
-{% highlight bash linenos %}
-pdftk compressedPDF.pdf output uncompressedPDF.pdf uncompress
-{% endhighlight %}
-
-Besides that, someone suggests [itextrups](http://sourceforge.net/projects/itextrups/) which is laid on iText library (written in Java). See the discussion [here](http://stackoverflow.com/questions/13368660/view-source-on-pdf-rendered-inside-a-browser). 
 
 
 
