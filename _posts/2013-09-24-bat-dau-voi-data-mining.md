@@ -2,7 +2,7 @@
 layout: post
 title: "Bắt đầu với Data Mining"
 description: ""
-category: Data Mining
+category: Data Mining, writing
 tags: []
 ---
 {% include JB/setup %}

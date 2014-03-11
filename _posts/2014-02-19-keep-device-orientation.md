@@ -2,7 +2,7 @@
 layout: post
 title: "Keep device orientation"
 description: "Sometimes we need to keep only one orientation for device regardless how it is rotated. Because of framework API change and the vary of UI Container elements, it is not easy to implement this task in several minutes. This post aims to cover two of these complex cases: app using UINavigationController and app using UITabbarController, and focus on iOS 5.x and iOS 6.x and later."
-category: ios
+category: ios, writing
 tags: []
 ---
 {% include JB/setup %}
