@@ -14,6 +14,10 @@ description: ""
 	- [Find Unlocalized Strings](#find-unlocalized-string)
 - [Core Graphics](#core-graphics)
 	- [Improving Drawing Performance](#drawing-performance)
+- [Performance](#performance)
+	- [Fast enumeration and Block](#fast-enum-and-block)
+	- [Call UIView's methods in main thread](#call-uiview-method-in-main-thread)
+- [Objective-C Techniques](#objective-c-techniques)
 
 ## Tip and Trick Document from Apple {#apple-tips}
 - [Advanced App Tricks](https://developer.apple.com/library/ios/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/AdvancedAppTricks/AdvancedAppTricks.html)
@@ -70,3 +74,91 @@ In the Core Graphics framework, there are two ways to modify the CTM.
 	You can also evaluate and invert affine transforms and use them to modify point, size, and rectangle values in your code. For more information on using affine transforms, see Quartz 2D Programming Guide and CGAffineTransform Reference.
 
 - Call ```setNeedsDisplay:``` judiciously. Calling this method carefully. If view doesn't not need to redraw, don't call it!
+
+## Performance {#performance}
+#### Fast enumeration and Block {#fast-enum-and-block}
+There are three options to operate with each element in an array:
+
+- [arr makeObjectsPerformSelector:@selector(_stubMethod)];
+- Fast enumeration
+- enumerateObjectsUsingBlock
+
+According to [this SO discussion](http://stackoverflow.com/questions/4486622/when-to-use-enumerateobjectsusingblock-vs-for/4487012#4487012), ```enumerateObjectsUsingBlock``` is the fastest, then ```Fast enumeration``` and the last is ```makeObjectsPerformSelector```. 
+
+#### Call UIView's methods in main thread {#call-uiview-method-in-main-thread}
+	Manipulations to your application’s user interface must occur on the main thread. Thus, you should always call the methods of the UIView class from code running in the main thread of your application. The only time this may not be strictly necessary is when creating the view object itself but all other manipulations should occur on the main thread.
+
+	from [Threading Considerations](https://developer.apple.com/library/ios/documentation/uikit/reference/uiview_class/UIView/UIView.html#//apple_ref/doc/uid/TP40006816-CH3-SW147). 
+
+## Objective-C Techniques {#objective-c-techniques}
+#### Create private method {#create-private-method}
+In Objective-C, there is no ```public```, ```protected``` or ```private``` scope for method, they are just for instance variable. Hence, if we need to make some methods go private, two approaches should be in mind. 
+
+##### Using category
+
+{% highlight objectivec linenos %}
+/*We declare the category*/
+@interface  MyClass (private)
+
+@property (nonatomic, retain) Type *aPrivateProperty; 
+- (void)aPrivateMethod;
+
+@end
+
+/*We implement it*/    
+@implementation MyClass (private)
+
+/*We cannot use synthesize in the category :-(*/
+@dynamic aPrivateProperty;
+- (Type *)aPrivateProperty {
+    //Getter code
+}
+
+- (void)setAPrivateProperty {
+    //Setter code
+}
+
+- (void)aPrivateMethod {        
+    //Some code there
+}
+@end
+{% endhighlight %}
+
+> The above code is of [this post](http://www.benjaminloulier.com/posts/private-properties-methods-and-ivars-in-objective-c/). 
+
+But this approach has some drawbacks:
+- You can't use synthesize to generate the implementation of your properties. Instead of, we need to implement runtime accessor methods.
+- 
+
+##### Using class extension
+
+{% highlight objectivec linenos %}
+
+/*We declare the class extension*/
+@interface  MyClass () 
+
+@property (nonatomic, retain) Type *aPrivateProperty; 
+- (void)aPrivateMethod;
+
+@end
+
+/*
+We can use the main implementation block to implement our properties
+and methods declared in the class extension.
+*/
+@implementation MyClass
+
+/*Therefore we can use synthesize ;-)*/
+@synthesize aPrivateProperty;
+
+- (void)aPrivateMethod {        
+    //Some code there
+}
+
+@end
+
+{% endhighlight %}
+
+> The above code is of [this post](http://www.benjaminloulier.com/posts/private-properties-methods-and-ivars-in-objective-c/).
+
+In summary, it is better to use the second approach using Class Extension.
