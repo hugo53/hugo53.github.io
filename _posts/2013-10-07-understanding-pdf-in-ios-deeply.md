@@ -21,8 +21,10 @@ X-height describes height of __X__ character in a font collection as the image b
 
 ![alt text](http://hugo53.github.io/images/pdfpost/line.png "baseline")
 
-##### Descent and Ascent
-In typography, **Descent** is a term refer to the part which is below **word baseline** (known as the underline of the word). For example, in the image above, descender is a part from baseline to descent line, ascender is a part from baseline to ascent line. Height of them are **descent**, **ascent** respectively.  
+##### Descender and Ascender
+In typography, **Descender** is a term refer to the part which is below **word baseline** (known as the underline of the word) and *Ascender** is the part of charater which is above the **meanline**. For example, in the image above, descender is a part from baseline to descent line (known as **beardline**), ascender is a part from meanline to ascender line (known as **topline**). Height of them are **descent**, **ascent** respectively. That means the height of a character is sum of three part: descent, x-height and ascent.
+
+![alt text](http://cdn.designinstruct.com/files/243-basics_typography/02_lines.jpg "baseline")
 
 ##### Font size
 Font size is measuared by distance from ascent line to descent line. In general term, point is unit for desmonstrating font size which is equal to 1/72 inch per point (1 point = 1/72 inch. That means Arial 12pt = 1/6 inch = 4.3 mm). In PDF specification, Font information is usually in _Resources_ dictionary which contains a _Font_ dictionary. We can open PDF file by a text editor and search for _Resources_ keyword to locate Font description.
