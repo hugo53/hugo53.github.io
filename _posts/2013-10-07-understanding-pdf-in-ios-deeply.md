@@ -33,6 +33,32 @@ Font size is measuared by distance from ascent line to descent line. In general 
 ( _Need more study_ )
 
 #### Font
+##### Font type (in PDF scope)
+There are some ways to divide font type into bucket. We can base on how a font be organized or how a font can be drawn.
+
+If using font structure, we have two kinds:
+- ```Simple Font```
+- ```Composite Font```
+
+Only ```Type 0``` is composite font. Others are of simple font, included: ```Type 1```, ```Type 3```, ```TrueType```, ```CIDFont```.
+
+Or if using drawing method, we also have two buckets:
+- Bitmap-based font: ```Type 3```
+- Outline font (Raster font): ```Type 0```, ```Type 1```, ```TrueType```, ```CIDFont```. 
+
+##### Font and CIDFont
+Font is a collection of glyphs. CIDFont is also a set of glyphs. But, CIDFont is only used as a component of Type 0 font, cannot be used directly like Font.
+
+##### Font program
+
+##### Font dictionary
+
+
+##### 
+
+
+
+#####
 
 
 ## Reading PDF Flow
@@ -159,6 +185,7 @@ Identity-H is a encoding which is used by Google Docs (when you export your docs
 
 - [Great summary](http://stackoverflow.com/questions/3889634/fast-and-lean-pdf-viewer-for-iphone-ipad-ios-tips-and-hints?rq=1)
 
+- [PDF Specification, v.1.7](http://www.verypdf.com/document/pdf-format-reference/bookmark.htm). HTML form of PDF Specification v.1.7, 2006. I found that it is very clear and easy to focus rather than read a PDF version.
 
 #### Advance
 - [Displaying and Searching PDF Content on iPhone](http://blog.random-ideas.net/?p=184) from scratch, for the first time do with PDF in iOS. Really helpful and full of information.
