@@ -2,8 +2,8 @@
 layout: post
 title: "Bắt đầu với Data Mining"
 description: ""
-category: Data Mining
-tags: [writing]
+category: writing
+tags: []
 ---
 {% include JB/setup %}
 > *(hook)*
