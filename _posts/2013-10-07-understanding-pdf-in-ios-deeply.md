@@ -47,8 +47,16 @@ Or if using drawing method, we also have two buckets:
 - Outline font (Raster font): ```Type 0```, ```Type 1```, ```TrueType```, ```CIDFont```. 
 
 ##### Font and CIDFont
-Font is a collection of glyphs. CIDFont is also a set of glyphs. But, CIDFont is only used as a component of Type 0 font, cannot be used directly like Font.
+Font is a collection of glyphs. CIDFont is also a set of glyphs. But, CIDFont is only used as a component of Type 0 font, cannot be used directly like other Fonts .
 
+##### Descendant Font
+is CIDFont, Type 0 will use glyphs of descendant font to draw characters. 
+
+
+##### CIDToGIDMap
+When CIDToGIDMap is Identity:
+
+##### Font Symbolic
 ##### Font program
 
 ##### Font dictionary

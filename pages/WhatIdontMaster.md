@@ -91,3 +91,8 @@ You can also evaluate and invert affine transforms and use them to modify point,
 
 ## 03/01/2014
 - [Objective-C Runtime Programming Guide](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/ObjCRuntimeGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008048-CH1-SW1). This document looks at the NSObject class and how Objective-C programs interact with the runtime system. In particular, it examines the paradigms for dynamically loading new classes at runtime, and forwarding messages to other objects. It also provides information about how you can find information about objects while your program is running. You should read this document to gain an understanding of how the Objective-C runtime system works and how you can take advantage of it. Typically, though, there should be little reason for you to need to know and understand this material to write a Cocoa application.
+
+## 08/04/2014
+- [CFString​Transform](http://nshipster.com/cfstringtransform/). Transform string from one form to another. For example, transform Chinese string to Latin string.
+- [Make controller smaller](http://inessential.com/2014/03/16/smaller_please)
+- [ARC Best practice](http://amattn.com/p/arc_best_practices.html)
