@@ -96,3 +96,6 @@ You can also evaluate and invert affine transforms and use them to modify point,
 - [CFString​Transform](http://nshipster.com/cfstringtransform/). Transform string from one form to another. For example, transform Chinese string to Latin string.
 - [Make controller smaller](http://inessential.com/2014/03/16/smaller_please)
 - [ARC Best practice](http://amattn.com/p/arc_best_practices.html)
+
+## 16/05/2014
+- [Collections Programming Topics for Core Foundation](https://developer.apple.com/library/mac/documentation/CoreFoundation/Conceptual/CFCollections/CFCollections.html#//apple_ref/doc/uid/10000124-SW1). VERY USEFUL TO GET OVERVIEW OF CORE FOUNDATION!!!
