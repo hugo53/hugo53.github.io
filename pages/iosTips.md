@@ -162,3 +162,17 @@ and methods declared in the class extension.
 > The above code is of [this post](http://www.benjaminloulier.com/posts/private-properties-methods-and-ivars-in-objective-c/).
 
 In summary, it is better to use the second approach using Class Extension.
+
+#### Use Preprocessor Macros to pre define version type
+In some cases, we need to know the version is lite or pro version. There are some ways to do that and using Preprocessor Macros is one. 
+We can set Preprocessor Macros in ```Target -> Buil Settings -> Apple LLVM 5.1 - Preprocessing``` and use some phrases like ```Target_LiteVersion``` or ```Target_ProVersion```. 
+Then, check in ```application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions``` with statement:
+
+{% highlight objectivec linenos %}
+#if defined (Target_ProVersion)
+    // Do somethings
+#endif
+{% endhighlight %}
+
+
+
