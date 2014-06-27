@@ -181,89 +181,85 @@
 
 <div class="row-fluid">
   <div class="span12">
-    <p>Jekyll is a up-to-date blog framework in the today&#8217;s world. It is increasing as the tool come in handy for many bloggers, especially developers who desire sharing their working experience. This page concentrates on showing basic techniques to construct a blog for all zealous people.</p>
+    
+<p>Jekyll is a up-to-date blog framework in the today&#8217;s world. It is increasing as the tool come in handy for many bloggers, especially developers who desire sharing their working experience. This page concentrates on showing basic techniques to construct a blog for all zealous people.</p>
 
-<h3 id='twitter_feed_on_jekyll_blog'>Twitter Feed on Jekyll Blog</h3>
-
-<p>Unfortunately, at the time when this page is established, there is no offical support from both Jekyll and JekyllBoostrap for adding a twitter feed box into this kind of blog. However, it is exist several works of some enthusiasm tech guys who also need to put their tweets on posts of Jekyll. In my site, I ulitize <a href='http://tweet.seaofclouds.com/'>this source</a> for my need.</p>
+<h3 id="twitter-feed-on-jekyll-blog">Twitter Feed on Jekyll Blog</h3>
+<p>Unfortunately, at the time when this page is established, there is no offical support from both Jekyll and JekyllBoostrap for adding a twitter feed box into this kind of blog. However, it is exist several works of some enthusiasm tech guys who also need to put their tweets on posts of Jekyll. In my site, I ulitize <a href="http://tweet.seaofclouds.com/">this source</a> for my need.</p>
 
 <p>There is the way I apply for my blog.</p>
 
-<h5 id='download_libraries'>Download libraries</h5>
-
+<h5 id="download-libraries">Download libraries</h5>
 <ul>
-<li>Download jquery 1.9.3v</li>
-
-<li>Download tweets library from <a href='https://github.com/seaofclouds/tweet/zipball/master'>here</a>.</li>
+  <li>Download jquery 1.9.3v</li>
+  <li>Download tweets library from <a href="https://github.com/seaofclouds/tweet/zipball/master">here</a>.</li>
 </ul>
 
-<h5 id='add_custom_source_code'>Add custom source code</h5>
-
+<h5 id="add-custom-source-code">Add custom source code</h5>
 <ul>
-<li>Add the below code at the end of <code>_layouts/post.html</code>.</li>
+  <li>Add the below code at the end of <code>_layouts/post.html</code>.</li>
 </ul>
 
 <p><code>
-&lt;script src=&quot;/assets/themes/jquery-1.9.1.min.js&quot;&gt; &lt;/script&gt;
-</code> <code>
-&lt;script src=&quot;/assets/tweetfeed/tweet/jquery.tweet.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;script src="/assets/themes/jquery-1.9.1.min.js"&gt; &lt;/script&gt;
+</code>
+<code>
+&lt;script src="/assets/tweetfeed/tweet/jquery.tweet.js" type="text/javascript"&gt;&lt;/script&gt;
 </code></p>
 
 <p><code>javascript
 jQuery(function($){
-    $(&quot;.tweet&quot;).tweet({
-          join_text: &quot;auto&quot;,
-          username: &quot;mrhoangnm&quot;,
+    $(".tweet").tweet({
+          join_text: "auto",
+          username: "mrhoangnm",
           avatar_size: 48,
           count: 5,
-          auto_join_text_default: &quot; we said, &quot;,
-          auto_join_text_ed: &quot; we &quot;,
-          auto_join_text_ing: &quot; we were &quot;,
-          auto_join_text_reply: &quot; we replied &quot;,
-          auto_join_text_url: &quot; we were checking out &quot;,
-          loading_text: &quot;loading tweets...&quot;
+          auto_join_text_default: " we said, ",
+          auto_join_text_ed: " we ",
+          auto_join_text_ing: " we were ",
+          auto_join_text_reply: " we replied ",
+          auto_join_text_url: " we were checking out ",
+          loading_text: "loading tweets..."
         });
       });
 </code></p>
 
 <p><code>javascript
- var s = &quot;JavaScript syntax highlighting&quot;;
+ var s = "JavaScript syntax highlighting";
  alert(s);
 </code></p>
 
 <p>and</p>
 
 <p><code>
-&lt;div class=&quot;tweet&quot;&gt;&lt;/div&gt;
+&lt;div class="tweet"&gt;&lt;/div&gt;
 </code></p>
 
 <ul>
-<li>Add the below code at the <code>head</code> of <code>_includes/themes/twitter/default.html</code> (I use twitter theme for this site, you can change this path if another theme is applied).</li>
+  <li>Add the below code at the <code>head</code> of <code>_includes/themes/twitter/default.html</code> (I use twitter theme for this site, you can change this path if another theme is applied). </li>
 </ul>
 
 <p><code>
-&lt;link href=&quot;/assets/tweetfeed/tweet/jquery.tweet.css&quot; media=&quot;all&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;/&gt;
+&lt;link href="/assets/tweetfeed/tweet/jquery.tweet.css" media="all" rel="stylesheet" type="text/css"/&gt;
 </code></p>
 
 <p>OK, well done. You already have tweet feed in your site now!</p>
 
-<h3 id='adding_table_of_contents_toc'>Adding Table of Contents (TOC)</h3>
+<h3 id="adding-table-of-contents-toc">Adding Table of Contents (TOC)</h3>
+<p>You should follow <a href="http://brizzled.clapper.org/blog/2012/02/04/generating-a-table-of-contents-in-octopress/">this post</a>.</p>
 
-<p>You should follow <a href='http://brizzled.clapper.org/blog/2012/02/04/generating-a-table-of-contents-in-octopress/'>this post</a>.</p>
-
-<h3 id='syntax_highlighting'>Syntax Highlighting</h3>
-
-<p>Use Pygments</p>
-
-<h5 id='how_to_install_it_in_mac'>How to install it in Mac?</h5>
-
-<p>Use port:</p>
+<h3 id="syntax-highlighting">Syntax Highlighting</h3>
+<p>Use Pygments
+##### How to install it in Mac?
+Use port:</p>
 
 <p>sudo port install python25 py25-pygments</p>
 
-<p>or just sudo easy_install Pygments</p>
+<p>or just 
+sudo easy_install Pygments</p>
 
 <p>refer http://truongtx.me/2012/12/28/jekyll-bootstrap-syntax-highlighting/</p>
+
   </div>
 </div>
 

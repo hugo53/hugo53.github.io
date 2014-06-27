@@ -185,50 +185,46 @@
       <span>27 September 2013</span>
     </div>
     <div class="content">
-      <blockquote>
-<p>Performing with audio is always a challenge for any developer by reason of its very low level. By chance, I got some opportunities to do with audio included playing, recording and pre (and/or) post processing. This post tends to cover as much as possible basic knowledge in Audio aspect for two reasons: reminding myself and sharing with other enthusiastic guys.</p>
+      
+<blockquote>
+  <p>Performing with audio is always a challenge for any developer by reason of its very low level. By chance, I got some opportunities to do with audio included playing, recording and pre (and/or) post processing. This post tends to cover as much as possible basic knowledge in Audio aspect for two reasons: reminding myself and sharing with other enthusiastic guys.</p>
 </blockquote>
 
-<p>In the first words, I want to warn that I am working on iOS platform at the moment. Therefore, all of knowledge appear here is of iOS or related to iOS by default.</p>
+<p>In the first words, I want to warn that I am working on iOS platform at the moment. Therefore, all of knowledge appear here is of iOS or related to iOS by default. </p>
 
-<h2 id='basic'>Basic</h2>
+<h2 id="basic">Basic</h2>
+<p>Before dig into details, we should know a litle bit about audio format, audio codec and what format is preferred in iOS. </p>
 
-<p>Before dig into details, we should know a litle bit about audio format, audio codec and what format is preferred in iOS.</p>
+<h4 id="audio-format-and-codec">Audio Format and Codec</h4>
+<p>General speaking, there are two elements of an audio file. It&#8217;s weird, huh? Don&#8217;t worry! First, codec and second, file format. Codec is the way audio file is encoded (for recording) or decoded (for playback). We must know the codec of audio file to perform some processing tasks such as uncompressing to play or mixing to make effects. The latter one, format is the way audio file is organized. </p>
 
-<h4 id='audio_format_and_codec'>Audio Format and Codec</h4>
+<h5 id="audio-format">Audio Format</h5>
 
-<p>General speaking, there are two elements of an audio file. It&#8217;s weird, huh? Don&#8217;t worry! First, codec and second, file format. Codec is the way audio file is encoded (for recording) or decoded (for playback). We must know the codec of audio file to perform some processing tasks such as uncompressing to play or mixing to make effects. The latter one, format is the way audio file is organized.</p>
+<h5 id="audio-codec">Audio Codec</h5>
 
-<h5 id='audio_format'>Audio Format</h5>
-
-<h5 id='audio_codec'>Audio Codec</h5>
-
-<h4 id='bit_rate'>Bit rate</h4>
-
+<h4 id="bit-rate">Bit rate</h4>
 <p>(hook)</p>
 
-<h4 id='playback'>Playback</h4>
-
+<h4 id="playback">Playback</h4>
 <p>Player must decode audio file if it want to play a song. In fact, iOS has two approaches to decode audio file: software-based and hardware-assisted. The biggest difference is that the first method allows multiple files to play simutaneously whereas the second way don&#8217;t. Because of that, hardware-assisted method is very fast and gives excellent performance while software-based may lead to CPU overhead state if it has to handle many sound files in the same time. As a result, if you need to maximize video frame rate (make application be more smooth), there are two ways:</p>
 
 <ul>
-<li>Minimize the CPU impact of your audio playback by using uncompressed audio or the IMA4 format.</li>
+  <li>Minimize the CPU impact of your audio playback by using uncompressed audio or the IMA4 format. </li>
 </ul>
 
-<p>Or</p>
+<p>Or </p>
 
 <ul>
-<li>Use hardware-assisted decoding of your compressed audio assets.</li>
+  <li>Use hardware-assisted decoding of your compressed audio assets.</li>
 </ul>
 
-<h4 id='preferred_audio_formats_in_ios_certainly'>Preferred Audio Formats (in iOS, certainly)</h4>
-
-<p>Just recall that there are two types of audio quality: uncompressed audio and compressed audio. In short words, uncompressed audio is always better than the remaining kind but it is true for professional listener not for all people. Because of two these existing types, Apple also defines two preferred formats respectively.</p>
+<h4 id="preferred-audio-formats-in-ios-certainly">Preferred Audio Formats (in iOS, certainly)</h4>
+<p>Just recall that there are two types of audio quality: uncompressed audio and compressed audio. In short words, uncompressed audio is always better than the remaining kind but it is true for professional listener not for all people. Because of two these existing types, Apple also defines two preferred formats respectively. </p>
 
 <p>For <strong>uncompressed audio</strong> (highest quality), use <em>16-bit</em>, <em>little endian</em>, <em>linear PCM</em> audio data packaged in a <em>CAF</em> file. You can convert an audio file to this format in Mac OS X using the afconvert command-line tool, as shown here:</p>
 
 <blockquote>
-<p>/usr/bin/afconvert -f caff -d LEI16 {INPUT} {OUTPUT}</p>
+  <p>/usr/bin/afconvert -f caff -d LEI16 {INPUT} {OUTPUT}</p>
 </blockquote>
 
 <p>For <strong>compressed audio</strong> when playing one sound at a time, and when you do not need to play audio simultaneously with the iPod application, use the <em>AAC</em> format packaged in a <em>CAF</em> or <em>m4a</em> file.</p>
@@ -236,46 +232,34 @@
 <p>For <strong>less memory usage</strong> when you need to <em>play multiple sounds simultaneously</em>, use <em>IMA4 (IMA/ADPCM) compression</em>. This reduces file size but entails minimal CPU impact during decompression. As with linear PCM data, package IMA4 data in a <em>CAF</em> file.</p>
 
 <blockquote>
-<p>Excerpt from <a href='https://developer.apple.com/library/ios/documentation/AudioVideo/Conceptual/MultimediaPG/UsingAudio/UsingAudio.html#//apple_ref/doc/uid/TP40009767-CH2-SW28'>Preferred Audio Formats in iOS - developer.apple.com</a>.</p>
+  <p>Excerpt from <a href="https://developer.apple.com/library/ios/documentation/AudioVideo/Conceptual/MultimediaPG/UsingAudio/UsingAudio.html#//apple_ref/doc/uid/TP40009767-CH2-SW28">Preferred Audio Formats in iOS - developer.apple.com</a>.
+## Frameworks</p>
 </blockquote>
 
-<h2 id='frameworks'>Frameworks</h2>
+<h2 id="libraries">Libraries</h2>
 
-<h2 id='libraries'>Libraries</h2>
+<h2 id="conclusion">Conclusion</h2>
 
-<h2 id='conclusion'>Conclusion</h2>
-
-<h2 id='references'>References</h2>
-
+<h2 id="references">References</h2>
 <ul>
-<li><a href='http://www.raywenderlich.com/204/audio-tutorial-for-ios-file-and-data-formats'>Audio Tutorial for iOS: File and Data Formats</a> by Raywenderlich</li>
-
-<li>Apple&#8217;s Docummentation</li>
-
-<li><a href='http://www.amazon.com/Learning-Core-Audio-Hands-On-Programming/dp/0321636848'>Learning Core Audio: A Hands-On Guide to Audio Programming for Mac and iOS</a> by Chris Adamson and Kevin Avila.</li>
-
-<li><a href='http://www.slideshare.net/invalidname/presentations'>Chris Adamson slideshare</a>. Sharing a plenty of precious knowledge.</li>
+  <li><a href="http://www.raywenderlich.com/204/audio-tutorial-for-ios-file-and-data-formats">Audio Tutorial for iOS: File and Data Formats</a> by Raywenderlich</li>
+  <li>Apple&#8217;s Docummentation</li>
+  <li><a href="http://www.amazon.com/Learning-Core-Audio-Hands-On-Programming/dp/0321636848">Learning Core Audio: A Hands-On Guide to Audio Programming for Mac and iOS</a> by Chris Adamson and Kevin Avila.</li>
+  <li><a href="http://www.slideshare.net/invalidname/presentations">Chris Adamson slideshare</a>. Sharing a plenty of precious knowledge.</li>
 </ul>
 
-<h2 id='open_sources_which_are_mentioned_above'>Open sources which are mentioned above</h2>
-
+<h2 id="open-sources-which-are-mentioned-above">Open sources which are mentioned above</h2>
 <ul>
-<li><a href='http://theamazingaudioengine.com/doc/'>The Amazing Audio Engine</a></li>
-
-<li><a href='http://kstenerud.github.io/ObjectAL-for-iPhone/documentation/index.html'>OpenAL</a></li>
-
-<li><a href='https://github.com/alexrestrepo/SoundEngine'>Sound Engine - an OpenAL Example</a></li>
-
-<li><a href='https://github.com/syedhali/EZAudio'>EZAudio</a>. For showing audio wave.</li>
+  <li><a href="http://theamazingaudioengine.com/doc/">The Amazing Audio Engine</a></li>
+  <li><a href="http://kstenerud.github.io/ObjectAL-for-iPhone/documentation/index.html">OpenAL</a></li>
+  <li><a href="https://github.com/alexrestrepo/SoundEngine">Sound Engine - an OpenAL Example</a></li>
+  <li><a href="https://github.com/syedhali/EZAudio">EZAudio</a>. For showing audio wave.</li>
 </ul>
 
-<h2 id='bonus'>Bonus</h2>
+<h2 id="bonus">Bonus</h2>
+<p>###The differences between Audio Engine and OpenAL
+- OpenAL: no some functions such as Reverb (Roger Beep, Distortion, Obstruction, and Occlusion must be tested more) but Audio Engine has.</p>
 
-<h3 id='the_differences_between_audio_engine_and_openal'>The differences between Audio Engine and OpenAL</h3>
-
-<ul>
-<li>OpenAL: no some functions such as Reverb (Roger Beep, Distortion, Obstruction, and Occlusion must be tested more) but Audio Engine has.</li>
-</ul>
     </div>
 
   
