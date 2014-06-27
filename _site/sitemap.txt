@@ -2,7 +2,6 @@
 http://hugo53.github.io/archive.html
 http://hugo53.github.io/atom.xml
 http://hugo53.github.io/categories.html
-http://hugo53.github.io/docbucket/resume.txt
 http://hugo53.github.io/index.html
 http://hugo53.github.io/pages/about.html
 http://hugo53.github.io/pages/Books.html
@@ -14,14 +13,21 @@ http://hugo53.github.io/pages/ielts/journey.html
 http://hugo53.github.io/pages/ielts/reading.html
 http://hugo53.github.io/pages/ielts/writing.html
 http://hugo53.github.io/pages/ios/monetization.html
+http://hugo53.github.io/pages/iosbugs.html
 http://hugo53.github.io/pages/iosmyth.html
 http://hugo53.github.io/pages/iosTips.html
+http://hugo53.github.io/pages/knowledgeResource.html
+http://hugo53.github.io/pages/resume.html
+http://hugo53.github.io/pages/test.html
 http://hugo53.github.io/pages/WhatIdontMaster.html
 http://hugo53.github.io/pages.html
 http://hugo53.github.io/rss.xml
 http://hugo53.github.io/sitemap.txt
 http://hugo53.github.io/tags.html
 
+http://hugo53.github.io/2014/06/27/weird-behaviour-with-viewcontroller
+http://hugo53.github.io/writing/2014/02/19/keep-device-orientation
+http://hugo53.github.io/ios/2014/01/07/attributed-string-and-the-magic-of-text-drawing
 http://hugo53.github.io/ios/2013/12/18/core-graphics-in-mind
 http://hugo53.github.io/ios/2013/11/26/huchart-be-in-top-new-github-repo-in-the-released-day
 http://hugo53.github.io/ios/2013/11/25/cocoapods---easy-but-not-easy
@@ -34,7 +40,7 @@ http://hugo53.github.io/2013/10/07/understanding-pdf-in-ios-deeply
 http://hugo53.github.io/tool/2013/09/28/git-and-its-tutorials
 http://hugo53.github.io/ios%20development/2013/09/27/audio-processing-in-ios---an-initial-step
 http://hugo53.github.io/2013/09/25/useful-command-line
-http://hugo53.github.io/data%20mining/2013/09/24/bat-dau-voi-data-mining
+http://hugo53.github.io/writing/2013/09/24/bat-dau-voi-data-mining
 http://hugo53.github.io/startup/2013/08/11/startup-toolkit
 http://hugo53.github.io/business%20model/2013/06/18/making-money-easy-or-difficult
 http://hugo53.github.io/computer%20science/2013/05/23/google-tech-talk---a-huge-resource-for-it-student

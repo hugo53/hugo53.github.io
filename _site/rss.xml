@@ -5,10 +5,82 @@
         <description>Leading Beautiful Life - Hugo Nguyen</description>
         <link>http://hugo53.github.io</link>
         <link>http://hugo53.github.io</link>
-        <lastBuildDate>2013-12-20T13:15:32+07:00</lastBuildDate>
-        <pubDate>2013-12-20T13:15:32+07:00</pubDate>
+        <lastBuildDate>2014-06-27T17:52:40+07:00</lastBuildDate>
+        <pubDate>2014-06-27T17:52:40+07:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>Weird Behaviour with ViewController</title>
+                <description>&lt;p&gt;If you&amp;#8217;re crazy, and if you&amp;#8217;re creating your awesome app without storyboard or xib, sometimes you may encounter a case which on iOS 7 your view is shifted to bottom automatically a distance of status bar and navigation bar (64px), like below:&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='Before go Background' src='http://hugo53.github.io/images/weird-behaviour-view-controller/before-go-background.png' /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='After go from Background' src='http://hugo53.github.io/images/weird-behaviour-view-controller/after-go-from-background.png' /&gt;&lt;/p&gt;
+
+&lt;p&gt;In fact, iOS 7 supports us an option for adjusting view by content inset. By default, it will be:&lt;/p&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='objectivec'&gt;&lt;span class='n'&gt;self&lt;/span&gt;&lt;span class='p'&gt;.&lt;/span&gt;&lt;span class='n'&gt;automaticallyAdjustsScrollViewInsets&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='nb'&gt;YES&lt;/span&gt;&lt;span class='p'&gt;;&lt;/span&gt;  &lt;span class='c1'&gt;// self is view controller&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Then, if you want to get rid of the that default, just do in view controller:&lt;/p&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='objectivec'&gt;&lt;span class='n'&gt;self&lt;/span&gt;&lt;span class='p'&gt;.&lt;/span&gt;&lt;span class='n'&gt;automaticallyAdjustsScrollViewInsets&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='nb'&gt;NO&lt;/span&gt;&lt;span class='p'&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You also may face to this problem when do with table view, scroll view.&lt;/p&gt;</description>
+                <link>http://hugo53.github.io/2014/06/27/weird-behaviour-with-viewcontroller</link>
+                <guid>http://hugo53.github.io/2014/06/27/weird-behaviour-with-viewcontroller</guid>
+                <pubDate>2014-06-27T00:00:00+07:00</pubDate>
+        </item>
+
+        <item>
+                <title>Keep device orientation</title>
+                <description>&lt;p&gt;Sometimes we need to keep only one orientation for device regardless how it is rotated. Because of framework API change and the vary of UI Container elements, it is not easy to implement this task in several minutes. This post aims to cover two of these complex cases: app using UINavigationController and app using UITabbarController, and focus on iOS 5.x and iOS 6.x \&amp;amp; later.&lt;/p&gt;
+
+&lt;h2 id='app_using_uinavigationcontroller'&gt;App using UINavigationController&lt;/h2&gt;
+
+&lt;p&gt;The root view controller is must inherited by UINavigationController and implement 4 functions: 1 for supporting iOS 5.x and 3 for supporting iOS 6.x.&lt;/p&gt;</description>
+                <link>http://hugo53.github.io/writing/2014/02/19/keep-device-orientation</link>
+                <guid>http://hugo53.github.io/writing/2014/02/19/keep-device-orientation</guid>
+                <pubDate>2014-02-19T00:00:00+07:00</pubDate>
+        </item>
+
+        <item>
+                <title>Attributed String and the magic of text drawing</title>
+                <description>&lt;p&gt;From IOS 6, there is a magical tool to make beautiful and colorful words for any purpose such as representing lovely text to girlfriend/boyfriend or to relations. It is called &lt;strong&gt;Attributed String&lt;/strong&gt;. In IOS 7, we can freely to reveal text in our apps with many new supports.&lt;/p&gt;
+
+&lt;p&gt;In almost built-in UI Components, &lt;em&gt;attributed&lt;/em&gt; is beside &lt;em&gt;text&lt;/em&gt; property. If we set property &lt;em&gt;attributedText&lt;/em&gt;, the label/UITextView/&amp;#8230; will show &lt;em&gt;attributedText&lt;/em&gt; instead of &lt;em&gt;text&lt;/em&gt; property. Sometimes, we tend to set &lt;em&gt;text&lt;/em&gt; but do some extra code to convert &lt;em&gt;text&lt;/em&gt; to &lt;em&gt;attributedText&lt;/em&gt; to make the string be eye-catching.&lt;/p&gt;
+
+&lt;h2 id='open_source'&gt;Open source&lt;/h2&gt;
+
+&lt;h4 id='customizing_attributed_text_for_label'&gt;Customizing Attributed Text for Label&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href='https://github.com/mattt/TTTAttributedLabel'&gt;TTTAttributedLabel&lt;/a&gt; by &lt;a href='http://mattt.me'&gt;Mattt&lt;/a&gt;. A drop-in replacement for UILabel that supports attributes, data detectors, links, and more. We can use attributed string in label with many extend features included link detetors (underline and making color for URI text) or manually making URI string. Its author is also one of creators of &lt;a href='https://github.com/AFNetworking/AFNetworking'&gt;AFNetworking&lt;/a&gt; - a powerful network library.&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href='https://github.com/AliSoftware/OHAttributedLabel'&gt;OHAttributedLabel&lt;/a&gt; by &lt;a href='https://github.com/AliSoftware'&gt;AliSoftware&lt;/a&gt;. This library allows us to make label text with extended attributed string. Especially, it can customize text for hashtag (#), mention (\@). Certainly, it also built link detector for emphasizing URI. Besides, there are many applications have used this library, including SoundClound, Wunderlist. See more &lt;a href='https://github.com/AliSoftware/OHAttributedLabel/wiki/They-use-this-class'&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href='http://docs.nimbuskit.info/NimbusAttributedLabel.html'&gt;Nimbus Attributed Label&lt;/a&gt; in &lt;a href='https://github.com/jverkoey/nimbus'&gt;Nimbus&lt;/a&gt;. Using NSAttributedString to render rich text labels with links using CoreText.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id='attributed_text_parser'&gt;Attributed Text Parser&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href='https://github.com/chrisdevereux/Slash'&gt;Slash&lt;/a&gt; by &lt;a href='https://github.com/chrisdevereux'&gt;Chris Devereux&lt;/a&gt;. Slash is a simple, extensible markup language for styling NSAttributedStrings. The language is similar in appearance to HTML, however the meaning of each tag is user-defined. It can be refered as a mini-parser which can extract structured text and show text as its expected tag.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id='source_may_need_when_work_with_attributedstring'&gt;Source may need when work with AttributedString&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href='http://iosfonts.com/'&gt;List all available fonts in iOS, from v.3.0 to v.7.0, for iPhone and Ipad&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+                <link>http://hugo53.github.io/ios/2014/01/07/attributed-string-and-the-magic-of-text-drawing</link>
+                <guid>http://hugo53.github.io/ios/2014/01/07/attributed-string-and-the-magic-of-text-drawing</guid>
+                <pubDate>2014-01-07T00:00:00+07:00</pubDate>
+        </item>
 
         <item>
                 <title>Core Graphics - Something should be in mind</title>
@@ -30,6 +102,10 @@
 &lt;li&gt;&lt;a href='#fore-or-back-front'&gt;Drawing fore-front of back-front?&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href='#some-notes'&gt;Some notes&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id='first-glance'&gt;At First Glance&lt;/h2&gt;
@@ -44,7 +120,7 @@
 &lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='objectivec'&gt;&lt;span class='n'&gt;CGContextRef&lt;/span&gt; &lt;span class='n'&gt;context&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='n'&gt;UIGraphicsGetCurrentContext&lt;/span&gt;&lt;span class='p'&gt;();&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;blockquote&gt;
-&lt;p&gt;However, the above line code just need to be wrote when we draw using CoreGraphics framework, for UIKit with UIBezierPath, this framework gets current context for us automatically.&lt;/p&gt;
+&lt;p&gt;However, the above line code just need to be written when we draw using CoreGraphics framework. For UIKit with UIBezierPath, this framework gets current context for us automatically.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;Current context is needed to pass to some Core Graphics function to perform painting actions.&lt;/p&gt;
@@ -76,9 +152,7 @@
 
 &lt;p&gt;Core Graphics provides a functions and some options to configure the next drawing action is fore-font or back-front in current context.&lt;/p&gt;
 &lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='objectivec'&gt;&lt;span class='n'&gt;CGContextSaveGState&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;context&lt;/span&gt;&lt;span class='p'&gt;);&lt;/span&gt;
-
 &lt;span class='n'&gt;CGContextSetBlendMode&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;context&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='n'&gt;blend_option&lt;/span&gt;&lt;span class='p'&gt;);&lt;/span&gt;
-
 &lt;span class='n'&gt;CGContextRestoreGState&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;ctx&lt;/span&gt;&lt;span class='p'&gt;);&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Blend Options may be:&lt;/p&gt;
@@ -86,20 +160,47 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;kCGBlendModeNormal&lt;/code&gt; next drawing is on fore-front&lt;/li&gt;
 &lt;/ul&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='objectivec'&gt;&lt;span class='n'&gt;CGContextSaveGState&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;context&lt;/span&gt;&lt;span class='p'&gt;);&lt;/span&gt;
 
+&lt;span class='n'&gt;CGContextSetBlendMode&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;context&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='n'&gt;kCGBlendModeMultiply&lt;/span&gt;&lt;span class='p'&gt;);&lt;/span&gt;&lt;span class='c1'&gt;// To draw yellow frame but not hide the text&lt;/span&gt;
+&lt;span class='n'&gt;drawHighlighFrame&lt;/span&gt; 	&lt;span class='c1'&gt;// Yellow frame&lt;/span&gt;
+
+&lt;span class='n'&gt;CGContextSetBlendMode&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;context&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='n'&gt;kCGBlendModeNormal&lt;/span&gt;&lt;span class='p'&gt;);&lt;/span&gt;	&lt;span class='c1'&gt;// To draw underline onto yellow frame&lt;/span&gt;
+&lt;span class='n'&gt;drawUnderline&lt;/span&gt;		&lt;span class='c1'&gt;// Blue line&lt;/span&gt;
+
+&lt;span class='n'&gt;CGContextRestoreGState&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;context&lt;/span&gt;&lt;span class='p'&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;img alt='alt text' src='http://hugo53.github.io/images/coregraphics/fore-front.png' /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;kCGBlendModeMultiply&lt;/code&gt; next drawing is on back-front&lt;/li&gt;
 &lt;/ul&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='objectivec'&gt;&lt;span class='n'&gt;CGContextSaveGState&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;context&lt;/span&gt;&lt;span class='p'&gt;);&lt;/span&gt;
 
+&lt;span class='n'&gt;CGContextSetBlendMode&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;context&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='n'&gt;kCGBlendModeMultiply&lt;/span&gt;&lt;span class='p'&gt;);&lt;/span&gt;&lt;span class='c1'&gt;// To draw yellow frame but not hide the text&lt;/span&gt;
+&lt;span class='n'&gt;drawHighlighFrame&lt;/span&gt; 	&lt;span class='c1'&gt;// Yellow frame&lt;/span&gt;
+
+&lt;span class='c1'&gt;// CGContextSetBlendMode(context, kCGBlendModeNormal);// This line is commented. Thus, underline is drawn behind yellow frame&lt;/span&gt;
+
+&lt;span class='n'&gt;drawUnderline&lt;/span&gt;		&lt;span class='c1'&gt;// Blue line&lt;/span&gt;
+
+&lt;span class='n'&gt;CGContextRestoreGState&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;context&lt;/span&gt;&lt;span class='p'&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;img alt='alt text' src='http://hugo53.github.io/images/coregraphics/back-front.png' /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Note: For two above images, desired color of underline is blue. The first image shows right color but the second does not.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Besure that always saving and restoring context to avoid impact later drawing.&lt;/p&gt;</description>
+&lt;p&gt;Besure that always saving and restoring context to avoid impact later drawing.&lt;/p&gt;
+
+&lt;h2 id='some-notes'&gt;Some notes&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Be careful when draw at frame&amp;#8217;s border. We may encounter &lt;strong&gt;Aliasing problem&lt;/strong&gt; - a huge problem in digital drawing. When we set path override frame&amp;#8217;s border, then set line width. There is no space for a part of line which is a half outside. Therefore, the path is not shown as expected. See &lt;a href='http://stackoverflow.com/questions/13674118/nsbezierpath-drawing/13674460#13674460'&gt;here&lt;/a&gt; for more information. &lt;a href='http://stackoverflow.com/questions/12878781/drawing-a-very-thin-line-with-cgcontextaddlinetopoint-and-cgcontextsetlinewidth'&gt;The other link&lt;/a&gt; also discusses about aliasing problem when drawing a path using Core Graphics.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img alt='alt text' src='http://i.stack.imgur.com/K9cY5.png' /&gt;&lt;/p&gt;</description>
                 <link>http://hugo53.github.io/ios/2013/12/18/core-graphics-in-mind</link>
                 <guid>http://hugo53.github.io/ios/2013/12/18/core-graphics-in-mind</guid>
                 <pubDate>2013-12-18T00:00:00+07:00</pubDate>
@@ -135,7 +236,7 @@
 
         <item>
                 <title>Cocoapods - Easy but not easy</title>
-                <description>&lt;p&gt;Someone told that Cocoapods is easy to use at both aspects: integrate open third-party into own project and publish open library to community. However, for newbie or even a experience developer, at the first time, it is not easy as a pie. This post is for them. Here we go!&lt;/p&gt;
+                <description>&lt;p&gt;Someone told that Cocoapods is easy to use at both aspects: integrating open third-party into own project and publishing opensource library to community. However, for a newbie or even an experience developer, at the first time, it is not easy as a pie. This post is for them. Here we go!&lt;/p&gt;
 
 &lt;h2 id='preparing_git_repository'&gt;Preparing git repository&lt;/h2&gt;
 
@@ -276,7 +377,19 @@ vi HUChart.podspec
 
 &lt;h2 id='notice'&gt;Notice&lt;/h2&gt;
 
-&lt;p&gt;Firstly, do not try to encrypt a file in separate part. Normally, an encrypt algorithm will save a header in cipher text, included key (gen from password), HMAC, salt and so on. Therefor, decrypt algorithm will read the header first to get these information before decrypting. If you encrypt a file by chunking this file and encrypting each part separately, cipher text will contains many headers. That will make decrypt algorithm goes fail because it cannot know where is header and where is cipher text.&lt;/p&gt;
+&lt;h4 id='do_not_try_to_encrypt_a_file_in_separate_parts'&gt;Do not try to encrypt a file in separate parts&lt;/h4&gt;
+
+&lt;p&gt;Firstly, do not try to encrypt a file in separate parts. Normally, an encrypt algorithm will save a header in cipher text, included key (gen from password), HMAC, salt and so on. Therefor, decrypt algorithm will read the header first to get these information before decrypting. If you encrypt a file by chunking this file and encrypting each part separately, cipher text will contains many headers. That will make decrypt algorithm goes fail because it cannot know where is header and where is cipher text.&lt;/p&gt;
+
+&lt;h4 id='openssl_is_deprecated_from_osx_107_and_not_included_in_ios'&gt;OpenSSL is deprecated from OSX 10.7 and not included in iOS&lt;/h4&gt;
+
+&lt;p&gt;In addition to these APIs, a number of open source tools use OpenSSL for secure networking. If you use OpenSSL in your publicly shipping apps, you must provide your own copy of the OpenSSL libraries, preferably as part of your app bundle; the OpenSSL libraries that OS X provides are deprecated. &lt;a href='https://developer.apple.com/library/mac/documentation/security/conceptual/cryptoservices/SecureNetworkCommunicationAPIs/SecureNetworkCommunicationAPIs.html'&gt;Refer link&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The reason Apple raised for that is: OS X includes a low-level command-line interface to the OpenSSL open-source cryptography toolkit; this interface is not available on iOS.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Further, although OpenSSL is commonly used in the open source community, **it does not provide a stable API from version to version**. For this reason, the programmatic interface to OpenSSL is deprecated in OS X and is not provided in iOS. Use of the Apple-provided OpenSSL libraries by apps is strongly discouraged.&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;One of Apple Engineers said in details at &lt;a href='http://rentzsch.tumblr.com/post/33696323211/wherein-i-write-apples-technote-about-openssl-on-os-x'&gt;here&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id='reference'&gt;Reference&lt;/h2&gt;
 
@@ -286,16 +399,30 @@ vi HUChart.podspec
 &lt;/li&gt;
 
 &lt;li&gt;
-&lt;p&gt;&lt;a href='https://github.com/rnapier/RNCryptor'&gt;RNCryptor&lt;/a&gt; by author of the above book&lt;/p&gt;
-&lt;/li&gt;
-
-&lt;li&gt;
 &lt;p&gt;&lt;a href='http://www.branchfire.com/lib-web/html/_security.html'&gt;PDF Protecting in iAnnotate&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 
 &lt;li&gt;
 &lt;p&gt;&lt;a href='http://www.cs.cmu.edu/~dst/Adobe/Gallery/anon21jul01-pdf-encryption.txt'&gt;PDF Encrypting Algorithm&lt;/a&gt; (&lt;a href='https://www.dropbox.com/s/0fvg5byv9bx4lix/anon21jul01-pdf-encryption.txt'&gt;secondary link&lt;/a&gt;)&lt;/p&gt;
 &lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href='https://developer.apple.com/library/ios/documentation/Security/Conceptual/Security_Overview/SeeAlso/SeeAlso.html#//apple_ref/doc/uid/TP30000976-CH7-SW1'&gt;Recommended Documention by Apple&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id='open_source__library'&gt;Open source - Library&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href='https://github.com/rnapier/RNCryptor'&gt;RNCryptor&lt;/a&gt; by author of the above book&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='https://github.com/benoitsan/BBAES'&gt;BBAES&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='https://github.com/gabriel/NAChloride'&gt;NAChloride&lt;/a&gt;. An Objective-C wrapper of &lt;a href='https://github.com/jedisct1/libsodium'&gt;libsodium&lt;/a&gt; which a package of &lt;a href='http://nacl.cr.yp.to/'&gt;NaCl&lt;/a&gt;. &amp;#8220;NaCl (pronounced &amp;#8220;salt&amp;#8221;) is a new easy-to-use high-speed software library for network communication, encryption, decryption, signatures, etc. NaCl&amp;#8217;s goal is to provide all of the core operations needed to build higher-level cryptographic tools.&amp;#8221;.&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://opensource.apple.com/source/Security/Security-55471/libsecurity_ssl/'&gt;Original Security Libray by Apple&lt;/a&gt;.&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='https://github.com/aerogear/aerogear-crypto-ios'&gt;Aerogear Crypto iOS&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;</description>
                 <link>http://hugo53.github.io/cryptography/2013/11/07/crytography-in-ios</link>
                 <guid>http://hugo53.github.io/cryptography/2013/11/07/crytography-in-ios</guid>
@@ -427,9 +554,11 @@ The OpenAL framework &lt;span class='o'&gt;(&lt;/span&gt;OpenAL.framework&lt;spa
 
 &lt;p&gt;&lt;img alt='alt text' src='http://hugo53.github.io/images/pdfpost/line.png' /&gt;&lt;/p&gt;
 
-&lt;h5 id='descent_and_ascent'&gt;Descent and Ascent&lt;/h5&gt;
+&lt;h5 id='descender_and_ascender'&gt;Descender and Ascender&lt;/h5&gt;
 
-&lt;p&gt;In typography, &lt;strong&gt;Descent&lt;/strong&gt; is a term refer to the part which is below &lt;strong&gt;word baseline&lt;/strong&gt; (known as the underline of the word). For example, in the image above, descender is a part from baseline to descent line, ascender is a part from baseline to ascent line. Height of them are &lt;strong&gt;descent&lt;/strong&gt;, &lt;strong&gt;ascent&lt;/strong&gt; respectively.&lt;/p&gt;
+&lt;p&gt;In typography, &lt;strong&gt;Descender&lt;/strong&gt; is a term refer to the part which is below &lt;strong&gt;word baseline&lt;/strong&gt; (known as the underline of the word) and &lt;em&gt;Ascender&lt;/em&gt;* is the part of charater which is above the &lt;strong&gt;meanline&lt;/strong&gt;. For example, in the image above, descender is a part from baseline to descent line (known as &lt;strong&gt;beardline&lt;/strong&gt;), ascender is a part from meanline to ascender line (known as &lt;strong&gt;topline&lt;/strong&gt;). Height of them are &lt;strong&gt;descent&lt;/strong&gt;, &lt;strong&gt;ascent&lt;/strong&gt; respectively. That means the height of a character is sum of three part: descent, x-height and ascent.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='alt text' src='http://cdn.designinstruct.com/files/243-basics_typography/02_lines.jpg' /&gt;&lt;/p&gt;
 
 &lt;h5 id='font_size'&gt;Font size&lt;/h5&gt;
 
@@ -438,6 +567,52 @@ The OpenAL framework &lt;span class='o'&gt;(&lt;/span&gt;OpenAL.framework&lt;spa
 &lt;h5 id='glyph'&gt;Glyph&lt;/h5&gt;
 
 &lt;p&gt;( &lt;em&gt;Need more study&lt;/em&gt; )&lt;/p&gt;
+
+&lt;h4 id='font'&gt;Font&lt;/h4&gt;
+
+&lt;h5 id='font_type_in_pdf_scope'&gt;Font type (in PDF scope)&lt;/h5&gt;
+
+&lt;p&gt;There are some ways to divide font type into bucket. We can base on how a font be organized or how a font can be drawn.&lt;/p&gt;
+
+&lt;p&gt;If using font structure, we have two kinds:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Simple Font&lt;/code&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;code&gt;Composite Font&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Only &lt;code&gt;Type 0&lt;/code&gt; is composite font. Others are of simple font, included: &lt;code&gt;Type 1&lt;/code&gt;, &lt;code&gt;Type 3&lt;/code&gt;, &lt;code&gt;TrueType&lt;/code&gt;, &lt;code&gt;CIDFont&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Or if using drawing method, we also have two buckets:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Bitmap-based font: &lt;code&gt;Type 3&lt;/code&gt;&lt;/li&gt;
+
+&lt;li&gt;Outline font (Raster font): &lt;code&gt;Type 0&lt;/code&gt;, &lt;code&gt;Type 1&lt;/code&gt;, &lt;code&gt;TrueType&lt;/code&gt;, &lt;code&gt;CIDFont&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id='font_and_cidfont'&gt;Font and CIDFont&lt;/h5&gt;
+
+&lt;p&gt;Font is a collection of glyphs. CIDFont is also a set of glyphs. But, CIDFont is only used as a component of Type 0 font, cannot be used directly like other Fonts .&lt;/p&gt;
+
+&lt;h5 id='descendant_font'&gt;Descendant Font&lt;/h5&gt;
+
+&lt;p&gt;is CIDFont, Type 0 will use glyphs of descendant font to draw characters.&lt;/p&gt;
+
+&lt;h5 id='cidtogidmap'&gt;CIDToGIDMap&lt;/h5&gt;
+
+&lt;p&gt;When CIDToGIDMap is Identity:&lt;/p&gt;
+
+&lt;h5 id='font_symbolic'&gt;Font Symbolic&lt;/h5&gt;
+
+&lt;h5 id='font_program'&gt;Font program&lt;/h5&gt;
+
+&lt;h5 id='font_dictionary'&gt;Font dictionary&lt;/h5&gt;
+
+&lt;h4 id='id1'&gt;#&lt;/h4&gt;
+
+&lt;h4 id='id2'&gt;#&lt;/h4&gt;
 
 &lt;h2 id='reading_pdf_flow'&gt;Reading PDF Flow&lt;/h2&gt;
 
@@ -499,6 +674,31 @@ ET&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Copy from &lt;a href='http://www.cocoachina.com/wiki/index.php?title=CGPDFScanner_Reference'&gt;CGPDFScanner Reference&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
+&lt;h2 id='parsing_pdf_content'&gt;Parsing PDF Content&lt;/h2&gt;
+
+&lt;p&gt;To parse exactly PDF content, we need to read all plain PDF information. However, except some pure control data, all streams in PDF are usually represented in compressed format. That means we need to decompress them to get the pure text. The compress algorithm is given clearly in stream description, for example:&lt;/p&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='bash'&gt;12 0 obj
+&amp;lt;&amp;lt; /Length 13 0 R /N 3 /Alternate /DeviceRGB /Filter /FlateDecode &amp;gt;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;/FlateDecode lets us that the encode algorithm is Flate and should use this algorithm to decode the stream.&lt;/p&gt;
+
+&lt;p&gt;As a standard, almost PDF creator use Flate Encoder to compress stream. Therefore, to decode that data, we can use some tools. In my experience, I usually use &lt;a href='http://www.pdflabs.com/tools/pdftk-server/'&gt;PDFToolkit&lt;/a&gt; (Server version) like this:&lt;/p&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='bash'&gt;&lt;span class='nv'&gt;$ &lt;/span&gt;pdftk compressedPDF.pdf output decompressedPDF.pdf uncompress
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Then, use &lt;code&gt;less&lt;/code&gt; command to see decoded text:&lt;/p&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='bash'&gt;&lt;span class='nv'&gt;$ &lt;/span&gt;less decompressedPDF.pdf
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Do that, now we can see pure PDF text specification. Hence, we can parse PDF content based on PDF Operators Specification.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;By a reason that PDF stream (text content, image content, &amp;#8230;) is usually compressed for decreasing data size, PDF Reader and/or PDF Parser must uncompresses that stream before rendering or parsing. Almost PDF Document stream is decoded using FlateDecode filter which is based on the zlib/deflate algorithm. For getting plain text to analyze, we can use some tools to convert compressed PDF to uncompressed PDF. In my case, I utilize &lt;a href='http://www.pdflabs.com/tools/pdftk-server/'&gt;pdftk&lt;/a&gt; with the command:&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='bash'&gt;pdftk compressedPDF.pdf output uncompressedPDF.pdf uncompress
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Besides that, someone suggests &lt;a href='http://sourceforge.net/projects/itextrups/'&gt;itextrups&lt;/a&gt; which is laid on iText library (written in Java). See the discussion &lt;a href='http://stackoverflow.com/questions/13368660/view-source-on-pdf-rendered-inside-a-browser'&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
 &lt;h2 id='processing_pdf_content'&gt;Processing PDF content&lt;/h2&gt;
 
 &lt;h4 id='get_text_rect'&gt;Get Text Rect&lt;/h4&gt;
@@ -541,17 +741,47 @@ ET&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2 id='references'&gt;References&lt;/h2&gt;
 
+&lt;h4 id='for_starter'&gt;For starter&lt;/h4&gt;
+
 &lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href='http://www.gnupdf.org/Introduction_to_PDF#A_first_example'&gt;Very detail introduction for reading PDF Content. Just paraphase the PDF specification but truly understandable. It is the best for newbie.&lt;/a&gt;. The backup file is at &lt;a href='https://www.dropbox.com/s/lg169kwgnu552bj/Introduction%20to%20PDF%20-%20GNUpdf.pdf'&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href='http://www.w3.org/WAI/GL/WCAG20-TECHS/pdf.html'&gt;PDF Techniques by W3C.&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
 &lt;li&gt;
 &lt;p&gt;&lt;a href='http://stackoverflow.com/questions/3889634/fast-and-lean-pdf-viewer-for-iphone-ipad-ios-tips-and-hints?rq=1'&gt;Great summary&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 
+&lt;li&gt;
+&lt;p&gt;&lt;a href='http://www.verypdf.com/document/pdf-format-reference/bookmark.htm'&gt;PDF Specification, v.1.7&lt;/a&gt;. HTML form of PDF Specification v.1.7, 2006. I found that it is very clear and easy to focus rather than read a PDF version.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id='advance'&gt;Advance&lt;/h4&gt;
+
+&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href='http://blog.random-ideas.net/?p=184'&gt;Displaying and Searching PDF Content on iPhone&lt;/a&gt; from scratch, for the first time do with PDF in iOS. Really helpful and full of information.&lt;/p&gt;
 &lt;/li&gt;
 
 &lt;li&gt;
 &lt;p&gt;&lt;a href='http://www.cocoachina.com/wiki/index.php?title=CGPDFDocument_Reference'&gt;Cocoa China docs&lt;/a&gt;. Re-write Apple đocs in easy follow way. More information than original Apple docs.&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href='http://www.badrit.com/blog/2012/2/1/ios-sdk-pdf-limitations'&gt;List of limitations in performing with PDF in iOS&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href='http://stackoverflow.com/questions/4495413/pdf-table-of-contents-parsing-with-ios-quartz-2d'&gt;Parsing table of contents&lt;/a&gt; by PSPDFKit creator.&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href='https://www.dropbox.com/s/y6ahxkwpypyymmg/PDFTutorial050411Annoted.pdf'&gt;Great slide describe how to understand PDF Specification&lt;/a&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -570,7 +800,25 @@ ET&lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id='open_sources_for_other_language'&gt;Open sources for other language&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href='https://github.com/mozilla/pdf.js'&gt;Mozilla PDF&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href='https://github.com/mozilla/pdf.js'&gt;Mozilla PDF&lt;/a&gt;. Good but there are some mistakes when parses complex tables. Take a test with this &lt;a href='https://www.dropbox.com/s/4i5o3e55pm9vmrp/DSN_Magazin_1303.pdf'&gt;doc&lt;/a&gt; and &lt;a href='https://www.dropbox.com/s/nn9dlzwdgaqjacr/issue_deapgschlagmannprodukte_238b99b0.1.pdf'&gt;this&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href='https://github.com/euske/pdfminer'&gt;PDF Minner&lt;/a&gt;. Great pdf parser but still has mistakes with PDF generated by Google Docs which using composite font and Identity-H Encoding. Give a try with &lt;a href='https://www.dropbox.com/s/arpkkzvi9e7evfc/Untitleddocument2.pdf'&gt;this&lt;/a&gt; document (its output is at &lt;a href='https://www.dropbox.com/s/g4jq9t7taahdgce/googledocs2.txt'&gt;here&lt;/a&gt;).&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href='https://github.com/yolanother/mupdf'&gt;mupdf&lt;/a&gt;. This library is used by &lt;a href='http://www.librelio.com/'&gt;librelio&lt;/a&gt; on &lt;a href='https://github.com/libreliodev/android/tree/72444610a1d02800165e04e3d70342f8e688145c/src/com/artifex/mupdf'&gt;Android version&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href='http://pdfbox.apache.org/'&gt;PDFBox&lt;/a&gt;. An Apache opensource which supports fully PDF tasks including text extraction, filling, splitting, merging, signing, printing and PDF/A Validation. It&amp;#8217;s written by Java.&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;a href='http://itextpdf.com/'&gt;iText&lt;/a&gt;. Also using Java as mainly language. Support backend and has an &lt;a href='https://github.com/itext/itextg'&gt;Android porting version&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;</description>
                 <link>http://hugo53.github.io/2013/10/07/understanding-pdf-in-ios-deeply</link>
                 <guid>http://hugo53.github.io/2013/10/07/understanding-pdf-in-ios-deeply</guid>
@@ -665,6 +913,10 @@ ET&lt;/code&gt;&lt;/pre&gt;
 &lt;li&gt;&lt;a href='http://www.raywenderlich.com/204/audio-tutorial-for-ios-file-and-data-formats'&gt;Audio Tutorial for iOS: File and Data Formats&lt;/a&gt; by Raywenderlich&lt;/li&gt;
 
 &lt;li&gt;Apple&amp;#8217;s Docummentation&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://www.amazon.com/Learning-Core-Audio-Hands-On-Programming/dp/0321636848'&gt;Learning Core Audio: A Hands-On Guide to Audio Programming for Mac and iOS&lt;/a&gt; by Chris Adamson and Kevin Avila.&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://www.slideshare.net/invalidname/presentations'&gt;Chris Adamson slideshare&lt;/a&gt;. Sharing a plenty of precious knowledge.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id='open_sources_which_are_mentioned_above'&gt;Open sources which are mentioned above&lt;/h2&gt;
@@ -675,6 +927,8 @@ ET&lt;/code&gt;&lt;/pre&gt;
 &lt;li&gt;&lt;a href='http://kstenerud.github.io/ObjectAL-for-iPhone/documentation/index.html'&gt;OpenAL&lt;/a&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;a href='https://github.com/alexrestrepo/SoundEngine'&gt;Sound Engine - an OpenAL Example&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='https://github.com/syedhali/EZAudio'&gt;EZAudio&lt;/a&gt;. For showing audio wave.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id='bonus'&gt;Bonus&lt;/h2&gt;
@@ -694,11 +948,21 @@ ET&lt;/code&gt;&lt;/pre&gt;
                 <description>&lt;p&gt;This post will list some useful commands which are usually used when you do with Linux/Mac OS.&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Show size of file (or files in a directory): &lt;em&gt;ls -lh file-name/folder-path&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Show size of file (or files in a directory): &lt;em&gt;ls -lh file-name/folder-path&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
 
-&lt;li&gt;Show size of current system (included all hard disks): &lt;em&gt;df -h&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Show size of current system (included all hard disks): &lt;em&gt;df -h&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
 
-&lt;li&gt;Remove sleep image (when your boot disk is full): &lt;em&gt;sudo rm /var/vm/sleepimage&lt;/em&gt;. This command will disable Hibernate mode which is reason for sleep image existing. If you want to enable this mode, should try &lt;em&gt;sudo pmset -a hibernatemode 3&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Remove sleep image (when your boot disk is full): &lt;em&gt;sudo rm /var/vm/sleepimage&lt;/em&gt;. This command will disable Hibernate mode which is reason for sleep image existing. If you want to enable this mode, should try &lt;em&gt;sudo pmset -a hibernatemode 3&lt;/em&gt;.&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Check for /Users/usernameLibrary/Developer/Xcode/DerivedData/ to see why harddisk get full.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;</description>
                 <link>http://hugo53.github.io/2013/09/25/useful-command-line</link>
                 <guid>http://hugo53.github.io/2013/09/25/useful-command-line</guid>
@@ -725,9 +989,15 @@ ET&lt;/code&gt;&lt;/pre&gt;
 &lt;li&gt;&lt;a href='https://www.dropbox.com/s/nkl3fjg2ynj5fiy/book.pdf'&gt;Mining of Massive Datasets&lt;/a&gt; của Anand Rajaraman, Jure Leskovec và Jeﬀrey D. Ullman.&lt;/li&gt;
 
 &lt;li&gt;&lt;a href='https://www.dropbox.com/s/73d69vtl8nyeotu/whole.pdf'&gt;Machine Learning, Neural and Statistical Classiﬁcation&lt;/a&gt; của D. Michie, D.J. Spiegelhalter và C.C. Taylor.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id='ti_nguyn'&gt;Tài nguyên&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href='http://xltiengviet.wikia.com/wiki/X%E1%BB%AD_l%C3%BD_ti%E1%BA%BFng_Vi%E1%BB%87t_Wiki'&gt;Kho thông tin về xử lý tiếng Việt&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
-                <link>http://hugo53.github.io/data%20mining/2013/09/24/bat-dau-voi-data-mining</link>
-                <guid>http://hugo53.github.io/data%20mining/2013/09/24/bat-dau-voi-data-mining</guid>
+                <link>http://hugo53.github.io/writing/2013/09/24/bat-dau-voi-data-mining</link>
+                <guid>http://hugo53.github.io/writing/2013/09/24/bat-dau-voi-data-mining</guid>
                 <pubDate>2013-09-24T00:00:00+07:00</pubDate>
         </item>
 
@@ -1913,6 +2183,20 @@ ET&lt;/code&gt;&lt;/pre&gt;
 &lt;li&gt;&lt;a href='http://www.androidpatterns.com/'&gt;Android Patterns&lt;/a&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;a href='http://www.slideshare.net/theresaneil'&gt;Theresa Neil&lt;/a&gt;. Slideshare of Theresa, a great UX Designer.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id='where_to_find_awesome_ui'&gt;Where to find Awesome UI?&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href='http://graphicburger.com/'&gt;UIKit, Icon, Background Image, everything for making an amazing app&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://glyphs.bulb9.com/'&gt;Glyphs&lt;/a&gt;. Sharing iOS icon for using freely!&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://graphicriver.net/'&gt;Graphics Market&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='https://www.behance.net/'&gt;Behance&lt;/a&gt;. Sharing a lot design, redesing for UI Mobile App.&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://dribbble.com/'&gt;Dribble&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id='advance_techniques'&gt;Advance Techniques&lt;/h2&gt;

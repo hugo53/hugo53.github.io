@@ -129,6 +129,18 @@
   
     
       
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
       	
       	<li><a href="/pages.html">Pages</a></li>
       	
@@ -191,9 +203,11 @@
 
 <p><img alt='alt text' src='http://hugo53.github.io/images/pdfpost/line.png' /></p>
 
-<h5 id='descent_and_ascent'>Descent and Ascent</h5>
+<h5 id='descender_and_ascender'>Descender and Ascender</h5>
 
-<p>In typography, <strong>Descent</strong> is a term refer to the part which is below <strong>word baseline</strong> (known as the underline of the word). For example, in the image above, descender is a part from baseline to descent line, ascender is a part from baseline to ascent line. Height of them are <strong>descent</strong>, <strong>ascent</strong> respectively.</p>
+<p>In typography, <strong>Descender</strong> is a term refer to the part which is below <strong>word baseline</strong> (known as the underline of the word) and <em>Ascender</em>* is the part of charater which is above the <strong>meanline</strong>. For example, in the image above, descender is a part from baseline to descent line (known as <strong>beardline</strong>), ascender is a part from meanline to ascender line (known as <strong>topline</strong>). Height of them are <strong>descent</strong>, <strong>ascent</strong> respectively. That means the height of a character is sum of three part: descent, x-height and ascent.</p>
+
+<p><img alt='alt text' src='http://cdn.designinstruct.com/files/243-basics_typography/02_lines.jpg' /></p>
 
 <h5 id='font_size'>Font size</h5>
 
@@ -202,6 +216,52 @@
 <h5 id='glyph'>Glyph</h5>
 
 <p>( <em>Need more study</em> )</p>
+
+<h4 id='font'>Font</h4>
+
+<h5 id='font_type_in_pdf_scope'>Font type (in PDF scope)</h5>
+
+<p>There are some ways to divide font type into bucket. We can base on how a font be organized or how a font can be drawn.</p>
+
+<p>If using font structure, we have two kinds:</p>
+
+<ul>
+<li><code>Simple Font</code></li>
+
+<li><code>Composite Font</code></li>
+</ul>
+
+<p>Only <code>Type 0</code> is composite font. Others are of simple font, included: <code>Type 1</code>, <code>Type 3</code>, <code>TrueType</code>, <code>CIDFont</code>.</p>
+
+<p>Or if using drawing method, we also have two buckets:</p>
+
+<ul>
+<li>Bitmap-based font: <code>Type 3</code></li>
+
+<li>Outline font (Raster font): <code>Type 0</code>, <code>Type 1</code>, <code>TrueType</code>, <code>CIDFont</code>.</li>
+</ul>
+
+<h5 id='font_and_cidfont'>Font and CIDFont</h5>
+
+<p>Font is a collection of glyphs. CIDFont is also a set of glyphs. But, CIDFont is only used as a component of Type 0 font, cannot be used directly like other Fonts .</p>
+
+<h5 id='descendant_font'>Descendant Font</h5>
+
+<p>is CIDFont, Type 0 will use glyphs of descendant font to draw characters.</p>
+
+<h5 id='cidtogidmap'>CIDToGIDMap</h5>
+
+<p>When CIDToGIDMap is Identity:</p>
+
+<h5 id='font_symbolic'>Font Symbolic</h5>
+
+<h5 id='font_program'>Font program</h5>
+
+<h5 id='font_dictionary'>Font dictionary</h5>
+
+<h4 id='id1'>#</h4>
+
+<h4 id='id2'>#</h4>
 
 <h2 id='reading_pdf_flow'>Reading PDF Flow</h2>
 
@@ -263,6 +323,31 @@ ET</code></pre>
 <p>Copy from <a href='http://www.cocoachina.com/wiki/index.php?title=CGPDFScanner_Reference'>CGPDFScanner Reference</a></p>
 </blockquote>
 
+<h2 id='parsing_pdf_content'>Parsing PDF Content</h2>
+
+<p>To parse exactly PDF content, we need to read all plain PDF information. However, except some pure control data, all streams in PDF are usually represented in compressed format. That means we need to decompress them to get the pure text. The compress algorithm is given clearly in stream description, for example:</p>
+<div class='highlight'><pre><code class='bash'>12 0 obj
+&lt;&lt; /Length 13 0 R /N 3 /Alternate /DeviceRGB /Filter /FlateDecode &gt;&gt;
+</code></pre></div>
+<p>/FlateDecode lets us that the encode algorithm is Flate and should use this algorithm to decode the stream.</p>
+
+<p>As a standard, almost PDF creator use Flate Encoder to compress stream. Therefore, to decode that data, we can use some tools. In my experience, I usually use <a href='http://www.pdflabs.com/tools/pdftk-server/'>PDFToolkit</a> (Server version) like this:</p>
+<div class='highlight'><pre><code class='bash'><span class='nv'>$ </span>pdftk compressedPDF.pdf output decompressedPDF.pdf uncompress
+</code></pre></div>
+<p>Then, use <code>less</code> command to see decoded text:</p>
+<div class='highlight'><pre><code class='bash'><span class='nv'>$ </span>less decompressedPDF.pdf
+</code></pre></div>
+<p>Do that, now we can see pure PDF text specification. Hence, we can parse PDF content based on PDF Operators Specification.</p>
+
+<blockquote>
+<p>By a reason that PDF stream (text content, image content, &#8230;) is usually compressed for decreasing data size, PDF Reader and/or PDF Parser must uncompresses that stream before rendering or parsing. Almost PDF Document stream is decoded using FlateDecode filter which is based on the zlib/deflate algorithm. For getting plain text to analyze, we can use some tools to convert compressed PDF to uncompressed PDF. In my case, I utilize <a href='http://www.pdflabs.com/tools/pdftk-server/'>pdftk</a> with the command:</p>
+</blockquote>
+<div class='highlight'><pre><code class='bash'>pdftk compressedPDF.pdf output uncompressedPDF.pdf uncompress
+</code></pre></div>
+<blockquote>
+<p>Besides that, someone suggests <a href='http://sourceforge.net/projects/itextrups/'>itextrups</a> which is laid on iText library (written in Java). See the discussion <a href='http://stackoverflow.com/questions/13368660/view-source-on-pdf-rendered-inside-a-browser'>here</a>.</p>
+</blockquote>
+
 <h2 id='processing_pdf_content'>Processing PDF content</h2>
 
 <h4 id='get_text_rect'>Get Text Rect</h4>
@@ -305,17 +390,47 @@ ET</code></pre>
 
 <h2 id='references'>References</h2>
 
+<h4 id='for_starter'>For starter</h4>
+
 <ul>
+<li>
+<p><a href='http://www.gnupdf.org/Introduction_to_PDF#A_first_example'>Very detail introduction for reading PDF Content. Just paraphase the PDF specification but truly understandable. It is the best for newbie.</a>. The backup file is at <a href='https://www.dropbox.com/s/lg169kwgnu552bj/Introduction%20to%20PDF%20-%20GNUpdf.pdf'>here</a>.</p>
+</li>
+
+<li>
+<p><a href='http://www.w3.org/WAI/GL/WCAG20-TECHS/pdf.html'>PDF Techniques by W3C.</a></p>
+</li>
+
 <li>
 <p><a href='http://stackoverflow.com/questions/3889634/fast-and-lean-pdf-viewer-for-iphone-ipad-ios-tips-and-hints?rq=1'>Great summary</a></p>
 </li>
 
+<li>
+<p><a href='http://www.verypdf.com/document/pdf-format-reference/bookmark.htm'>PDF Specification, v.1.7</a>. HTML form of PDF Specification v.1.7, 2006. I found that it is very clear and easy to focus rather than read a PDF version.</p>
+</li>
+</ul>
+
+<h4 id='advance'>Advance</h4>
+
+<ul>
 <li>
 <p><a href='http://blog.random-ideas.net/?p=184'>Displaying and Searching PDF Content on iPhone</a> from scratch, for the first time do with PDF in iOS. Really helpful and full of information.</p>
 </li>
 
 <li>
 <p><a href='http://www.cocoachina.com/wiki/index.php?title=CGPDFDocument_Reference'>Cocoa China docs</a>. Re-write Apple đocs in easy follow way. More information than original Apple docs.</p>
+</li>
+
+<li>
+<p><a href='http://www.badrit.com/blog/2012/2/1/ios-sdk-pdf-limitations'>List of limitations in performing with PDF in iOS</a></p>
+</li>
+
+<li>
+<p><a href='http://stackoverflow.com/questions/4495413/pdf-table-of-contents-parsing-with-ios-quartz-2d'>Parsing table of contents</a> by PSPDFKit creator.</p>
+</li>
+
+<li>
+<p><a href='https://www.dropbox.com/s/y6ahxkwpypyymmg/PDFTutorial050411Annoted.pdf'>Great slide describe how to understand PDF Specification</a>.</p>
 </li>
 </ul>
 
@@ -334,7 +449,25 @@ ET</code></pre>
 <h3 id='open_sources_for_other_language'>Open sources for other language</h3>
 
 <ul>
-<li><a href='https://github.com/mozilla/pdf.js'>Mozilla PDF</a></li>
+<li>
+<p><a href='https://github.com/mozilla/pdf.js'>Mozilla PDF</a>. Good but there are some mistakes when parses complex tables. Take a test with this <a href='https://www.dropbox.com/s/4i5o3e55pm9vmrp/DSN_Magazin_1303.pdf'>doc</a> and <a href='https://www.dropbox.com/s/nn9dlzwdgaqjacr/issue_deapgschlagmannprodukte_238b99b0.1.pdf'>this</a>.</p>
+</li>
+
+<li>
+<p><a href='https://github.com/euske/pdfminer'>PDF Minner</a>. Great pdf parser but still has mistakes with PDF generated by Google Docs which using composite font and Identity-H Encoding. Give a try with <a href='https://www.dropbox.com/s/arpkkzvi9e7evfc/Untitleddocument2.pdf'>this</a> document (its output is at <a href='https://www.dropbox.com/s/g4jq9t7taahdgce/googledocs2.txt'>here</a>).</p>
+</li>
+
+<li>
+<p><a href='https://github.com/yolanother/mupdf'>mupdf</a>. This library is used by <a href='http://www.librelio.com/'>librelio</a> on <a href='https://github.com/libreliodev/android/tree/72444610a1d02800165e04e3d70342f8e688145c/src/com/artifex/mupdf'>Android version</a>.</p>
+</li>
+
+<li>
+<p><a href='http://pdfbox.apache.org/'>PDFBox</a>. An Apache opensource which supports fully PDF tasks including text extraction, filling, splitting, merging, signing, printing and PDF/A Validation. It&#8217;s written by Java.</p>
+</li>
+
+<li>
+<p><a href='http://itextpdf.com/'>iText</a>. Also using Java as mainly language. Support backend and has an <a href='https://github.com/itext/itextg'>Android porting version</a>.</p>
+</li>
 </ul>
     </div>
 
@@ -426,7 +559,7 @@ jQuery(function($){
       </div>
       <hr>
       <footer>
-        <p>Copyright &copy; 2013 Minh-Hoang Nguyen
+        <p>Copyright &copy; 2014 Minh-Hoang Nguyen
         
         </p>
         <span>
