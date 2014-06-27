@@ -9,11 +9,9 @@ tags: []
 
 If you're crazy, and if you're creating your awesome app without storyboard or xib, sometimes you may encounter a case which on iOS 7 your view is shifted to bottom automatically a distance of status bar and navigation bar (64px), like below:
 
-Before go Background
-![alt text](https://raw.githubusercontent.com/hugo53/hugo53.github.io/master/images/weird-behaviour-view-controller/before-go-background.PNG =320x480)
+<img src="https://raw.githubusercontent.com/hugo53/hugo53.github.io/master/images/weird-behaviour-view-controller/before-go-background.PNG" alt="Before go Background" width="320px" height="480px" />
 
-After go from Background
-![alt text](https://raw.githubusercontent.com/hugo53/hugo53.github.io/master/images/weird-behaviour-view-controller/after-go-from-background.PNG =320x480)
+<img src="https://raw.githubusercontent.com/hugo53/hugo53.github.io/master/images/weird-behaviour-view-controller/after-go-from-background.PNG" alt="After go from Background" width="320px" height="480px" />
 
 In fact, iOS 7 supports us an option for adjusting view by content inset. By default, it will be:
 
