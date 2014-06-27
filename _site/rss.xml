@@ -5,8 +5,8 @@
         <description>Leading Beautiful Life - Hugo Nguyen</description>
         <link>http://hugo53.github.io</link>
         <link>http://hugo53.github.io</link>
-        <lastBuildDate>2014-06-27T18:29:41+07:00</lastBuildDate>
-        <pubDate>2014-06-27T18:29:41+07:00</pubDate>
+        <lastBuildDate>2014-06-27T18:33:22+07:00</lastBuildDate>
+        <pubDate>2014-06-27T18:33:22+07:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -15,11 +15,9 @@
                 <description>
 &lt;p&gt;If you&amp;#8217;re crazy, and if you&amp;#8217;re creating your awesome app without storyboard or xib, sometimes you may encounter a case which on iOS 7 your view is shifted to bottom automatically a distance of status bar and navigation bar (64px), like below:&lt;/p&gt;
 
-&lt;p&gt;Before go Background
-&lt;img src=&quot;https://raw.githubusercontent.com/hugo53/hugo53.github.io/master/images/weird-behaviour-view-controller/before-go-background.PNG =320x480&quot; alt=&quot;alt text&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/hugo53/hugo53.github.io/master/images/weird-behaviour-view-controller/before-go-background.PNG&quot; alt=&quot;Before go Background&quot; width=&quot;320px&quot; height=&quot;480px&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;After go from Background
-&lt;img src=&quot;https://raw.githubusercontent.com/hugo53/hugo53.github.io/master/images/weird-behaviour-view-controller/after-go-from-background.PNG =320x480&quot; alt=&quot;alt text&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/hugo53/hugo53.github.io/master/images/weird-behaviour-view-controller/after-go-from-background.PNG&quot; alt=&quot;After go from Background&quot; width=&quot;320px&quot; height=&quot;480px&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;In fact, iOS 7 supports us an option for adjusting view by content inset. By default, it will be:&lt;/p&gt;
 
