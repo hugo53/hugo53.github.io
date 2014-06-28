@@ -23,7 +23,8 @@ Then, if you want to get rid of the that default, just do in view controller:
 self.automaticallyAdjustsScrollViewInsets = NO;
 {% endhighlight %}
 
-You also may face to this problem when do with table view, scroll view.
+You also may face to this problem when do with table view, scroll view like an example [here](https://github.com/nicklockwood/SwipeView/issues/54#issuecomment-31060333).
+
 
 
 
