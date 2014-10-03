@@ -47,7 +47,15 @@ Computer Science, University of Engineering and Technology, Vietnam National Uni
 ****
 ## Working Experience {#working-experience}
 
-#### 08/2013 - Now &nbsp;&nbsp;&nbsp; Mobile Team, [Kloon Ltd](http://www.kloon.com/)
+#### 05/2014 - Now &nbsp;&nbsp;&nbsp; Mobile Team, [Scopic Software](http://www.scopicsoftware.com/)
+- **Position** iOS Engineer
+- **Technology** Core Data, iCloud
+- Help talent guys in Design build ideas and bring their work to real world, mainly focusing on iOS Platform.
+	 
+
+<br />
+
+#### 08/2013 - 05/2014 &nbsp;&nbsp;&nbsp; Mobile Team, [Kloon Ltd](http://www.kloon.com/)
 - **Position** Solution Engineer (iOS)
 - **Technology** PDF Technology, Data Encryption, Bluetooth Low Energy Technology, Core Graphics
 - **Project**
@@ -155,4 +163,4 @@ Event Extraction is a complex and interesting topic in Information Extraction th
 <br />
 <br />
 <br />
-_Last updated: December 06, 2013_ 
+_Last updated: October 03, 2014_ 
