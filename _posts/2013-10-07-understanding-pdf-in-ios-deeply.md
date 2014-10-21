@@ -9,7 +9,9 @@ tags: [pdf, ios]
 Operating with PDF in iOS is really low-level task. It is not just using some built-in features of iOS to create your own product. Indeed, it requires intensive knowledge at very low iOS layer and at least basic PDF definition. This post tends to supply some aspects of processing PDF in iOS which aims to help developers easy to win this hard job.
 
 ## PDF Specification
+
 #### Basic Definitions (mixed up Typography)
+
 ##### Leading
 Leading is space between two lines. According to [Wikipedia](http://en.wikipedia.org/wiki/Leading), _In typography, leading /ˈlɛdɪŋ/ refers to the distance between the baselines of successive lines of type_. However, there are more than one _leading_ definition. The below image shows you 3 ways _leading_ is defined.
 
@@ -33,6 +35,7 @@ Font size is measuared by distance from ascent line to descent line. In general 
 ( _Need more study_ )
 
 #### Font
+
 ##### Font type (in PDF scope)
 There are some ways to divide font type into bucket. We can base on how a font be organized or how a font can be drawn.
 
@@ -57,17 +60,10 @@ is CIDFont, Type 0 will use glyphs of descendant font to draw characters.
 When CIDToGIDMap is Identity:
 
 ##### Font Symbolic
+
 ##### Font program
 
 ##### Font dictionary
-
-
-##### 
-
-
-
-#####
-
 
 ## Reading PDF Flow
 ### PDF Operator
@@ -175,6 +171,7 @@ CGRect rect = CGRectMake(coords[0],coords[3],coords[2]-coords[0],coords[3]-coord
 {% endhighlight %}
 
 ## Some add-on elements for showing PDF
+
 ### Annotation
 
 ### Linking Media/Web Elements
@@ -186,7 +183,9 @@ Identity-H is a encoding which is used by Google Docs (when you export your docs
 
 
 ## References
+
 #### For starter
+
 - [Very detail introduction for reading PDF Content. Just paraphase the PDF specification but truly understandable. It is the best for newbie.](http://www.gnupdf.org/Introduction_to_PDF#A_first_example). The backup file is at [here](https://www.dropbox.com/s/lg169kwgnu552bj/Introduction%20to%20PDF%20-%20GNUpdf.pdf).
 
 - [PDF Techniques by W3C.](http://www.w3.org/WAI/GL/WCAG20-TECHS/pdf.html)
