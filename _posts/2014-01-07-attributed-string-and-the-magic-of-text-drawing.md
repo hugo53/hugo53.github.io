@@ -17,6 +17,7 @@ In almost built-in UI Components, _attributed_ is beside _text_ property. If we 
 
 
 ## Open source
+
 #### Customizing Attributed Text for Label
 - [TTTAttributedLabel](https://github.com/mattt/TTTAttributedLabel) by [Mattt](http://mattt.me). A drop-in replacement for UILabel that supports attributes, data detectors, links, and more. We can use attributed string in label with many extend features included link detetors (underline and making color for URI text) or manually making URI string. Its author is also one of creators of [AFNetworking](https://github.com/AFNetworking/AFNetworking) - a powerful network library. 
 
