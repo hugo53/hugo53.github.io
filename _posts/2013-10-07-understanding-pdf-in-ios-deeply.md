@@ -66,7 +66,9 @@ When CIDToGIDMap is Identity:
 ##### Font dictionary
 
 ## Reading PDF Flow
+
 ### PDF Operator
+
 PDF uses _operators_ to determine what kind of text will be shown based on pre-defined format. However, it is so complex to understand how pdf is organized. 
 
 	BT % Begin text object
@@ -143,6 +145,7 @@ pdftk compressedPDF.pdf output uncompressedPDF.pdf uncompress
 
 ## Processing PDF content
 #### Get Text Rect
+
 [Get Text Rect](http://stackoverflow.com/questions/4255298/how-does-an-annot-cgpdfdictionary-rect-translate-to-objective-c-rect/4255586#4255586)
 
 {% highlight objectivec %}
