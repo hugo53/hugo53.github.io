@@ -20,11 +20,13 @@ description: ""
 - [Other skill](#other-skill)
 
 ****
+
 ## Introduction
 
 I am an enthusiastic IT man and an open-minded person who is willing to face with any challenge although it is difficult or needs me take time to research for giving solution. Sharing precious knowledge, making awesome products are something in my mind. With responsibility, I always tend to try my best, aim to unlimited revolution. 
 
 #### Information {#information}
+
 |    |            |
 |----------|:-------------|
 | Fullname |  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **MINH–HOANG NGUYEN** |
@@ -40,14 +42,14 @@ I am an enthusiastic IT man and an open-minded person who is willing to face wit
 - High Scalability System
 
 ****
-## Education
 
+## Education
 #### 09/2008 – 07/2012 &nbsp;&nbsp;&nbsp; Bachelor Degree
 Computer Science, University of Engineering and Technology, Vietnam National University, Hanoi (VNU)
 
 ****
-## Working Experience {#working-experience}
 
+## Working Experience {#working-experience}
 #### 05/2014 - Now &nbsp;&nbsp;&nbsp; Mobile Team, [Scopic Software](http://www.scopicsoftware.com/)
 - **Position** iOS Engineer
 - **Technology** Core Data, iCloud
@@ -111,28 +113,28 @@ Research and implement Data Mining algorithms, focusing on four sub-domains: Med
 - Third Prize at the National Olympiad in Informatics, 19th, Vietnam Association for Information Processing (VAIP) & Ministry of Education and Training (MOET)
 
 ****
-## Publication
 
+## Publication
 #### [VnLoc: A Realtime News Event Extraction Framework for Vietnamese](http://ieeexplore.ieee.org/xpl/abstractAuthors.jsp?tp=&arnumber=6299414), KSE 2012
 
 Event Extraction is a complex and interesting topic in Information Extraction that includes event extraction methods from free text or web data. The result of event extraction systems can be used in several fields such as risk analysis systems, online monitoring systems or decide support tools. In this paper, we introduce a method that combines lexico-semantic and machine learning to extract event from Vietnamese news. Furthermore, we concentrate to describe event online monitoring system named VnLoc based on the method that was proposed above to extract event in Vietnamese language. Besides, in experiment phase, we have evaluated this method based on precision, recall and F1 measure. At this time of experiment, we on investigated on three types of event: FIRE, CRIME and TRANSPORT ACCIDENT.
 
 ****
-## Certification
 
+## Certification
 - Fundamental Information Technology Engineer Skill Standards (FE) by [VITEC](http://www.vitec.org.vn/)
 - IBM Certified Solution Designer, Object Oriented Analysis and Design, vUML2 by [IBM Corporation](http://www.ibm.com/us/en/)
 
 ****
-## Open Source {#open-source}
 
+## Open Source {#open-source}
 - [HUChart](https://github.com/hugo53/HUChart) A simple chart library for iOS to draw semi-circle chart for some cases which has a LITTLE SPACE to make a full circle chart.
 - [iLL](https://github.com/hugo53/iLL) iOS Library List - A useful collection for iOS developers.
 - [HUsyntactic](https://github.com/hugo53/HUsyntactic) A syntactic parser uses CYK (CKY), Earley. Best fit for English, Vietnamese.
 
 ****
-## Technical Skill {#technical-skill}
 
+## Technical Skill {#technical-skill}
 #### Programming Language {#programming-language}
 
 |                   |               |
@@ -145,6 +147,7 @@ Event Extraction is a complex and interesting topic in Information Extraction th
 | Matlab            |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ★★★★|
 
 <br />
+
 > ★★★★★ Using without any inconvenient
 >
 > ★★★★☆	Using with a little inconvenient but easy to pass any challenge
