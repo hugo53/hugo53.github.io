@@ -44,12 +44,14 @@ I am an enthusiastic IT man and an open-minded person who is willing to face wit
 ****
 
 ## Education
+
 #### 09/2008 – 07/2012 &nbsp;&nbsp;&nbsp; Bachelor Degree
 Computer Science, University of Engineering and Technology, Vietnam National University, Hanoi (VNU)
 
 ****
 
 ## Working Experience {#working-experience}
+
 #### 05/2014 - Now &nbsp;&nbsp;&nbsp; Mobile Team, [Scopic Software](http://www.scopicsoftware.com/)
 - **Position** iOS Engineer
 - **Technology** Core Data, iCloud
@@ -115,6 +117,7 @@ Research and implement Data Mining algorithms, focusing on four sub-domains: Med
 ****
 
 ## Publication
+
 #### [VnLoc: A Realtime News Event Extraction Framework for Vietnamese](http://ieeexplore.ieee.org/xpl/abstractAuthors.jsp?tp=&arnumber=6299414), KSE 2012
 
 Event Extraction is a complex and interesting topic in Information Extraction that includes event extraction methods from free text or web data. The result of event extraction systems can be used in several fields such as risk analysis systems, online monitoring systems or decide support tools. In this paper, we introduce a method that combines lexico-semantic and machine learning to extract event from Vietnamese news. Furthermore, we concentrate to describe event online monitoring system named VnLoc based on the method that was proposed above to extract event in Vietnamese language. Besides, in experiment phase, we have evaluated this method based on precision, recall and F1 measure. At this time of experiment, we on investigated on three types of event: FIRE, CRIME and TRANSPORT ACCIDENT.
