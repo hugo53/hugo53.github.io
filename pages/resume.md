@@ -138,6 +138,7 @@ Event Extraction is a complex and interesting topic in Information Extraction th
 ****
 
 ## Technical Skill {#technical-skill}
+
 #### Programming Language {#programming-language}
 
 |                   |               |
