@@ -57,6 +57,7 @@ CTM (and Affine Transformation) has 6 parameters: a, b, c, d, tx and ty at posit
 
 
 ## Use Case {#use-case}
+
 #### Drawing fore-front of back-front? {#fore-or-back-front}
 Core Graphics provides a functions and some options to configure the next drawing action is fore-font or back-front in current context.
 
