@@ -144,6 +144,7 @@ pdftk compressedPDF.pdf output uncompressedPDF.pdf uncompress
 > Besides that, someone suggests [itextrups](http://sourceforge.net/projects/itextrups/) which is laid on iText library (written in Java). See the discussion [here](http://stackoverflow.com/questions/13368660/view-source-on-pdf-rendered-inside-a-browser). 
 
 ## Processing PDF content
+
 #### Get Text Rect
 
 [Get Text Rect](http://stackoverflow.com/questions/4255298/how-does-an-annot-cgpdfdictionary-rect-translate-to-objective-c-rect/4255586#4255586)
