@@ -13,7 +13,7 @@ This post will list some useful commands which are usually used when you do with
 - Show size of current system (included all hard disks): *df -h*
 - Remove sleep image (when your boot disk is full): *sudo rm /var/vm/sleepimage*. This command will disable Hibernate mode which is reason for sleep image existing. If you want to enable this mode, should try *sudo pmset -a hibernatemode 3*.
 
-- Check for /Users/usernameLibrary/Developer/Xcode/DerivedData/ to see why harddisk get full.
+- Check for /Users/username/Library/Developer/Xcode/DerivedData/ to see why harddisk get full.
 
 
 

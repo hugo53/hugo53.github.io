@@ -12,6 +12,7 @@ Someone told that Cocoapods is easy to use at both aspects: integrating open thi
 
 ## Preparing git repository
 ### Pushing source code
+
 You should push source code to remote repository first.
 
 {% highlight bash linenos %}

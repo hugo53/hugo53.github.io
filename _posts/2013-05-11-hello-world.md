@@ -6,5 +6,5 @@ category:
 tags: []
 ---
 {% include JB/setup %}
-# Kick off. 
+# Kick off.
 ## Let's start blogging!

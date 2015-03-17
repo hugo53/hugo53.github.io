@@ -1,12 +1,12 @@
 ---
 layout: post
 title: "Cryptography in iOS - How to protect your precious data?"
-description: "(Intro here, complete after)"
+description: "Our current project (PDF Subscription service) is in need some urgent tasks relating to protecting data far away from hackers. There are many ways to put data into pocket with multi-levels, especially in iOS. As one of my tasks in the project, I would like to learn more about cryptography and apply into our end-to-end encryption with PDF data, image data and a part of video data. As my normal habit, I noted what I read about."
 category: cryptography
 tags: [cryp tography]
 ---
 {% include JB/setup %}
-(Intro here, complete after)
+> Our current project (PDF Subscription service) is in need some urgent tasks relating to protecting data far away from hackers. There are many ways to put data into pocket with multi-levels, especially in iOS. As one of my tasks in the project, I would like to learn more about cryptography and apply into our end-to-end encryption with PDF data, image data and a part of video data. As my normal habit, I noted what I read about.
 
 ## Basic terminology
 This section is for someone who is not familiar with cryptography. Some basic terms will be unleashed here.
@@ -50,6 +50,7 @@ Fortunately, Rob Napier opens his work at [RNCryptor](https://github.com/rnapier
 
 ## Notice
 #### Do not try to encrypt a file in separate parts
+
 Firstly, do not try to encrypt a file in separate parts. Normally, an encrypt algorithm will save a header in cipher text, included key (gen from password), HMAC, salt and so on. Therefor, decrypt algorithm will read the header first to get these information before decrypting. If you encrypt a file by chunking this file and encrypting each part separately, cipher text will contains many headers. That will make decrypt algorithm goes fail because it cannot know where is header and where is cipher text. 
 
 #### OpenSSL is deprecated from OSX 10.7 and not included in iOS
