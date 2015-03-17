@@ -7,4 +7,4 @@ tags: []
 ---
 {% include JB/setup %}
 # Kick off.
-## Let's start blogging!
+Let's start blogging!

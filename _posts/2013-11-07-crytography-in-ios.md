@@ -49,6 +49,7 @@ Fortunately, Rob Napier opens his work at [RNCryptor](https://github.com/rnapier
 
 
 ## Notice
+
 #### Do not try to encrypt a file in separate parts
 
 Firstly, do not try to encrypt a file in separate parts. Normally, an encrypt algorithm will save a header in cipher text, included key (gen from password), HMAC, salt and so on. Therefor, decrypt algorithm will read the header first to get these information before decrypting. If you encrypt a file by chunking this file and encrypting each part separately, cipher text will contains many headers. That will make decrypt algorithm goes fail because it cannot know where is header and where is cipher text. 

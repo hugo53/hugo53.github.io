@@ -69,5 +69,7 @@ For **less memory usage** when you need to *play multiple sounds simultaneously*
 - [EZAudio](https://github.com/syedhali/EZAudio). For showing audio wave.
 
 ##Bonus
+
 ###The differences between Audio Engine and OpenAL
+
 - OpenAL: no some functions such as Reverb (Roger Beep, Distortion, Obstruction, and Occlusion must be tested more) but Audio Engine has.

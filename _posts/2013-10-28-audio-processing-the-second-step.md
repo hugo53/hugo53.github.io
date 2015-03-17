@@ -11,6 +11,7 @@ In the previous post at [here](http://hugo53.github.io/ios%20development/2013/09
 I had an opportunity to work with audio, thus I must read documentation carefully. However, there are plenty of notions that I have not known ever, even listening about them has never occured. What I should mention are _audio session_, _audio unit_, _audio category_, and so on. One time again, we must familiar with these definitions. Here we go!
 
 ## Basic Definitions
+
 #### Audio Session
 
 #### Audio Category
