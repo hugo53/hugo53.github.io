@@ -6,6 +6,7 @@ category:ios
 tags: []
 ---
 {% include JB/setup %}
+> Facebook just opened their analyzing tool for mobile development, primarily focusing on iOS and Android project, called [Infer](http://fbinfer.com). As Facebook said, A tool to detect bugs in Android and iOS apps before they ship, Infer can analyze and detect much more implicit bugs in a mobile project before sending to users.
 
 Because of its awesomeness, I'm curious and just spent some minutes to give a try. 
 
