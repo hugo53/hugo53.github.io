@@ -10,7 +10,7 @@ tags: []
 
 Because of its awesomeness, I'm curious and just spent some minutes to give a try. 
 
-Firstly, of course, [Installing Infer](http://fbinfer.com/docs/getting-started.html), needs some terminal lines but that's not difficult to geek. Infer is written by Python by the way.
+Firstly, of course, [Installing Infer](http://fbinfer.com/docs/getting-started.html), needs some terminal lines but that's not difficult to geek. Infer is written by Ocaml by the way.
 
 I checked with [sample project](https://github.com/facebook/infer/tree/2bce7c6c3dbb22646e2d67a2c6ade77f060b4bca/examples/ios_hello) provided by Facebook. Just go to directory contains that project
 
