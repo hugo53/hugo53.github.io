@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Infer Facebook Demo"
-description: "Facebook just opened their analyzing tool for mobile development, primarily focusing on iOS and Android project, called Infer. As Facebook said, "A tool to detect bugs in Android and iOS apps before they ship", Infer can analyze and detect much more implicit bugs in a mobile project before sending to users."
-category: iOS
+description: "Facebook just opened their analyzing tool for mobile development, primarily focusing on iOS and Android project, called Infer. As Facebook said, A tool to detect bugs in Android and iOS apps before they ship, Infer can analyze and detect much more implicit bugs in a mobile project before sending to users."
+category:ios
 tags: []
 ---
 {% include JB/setup %}
