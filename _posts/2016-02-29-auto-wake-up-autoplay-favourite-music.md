@@ -12,30 +12,48 @@ Somedays I remember old days which my father usually opened guitar songs when he
 That's why I want to auto wake up my Mac and auto play favourite guitar playlist when I'm still sleeping. Then this is how I did, thanks to [Sleepwatcher](http://www.bernhard-baehr.de/).
 
 ### Install Sleepwatcher
-```sudo mkdir -p /usr/local/sbin /usr/local/share/man/man8```
-```sudo cp ~/Downloads/sleepwatcher_2.2/sleepwatcher /usr/local/sbin/```
-```sudo cp ~/Downloads/sleepwatcher_2.2/sleepwatcher.8 /usr/local/share/man/man8```
+{% highlight bash %}
+
+sudo mkdir -p /usr/local/sbin /usr/local/share/man/man8
+sudo cp ~/Downloads/sleepwatcher_2.2/sleepwatcher /usr/local/sbin/
+sudo cp ~/Downloads/sleepwatcher_2.2/sleepwatcher.8 /usr/local/share/man/man8
+
+{% endhighlight %}
 
 Test Sleepwatcher
 
-```man sleepwatcher```
+{% highlight bash %}
+man sleepwatcher
+{% endhighlight %}
+
 
 ### Create AppleScript 
 Before create AppleScript, be sure you have at least one playlist on iTunes. If not, go create it. Just a step using iTunes.
-Then now, we write a simple script to open iTunes and play a specific playlist automatically, looks like that:
+Then now, we write a simple script to open iTunes and play a specific playlist automatically, named ```.wakeup```, looks like that:
 
-> \#!/bin/bash 
-> 
-> osascript -e "tell application \"iTunes\" to activate" -e "tell application \"iTunes\" to play playlist \"Test1Playlist\""
+{% highlight bash %}
+
+#!/bin/bash 
+
+osascript -e "tell application \"iTunes\" to activate" -e "tell application \"iTunes\" to play playlist \"Test1Playlist\""
+
+{% endhighlight %}
 
 Tell Sleepwatcher wakeup configuration file.
-```/usr/local/sbin/sleepwatcher --verbose --wakeup .wakeup``` 
+
+{% highlight bash %}
+
+/usr/local/sbin/sleepwatcher --verbose --wakeup .wakeup
+{% endhighlight %}
 
 ### Configure to launch Sleepwatcher at startup
 Using terminal to configure launch Sleepwatcher at startup and load configuration for wake up behavior. 
 
-```ln -sfv ~/Downloads/sleepwatcher_2.2/config/de.bernhard-baehr.sleepwatcher-20compatibility-localuser.plist ~/Library/LaunchAgents/```
-```launchctl load ~/Library/LaunchAgents/de.bernhard-baehr.sleepwatcher-20compatibility-localuser.plist```
+{% highlight bash %}
+ln -sfv ~/Downloads/sleepwatcher_2.2/config/de.bernhard-baehr.sleepwatcher-20compatibility-localuser.plist ~/Library/LaunchAgents/
+
+launchctl load ~/Library/LaunchAgents/de.bernhard-baehr.sleepwatcher-20compatibility-localuser.plist
+{% endhighlight %}
 
 ### Setup Energy Saver on Mac
 
