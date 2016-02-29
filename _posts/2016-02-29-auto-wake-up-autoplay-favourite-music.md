@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Auto Wake Up, Autoplay Favourite Music"
-description: "Somedays I remember old days which my father usually opened guitar songs when he woke up while I was sleeping. That was great to hear smooth melody and be woken up by those beautiful rhythm in the morning. That's why I want to auto wake up my Mac and auto play favourite guitar playlist when I'm still sleeping. Then this is how I did."
+description: ""
 category: 
 tags: [auto]
 ---
