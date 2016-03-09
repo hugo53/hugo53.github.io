@@ -103,6 +103,7 @@ Source code and review apps with high income is [here](http://iosapptemplate.com
 
 ## App Evaluation
 - [How Much To Build An App](http://howmuchtobuildanapp.com/#). A tool to help you estimate the cost to develop your iPhone, iPad, Android, Windows Phone, or Web app in seconds.
+- [What does it cost to develop an app?](https://fueled.com/blog/how-much-does-it-cost-to-develop-an-app/) by Fueled, an app maker agency, explaining more how to choose team to build a mobile application and how much it should cost.
 - [How much does it cost to build an iPhone app?](http://www.quora.com/How-much-does-it-cost-to-build-an-iPhone-app). A Quora question, bring us a lots knowledge.
 
 ## Great Advices from original documentation (or Great Knowledge)
