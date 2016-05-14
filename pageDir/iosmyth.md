@@ -8,11 +8,11 @@ description: ""
 # Table of Contents
 
 - [How an object is created?](#How-an-object-is-created)
-- [How many introspection methods?](#How-many-introspection-methods?)
+- [How many introspection methods?](#How-many-introspection-methods)
 - [isEqual and Hash](#isEqual-and-Hash)
 - [Event Queue and how iOS manage events](#Event-Queue-and-how-iOS-manage-events)
 - [The Dynamism of Objective-C](#The-Dynamism-of-Objective-C)
-- [View, Frame and Bound - What is difference?](#View-Frame-and-Bound-What-is-difference?)
+- [View, Frame and Bound - What is difference?](#View-Frame-and-Bound-What-is-difference)
 - [Atomic and NonAtomic attributes](#Atomic-and-NonAtomic-attributes)
 - [Naming convention for accessor methods](#Naming-convention-for-accessor-methods)
 - [Instance variable and Property](#Instance-variable-and-Property)
@@ -42,7 +42,7 @@ In summary, allocation not only allocates memory for an object but initializes t
 
 > ALLOC: Do three tasks but object is not usable. INIT will make allocated object be usable. 
 
-## How many introspection methods? {#How-many-introspection-methods?}
+## How many introspection methods? {#How-many-introspection-methods}
 - \[objectX class\]
 - \[objectX superclass\]
 - \[objectX isKindOfClass\]
@@ -118,7 +118,7 @@ This _lazy-loading_ of program code and resources improves overall performance b
 
 > Investigate more in Dynamic loading (with NSBundle) and Dynamic binding (Does it relate to performSelector or delegate method)
 
-## View, Frame and Bound - What is difference? {#View-Frame-and-Bound-What-is-difference?}
+## View, Frame and Bound - What is difference? {#View-Frame-and-Bound-What-is-difference}
 Firstly, Frame and Bound are two of view's properties.
 
 **A view** is an object that draws itself within a rectangular area of a window and that can respond to user actions such as finger taps or mouse clicks. A view draws a visual representation of itself and presents a surface that responds to touches and input from devices. Not all views handle events, but views are more likely to handle events than other types of responder objects (that is, objects capable of responding to events). Views also provide the content for printing. _For a view to be useful, it must be situated in the view hierarchy of a window._ View  inherit, directly or indirectly, from NSView in Mac OSX or from UIView in iOS.

@@ -25,6 +25,7 @@ description: ""
 - [Great Intro App States and Multitasking](https://developer.apple.com/library/ios/documentation/iphone/conceptual/iphoneosprogrammingguide/ManagingYourApplicationsFlow/ManagingYourApplicationsFlow.html#//apple_ref/doc/uid/TP40007072-CH4-SW47). Discuss more about app launching with some first methods at the launch time. 
 
 ## System Functions {#system-function}
+
 #### Get current orientation {#get-current-orientation}
 
 The below is not the best way. Sometimes, it may return ```UIDeviceOrientationUnknown``` value.
@@ -38,6 +39,7 @@ UIInterfaceOrientation orientation = [[UIApplication sharedApplication] statusBa
 {% endhighlight %}
 
 ## Debugging {#debugging}
+
 #### BAD_EXEC error {#bad-exec}
 When BAD_EXEC occurs, the best way to detect the root cause is turn on NSZoombie flag in Scheme.
 To do that: ```Product``` -> ```Scheme``` -> ```Edit Scheme``` -> ```Diagnostics``` -> Tick on ```Enable Zoombie Objects```. 
@@ -57,6 +59,7 @@ Localizable string "networkxyz" not found in strings table "Localizable" of bund
 ```
 
 ## Core Graphics {#core-graphics}
+
 #### Improving Drawing Performance {#drawing-performance}
 Drawing is a relatively expensive operation on any platform, and optimizing your drawing code should always be an important step in your development process. Table [here](https://developer.apple.com/library/ios/documentation/2ddrawing/conceptual/drawingprintingios/DrawingTips/DrawingTips.html#//apple_ref/doc/uid/TP40010156-CH18-SW1) lists several tips for ensuring that your drawing code is as optimal as possible. In addition to these tips, you should always use the available performance tools to test your code and remove hotspots and redundancies.
 
@@ -76,6 +79,7 @@ In the Core Graphics framework, there are two ways to modify the CTM.
 - Call ```setNeedsDisplay:``` judiciously. Calling this method carefully. If view doesn't not need to redraw, don't call it!
 
 ## Performance {#performance}
+
 #### Fast enumeration and Block {#fast-enum-and-block}
 There are three options to operate with each element in an array:
 
@@ -91,6 +95,7 @@ According to [this SO discussion](http://stackoverflow.com/questions/4486622/whe
 	from [Threading Considerations](https://developer.apple.com/library/ios/documentation/uikit/reference/uiview_class/UIView/UIView.html#//apple_ref/doc/uid/TP40006816-CH3-SW147). 
 
 ## Objective-C Techniques {#objective-c-techniques}
+
 #### Create private method {#create-private-method}
 In Objective-C, there is no ```public```, ```protected``` or ```private``` scope for method, they are just for instance variable. Hence, if we need to make some methods go private, two approaches should be in mind. 
 

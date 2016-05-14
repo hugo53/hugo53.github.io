@@ -4,7 +4,7 @@
  <title>Leading Beautiful Life</title>
  <link href="http://hugo53.github.io/" rel="self"/>
  <link href="http://hugo53.github.io"/>
- <updated>2014-06-27T18:33:22+07:00</updated>
+ <updated>2016-05-15T00:54:02+07:00</updated>
  <id>http://hugo53.github.io</id>
  <author>
    <name>Hugo Nguyen</name>
@@ -13,37 +13,150 @@
 
  
  <entry>
+   <title>Auto Wake Up, Autoplay Favourite Music</title>
+   <link href="http://hugo53.github.io/2016/02/29/auto-wake-up-autoplay-favourite-music"/>
+   <updated>2016-02-29T00:00:00+07:00</updated>
+   <id>http://hugo53.github.io/2016/02/29/auto-wake-up-autoplay-favourite-music</id>
+   <content type="html">
+&lt;p&gt;Somedays I remember old days which my father usually opened guitar songs when he woke up while I was sleeping. That was great to hear smooth melody and be woken up by those beautiful rhythm in the morning.&lt;/p&gt;
+
+&lt;p&gt;That’s why I want to auto wake up my Mac and auto play favourite guitar playlist when I’m still sleeping. Then this is how I did, thanks to &lt;a href=&quot;http://www.bernhard-baehr.de/&quot;&gt;Sleepwatcher&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;install-sleepwatcher&quot;&gt;Install Sleepwatcher&lt;/h3&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;sudo mkdir -p /usr/local/sbin /usr/local/share/man/man8
+sudo cp ~/Downloads/sleepwatcher_2.2/sleepwatcher /usr/local/sbin/
+sudo cp ~/Downloads/sleepwatcher_2.2/sleepwatcher.8 /usr/local/share/man/man8&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Test Sleepwatcher&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;man sleepwatcher&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;create-applescript&quot;&gt;Create AppleScript&lt;/h3&gt;
+&lt;p&gt;Before create AppleScript, be sure you have at least one playlist on iTunes. If not, go create it. Just a step using iTunes.
+Then now, we write a simple script to open iTunes and play a specific playlist automatically, named &lt;code&gt;.wakeup&lt;/code&gt;, looks like that:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;c&quot;&gt;#!/bin/bash &lt;/span&gt;
+
+osascript -e &lt;span class=&quot;s2&quot;&gt;&amp;quot;tell application \&amp;quot;iTunes\&amp;quot; to activate&amp;quot;&lt;/span&gt; -e &lt;span class=&quot;s2&quot;&gt;&amp;quot;tell application \&amp;quot;iTunes\&amp;quot; to play playlist \&amp;quot;Test1Playlist\&amp;quot;&amp;quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Tell Sleepwatcher wakeup configuration file.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;/usr/local/sbin/sleepwatcher --verbose --wakeup .wakeup&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;configure-to-launch-sleepwatcher-at-startup&quot;&gt;Configure to launch Sleepwatcher at startup&lt;/h3&gt;
+&lt;p&gt;Using terminal to configure launch Sleepwatcher at startup and load configuration for wake up behavior.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;ln -sfv ~/Downloads/sleepwatcher_2.2/config/de.bernhard-baehr.sleepwatcher-20compatibility-localuser.plist ~/Library/LaunchAgents/
+
+launchctl load ~/Library/LaunchAgents/de.bernhard-baehr.sleepwatcher-20compatibility-localuser.plist&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;setup-energy-saver-on-mac&quot;&gt;Setup Energy Saver on Mac&lt;/h3&gt;
+
+&lt;p&gt;System Preferences &amp;gt; Energy Saver &amp;gt; Schedule &amp;gt; Startup or Wake &amp;gt; Set time&lt;/p&gt;
+
+&lt;p&gt;Notice that we need to plug power adapter to use this feature.&lt;/p&gt;
+
+&lt;h5 id=&quot;woohoo-so-now-let-wake-up-with-beautiful-songs-every-morning&quot;&gt;Woohoo. So now let wake up with beautiful songs every morning.&lt;/h5&gt;
+
+&lt;h3 id=&quot;reference&quot;&gt;Reference&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.kodiakskorner.com/log/258&quot;&gt;Mac OS X: Automating Tasks on Sleep&lt;/a&gt; by Jason Pitoniak.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://hints.macworld.com/article.php?story=20011108211802830&quot;&gt;Controlling iTunes from the Terminal&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Infer Facebook Demo</title>
+   <link href="http://hugo53.github.io/2015/06/12/infer-facebook-demo-and-test"/>
+   <updated>2015-06-12T00:00:00+07:00</updated>
+   <id>http://hugo53.github.io/2015/06/12/infer-facebook-demo-and-test</id>
+   <content type="html">
+&lt;blockquote&gt;
+  &lt;p&gt;Facebook just opened their analyzing tool for mobile development, primarily focusing on iOS and Android project, called &lt;a href=&quot;http://fbinfer.com&quot;&gt;Infer&lt;/a&gt;. As Facebook said, A tool to detect bugs in Android and iOS apps before they ship, Infer can analyze and detect much more implicit bugs in a mobile project before sending to users.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Because of its awesomeness, I’m curious and just spent some minutes to give a try.&lt;/p&gt;
+
+&lt;p&gt;Firstly, of course, &lt;a href=&quot;http://fbinfer.com/docs/getting-started.html&quot;&gt;Installing Infer&lt;/a&gt;, needs some terminal lines but that’s not difficult to geek. Infer is written by Ocaml by the way.&lt;/p&gt;
+
+&lt;p&gt;I checked with &lt;a href=&quot;https://github.com/facebook/infer/tree/2bce7c6c3dbb22646e2d67a2c6ade77f060b4bca/examples/ios_hello&quot;&gt;sample project&lt;/a&gt; provided by Facebook. Just go to directory contains that project&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;cd ios_hello/&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;then type in terminal&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;infer -- xcodebuild -target HelloWorldApp -configuration Debug -sdk iphonesimulator&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;So, Infer takes several minutes to analyze full project and when finish, it will show us some cool stuffs, about MEMORY LEAK, RESOURCE_LEAK, PARAMETER_NOT_NULL_CHECKED, NULL_DEREFERENCE, PREMATURE_NIL_TERMINATION_ARGUMENT and so on. Absolutely awesome!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://hugo53.github.io/images/infer/infer-result.png&quot; alt=&quot;alt text&quot; title=&quot;Infer result&quot; /&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Pod's problem with UnitTest</title>
+   <link href="http://hugo53.github.io/2015/06/04/pods-problem-with-unittest"/>
+   <updated>2015-06-04T00:00:00+07:00</updated>
+   <id>http://hugo53.github.io/2015/06/04/pods-problem-with-unittest</id>
+   <content type="html">
+&lt;p&gt;I was in trouble with an error come from Unit Test when I add new Cocoapod library. I import right statement but error still appears when build, like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://hugo53.github.io/images/podUnitTest/before.png&quot; alt=&quot;alt text&quot; title=&quot;Error&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;how-to-fix&quot;&gt;How to fix&lt;/h4&gt;
+&lt;p&gt;See the below image for more details. Choose &lt;code&gt;Pods.debug&lt;/code&gt; for &lt;code&gt;XYZTests&lt;/code&gt; in &lt;code&gt;Debug&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://hugo53.github.io/images/podUnitTest/after.png&quot; alt=&quot;alt text&quot; title=&quot;Error&quot; /&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Writing for the beginning of would be great year</title>
+   <link href="http://hugo53.github.io/2015/01/04/writing-for-the-beginning-of-would-be-great-year"/>
+   <updated>2015-01-04T00:00:00+07:00</updated>
+   <id>http://hugo53.github.io/2015/01/04/writing-for-the-beginning-of-would-be-great-year</id>
+   <content type="html">
+&lt;p&gt;Heyza, new year came. That’s it, it came no doubt there. The previous year is not really good, actually.&lt;/p&gt;
+
+&lt;p&gt;This year, I will try something new every 60 days and do my best to start my first challenge. It would be awesome as my dream.&lt;/p&gt;
+
+&lt;p&gt;To make motivation, I opened this awesome list &lt;a href=&quot;https://github.com/hugo53/awesome-RemoteWork&quot;&gt;https://github.com/hugo53/awesome-RemoteWork&lt;/a&gt; for all crazy guys who are keen on remote working. Just wanted you know, I’m trying to be a travel engineer in this year, plan for Jun, 2015. Of course, nothing to say more, it got trending repo on the first opened day. All pull requests are welcome.&lt;/p&gt;
+
+&lt;p&gt;Let go for next station and next dream is going come true.&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
    <title>Weird Behaviour with ViewController</title>
    <link href="http://hugo53.github.io/2014/06/27/weird-behaviour-with-viewcontroller"/>
    <updated>2014-06-27T00:00:00+07:00</updated>
    <id>http://hugo53.github.io/2014/06/27/weird-behaviour-with-viewcontroller</id>
    <content type="html">
-&lt;p&gt;If you&amp;#8217;re crazy, and if you&amp;#8217;re creating your awesome app without storyboard or xib, sometimes you may encounter a case which on iOS 7 your view is shifted to bottom automatically a distance of status bar and navigation bar (64px), like below:&lt;/p&gt;
+&lt;p&gt;If you’re crazy, and if you’re creating your awesome app without storyboard or xib, sometimes you may encounter a case which on iOS 7 your view is shifted to bottom automatically a distance of status bar and navigation bar (64px), like below:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/hugo53/hugo53.github.io/master/images/weird-behaviour-view-controller/before-go-background.PNG&quot; alt=&quot;Before go Background&quot; width=&quot;320px&quot; height=&quot;480px&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/hugo53/hugo53.github.io/master/images/weird-behaviour-view-controller/after-go-from-background.PNG&quot; alt=&quot;After go from Background&quot; width=&quot;320px&quot; height=&quot;480px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://hugo53.github.io/images/weird-behaviour-view-controller/weird-behaviour.png&quot; alt=&quot;After go from Background&quot; width=&quot;680px&quot; height=&quot;544px&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;In fact, iOS 7 supports us an option for adjusting view by content inset. By default, it will be:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;objectivec&quot;&gt;&lt;span class=&quot;n&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;automaticallyAdjustsScrollViewInsets&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;YES&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;// self is view controller&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-objectivec&quot; data-lang=&quot;objectivec&quot;&gt;&lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;automaticallyAdjustsScrollViewInsets&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;YES&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;// self is view controller&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;Then, if you want to get rid of the that default, just do in view controller:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;objectivec&quot;&gt;&lt;span class=&quot;n&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;automaticallyAdjustsScrollViewInsets&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;NO&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-objectivec&quot; data-lang=&quot;objectivec&quot;&gt;&lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;automaticallyAdjustsScrollViewInsets&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;NO&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;You also may face to this problem when do with table view, scroll view.&lt;/p&gt;
+&lt;p&gt;You also may face to this problem when do with table view, scroll view like an example &lt;a href=&quot;https://github.com/nicklockwood/SwipeView/issues/54#issuecomment-31060333&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
 </content>
  </entry>
  
  <entry>
    <title>Keep device orientation</title>
-   <link href="http://hugo53.github.io/writing/2014/02/19/keep-device-orientation"/>
+   <link href="http://hugo53.github.io/translation/2014/02/19/keep-device-orientation"/>
    <updated>2014-02-19T00:00:00+07:00</updated>
-   <id>http://hugo53.github.io/writing/2014/02/19/keep-device-orientation</id>
+   <id>http://hugo53.github.io/translation/2014/02/19/keep-device-orientation</id>
    <content type="html">
 &lt;p&gt;Sometimes we need to keep only one orientation for device regardless how it is rotated. Because of framework API change and the vary of UI Container elements, it is not easy to implement this task in several minutes. This post aims to cover two of these complex cases: app using UINavigationController and app using UITabbarController, and focus on iOS 5.x and iOS 6.x \&amp;amp; later.&lt;/p&gt;
 
@@ -62,13 +175,15 @@
    <content type="html">
 &lt;p&gt;From IOS 6, there is a magical tool to make beautiful and colorful words for any purpose such as representing lovely text to girlfriend/boyfriend or to relations. It is called &lt;strong&gt;Attributed String&lt;/strong&gt;. In IOS 7, we can freely to reveal text in our apps with many new supports.&lt;/p&gt;
 
-&lt;p&gt;In almost built-in UI Components, &lt;em&gt;attributed&lt;/em&gt; is beside &lt;em&gt;text&lt;/em&gt; property. If we set property &lt;em&gt;attributedText&lt;/em&gt;, the label/UITextView/&amp;#8230; will show &lt;em&gt;attributedText&lt;/em&gt; instead of &lt;em&gt;text&lt;/em&gt; property. Sometimes, we tend to set &lt;em&gt;text&lt;/em&gt; but do some extra code to convert &lt;em&gt;text&lt;/em&gt; to &lt;em&gt;attributedText&lt;/em&gt; to make the string be eye-catching.&lt;/p&gt;
+&lt;p&gt;In almost built-in UI Components, &lt;em&gt;attributed&lt;/em&gt; is beside &lt;em&gt;text&lt;/em&gt; property. If we set property &lt;em&gt;attributedText&lt;/em&gt;, the label/UITextView/… will show &lt;em&gt;attributedText&lt;/em&gt; instead of &lt;em&gt;text&lt;/em&gt; property. Sometimes, we tend to set &lt;em&gt;text&lt;/em&gt; but do some extra code to convert &lt;em&gt;text&lt;/em&gt; to &lt;em&gt;attributedText&lt;/em&gt; to make the string be eye-catching.&lt;/p&gt;
 
 &lt;h2 id=&quot;open-source&quot;&gt;Open source&lt;/h2&gt;
-&lt;p&gt;#### Customizing Attributed Text for Label
-- &lt;a href=&quot;https://github.com/mattt/TTTAttributedLabel&quot;&gt;TTTAttributedLabel&lt;/a&gt; by &lt;a href=&quot;http://mattt.me&quot;&gt;Mattt&lt;/a&gt;. A drop-in replacement for UILabel that supports attributes, data detectors, links, and more. We can use attributed string in label with many extend features included link detetors (underline and making color for URI text) or manually making URI string. Its author is also one of creators of &lt;a href=&quot;https://github.com/AFNetworking/AFNetworking&quot;&gt;AFNetworking&lt;/a&gt; - a powerful network library. &lt;/p&gt;
 
+&lt;h4 id=&quot;customizing-attributed-text-for-label&quot;&gt;Customizing Attributed Text for Label&lt;/h4&gt;
 &lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/mattt/TTTAttributedLabel&quot;&gt;TTTAttributedLabel&lt;/a&gt; by &lt;a href=&quot;http://mattt.me&quot;&gt;Mattt&lt;/a&gt;. A drop-in replacement for UILabel that supports attributes, data detectors, links, and more. We can use attributed string in label with many extend features included link detetors (underline and making color for URI text) or manually making URI string. Its author is also one of creators of &lt;a href=&quot;https://github.com/AFNetworking/AFNetworking&quot;&gt;AFNetworking&lt;/a&gt; - a powerful network library.&lt;/p&gt;
+  &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;a href=&quot;https://github.com/AliSoftware/OHAttributedLabel&quot;&gt;OHAttributedLabel&lt;/a&gt; by &lt;a href=&quot;https://github.com/AliSoftware&quot;&gt;AliSoftware&lt;/a&gt;. This library allows us to make label text with extended attributed string. Especially, it can customize text for hashtag (#), mention (\@). Certainly, it also built link detector for emphasizing URI. Besides, there are many applications have used this library, including SoundClound, Wunderlist. See more &lt;a href=&quot;https://github.com/AliSoftware/OHAttributedLabel/wiki/They-use-this-class&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
   &lt;/li&gt;
@@ -114,27 +229,25 @@
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;first-glance&quot;&gt;At First Glance&lt;/h2&gt;
-&lt;p&gt;iOS provides two primary ways for drawing: Core Graphics and Open GL. However, there are more API types of these frameworks. It is simple for OpenGL when it has some clear API named OpenGL ES, Cocos2d. For Core Graphics framework, it may lead junior developer to a confused: Quartz, Quartz 2D or QuartzCore. Firstly, Quartz is heart of CoreGraphics, someone likes to refer Core Graphics as Quartz. Secondly, Quartz 2D is a part of Core Graphics, can refer as an API. Finally, QuartzCore (also known as Core Animation) is for animation, image processing and video image manipulation. It extends some function from Quartz (Core Graphics) but not a part of Quartz. In additional, iOS also provides us UIKit which contains some high-level implementation of Core Graphics, ex. &lt;a href=&quot;https://developer.apple.com/library/ios/documentation/uikit/reference/UIBezierPath_class/Reference/Reference.html&quot;&gt;UIBezierPath&lt;/a&gt; is high-level implementation of &lt;a href=&quot;https://developer.apple.com/library/mac/documentation/graphicsimaging/reference/CGPath/Reference/reference.html&quot;&gt;CGPathRef&lt;/a&gt;. &lt;/p&gt;
+&lt;p&gt;iOS provides two primary ways for drawing: Core Graphics and Open GL. However, there are more API types of these frameworks. It is simple for OpenGL when it has some clear API named OpenGL ES, Cocos2d. For Core Graphics framework, it may lead junior developer to a confused: Quartz, Quartz 2D or QuartzCore. Firstly, Quartz is heart of CoreGraphics, someone likes to refer Core Graphics as Quartz. Secondly, Quartz 2D is a part of Core Graphics, can refer as an API. Finally, QuartzCore (also known as Core Animation) is for animation, image processing and video image manipulation. It extends some function from Quartz (Core Graphics) but not a part of Quartz. In additional, iOS also provides us UIKit which contains some high-level implementation of Core Graphics, ex. &lt;a href=&quot;https://developer.apple.com/library/ios/documentation/uikit/reference/UIBezierPath_class/Reference/Reference.html&quot;&gt;UIBezierPath&lt;/a&gt; is high-level implementation of &lt;a href=&quot;https://developer.apple.com/library/mac/documentation/graphicsimaging/reference/CGPath/Reference/reference.html&quot;&gt;CGPathRef&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Some terms we should familliar with at the first glance are &lt;code&gt;Drawing Context&lt;/code&gt;, &lt;code&gt;CTM&lt;/code&gt; (Current Transformation Matrix), &lt;code&gt;Core Graphics Coordinate&lt;/code&gt;.&lt;/p&gt;
 
 &lt;h4 id=&quot;drawing-context&quot;&gt;Drawing Context&lt;/h4&gt;
 &lt;p&gt;Everytime you want to draw a path, a shape on screen, you have to know the current context of screen. It is easy to get the current context via:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;objectivec&quot;&gt;&lt;span class=&quot;n&quot;&gt;CGContextRef&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;context&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;UIGraphicsGetCurrentContext&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-objectivec&quot; data-lang=&quot;objectivec&quot;&gt;&lt;span class=&quot;n&quot;&gt;CGContextRef&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;context&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;UIGraphicsGetCurrentContext&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;However, the above line code just need to be written when we draw using CoreGraphics framework. For UIKit with UIBezierPath, this framework gets current context for us automatically. &lt;/p&gt;
+  &lt;p&gt;However, the above line code just need to be written when we draw using CoreGraphics framework. For UIKit with UIBezierPath, this framework gets current context for us automatically.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Current context is needed to pass to some Core Graphics function to perform painting actions. &lt;/p&gt;
+&lt;p&gt;Current context is needed to pass to some Core Graphics function to perform painting actions.&lt;/p&gt;
 
 &lt;p&gt;In context, it has some significant properties. The most important property is CTM (which will discuss more below). We can get the CTM of current context by:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;objectivec&quot;&gt;&lt;span class=&quot;n&quot;&gt;CGContextRef&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;context&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;UIGraphicsGetCurrentContext&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;CGAffineTransform&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ctm&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;CGContextGetCTM&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-objectivec&quot; data-lang=&quot;objectivec&quot;&gt;&lt;span class=&quot;n&quot;&gt;CGContextRef&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;context&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;UIGraphicsGetCurrentContext&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;bp&quot;&gt;CGAffineTransform&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ctm&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;CGContextGetCTM&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;h4 id=&quot;ctm-current-transformation-context&quot;&gt;CTM (Current Transformation Context)&lt;/h4&gt;
 &lt;p&gt;Current Transformation Context is an Affine Transformation which plays a role in transforming coordinate, including translation, rotation, scale, flip. Everytime we want to transform coordinate, we must combine desired affine transformation with CTM to make a new CTM which describes right origin and direction of the coordinate.&lt;/p&gt;
@@ -144,9 +257,9 @@
 &lt;table&gt;
   &lt;thead&gt;
     &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;&amp;#160;&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;&amp;#160;&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;&amp;#160;&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt; &lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt; &lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt; &lt;/th&gt;
     &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -177,13 +290,13 @@
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;use-case&quot;&gt;Use Case&lt;/h2&gt;
-&lt;p&gt;#### Drawing fore-front of back-front? {#fore-or-back-front}
-Core Graphics provides a functions and some options to configure the next drawing action is fore-font or back-front in current context.&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;objectivec&quot;&gt;&lt;span class=&quot;n&quot;&gt;CGContextSaveGState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;h4 id=&quot;fore-or-back-front&quot;&gt;Drawing fore-front of back-front?&lt;/h4&gt;
+&lt;p&gt;Core Graphics provides a functions and some options to configure the next drawing action is fore-font or back-front in current context.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-objectivec&quot; data-lang=&quot;objectivec&quot;&gt;&lt;span class=&quot;n&quot;&gt;CGContextSaveGState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;CGContextSetBlendMode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;blend_option&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;CGContextRestoreGState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ctx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span class=&quot;n&quot;&gt;CGContextRestoreGState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ctx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;Blend Options may be:&lt;/p&gt;
 
@@ -191,7 +304,7 @@ Core Graphics provides a functions and some options to configure the next drawin
   &lt;li&gt;&lt;code&gt;kCGBlendModeNormal&lt;/code&gt; next drawing is on fore-front&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;objectivec&quot;&gt;&lt;span class=&quot;n&quot;&gt;CGContextSaveGState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-objectivec&quot; data-lang=&quot;objectivec&quot;&gt;&lt;span class=&quot;n&quot;&gt;CGContextSaveGState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 
 &lt;span class=&quot;n&quot;&gt;CGContextSetBlendMode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;kCGBlendModeMultiply&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;// To draw yellow frame but not hide the text&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;drawHighlighFrame&lt;/span&gt; 	&lt;span class=&quot;c1&quot;&gt;// Yellow frame&lt;/span&gt;
@@ -199,8 +312,7 @@ Core Graphics provides a functions and some options to configure the next drawin
 &lt;span class=&quot;n&quot;&gt;CGContextSetBlendMode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;kCGBlendModeNormal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;// To draw underline onto yellow frame&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;drawUnderline&lt;/span&gt;		&lt;span class=&quot;c1&quot;&gt;// Blue line&lt;/span&gt;
 
-&lt;span class=&quot;n&quot;&gt;CGContextRestoreGState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span class=&quot;n&quot;&gt;CGContextRestoreGState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://hugo53.github.io/images/coregraphics/fore-front.png&quot; alt=&quot;alt text&quot; title=&quot;fore front&quot; /&gt;&lt;/p&gt;
 
@@ -208,7 +320,7 @@ Core Graphics provides a functions and some options to configure the next drawin
   &lt;li&gt;&lt;code&gt;kCGBlendModeMultiply&lt;/code&gt; next drawing is on back-front&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;objectivec&quot;&gt;&lt;span class=&quot;n&quot;&gt;CGContextSaveGState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-objectivec&quot; data-lang=&quot;objectivec&quot;&gt;&lt;span class=&quot;n&quot;&gt;CGContextSaveGState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 
 &lt;span class=&quot;n&quot;&gt;CGContextSetBlendMode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;kCGBlendModeMultiply&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;// To draw yellow frame but not hide the text&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;drawHighlighFrame&lt;/span&gt; 	&lt;span class=&quot;c1&quot;&gt;// Yellow frame&lt;/span&gt;
@@ -217,20 +329,19 @@ Core Graphics provides a functions and some options to configure the next drawin
 
 &lt;span class=&quot;n&quot;&gt;drawUnderline&lt;/span&gt;		&lt;span class=&quot;c1&quot;&gt;// Blue line&lt;/span&gt;
 
-&lt;span class=&quot;n&quot;&gt;CGContextRestoreGState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span class=&quot;n&quot;&gt;CGContextRestoreGState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://hugo53.github.io/images/coregraphics/back-front.png&quot; alt=&quot;alt text&quot; title=&quot;back front&quot; /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Note: For two above images, desired color of underline is blue. The first image shows right color but the second does not. &lt;/p&gt;
+  &lt;p&gt;Note: For two above images, desired color of underline is blue. The first image shows right color but the second does not.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Besure that always saving and restoring context to avoid impact later drawing. &lt;/p&gt;
+&lt;p&gt;Besure that always saving and restoring context to avoid impact later drawing.&lt;/p&gt;
 
 &lt;h2 id=&quot;some-notes&quot;&gt;Some notes&lt;/h2&gt;
 &lt;ul&gt;
-  &lt;li&gt;Be careful when draw at frame&amp;#8217;s border. We may encounter &lt;strong&gt;Aliasing problem&lt;/strong&gt; - a huge problem in digital drawing. When we set path override frame&amp;#8217;s border, then set line width. There is no space for a part of line which is a half outside. Therefore, the path is not shown as expected. See &lt;a href=&quot;http://stackoverflow.com/questions/13674118/nsbezierpath-drawing/13674460#13674460&quot;&gt;here&lt;/a&gt; for more information. &lt;a href=&quot;http://stackoverflow.com/questions/12878781/drawing-a-very-thin-line-with-cgcontextaddlinetopoint-and-cgcontextsetlinewidth&quot;&gt;The other link&lt;/a&gt; also discusses about aliasing problem when drawing a path using Core Graphics.&lt;/li&gt;
+  &lt;li&gt;Be careful when draw at frame’s border. We may encounter &lt;strong&gt;Aliasing problem&lt;/strong&gt; - a huge problem in digital drawing. When we set path override frame’s border, then set line width. There is no space for a part of line which is a half outside. Therefore, the path is not shown as expected. See &lt;a href=&quot;http://stackoverflow.com/questions/13674118/nsbezierpath-drawing/13674460#13674460&quot;&gt;here&lt;/a&gt; for more information. &lt;a href=&quot;http://stackoverflow.com/questions/12878781/drawing-a-very-thin-line-with-cgcontextaddlinetopoint-and-cgcontextsetlinewidth&quot;&gt;The other link&lt;/a&gt; also discusses about aliasing problem when drawing a path using Core Graphics.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://i.stack.imgur.com/K9cY5.png&quot; alt=&quot;alt text&quot; title=&quot;aliasing-path&quot; /&gt;&lt;/p&gt;
@@ -255,7 +366,8 @@ Core Graphics provides a functions and some options to configure the next drawin
 &lt;p&gt;See more at &lt;a href=&quot;http://us5.campaign-archive2.com/?u=439aa16a39e4b10e0b65ff2ef&amp;amp;id=2e5c5e8e16&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
-&lt;p&gt;### FYI&lt;/p&gt;
+
+&lt;h3 id=&quot;fyi&quot;&gt;FYI&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/hugo53/HUChart&quot;&gt;HUChart&lt;/a&gt; is a simple chart library for iOS to draw semi-circle chart for some cases which has a LITTLE SPACE to make a full circle chart. With this library, you can customize a semi circle chart (so-called half pie chart) to make a suitable chart for available space in device screen where has not enough space to draw a full circle chart.&lt;/p&gt;
 
@@ -271,67 +383,60 @@ Core Graphics provides a functions and some options to configure the next drawin
  
  <entry>
    <title>Cocoapods - Easy but not easy</title>
-   <link href="http://hugo53.github.io/ios/2013/11/25/cocoapods---easy-but-not-easy"/>
+   <link href="http://hugo53.github.io/ios/2013/11/25/cocoapods-easy-but-not-easy"/>
    <updated>2013-11-25T00:00:00+07:00</updated>
    <id>http://hugo53.github.io/ios/2013/11/25/cocoapods---easy-but-not-easy</id>
    <content type="html">
 &lt;p&gt;Someone told that Cocoapods is easy to use at both aspects: integrating open third-party into own project and publishing opensource library to community. However, for a newbie or even an experience developer, at the first time, it is not easy as a pie. This post is for them. Here we go!&lt;/p&gt;
 
 &lt;h2 id=&quot;preparing-git-repository&quot;&gt;Preparing git repository&lt;/h2&gt;
-&lt;p&gt;### Pushing source code
-You should push source code to remote repository first.&lt;/p&gt;
+&lt;p&gt;### Pushing source code&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;&lt;span class=&quot;lineno&quot;&gt;1&lt;/span&gt; git add .
+&lt;p&gt;You should push source code to remote repository first.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;lineno&quot;&gt;1&lt;/span&gt; git add .
 &lt;span class=&quot;lineno&quot;&gt;2&lt;/span&gt; git commit -m &lt;span class=&quot;s2&quot;&gt;&amp;quot;Initial commit&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt;3&lt;/span&gt; git push origin -u master
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span class=&quot;lineno&quot;&gt;3&lt;/span&gt; git push origin -u master&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;h3 id=&quot;tagging&quot;&gt;Tagging&lt;/h3&gt;
 &lt;p&gt;A tag should be created for the source code because we will need tag version to config podspec file later.&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;&lt;span class=&quot;lineno&quot;&gt;1&lt;/span&gt; git tag -a 1.0.0 -m &lt;span class=&quot;s2&quot;&gt;&amp;quot;Make v1.0.0&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt;2&lt;/span&gt; git push origin --tags
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;lineno&quot;&gt;1&lt;/span&gt; git tag -a 1.0.0 -m &lt;span class=&quot;s2&quot;&gt;&amp;quot;Make v1.0.0&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;2&lt;/span&gt; git push origin --tags&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;h2 id=&quot;create-pod&quot;&gt;Create pod&lt;/h2&gt;
 &lt;p&gt;Change directory to project which you want to create a pod. In my case, I will go to &lt;code&gt;HUChartDemo&lt;/code&gt;:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;HUChartDemo
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;HUChartDemo&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;Next, create a podspec file:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;pod spec create HUChart    // May need sudo
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;pod spec create HUChart    // May need sudo&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Now, it&amp;#8217;s time to config podspec file. See &lt;a href=&quot;https://github.com/CocoaPods/CocoaPods/wiki/A-pod-specification&quot;&gt;Pod specification&lt;/a&gt; to get further information. Just do like the example, it is OK. Note that &lt;code&gt;s.version&lt;/code&gt; should be set by a tag version like:&lt;/p&gt;
+&lt;p&gt;Now, it’s time to config podspec file. See &lt;a href=&quot;https://github.com/CocoaPods/CocoaPods/wiki/A-pod-specification&quot;&gt;Pod specification&lt;/a&gt; to get further information. Just do like the example, it is OK. Note that &lt;code&gt;s.version&lt;/code&gt; should be set by a tag version like:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;s.version &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;1.0.0&amp;quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;s.version &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;1.0.0&amp;quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;open -e HUChart.podspec
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;open -e HUChart.podspec
 or
-vi HUChart.podspec
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+vi HUChart.podspec&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;Thereafter, do a validation for podspec:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;pod spec lint HUChart.podspec    // May need sudo
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;pod spec lint HUChart.podspec    // May need sudo&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;At the end of terminal screen, &lt;code&gt;pod-name.podspec passes validation&lt;/code&gt; appears let you know that your pod is OK to publish. &lt;/p&gt;
+&lt;p&gt;At the end of terminal screen, &lt;code&gt;pod-name.podspec passes validation&lt;/code&gt; appears let you know that your pod is OK to publish.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://hugo53.github.io/images/huchart/hucharPodValidation.png&quot; alt=&quot;alt text&quot; title=&quot;pod validation top&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Otherwise, check again all fields in podspec file to ensure that all is accurate. &lt;/p&gt;
+&lt;p&gt;Otherwise, check again all fields in podspec file to ensure that all is accurate.&lt;/p&gt;
 
 &lt;p&gt;Next, go to do the last task, send a pull request (PR).&lt;/p&gt;
 
 &lt;h5 id=&quot;a-note-for-ssourcefiles-attribute-in-podspec-file&quot;&gt;A note for s.source_files attribute in podspec file&lt;/h5&gt;
-&lt;p&gt;It is to locate source files you want to publish. Thus, be sure that you provide the exact path for &lt;code&gt;s.source_files&lt;/code&gt; attribute. A legal path is a path from the root directory which contains &lt;code&gt;.git&lt;/code&gt; folder to destination file. For example, the below code show a path for &lt;code&gt;HUChartDemo&lt;/code&gt; project (but its repository name is &lt;a href=&quot;https://github.com/hugo53/HUChart&quot;&gt;HUChart&lt;/a&gt;, don&amp;#8217;t be confused here, we need project&amp;#8217;s root directory, not repository name). &lt;/p&gt;
+&lt;p&gt;It is to locate source files you want to publish. Thus, be sure that you provide the exact path for &lt;code&gt;s.source_files&lt;/code&gt; attribute. A legal path is a path from the root directory which contains &lt;code&gt;.git&lt;/code&gt; folder to destination file. For example, the below code show a path for &lt;code&gt;HUChartDemo&lt;/code&gt; project (but its repository name is &lt;a href=&quot;https://github.com/hugo53/HUChart&quot;&gt;HUChart&lt;/a&gt;, don’t be confused here, we need project’s root directory, not repository name).&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;s.source_files  &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;HUChart&amp;#39;&lt;/span&gt;, &lt;span class=&quot;s1&quot;&gt;&amp;#39;HUChartDemo/HUChart/*.{h,m}&amp;#39;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;s.source_files  &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;HUChart&amp;#39;&lt;/span&gt;, &lt;span class=&quot;s1&quot;&gt;&amp;#39;HUChartDemo/HUChart/*.{h,m}&amp;#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;h2 id=&quot;send-a-pull-request-to-specshttpsgithubcomcocoapodsspecs&quot;&gt;Send a pull request to &lt;a href=&quot;https://github.com/CocoaPods/Specs&quot;&gt;Specs&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;After that, we must send a pull request to &lt;code&gt;Specs&lt;/code&gt; to make the pod is visible. To do that, follow these steps:&lt;/p&gt;
@@ -340,29 +445,25 @@ vi HUChart.podspec
   &lt;li&gt;Fork &lt;a href=&quot;https://github.com/CocoaPods/Specs&quot;&gt;Specs&lt;/a&gt; and clone it.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;git clone https://github.com/CocoaPods/Specs.git
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;git clone https://github.com/CocoaPods/Specs.git&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Change directory (cd) to &lt;code&gt;Specs&lt;/code&gt; folder.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;Specs
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;Specs&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Assigns the original repo to a remote called &amp;#8220;upstream&amp;#8221;.&lt;/li&gt;
+  &lt;li&gt;Assigns the original repo to a remote called “upstream”.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;git remote add upstream git@github.com:CocoaPods/Specs.git
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;git remote add upstream git@github.com:CocoaPods/Specs.git&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Create our own Pod folder, ex. &lt;/li&gt;
+  &lt;li&gt;Create our own Pod folder, ex.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;mkdir -p HUChart/1.0.0
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;mkdir -p HUChart/1.0.0&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;Note that &lt;code&gt;1.0.0&lt;/code&gt; is version number which we set for &lt;code&gt;s.version = &quot;1.0.0&quot;&lt;/code&gt; in podspec file.&lt;/p&gt;
 
@@ -370,23 +471,21 @@ vi HUChart.podspec
   &lt;li&gt;Copy .podspec file which we have already made some minutes ago to the version folder. In this case, version folder is &lt;code&gt;Specs/HUChart/1.0.0&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;cp path/to/.podspec-file Specs/HUChart/1.0.0 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;cp path/to/.podspec-file Specs/HUChart/1.0.0 &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Do git add this file and commit with a clear comment. After that, push it to forked Specs repository.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;&lt;span class=&quot;lineno&quot;&gt;1&lt;/span&gt; git add Specs/HUChart/1.0.0/*.podspec
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;lineno&quot;&gt;1&lt;/span&gt; git add Specs/HUChart/1.0.0/*.podspec
 &lt;span class=&quot;lineno&quot;&gt;2&lt;/span&gt; git commit -m &lt;span class=&quot;s2&quot;&gt;&amp;quot;Added HUChart library to draw a semi circle chart.&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt;3&lt;/span&gt; git push origin -u master
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span class=&quot;lineno&quot;&gt;3&lt;/span&gt; git push origin -u master&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Lastly, go to &lt;a href=&quot;https://github.com/CocoaPods/Specs/pulls&quot;&gt;Specs pull page&lt;/a&gt; and press onto &lt;code&gt;New pull request&lt;/code&gt; and fill all require fields to create a pull request. Thereafter, wait for Specs&amp;#8217; developers merge this request. Once they approve the request and merge it, we can use our lib as a Pod by Podfile.&lt;/li&gt;
+  &lt;li&gt;Lastly, go to &lt;a href=&quot;https://github.com/CocoaPods/Specs/pulls&quot;&gt;Specs pull page&lt;/a&gt; and press onto &lt;code&gt;New pull request&lt;/code&gt; and fill all require fields to create a pull request. Thereafter, wait for Specs’ developers merge this request. Once they approve the request and merge it, we can use our lib as a Pod by Podfile.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;It is so easy, isn&amp;#8217;t it? But for me, the first time I created a pod, I wonder how pod work and how many necessary steps to make a pod successfully. Now, you have an own pod. Congratulations! Take time to share it as far as possible! &lt;/p&gt;
+&lt;p&gt;It is so easy, isn’t it? But for me, the first time I created a pod, I wonder how pod work and how many necessary steps to make a pod successfully. Now, you have an own pod. Congratulations! Take time to share it as far as possible!&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;For Note: A source for setting up &lt;a href=&quot;http://blog.herlein.com/wp-content/plugins/really-static/static/2013/01/private-cocoapods/&quot;&gt;a private pod&lt;/a&gt;&lt;/p&gt;
@@ -404,7 +503,9 @@ vi HUChart.podspec
    <updated>2013-11-07T00:00:00+07:00</updated>
    <id>http://hugo53.github.io/cryptography/2013/11/07/crytography-in-ios</id>
    <content type="html">
-&lt;p&gt;(Intro here, complete after)&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Our current project (PDF Subscription service) is in need some urgent tasks relating to protecting data far away from hackers. There are many ways to put data into pocket with multi-levels, especially in iOS. As one of my tasks in the project, I would like to learn more about cryptography and apply into our end-to-end encryption with PDF data, image data and a part of video data. As my normal habit, I noted what I read about.&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;h2 id=&quot;basic-terminology&quot;&gt;Basic terminology&lt;/h2&gt;
 &lt;p&gt;This section is for someone who is not familiar with cryptography. Some basic terms will be unleashed here.&lt;/p&gt;
@@ -437,8 +538,10 @@ vi HUChart.podspec
 &lt;h4 id=&quot;streaming-security&quot;&gt;Streaming Security&lt;/h4&gt;
 
 &lt;h2 id=&quot;notice&quot;&gt;Notice&lt;/h2&gt;
-&lt;p&gt;#### Do not try to encrypt a file in separate parts
-Firstly, do not try to encrypt a file in separate parts. Normally, an encrypt algorithm will save a header in cipher text, included key (gen from password), HMAC, salt and so on. Therefor, decrypt algorithm will read the header first to get these information before decrypting. If you encrypt a file by chunking this file and encrypting each part separately, cipher text will contains many headers. That will make decrypt algorithm goes fail because it cannot know where is header and where is cipher text. &lt;/p&gt;
+
+&lt;h4 id=&quot;do-not-try-to-encrypt-a-file-in-separate-parts&quot;&gt;Do not try to encrypt a file in separate parts&lt;/h4&gt;
+
+&lt;p&gt;Firstly, do not try to encrypt a file in separate parts. Normally, an encrypt algorithm will save a header in cipher text, included key (gen from password), HMAC, salt and so on. Therefor, decrypt algorithm will read the header first to get these information before decrypting. If you encrypt a file by chunking this file and encrypting each part separately, cipher text will contains many headers. That will make decrypt algorithm goes fail because it cannot know where is header and where is cipher text.&lt;/p&gt;
 
 &lt;h4 id=&quot;openssl-is-deprecated-from-osx-107-and-not-included-in-ios&quot;&gt;OpenSSL is deprecated from OSX 10.7 and not included in iOS&lt;/h4&gt;
 &lt;p&gt;In addition to these APIs, a number of open source tools use OpenSSL for secure networking. If you use OpenSSL in your publicly shipping apps, you must provide your own copy of the OpenSSL libraries, preferably as part of your app bundle; the OpenSSL libraries that OS X provides are deprecated. &lt;a href=&quot;https://developer.apple.com/library/mac/documentation/security/conceptual/cryptoservices/SecureNetworkCommunicationAPIs/SecureNetworkCommunicationAPIs.html&quot;&gt;Refer link&lt;/a&gt;.&lt;/p&gt;
@@ -472,7 +575,7 @@ Firstly, do not try to encrypt a file in separate parts. Normally, an encrypt al
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/rnapier/RNCryptor&quot;&gt;RNCryptor&lt;/a&gt; by author of the above book&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/benoitsan/BBAES&quot;&gt;BBAES&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/gabriel/NAChloride&quot;&gt;NAChloride&lt;/a&gt;. An Objective-C wrapper of &lt;a href=&quot;https://github.com/jedisct1/libsodium&quot;&gt;libsodium&lt;/a&gt; which a package of &lt;a href=&quot;http://nacl.cr.yp.to/&quot;&gt;NaCl&lt;/a&gt;. &amp;#8220;NaCl (pronounced &amp;#8220;salt&amp;#8221;) is a new easy-to-use high-speed software library for network communication, encryption, decryption, signatures, etc. NaCl&amp;#8217;s goal is to provide all of the core operations needed to build higher-level cryptographic tools.&amp;#8221;.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gabriel/NAChloride&quot;&gt;NAChloride&lt;/a&gt;. An Objective-C wrapper of &lt;a href=&quot;https://github.com/jedisct1/libsodium&quot;&gt;libsodium&lt;/a&gt; which a package of &lt;a href=&quot;http://nacl.cr.yp.to/&quot;&gt;NaCl&lt;/a&gt;. “NaCl (pronounced “salt”) is a new easy-to-use high-speed software library for network communication, encryption, decryption, signatures, etc. NaCl’s goal is to provide all of the core operations needed to build higher-level cryptographic tools.”.&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://opensource.apple.com/source/Security/Security-55471/libsecurity_ssl/&quot;&gt;Original Security Libray by Apple&lt;/a&gt;.&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/aerogear/aerogear-crypto-ios&quot;&gt;Aerogear Crypto iOS&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
@@ -491,7 +594,8 @@ Firstly, do not try to encrypt a file in separate parts. Normally, an encrypt al
 &lt;p&gt;I had an opportunity to work with audio, thus I must read documentation carefully. However, there are plenty of notions that I have not known ever, even listening about them has never occured. What I should mention are &lt;em&gt;audio session&lt;/em&gt;, &lt;em&gt;audio unit&lt;/em&gt;, &lt;em&gt;audio category&lt;/em&gt;, and so on. One time again, we must familiar with these definitions. Here we go!&lt;/p&gt;
 
 &lt;h2 id=&quot;basic-definitions&quot;&gt;Basic Definitions&lt;/h2&gt;
-&lt;p&gt;#### Audio Session&lt;/p&gt;
+
+&lt;h4 id=&quot;audio-session&quot;&gt;Audio Session&lt;/h4&gt;
 
 &lt;h4 id=&quot;audio-category&quot;&gt;Audio Category&lt;/h4&gt;
 
@@ -501,7 +605,7 @@ Firstly, do not try to encrypt a file in separate parts. Normally, an encrypt al
 &lt;p&gt;Audio Unit is defined as software-plugin service which carries some low-level tasks such as mixing, filtering, splitting or digital processing services as general term. If you want to do futher than just playback audio file, you must know audio unit, and use Audio Unit framework to complete your desire.&lt;/p&gt;
 
 &lt;h2 id=&quot;audio-services-in-ios&quot;&gt;Audio Services in IOS&lt;/h2&gt;
-&lt;p&gt;Audio Service is a service which performs several specific tasks. Thus, a framework may contain more than one services. The image below shows three levels dividing services: Low-level, Mid-level and High-level (we usually do with two last levels). &lt;/p&gt;
+&lt;p&gt;Audio Service is a service which performs several specific tasks. Thus, a framework may contain more than one services. The image below shows three levels dividing services: Low-level, Mid-level and High-level (we usually do with two last levels).&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://hugo53.github.io/images/core_audio_layers_2x.png&quot; alt=&quot;alt text&quot; title=&quot;leading&quot; /&gt;&lt;/p&gt;
 
@@ -510,22 +614,21 @@ Firstly, do not try to encrypt a file in separate parts. Normally, an encrypt al
 
 &lt;p&gt;According to Apple iOS documentation:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;The Audio Toolbox framework &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;AudioToolbox.framework&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; provides interfaces &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;the mid- and high-level services in Core Audio. In iOS, this framework includes Audio Session Services, the interface &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;managing your application’s audio behavior in the context of a device that functions as a mobile phone and iPod.
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;The Audio Toolbox framework &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;AudioToolbox.framework&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; provides interfaces &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; the mid- and high-level services in Core Audio. In iOS, this framework includes Audio Session Services, the interface &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; managing your application’s audio behavior in the context of a device that functions as a mobile phone and iPod.
 
 The Audio Unit framework &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;AudioUnit.framework&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; lets applications work with audio plug-ins, including audio units and codecs.
 
-The AV Foundation framework &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;AVFoundation.framework&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;, available in iOS, provides the AVAudioPlayer class, a streamlined and simple Objective-C interface &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;audio playback.
+The AV Foundation framework &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;AVFoundation.framework&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;, available in iOS, provides the AVAudioPlayer class, a streamlined and simple Objective-C interface &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; audio playback.
 
-The Core Audio framework &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;CoreAudio.framework&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; supplies data types used across Core Audio as well as interfaces &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;the low-level services.
+The Core Audio framework &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;CoreAudio.framework&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; supplies data types used across Core Audio as well as interfaces &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; the low-level services.
 
-The Core Audio Kit framework &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;CoreAudioKit.framework&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; provides a small API &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;creating user interfaces &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;audio units. This framework is not available in iOS.
+The Core Audio Kit framework &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;CoreAudioKit.framework&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; provides a small API &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; creating user interfaces &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; audio units. This framework is not available in iOS.
 
 The Core MIDI framework &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;CoreMIDI.framework&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; lets applications work with MIDI data and configure MIDI networks. This framework is not available in iOS.
 
 The Core MIDI Server framework &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;CoreMIDIServer.framework&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; lets MIDI drivers communicate with the OS X MIDI server. This framework is not available in iOS.
 
-The OpenAL framework &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;OpenAL.framework&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; provides the interfaces to work with OpenAL, an open &lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt;, positional audio technology.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+The OpenAL framework &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;OpenAL.framework&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; provides the interfaces to work with OpenAL, an open &lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt;, positional audio technology.&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;In summary, we should focus on three frameworks (priority descending): AVFoundation, AudioToolbox, CoreAudio for making an awesome iOS app.&lt;/p&gt;
 
@@ -542,11 +645,11 @@ The OpenAL framework &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;OpenAL.framew
   &lt;p&gt;Original post at &lt;a href=&quot;http://www.analyticbridge.com/profiles/blogs/how-to-create-a-high-performance-analytics-team&quot;&gt;How to create a High performance Analytics team?&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Nếu bạn là CEO của một tập đoàn đa quốc gia (MNC), hoạt động trên khắp các châu lục, rất có thể, bạn sẽ cần đọc bài viết này. Nếu không, hãy giả sử như bạn là một người như thế, và bài viết dưới đây là dành cho bạn. &lt;/p&gt;
+&lt;p&gt;Nếu bạn là CEO của một tập đoàn đa quốc gia (MNC), hoạt động trên khắp các châu lục, rất có thể, bạn sẽ cần đọc bài viết này. Nếu không, hãy giả sử như bạn là một người như thế, và bài viết dưới đây là dành cho bạn.&lt;/p&gt;
 
 &lt;p&gt;Từ vài năm trước, chắc hẳn bạn đã nghe rất nhiều về những cụm từ mĩ miều, nổi bật nói về phân tích dữ liệu cũng như hàng loạt công ty nổi lên nhờ dịch vụ phân tích dữ liệu. Tuy nhiên, ở mặt kia của vấn đề, nhiều công ty đã dồn lượng lớn về thời gian cũng như tiền bạc để tìm cơ hội với phân tích dữ liệu nhưng vẫn chưa hề có kết quả thời gian, thậm chí nhiều năm sau khi bắt đầu. Mặc dù, công ty của bạn là một công ty đa quốc gia, việc sở hữu một đội ngũ chuyên gia phân tích dữ liệu dường như là hiển nhiên nhưng, câu hỏi đặt ra là: &lt;em&gt;Tại sao các công ty đó lại thất bại trong việc tạo lợi nhuận dựa trên phân tích dữ liệu?&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;Câu hỏi trên luôn thường trực, và dường như bất cứ vị CEO đều phải đối mặt nếu như anh ta có ý định về vấn đề này. Tương tự vậy, gần đây cũng có nhiều thảo luận về việc làm thế nào để bắt đầu với Big Data và ứng dụng nó vào thực tế. Bởi vậy, bài viết này sẽ hỗ trợ các leader về phân tích dữ liệu có thể dễ dàng thành lập đội ngũ cho riêng mình, sẵn sàng chinh phục miền đất hứa Big Data. &lt;/p&gt;
+&lt;p&gt;Câu hỏi trên luôn thường trực, và dường như bất cứ vị CEO đều phải đối mặt nếu như anh ta có ý định về vấn đề này. Tương tự vậy, gần đây cũng có nhiều thảo luận về việc làm thế nào để bắt đầu với Big Data và ứng dụng nó vào thực tế. Bởi vậy, bài viết này sẽ hỗ trợ các leader về phân tích dữ liệu có thể dễ dàng thành lập đội ngũ cho riêng mình, sẵn sàng chinh phục miền đất hứa Big Data.&lt;/p&gt;
 
 </content>
  </entry>
@@ -563,11 +666,11 @@ The OpenAL framework &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;OpenAL.framew
 
 &lt;p&gt;Alex Polvi, ở tuổi 25, trở nên nổi tiếng trong giới công nghệ khi Rackspace bỏ ra 30 triệu đô la để mua lại startup của anh - Cloudclick - vào năm 2010.  Không dừng lại ở đó, Alex vẫn đang tiếp tục gây dựng hành trình khởi nghiệp của mình với CoreOS – tập trung xây dựng hệ điều hành cho máy chủ. Đây được coi là một startup đáng chú ý với nhiều cải tiến mang tính cách mạng.&lt;/p&gt;
 
-&lt;p&gt;Điều đầu tiên cần nói tới, CoreOS sử dụng một số công nghệ hiện đại để tự xây dựng phiên bản hệ điều hành riêng dựa trên nhân Linux giống như những gì Google đã làm để xây dựng ChromeOS. Thậm chí, trong đội ngũ nhân viên của họ cũng có những cựu nhân viên của Google, từng làm việc trong dự án ChromeOS. Về mặt cơ bản, hệ điều hành CoreOS giúp các máy chủ có thể thực thi nhiều tác vụ hơn  mà sử dụng ít tài nguyên phần cứng nhằm tăng hiệu năng hoạt động đồng thời hạn chế tối đa những tác động về năng lượng của các trung tâm dữ liệu, trung tâm máy chủ tới môi trường. &lt;/p&gt;
+&lt;p&gt;Điều đầu tiên cần nói tới, CoreOS sử dụng một số công nghệ hiện đại để tự xây dựng phiên bản hệ điều hành riêng dựa trên nhân Linux giống như những gì Google đã làm để xây dựng ChromeOS. Thậm chí, trong đội ngũ nhân viên của họ cũng có những cựu nhân viên của Google, từng làm việc trong dự án ChromeOS. Về mặt cơ bản, hệ điều hành CoreOS giúp các máy chủ có thể thực thi nhiều tác vụ hơn  mà sử dụng ít tài nguyên phần cứng nhằm tăng hiệu năng hoạt động đồng thời hạn chế tối đa những tác động về năng lượng của các trung tâm dữ liệu, trung tâm máy chủ tới môi trường.&lt;/p&gt;
 
-&lt;p&gt;Ngoài ra, CoreOS là một startup được ươm mầm bởi Y Combinator – tổ chức ươm mầm khởi nghiệp nổi tiếng tại Silicon Valey. Chính vì điều này, CoreOS nhận được sự hỗ trợ của nhiều nhà đầu tư nổi tiếng, có thể kể tới như Andreessen Horowitz, Sequoia Capital hay Ron Conway hoặc danh thủ bóng bầu dục Joe Montana. Trong một bài phỏng vấn mới đây với Bloomberg, Montana cho biết rất hào hứng với những ý tưởng của Polvi trình bày tại buổi pitch của Y Combinator và dường như ngay lập tức, ông đã quyết định đầu tư vào CoreOS như một sự cổ vũ và thể hiện sự tin tưởng đối với Alex. &lt;/p&gt;
+&lt;p&gt;Ngoài ra, CoreOS là một startup được ươm mầm bởi Y Combinator – tổ chức ươm mầm khởi nghiệp nổi tiếng tại Silicon Valey. Chính vì điều này, CoreOS nhận được sự hỗ trợ của nhiều nhà đầu tư nổi tiếng, có thể kể tới như Andreessen Horowitz, Sequoia Capital hay Ron Conway hoặc danh thủ bóng bầu dục Joe Montana. Trong một bài phỏng vấn mới đây với Bloomberg, Montana cho biết rất hào hứng với những ý tưởng của Polvi trình bày tại buổi pitch của Y Combinator và dường như ngay lập tức, ông đã quyết định đầu tư vào CoreOS như một sự cổ vũ và thể hiện sự tin tưởng đối với Alex.&lt;/p&gt;
 
-&lt;p&gt;Thông tin chi tiết về giá trị gọi vốn ban đầu  của CoreOS không được tiết lộ, nhưng theo cây bút của TechCrunch Alex Williams, con số ấy rơi vào khoảng  1 – 5 triệu đô la. Nhưng trên hết, CoreOS đang nhận được sự trợ giúp vô cùng quý giá của một trong hai người có đóng góp nhiều nhất cho sự phát triển của hệ điều hành Linux, Greg Kroah Hartman. Người còn lại, không ai khác, chính là Linux Torvalds. Cũng giống như Linux, CoreOS là hệ điều hành miễn phí và được công khai mã nguồn. Bởi thế, mọi người, không loại trừ bất kì ai, đều có quyền tải về, sử dụng và thậm chí là thay đổi hệ điều hành này nếu như có đủ kiến thức về tin học cần thiết.  Dĩ nhiên, nếu tổ chức nào muốn nhận được sự hỗ trợ từ phía CoreOS, họ cần trả một khoản phí nhất định, đây được xem là cách tạo nguồn lợi nhuận của Polvi và cộng sự.  &lt;/p&gt;
+&lt;p&gt;Thông tin chi tiết về giá trị gọi vốn ban đầu  của CoreOS không được tiết lộ, nhưng theo cây bút của TechCrunch Alex Williams, con số ấy rơi vào khoảng  1 – 5 triệu đô la. Nhưng trên hết, CoreOS đang nhận được sự trợ giúp vô cùng quý giá của một trong hai người có đóng góp nhiều nhất cho sự phát triển của hệ điều hành Linux, Greg Kroah Hartman. Người còn lại, không ai khác, chính là Linux Torvalds. Cũng giống như Linux, CoreOS là hệ điều hành miễn phí và được công khai mã nguồn. Bởi thế, mọi người, không loại trừ bất kì ai, đều có quyền tải về, sử dụng và thậm chí là thay đổi hệ điều hành này nếu như có đủ kiến thức về tin học cần thiết.  Dĩ nhiên, nếu tổ chức nào muốn nhận được sự hỗ trợ từ phía CoreOS, họ cần trả một khoản phí nhất định, đây được xem là cách tạo nguồn lợi nhuận của Polvi và cộng sự.&lt;/p&gt;
 
 </content>
  </entry>
@@ -586,7 +689,7 @@ The OpenAL framework &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;OpenAL.framew
 
 &lt;p&gt;Theo báo cáo nghiên cứu trên, tính tới thời điểm cuối năm 2013, số lượng thuê bao di động trên toàn thế giới sẽ đạt mức 2.1 tỷ thuê bao, gấp khoảng 3 lần so với số lượng thuê bao cố định. Tuy nhiên, mọi thứ mới chỉ bắt đầu. Trung Quốc - quốc gia đông dân nhất thế giới, mới chỉ có 17 thuê bao di động trong mỗi 100 dân (số liệu cuối năm 2012). Mặc dù vậy, Trung Quốc vẫn có tỷ lệ tăng mạnh về mức độ sử dụng Internet cũng như số lượng nhà cung cấp thiết bị di động.&lt;/p&gt;
 
-&lt;p&gt;Bên cạnh đó, hai quốc gia khác tại Châu Á là Singapore và Nhật Bản cũng dẫn đầu về tỷ lệ sử dụng thiết bị di động, lần lượt là 123/100 và 113/100. Điều này có nghĩa, nhiều người cùng một lúc sở hữu hơn một thiết bị. &lt;/p&gt;
+&lt;p&gt;Bên cạnh đó, hai quốc gia khác tại Châu Á là Singapore và Nhật Bản cũng dẫn đầu về tỷ lệ sử dụng thiết bị di động, lần lượt là 123/100 và 113/100. Điều này có nghĩa, nhiều người cùng một lúc sở hữu hơn một thiết bị.&lt;/p&gt;
 
 &lt;p&gt;Đặc biệt hơn nữa, một số quốc gia đang phát triển như Oman hay Kazakhstan xếp trên cả các nước như Thụy Sỹ, Đức về tỷ lệ gia tăng thuê bao di động. Sự bùng nổ của mobile Internet đã giúp cho các quốc gia này có bước nhảy vọt về số lượng thiết bị di động, đồng thời đưa các hình thức kết nối truyền thống như điện thoại cố định đi vào dĩ vãng.&lt;/p&gt;
 
@@ -604,9 +707,11 @@ The OpenAL framework &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;OpenAL.framew
 &lt;p&gt;Operating with PDF in iOS is really low-level task. It is not just using some built-in features of iOS to create your own product. Indeed, it requires intensive knowledge at very low iOS layer and at least basic PDF definition. This post tends to supply some aspects of processing PDF in iOS which aims to help developers easy to win this hard job.&lt;/p&gt;
 
 &lt;h2 id=&quot;pdf-specification&quot;&gt;PDF Specification&lt;/h2&gt;
-&lt;p&gt;#### Basic Definitions (mixed up Typography)
-##### Leading
-Leading is space between two lines. According to &lt;a href=&quot;http://en.wikipedia.org/wiki/Leading&quot;&gt;Wikipedia&lt;/a&gt;, &lt;em&gt;In typography, leading /ˈlɛdɪŋ/ refers to the distance between the baselines of successive lines of type&lt;/em&gt;. However, there are more than one &lt;em&gt;leading&lt;/em&gt; definition. The below image shows you 3 ways &lt;em&gt;leading&lt;/em&gt; is defined.&lt;/p&gt;
+
+&lt;h4 id=&quot;basic-definitions-mixed-up-typography&quot;&gt;Basic Definitions (mixed up Typography)&lt;/h4&gt;
+
+&lt;h5 id=&quot;leading&quot;&gt;Leading&lt;/h5&gt;
+&lt;p&gt;Leading is space between two lines. According to &lt;a href=&quot;http://en.wikipedia.org/wiki/Leading&quot;&gt;Wikipedia&lt;/a&gt;, &lt;em&gt;In typography, leading /ˈlɛdɪŋ/ refers to the distance between the baselines of successive lines of type&lt;/em&gt;. However, there are more than one &lt;em&gt;leading&lt;/em&gt; definition. The below image shows you 3 ways &lt;em&gt;leading&lt;/em&gt; is defined.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://hugo53.github.io/images/pdfpost/leadingoriginal.png&quot; alt=&quot;alt text&quot; title=&quot;leading&quot; /&gt;&lt;/p&gt;
 
@@ -627,8 +732,9 @@ Leading is space between two lines. According to &lt;a href=&quot;http://en.wiki
 &lt;p&gt;( &lt;em&gt;Need more study&lt;/em&gt; )&lt;/p&gt;
 
 &lt;h4 id=&quot;font&quot;&gt;Font&lt;/h4&gt;
-&lt;p&gt;##### Font type (in PDF scope)
-There are some ways to divide font type into bucket. We can base on how a font be organized or how a font can be drawn.&lt;/p&gt;
+
+&lt;h5 id=&quot;font-type-in-pdf-scope&quot;&gt;Font type (in PDF scope)&lt;/h5&gt;
+&lt;p&gt;There are some ways to divide font type into bucket. We can base on how a font be organized or how a font can be drawn.&lt;/p&gt;
 
 &lt;p&gt;If using font structure, we have two kinds:
 - &lt;code&gt;Simple Font&lt;/code&gt;
@@ -638,29 +744,28 @@ There are some ways to divide font type into bucket. We can base on how a font b
 
 &lt;p&gt;Or if using drawing method, we also have two buckets:
 - Bitmap-based font: &lt;code&gt;Type 3&lt;/code&gt;
-- Outline font (Raster font): &lt;code&gt;Type 0&lt;/code&gt;, &lt;code&gt;Type 1&lt;/code&gt;, &lt;code&gt;TrueType&lt;/code&gt;, &lt;code&gt;CIDFont&lt;/code&gt;. &lt;/p&gt;
+- Outline font (Raster font): &lt;code&gt;Type 0&lt;/code&gt;, &lt;code&gt;Type 1&lt;/code&gt;, &lt;code&gt;TrueType&lt;/code&gt;, &lt;code&gt;CIDFont&lt;/code&gt;.&lt;/p&gt;
 
 &lt;h5 id=&quot;font-and-cidfont&quot;&gt;Font and CIDFont&lt;/h5&gt;
 &lt;p&gt;Font is a collection of glyphs. CIDFont is also a set of glyphs. But, CIDFont is only used as a component of Type 0 font, cannot be used directly like other Fonts .&lt;/p&gt;
 
 &lt;h5 id=&quot;descendant-font&quot;&gt;Descendant Font&lt;/h5&gt;
-&lt;p&gt;is CIDFont, Type 0 will use glyphs of descendant font to draw characters. &lt;/p&gt;
+&lt;p&gt;is CIDFont, Type 0 will use glyphs of descendant font to draw characters.&lt;/p&gt;
 
 &lt;h5 id=&quot;cidtogidmap&quot;&gt;CIDToGIDMap&lt;/h5&gt;
 &lt;p&gt;When CIDToGIDMap is Identity:&lt;/p&gt;
 
 &lt;h5 id=&quot;font-symbolic&quot;&gt;Font Symbolic&lt;/h5&gt;
-&lt;p&gt;##### Font program&lt;/p&gt;
+
+&lt;h5 id=&quot;font-program&quot;&gt;Font program&lt;/h5&gt;
 
 &lt;h5 id=&quot;font-dictionary&quot;&gt;Font dictionary&lt;/h5&gt;
 
-&lt;p&gt;##### &lt;/p&gt;
-
-&lt;h4 id=&quot;section&quot;&gt;#&lt;/h4&gt;
-
 &lt;h2 id=&quot;reading-pdf-flow&quot;&gt;Reading PDF Flow&lt;/h2&gt;
-&lt;p&gt;### PDF Operator
-PDF uses &lt;em&gt;operators&lt;/em&gt; to determine what kind of text will be shown based on pre-defined format. However, it is so complex to understand how pdf is organized. &lt;/p&gt;
+
+&lt;h3 id=&quot;pdf-operator&quot;&gt;PDF Operator&lt;/h3&gt;
+
+&lt;p&gt;PDF uses &lt;em&gt;operators&lt;/em&gt; to determine what kind of text will be shown based on pre-defined format. However, it is so complex to understand how pdf is organized.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;BT % Begin text object
 /F1 1 Tf % Set text font and size 
@@ -708,21 +813,18 @@ ET
 &lt;h2 id=&quot;parsing-pdf-content&quot;&gt;Parsing PDF Content&lt;/h2&gt;
 &lt;p&gt;To parse exactly PDF content, we need to read all plain PDF information. However, except some pure control data, all streams in PDF are usually represented in compressed format. That means we need to decompress them to get the pure text. The compress algorithm is given clearly in  stream description, for example:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;12 0 obj
-&amp;lt;&amp;lt; /Length 13 0 R /N 3 /Alternate /DeviceRGB /Filter /FlateDecode &amp;gt;&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;m&quot;&gt;12&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; obj
+&amp;lt;&amp;lt; /Length &lt;span class=&quot;m&quot;&gt;13&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; R /N &lt;span class=&quot;m&quot;&gt;3&lt;/span&gt; /Alternate /DeviceRGB /Filter /FlateDecode &amp;gt;&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;/FlateDecode lets us that the encode algorithm is Flate and should use this algorithm to decode the stream. &lt;/p&gt;
+&lt;p&gt;/FlateDecode lets us that the encode algorithm is Flate and should use this algorithm to decode the stream.&lt;/p&gt;
 
 &lt;p&gt;As a standard, almost PDF creator use Flate Encoder to compress stream. Therefore, to decode that data, we can use some tools. In my experience, I usually use &lt;a href=&quot;http://www.pdflabs.com/tools/pdftk-server/&quot;&gt;PDFToolkit&lt;/a&gt; (Server version) like this:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;pdftk compressedPDF.pdf output decompressedPDF.pdf uncompress
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;pdftk compressedPDF.pdf output decompressedPDF.pdf uncompress&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;Then, use &lt;code&gt;less&lt;/code&gt; command to see decoded text:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;less decompressedPDF.pdf
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;less decompressedPDF.pdf&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;Do that, now we can see pure PDF text specification. Hence, we can parse PDF content based on PDF Operators Specification.&lt;/p&gt;
 
@@ -730,18 +832,19 @@ ET
   &lt;p&gt;By a reason that PDF stream (text content, image content, …) is usually compressed for decreasing data size, PDF Reader and/or PDF Parser must uncompresses that stream before rendering or parsing. Almost PDF Document stream is decoded using FlateDecode filter which is based on the zlib/deflate algorithm. For getting plain text to analyze, we can use some tools to convert compressed PDF to uncompressed PDF. In my case, I utilize &lt;a href=&quot;http://www.pdflabs.com/tools/pdftk-server/&quot;&gt;pdftk&lt;/a&gt; with the command:&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;pdftk compressedPDF.pdf output uncompressedPDF.pdf uncompress
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;pdftk compressedPDF.pdf output uncompressedPDF.pdf uncompress&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Besides that, someone suggests &lt;a href=&quot;http://sourceforge.net/projects/itextrups/&quot;&gt;itextrups&lt;/a&gt; which is laid on iText library (written in Java). See the discussion &lt;a href=&quot;http://stackoverflow.com/questions/13368660/view-source-on-pdf-rendered-inside-a-browser&quot;&gt;here&lt;/a&gt;. &lt;/p&gt;
+  &lt;p&gt;Besides that, someone suggests &lt;a href=&quot;http://sourceforge.net/projects/itextrups/&quot;&gt;itextrups&lt;/a&gt; which is laid on iText library (written in Java). See the discussion &lt;a href=&quot;http://stackoverflow.com/questions/13368660/view-source-on-pdf-rendered-inside-a-browser&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;processing-pdf-content&quot;&gt;Processing PDF content&lt;/h2&gt;
-&lt;p&gt;#### Get Text Rect
-&lt;a href=&quot;http://stackoverflow.com/questions/4255298/how-does-an-annot-cgpdfdictionary-rect-translate-to-objective-c-rect/4255586#4255586&quot;&gt;Get Text Rect&lt;/a&gt;&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;objectivec&quot;&gt;&lt;span class=&quot;n&quot;&gt;CGPDFArrayRef&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rectArray&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;h4 id=&quot;get-text-rect&quot;&gt;Get Text Rect&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://stackoverflow.com/questions/4255298/how-does-an-annot-cgpdfdictionary-rect-translate-to-objective-c-rect/4255586#4255586&quot;&gt;Get Text Rect&lt;/a&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-objectivec&quot; data-lang=&quot;objectivec&quot;&gt;&lt;span class=&quot;n&quot;&gt;CGPDFArrayRef&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rectArray&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CGPDFDictionaryGetArray&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;annotDict&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;Rect&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rectArray&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;c1&quot;&gt;//continue;&lt;/span&gt;
     &lt;span class=&quot;n&quot;&gt;CGPDFReal&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;coords&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
@@ -762,24 +865,27 @@ ET
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 
 &lt;span class=&quot;c1&quot;&gt;//blx,bly,trx,try&amp;gt;tlx,tly,w,h&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;CGRect&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rect&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CGRectMake&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;coords&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;coords&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;coords&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;coords&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;coords&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;coords&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span class=&quot;bp&quot;&gt;CGRect&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rect&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CGRectMake&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;coords&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;coords&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;coords&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;coords&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;coords&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;coords&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;h2 id=&quot;some-add-on-elements-for-showing-pdf&quot;&gt;Some add-on elements for showing PDF&lt;/h2&gt;
-&lt;p&gt;### Annotation&lt;/p&gt;
+
+&lt;h3 id=&quot;annotation&quot;&gt;Annotation&lt;/h3&gt;
 
 &lt;h3 id=&quot;linking-mediaweb-elements&quot;&gt;Linking Media/Web Elements&lt;/h3&gt;
 
 &lt;h2 id=&quot;performing-with-font-and-charset-encoding&quot;&gt;Performing with Font and Charset Encoding&lt;/h2&gt;
 
 &lt;h4 id=&quot;problem-with-identity-h-encoding&quot;&gt;Problem with Identity-H Encoding&lt;/h4&gt;
-&lt;p&gt;Identity-H is a encoding which is used by Google Docs (when you export your docs to PDF file). &lt;/p&gt;
+&lt;p&gt;Identity-H is a encoding which is used by Google Docs (when you export your docs to PDF file).&lt;/p&gt;
 
 &lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
-&lt;p&gt;#### For starter
-- &lt;a href=&quot;http://www.gnupdf.org/Introduction_to_PDF#A_first_example&quot;&gt;Very detail introduction for reading PDF Content. Just paraphase the PDF specification but truly understandable. It is the best for newbie.&lt;/a&gt;. The backup file is at &lt;a href=&quot;https://www.dropbox.com/s/lg169kwgnu552bj/Introduction%20to%20PDF%20-%20GNUpdf.pdf&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;for-starter&quot;&gt;For starter&lt;/h4&gt;
 
 &lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://www.gnupdf.org/Introduction_to_PDF#A_first_example&quot;&gt;Very detail introduction for reading PDF Content. Just paraphase the PDF specification but truly understandable. It is the best for newbie.&lt;/a&gt;. The backup file is at &lt;a href=&quot;https://www.dropbox.com/s/lg169kwgnu552bj/Introduction%20to%20PDF%20-%20GNUpdf.pdf&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;a href=&quot;http://www.w3.org/WAI/GL/WCAG20-TECHS/pdf.html&quot;&gt;PDF Techniques by W3C.&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
@@ -846,13 +952,13 @@ ET
    <updated>2013-09-28T00:00:00+07:00</updated>
    <id>http://hugo53.github.io/tool/2013/09/28/git-and-its-tutorials</id>
    <content type="html">
-&lt;p&gt;Nowadays, Git becomes very popular for managing source-code in not only IT Industry but also universities, academies. By this reason, Git is really important for all who want to work faster, smarter and in bigger projects. However, Git is not easy to control if you are not familiar with sourcecode management, even if you used to do with svn, it is still difficult. This post, I list some good tutorials for a wide range of Git&amp;#8217;s users, from newbie to intermediate to advance guys. &lt;/p&gt;
+&lt;p&gt;Nowadays, Git becomes very popular for managing source-code in not only IT Industry but also universities, academies. By this reason, Git is really important for all who want to work faster, smarter and in bigger projects. However, Git is not easy to control if you are not familiar with sourcecode management, even if you used to do with svn, it is still difficult. This post, I list some good tutorials for a wide range of Git’s users, from newbie to intermediate to advance guys.&lt;/p&gt;
 
-&lt;p&gt;By the way, there are several manual books should be translated into Vietnamese (my mother tongue) due to Git&amp;#8217;s difficulty. Thus, if you are interested in this job, please contact me to make a plan for working together. I think it will be very great moment of us. &lt;/p&gt;
+&lt;p&gt;By the way, there are several manual books should be translated into Vietnamese (my mother tongue) due to Git’s difficulty. Thus, if you are interested in this job, please contact me to make a plan for working together. I think it will be very great moment of us.&lt;/p&gt;
 
 &lt;p&gt;And the list is below.
-- &lt;a href=&quot;http://git-scm.com/book/&quot;&gt;Git SCM Book&lt;/a&gt; and its &lt;a href=&quot;https://github.com/progit/progit&quot;&gt;source&lt;/a&gt; (no &lt;em&gt;vi&lt;/em&gt; folder existing until now - Sep 28, 2013). This is official document from  Git&amp;#8217;s creators. 
-- &lt;a href=&quot;http://gitready.com/&quot;&gt;Git Ready&lt;/a&gt; and its &lt;a href=&quot;https://github.com/gitready/gitready&quot;&gt;source&lt;/a&gt; (no &lt;em&gt;vi&lt;/em&gt; branch existing until now - Sep 28, 2013). This tutorial divides lessons into 3 levels: beginner, intermediate, advance with specific use-cases, easy to apply on real projects. &lt;/p&gt;
+- &lt;a href=&quot;http://git-scm.com/book/&quot;&gt;Git SCM Book&lt;/a&gt; and its &lt;a href=&quot;https://github.com/progit/progit&quot;&gt;source&lt;/a&gt; (no &lt;em&gt;vi&lt;/em&gt; folder existing until now - Sep 28, 2013). This is official document from  Git’s creators. 
+- &lt;a href=&quot;http://gitready.com/&quot;&gt;Git Ready&lt;/a&gt; and its &lt;a href=&quot;https://github.com/gitready/gitready&quot;&gt;source&lt;/a&gt; (no &lt;em&gt;vi&lt;/em&gt; branch existing until now - Sep 28, 2013). This tutorial divides lessons into 3 levels: beginner, intermediate, advance with specific use-cases, easy to apply on real projects.&lt;/p&gt;
 
 &lt;p&gt;Besides, there is a book which is already in Vietnamese by contribution of &lt;a href=&quot;http://vnwildman.users.sourceforge.net/&quot;&gt;Mr. Tran Ngoc Quan&lt;/a&gt;. It is located at &lt;a href=&quot;http://vnwildman.users.sourceforge.net/gitmagic/index.html&quot;&gt;here&lt;/a&gt;. The original guide is of &lt;a href=&quot;http://www-cs-students.stanford.edu/~blynn/gitmagic/&quot;&gt;Ben Lynn&lt;/a&gt; - a Stanford alumnus.&lt;/p&gt;
 </content>
@@ -860,7 +966,7 @@ ET
  
  <entry>
    <title>Audio Processing in iOS - an initial step</title>
-   <link href="http://hugo53.github.io/ios%20development/2013/09/27/audio-processing-in-ios---an-initial-step"/>
+   <link href="http://hugo53.github.io/ios%20development/2013/09/27/audio-processing-in-ios-an-initial-step"/>
    <updated>2013-09-27T00:00:00+07:00</updated>
    <id>http://hugo53.github.io/ios%20development/2013/09/27/audio-processing-in-ios---an-initial-step</id>
    <content type="html">
@@ -868,13 +974,13 @@ ET
   &lt;p&gt;Performing with audio is always a challenge for any developer by reason of its very low level. By chance, I got some opportunities to do with audio included playing, recording and pre (and/or) post processing. This post tends to cover as much as possible basic knowledge in Audio aspect for two reasons: reminding myself and sharing with other enthusiastic guys.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;In the first words, I want to warn that I am working on iOS platform at the moment. Therefore, all of knowledge appear here is of iOS or related to iOS by default. &lt;/p&gt;
+&lt;p&gt;In the first words, I want to warn that I am working on iOS platform at the moment. Therefore, all of knowledge appear here is of iOS or related to iOS by default.&lt;/p&gt;
 
 &lt;h2 id=&quot;basic&quot;&gt;Basic&lt;/h2&gt;
-&lt;p&gt;Before dig into details, we should know a litle bit about audio format, audio codec and what format is preferred in iOS. &lt;/p&gt;
+&lt;p&gt;Before dig into details, we should know a litle bit about audio format, audio codec and what format is preferred in iOS.&lt;/p&gt;
 
 &lt;h4 id=&quot;audio-format-and-codec&quot;&gt;Audio Format and Codec&lt;/h4&gt;
-&lt;p&gt;General speaking, there are two elements of an audio file. It&amp;#8217;s weird, huh? Don&amp;#8217;t worry! First, codec and second, file format. Codec is the way audio file is encoded (for recording) or decoded (for playback). We must know the codec of audio file to perform some processing tasks such as uncompressing to play or mixing to make effects. The latter one, format is the way audio file is organized. &lt;/p&gt;
+&lt;p&gt;General speaking, there are two elements of an audio file. It’s weird, huh? Don’t worry! First, codec and second, file format. Codec is the way audio file is encoded (for recording) or decoded (for playback). We must know the codec of audio file to perform some processing tasks such as uncompressing to play or mixing to make effects. The latter one, format is the way audio file is organized.&lt;/p&gt;
 
 &lt;h5 id=&quot;audio-format&quot;&gt;Audio Format&lt;/h5&gt;
 
@@ -884,20 +990,20 @@ ET
 &lt;p&gt;(hook)&lt;/p&gt;
 
 &lt;h4 id=&quot;playback&quot;&gt;Playback&lt;/h4&gt;
-&lt;p&gt;Player must decode audio file if it want to play a song. In fact, iOS has two approaches to decode audio file: software-based and hardware-assisted. The biggest difference is that the first method allows multiple files to play simutaneously whereas the second way don&amp;#8217;t. Because of that, hardware-assisted method is very fast and gives excellent performance while software-based may lead to CPU overhead state if it has to handle many sound files in the same time. As a result, if you need to maximize video frame rate (make application be more smooth), there are two ways:&lt;/p&gt;
+&lt;p&gt;Player must decode audio file if it want to play a song. In fact, iOS has two approaches to decode audio file: software-based and hardware-assisted. The biggest difference is that the first method allows multiple files to play simutaneously whereas the second way don’t. Because of that, hardware-assisted method is very fast and gives excellent performance while software-based may lead to CPU overhead state if it has to handle many sound files in the same time. As a result, if you need to maximize video frame rate (make application be more smooth), there are two ways:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Minimize the CPU impact of your audio playback by using uncompressed audio or the IMA4 format. &lt;/li&gt;
+  &lt;li&gt;Minimize the CPU impact of your audio playback by using uncompressed audio or the IMA4 format.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Or &lt;/p&gt;
+&lt;p&gt;Or&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Use hardware-assisted decoding of your compressed audio assets.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h4 id=&quot;preferred-audio-formats-in-ios-certainly&quot;&gt;Preferred Audio Formats (in iOS, certainly)&lt;/h4&gt;
-&lt;p&gt;Just recall that there are two types of audio quality: uncompressed audio and compressed audio. In short words, uncompressed audio is always better than the remaining kind but it is true for professional listener not for all people. Because of two these existing types, Apple also defines two preferred formats respectively. &lt;/p&gt;
+&lt;p&gt;Just recall that there are two types of audio quality: uncompressed audio and compressed audio. In short words, uncompressed audio is always better than the remaining kind but it is true for professional listener not for all people. Because of two these existing types, Apple also defines two preferred formats respectively.&lt;/p&gt;
 
 &lt;p&gt;For &lt;strong&gt;uncompressed audio&lt;/strong&gt; (highest quality), use &lt;em&gt;16-bit&lt;/em&gt;, &lt;em&gt;little endian&lt;/em&gt;, &lt;em&gt;linear PCM&lt;/em&gt; audio data packaged in a &lt;em&gt;CAF&lt;/em&gt; file. You can convert an audio file to this format in Mac OS X using the afconvert command-line tool, as shown here:&lt;/p&gt;
 
@@ -921,7 +1027,7 @@ ET
 &lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;http://www.raywenderlich.com/204/audio-tutorial-for-ios-file-and-data-formats&quot;&gt;Audio Tutorial for iOS: File and Data Formats&lt;/a&gt; by Raywenderlich&lt;/li&gt;
-  &lt;li&gt;Apple&amp;#8217;s Docummentation&lt;/li&gt;
+  &lt;li&gt;Apple’s Docummentation&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://www.amazon.com/Learning-Core-Audio-Hands-On-Programming/dp/0321636848&quot;&gt;Learning Core Audio: A Hands-On Guide to Audio Programming for Mac and iOS&lt;/a&gt; by Chris Adamson and Kevin Avila.&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://www.slideshare.net/invalidname/presentations&quot;&gt;Chris Adamson slideshare&lt;/a&gt;. Sharing a plenty of precious knowledge.&lt;/li&gt;
 &lt;/ul&gt;
@@ -934,9 +1040,13 @@ ET
   &lt;li&gt;&lt;a href=&quot;https://github.com/syedhali/EZAudio&quot;&gt;EZAudio&lt;/a&gt;. For showing audio wave.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;bonus&quot;&gt;Bonus&lt;/h2&gt;
-&lt;p&gt;###The differences between Audio Engine and OpenAL
-- OpenAL: no some functions such as Reverb (Roger Beep, Distortion, Obstruction, and Occlusion must be tested more) but Audio Engine has.&lt;/p&gt;
+&lt;p&gt;##Bonus&lt;/p&gt;
+
+&lt;p&gt;###The differences between Audio Engine and OpenAL&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;OpenAL: no some functions such as Reverb (Roger Beep, Distortion, Obstruction, and Occlusion must be tested more) but Audio Engine has.&lt;/li&gt;
+&lt;/ul&gt;
 </content>
  </entry>
  
@@ -954,7 +1064,7 @@ ET
   &lt;li&gt;
     &lt;p&gt;Remove sleep image (when your boot disk is full): &lt;em&gt;sudo rm /var/vm/sleepimage&lt;/em&gt;. This command will disable Hibernate mode which is reason for sleep image existing. If you want to enable this mode, should try &lt;em&gt;sudo pmset -a hibernatemode 3&lt;/em&gt;.&lt;/p&gt;
   &lt;/li&gt;
-  &lt;li&gt;Check for /Users/usernameLibrary/Developer/Xcode/DerivedData/ to see why harddisk get full.&lt;/li&gt;
+  &lt;li&gt;Check for /Users/username/Library/Developer/Xcode/DerivedData/ to see why harddisk get full.&lt;/li&gt;
 &lt;/ul&gt;
 
 </content>
@@ -962,9 +1072,9 @@ ET
  
  <entry>
    <title>Bắt đầu với Data Mining</title>
-   <link href="http://hugo53.github.io/writing/2013/09/24/bat-dau-voi-data-mining"/>
+   <link href="http://hugo53.github.io/translation/2013/09/24/bat-dau-voi-data-mining"/>
    <updated>2013-09-24T00:00:00+07:00</updated>
-   <id>http://hugo53.github.io/writing/2013/09/24/bat-dau-voi-data-mining</id>
+   <id>http://hugo53.github.io/translation/2013/09/24/bat-dau-voi-data-mining</id>
    <content type="html">
 &lt;blockquote&gt;
   &lt;p&gt;&lt;em&gt;(hook)&lt;/em&gt;&lt;/p&gt;
@@ -978,7 +1088,7 @@ ET
 
 &lt;h2 id=&quot;ti-liu-tham-kho&quot;&gt;Tài liệu tham khảo&lt;/h2&gt;
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.dropbox.com/s/vqdoskyhml7oq8e/dmafca.pdf&quot;&gt;Data Mining and Analysis: Fundamental Concepts and Algorithms&lt;/a&gt; của Mohammed J. Zaki và Wagner Meira Jr. &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.dropbox.com/s/vqdoskyhml7oq8e/dmafca.pdf&quot;&gt;Data Mining and Analysis: Fundamental Concepts and Algorithms&lt;/a&gt; của Mohammed J. Zaki và Wagner Meira Jr.&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.dropbox.com/s/nkl3fjg2ynj5fiy/book.pdf&quot;&gt;Mining of Massive Datasets&lt;/a&gt; của Anand Rajaraman, Jure Leskovec và Jeﬀrey D. Ullman.&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.dropbox.com/s/73d69vtl8nyeotu/whole.pdf&quot;&gt;Machine Learning, Neural and Statistical Classiﬁcation&lt;/a&gt; của D. Michie, D.J. Spiegelhalter và C.C. Taylor.&lt;/li&gt;
 &lt;/ul&gt;
@@ -1034,7 +1144,7 @@ ET
 
 &lt;p&gt;Stanford University’s Entrepreneurship Corner&lt;/p&gt;
 
-&lt;p&gt;Linkedin &lt;/p&gt;
+&lt;p&gt;Linkedin&lt;/p&gt;
 
 &lt;p&gt;AngelList&lt;/p&gt;
 
@@ -1094,7 +1204,7 @@ ET
 
 &lt;p&gt;Launch Effect WordPress theme for viral launches&lt;/p&gt;
 
-&lt;p&gt;Prefinery Full beta management system &lt;/p&gt;
+&lt;p&gt;Prefinery Full beta management system&lt;/p&gt;
 
 &lt;p&gt;Launch Effect App&lt;/p&gt;
 
@@ -1178,7 +1288,7 @@ ET
 
 &lt;p&gt;startups.bz&lt;/p&gt;
 
-&lt;p&gt;www.growvc.com &lt;/p&gt;
+&lt;p&gt;www.growvc.com&lt;/p&gt;
 
 &lt;p&gt;sproutingstartups.com&lt;/p&gt;
 
@@ -1266,7 +1376,7 @@ ET
 
 &lt;p&gt;ProFounder (crowd funding) https://www.profounder.com&lt;/p&gt;
 
-&lt;p&gt;http://www.microventures.com/home &lt;/p&gt;
+&lt;p&gt;http://www.microventures.com/home&lt;/p&gt;
 
 &lt;h2 id=&quot;outsourcing&quot;&gt;Outsourcing&lt;/h2&gt;
 
@@ -1278,9 +1388,9 @@ ET
 
 &lt;p&gt;Crowdspring&lt;/p&gt;
 
-&lt;p&gt;Designcrowd  &lt;/p&gt;
+&lt;p&gt;Designcrowd&lt;/p&gt;
 
-&lt;p&gt;TheBestArticles  &lt;/p&gt;
+&lt;p&gt;TheBestArticles&lt;/p&gt;
 
 &lt;h3 id=&quot;project-management&quot;&gt;Project management&lt;/h3&gt;
 
@@ -1362,7 +1472,7 @@ ET
 
 &lt;p&gt;Optimizely&lt;/p&gt;
 
-&lt;p&gt;Google website optimizer (Free) &lt;/p&gt;
+&lt;p&gt;Google website optimizer (Free)&lt;/p&gt;
 
 &lt;h2 id=&quot;cloud-storage&quot;&gt;Cloud storage&lt;/h2&gt;
 
@@ -1372,7 +1482,7 @@ ET
 
 &lt;p&gt;Box ( 5GB free )&lt;/p&gt;
 
-&lt;p&gt;for more cloud storage tools click here to check our previous list. &lt;/p&gt;
+&lt;p&gt;for more cloud storage tools click here to check our previous list.&lt;/p&gt;
 
 &lt;h2 id=&quot;conversation-rate-optimization&quot;&gt;Conversation Rate Optimization&lt;/h2&gt;
 
@@ -1514,15 +1624,15 @@ Market your own services: If selling stuff makes your skin crawl, you can use a 
  
  <entry>
    <title>Google Tech Talk - A huge resource for IT Student</title>
-   <link href="http://hugo53.github.io/computer%20science/2013/05/23/google-tech-talk---a-huge-resource-for-it-student"/>
+   <link href="http://hugo53.github.io/computer%20science/2013/05/23/google-tech-talk-a-huge-resource-for-it-student"/>
    <updated>2013-05-23T00:00:00+07:00</updated>
    <id>http://hugo53.github.io/computer%20science/2013/05/23/google-tech-talk---a-huge-resource-for-it-student</id>
    <content type="html">
-&lt;p&gt;Almost CS students have known that Google is a giant leading innovation in today&amp;#8217;s world. A plenty of its products brought extraordinary experience to human race in many aspects of life. It is possible to say that Google Search Engine has changed totally the way people looking for information. Besides this tool, there are a large number of products which have ability to persuade billions people all over the world to be addicted them.&lt;/p&gt;
+&lt;p&gt;Almost CS students have known that Google is a giant leading innovation in today’s world. A plenty of its products brought extraordinary experience to human race in many aspects of life. It is possible to say that Google Search Engine has changed totally the way people looking for information. Besides this tool, there are a large number of products which have ability to persuade billions people all over the world to be addicted them.&lt;/p&gt;
 
-&lt;p&gt;In addition, Google has also produced many tech talk shows for several purposes such as training its staff, promoting its working style and even helping students who can access the Internet and download its video. &lt;/p&gt;
+&lt;p&gt;In addition, Google has also produced many tech talk shows for several purposes such as training its staff, promoting its working style and even helping students who can access the Internet and download its video.&lt;/p&gt;
 
-&lt;p&gt;To begin with, you should subscribe &lt;a href=&quot;http://www.youtube.com/user/GoogleTechTalks?feature=watch&quot;&gt;this channel&lt;/a&gt;. It is official tube of Google Tech Talk and be updated daily. Next, you can browse any video which attracts you, maybe just by its title. &lt;/p&gt;
+&lt;p&gt;To begin with, you should subscribe &lt;a href=&quot;http://www.youtube.com/user/GoogleTechTalks?feature=watch&quot;&gt;this channel&lt;/a&gt;. It is official tube of Google Tech Talk and be updated daily. Next, you can browse any video which attracts you, maybe just by its title.&lt;/p&gt;
 
 &lt;p&gt;In this post, one of useful series is mentioned. This series is about coding method and is attached with a hot keyword &lt;em&gt;clean code&lt;/em&gt;. It is &lt;a href=&quot;http://www.youtube.com/watch?feature=player_embedded&amp;amp;v=4F72VULWFvc&quot;&gt;here&lt;/a&gt;. There are many kinds of coding style that may help IT students from developing countries or even students of industrialized nations improve their style when generate code.&lt;/p&gt;
 </content>
@@ -1534,10 +1644,10 @@ Market your own services: If selling stuff makes your skin crawl, you can use a 
    <updated>2013-05-19T00:00:00+07:00</updated>
    <id>http://hugo53.github.io/lifestyle/2013/05/19/the-first-journey-to-hometown</id>
    <content type="html">
-&lt;p&gt;The idea of cycling to hometown came many days ago but due to several reasons, I could not perform this awesome plan immediately. However, today - a beautiful day, I decided to come back home by riding using my second lover - Columbia 18x (it is MTB bicycle). Although there were some issues in my road, it was still wonderful experience to me. That means I will continue this plan, go back Hanoi (our capital city) and come back my village again, utilizing Columbia in both cases. &lt;/p&gt;
+&lt;p&gt;The idea of cycling to hometown came many days ago but due to several reasons, I could not perform this awesome plan immediately. However, today - a beautiful day, I decided to come back home by riding using my second lover - Columbia 18x (it is MTB bicycle). Although there were some issues in my road, it was still wonderful experience to me. That means I will continue this plan, go back Hanoi (our capital city) and come back my village again, utilizing Columbia in both cases.&lt;/p&gt;
 
 &lt;h3 id=&quot;start&quot;&gt;Start&lt;/h3&gt;
-&lt;p&gt;In my mind set up yesterday, I was planning to wake up at 4.30 a.m and do prepare something to start the journey at 5.00 a.m. However, it was broken. I woke up at 5.20 a.m. It was not good job. That is why the journey was started at 6.00 a.m instead of 5.00 a.m as ideal time. This time is summer in Vietnam, so starting later means I had to face with heat when the time is 7.00 a.m or 8.00 a.m. Though it was late, I still began. 6.04 a.m, I started the journey. I also checked the meter which displayed that Sum of ridden length: 91 km, time: 6.04 a.m.  &lt;/p&gt;
+&lt;p&gt;In my mind set up yesterday, I was planning to wake up at 4.30 a.m and do prepare something to start the journey at 5.00 a.m. However, it was broken. I woke up at 5.20 a.m. It was not good job. That is why the journey was started at 6.00 a.m instead of 5.00 a.m as ideal time. This time is summer in Vietnam, so starting later means I had to face with heat when the time is 7.00 a.m or 8.00 a.m. Though it was late, I still began. 6.04 a.m, I started the journey. I also checked the meter which displayed that Sum of ridden length: 91 km, time: 6.04 a.m.&lt;/p&gt;
 
 &lt;h3 id=&quot;ride&quot;&gt;Ride&lt;/h3&gt;
 &lt;p&gt;After 10 km was passed, I felt very tired on account of weight of backpack which is predicted 10 kg weight. Surprisingly, it just took 15 minutes to accomplish that length however. This record made me more confident to go.&lt;/p&gt;
@@ -1582,16 +1692,16 @@ Market your own services: If selling stuff makes your skin crawl, you can use a 
 &lt;p&gt;Trước hết, tựu chung về những gì mà một sinh viên CNTT nên biết, bao gồm cơ bản xử lý mức máy (byte, memory, …), cơ bản hệ điều hành (Windows, Unix), các ngôn ngữ lập trình (lập trình hướng đối tượng, lập trình hàm, lập trình logic, lập trình script), thuật toán và cấu trúc dữ liệu cơ bản và cuối cùng, nơi để tìm kiếm thêm thông tin, tham gia trao đổi nâng cao kiến thức. Tuy nhiên, trong quá trình hoàn thiện mình, sinh viên CNTT nên biết thêm một vài lĩnh vực khác có thể hữu ích trong công việc cũng như trong cuộc sống sau này, có thể kể tên kinh tế học cơ bản, cơ bản quản lý (bao gồm quản lý cá nhân, quản lý công việc, sâu hơn là quản lý dự án). Nhìn chung, càng có nhiều tri thức, càng dễ bề xoay xở. Một phần không thể quên, chính là phải nắm vững kỹ thuật dating (tiếng Việt là tìm bạn khác giới). Thực trạng đáng buồn là sinh viên CNTT luôn có tỷ lệ F.A cao. Tại sao lại phải thuần thục vấn đề này sẽ được giải thích rõ hơn trong một bài viết đề cập về  sự ảnh hưởng của hormone Oxytocin đến khả năng học tập/làm việc hiệu quả. Just kidding, but it’s true!&lt;/p&gt;
 
 &lt;h4 id=&quot;barrierlanguage&quot;&gt;Tiếng Anh, rào cản lớn nhất!&lt;/h4&gt;
-&lt;p&gt;Có thể nói rằng ngoại ngữ là rào cản lớn nhất trong quá trình rèn luyện, thu thập kiến thức của sinh viên nói chung và sinh viên CNTT nói riêng. Sở dĩ nói vậy bởi công nghệ thông tin là ngành tương đối đặc thù với các kỹ thuật phát triển nhanh và không ngừng thay đổi. Một công nghệ có thể hôm nay là thời thượng, ngày mai có thể đi vào dĩ vãng mà Yahoo là người hiểu rõ hơn cả: sự lớn mạnh của các trang mạng xã hội như Facebook đã đánh gục Blog 360 hay sự nở rộ của các phần mềm chat OTT (Over-the-top) như Viber, Whatsapp đã khiến Yahoo Messenger không còn nhiều đất diễn. Những ví dụ trên đủ cho thấy, nếu bạn là sinh viên CNTT, hãy chuẩn bị kĩ lưỡng để cập nhật thông tin công nghệ mọi lúc, mọi nơi bất kể vùng miền hay tuổi tác. Một ngày bạn ngừng cập nhật, là một ngày bạn chậm chân so với bạn đồng nghiệp, bạn đồng trang lứa. Dẫn dắt tuy dài dòng, nhưng câu hỏi chốt lại, &lt;em&gt;Tại sao phải biết tiếng Anh?&lt;/em&gt;. Như trên, tin mới nhất được diễn đạt bằng tiếng Anh. Bạn chờ nó chuyển sang tiếng Việt, là bạn chậm vài trăm ngày rồi. &lt;/p&gt;
+&lt;p&gt;Có thể nói rằng ngoại ngữ là rào cản lớn nhất trong quá trình rèn luyện, thu thập kiến thức của sinh viên nói chung và sinh viên CNTT nói riêng. Sở dĩ nói vậy bởi công nghệ thông tin là ngành tương đối đặc thù với các kỹ thuật phát triển nhanh và không ngừng thay đổi. Một công nghệ có thể hôm nay là thời thượng, ngày mai có thể đi vào dĩ vãng mà Yahoo là người hiểu rõ hơn cả: sự lớn mạnh của các trang mạng xã hội như Facebook đã đánh gục Blog 360 hay sự nở rộ của các phần mềm chat OTT (Over-the-top) như Viber, Whatsapp đã khiến Yahoo Messenger không còn nhiều đất diễn. Những ví dụ trên đủ cho thấy, nếu bạn là sinh viên CNTT, hãy chuẩn bị kĩ lưỡng để cập nhật thông tin công nghệ mọi lúc, mọi nơi bất kể vùng miền hay tuổi tác. Một ngày bạn ngừng cập nhật, là một ngày bạn chậm chân so với bạn đồng nghiệp, bạn đồng trang lứa. Dẫn dắt tuy dài dòng, nhưng câu hỏi chốt lại, &lt;em&gt;Tại sao phải biết tiếng Anh?&lt;/em&gt;. Như trên, tin mới nhất được diễn đạt bằng tiếng Anh. Bạn chờ nó chuyển sang tiếng Việt, là bạn chậm vài trăm ngày rồi.&lt;/p&gt;
 
-&lt;p&gt;Tuy nhiên, ở đây tác giả không chỉ đề cập tới sự cần thiết của tiếng Anh trong việc nắm bắt thông tin. Một cách đầy đủ, tiếng Anh là công cụ cần thiết bậc nhất, nếu bạn muốn thành công trong lĩnh vực tin học. Đọc thôi không đủ, bạn cần có khả năng nghe (chí ít để nghe bài giảng của các khoá học mà sẽ được nói tới ở phần &lt;a href=&quot;#mooc&quot;&gt;Massive Online Open Course (MOOC) và tương lai của đào tạo chất lượng cao&lt;/a&gt;), bạn cần phải giao tiếp thành thục được - phòng trường hợp &lt;em&gt;phải&lt;/em&gt; làm Leader, trao đổi suốt ngày với khách hàng ngoại quốc nói tiếng Tây. Ngoài ra, bạn cũng cần có kỹ năng viết nhất định, ít nhất có thể hoàn thành được tài liệu hướng dẫn sử dụng thứ mà bạn đã dày công làm ra, khoảng trên dưới trăm trang có lẻ. Như vậy, một lần nữa khẳng định rằng tiếng Anh cực kỳ quan trọng! Dĩ nhiên, nếu bạn chỉ muốn trở thành một lập trình viên hạng xoàng thì không cần mất thời gian vào tiếng Anh làm gì, &lt;em&gt;đằng nào chả có đứa dịch cho mình, tội gì mất công học, code mấy thứ hay ho còn vui hơn&lt;/em&gt;. &lt;/p&gt;
+&lt;p&gt;Tuy nhiên, ở đây tác giả không chỉ đề cập tới sự cần thiết của tiếng Anh trong việc nắm bắt thông tin. Một cách đầy đủ, tiếng Anh là công cụ cần thiết bậc nhất, nếu bạn muốn thành công trong lĩnh vực tin học. Đọc thôi không đủ, bạn cần có khả năng nghe (chí ít để nghe bài giảng của các khoá học mà sẽ được nói tới ở phần &lt;a href=&quot;#mooc&quot;&gt;Massive Online Open Course (MOOC) và tương lai của đào tạo chất lượng cao&lt;/a&gt;), bạn cần phải giao tiếp thành thục được - phòng trường hợp &lt;em&gt;phải&lt;/em&gt; làm Leader, trao đổi suốt ngày với khách hàng ngoại quốc nói tiếng Tây. Ngoài ra, bạn cũng cần có kỹ năng viết nhất định, ít nhất có thể hoàn thành được tài liệu hướng dẫn sử dụng thứ mà bạn đã dày công làm ra, khoảng trên dưới trăm trang có lẻ. Như vậy, một lần nữa khẳng định rằng tiếng Anh cực kỳ quan trọng! Dĩ nhiên, nếu bạn chỉ muốn trở thành một lập trình viên hạng xoàng thì không cần mất thời gian vào tiếng Anh làm gì, &lt;em&gt;đằng nào chả có đứa dịch cho mình, tội gì mất công học, code mấy thứ hay ho còn vui hơn&lt;/em&gt;.&lt;/p&gt;
 
 &lt;h6 id=&quot;bt-u-hc-ting-anh-t-u&quot;&gt;Bắt đầu học tiếng Anh từ đâu?&lt;/h6&gt;
 &lt;p&gt;Câu hỏi này, khó mà lại dễ! Dễ bởi, chắc đa phần chúng ta bắt đầu tiếp cận với tiếng anh ở cấp Trung học. Nghĩa là, lên tới đại học, bạn có khoảng 7 năm kinh nghiệm học tiếng Anh. Còn khó, cũng đa phần chúng ta tiếp cận sai phương pháp. Bài viết này không chỉ ra phương pháp nào là phương pháp đúng đắn nhất, bởi đơn giản, điều đó phụ thuộc mỗi người. Tuy vậy, một số phương pháp đang được sử dụng phổ biến như dưới đây.
 - &lt;a href=&quot;http://effortlessenglishclub.com/&quot;&gt;Effortless English&lt;/a&gt;.
 - &lt;a href=&quot;http://www.pimsleur.com/Learn-English-for-Vietnamese-Speakers&quot;&gt;Pimsleur&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Ngoài ra còn rất nhiều tài nguyên trên internet nếu bạn muốn luyện các chứng chỉ quốc tế IELTS, TOEFT hay TOEIC. &lt;/p&gt;
+&lt;p&gt;Ngoài ra còn rất nhiều tài nguyên trên internet nếu bạn muốn luyện các chứng chỉ quốc tế IELTS, TOEFT hay TOEIC.&lt;/p&gt;
 
 &lt;h4 id=&quot;person&quot;&gt;Bạn  muốn trở thành người như thế nào?&lt;/h4&gt;
 
@@ -1654,7 +1764,7 @@ Market your own services: If selling stuff makes your skin crawl, you can use a 
   &lt;li&gt;Classifieds - ex. Craiglist&lt;/li&gt;
   &lt;li&gt;Featured listings - e.g. Yelp, Super Pages;&lt;/li&gt;
   &lt;li&gt;Email Ads - as done by Yahoo, MSN&lt;/li&gt;
-  &lt;li&gt;Ad Retargeting - ex. Criteo &lt;/li&gt;
+  &lt;li&gt;Ad Retargeting - ex. Criteo&lt;/li&gt;
   &lt;li&gt;Real-time Intent Ad Delivery&lt;/li&gt;
   &lt;li&gt;Location-based offers - ex/ Foursquare&lt;/li&gt;
   &lt;li&gt;Sponsorships / Site Takeovers -  ex. Pandora&lt;/li&gt;
@@ -1720,7 +1830,7 @@ Market your own services: If selling stuff makes your skin crawl, you can use a 
   &lt;li&gt;Telephony - ex. termination/origination in public telephony networks (skype out/in)&lt;/li&gt;
   &lt;li&gt;Telephony - ex. termination/origination within private telephony cloud (e.g. native skype)&lt;/li&gt;
   &lt;li&gt;Payment Gateways: Mobile -ex. Braintree&lt;/li&gt;
-  &lt;li&gt;Platform Monetization (&amp;#8220;Tax&amp;#8221;) - Facebook Credits; iO6 30% cut.&lt;/li&gt;
+  &lt;li&gt;Platform Monetization (“Tax”) - Facebook Credits; iO6 30% cut.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;licensing&quot;&gt;Licensing&lt;/h2&gt;
@@ -1774,8 +1884,8 @@ Market your own services: If selling stuff makes your skin crawl, you can use a 
    <content type="html">
 &lt;p&gt;Aww, it seems very amazing when you traverse &lt;a href=&quot;http://quora.com&quot;&gt;Quora&lt;/a&gt; to face with many curious questions. In the spare time, I usually &lt;em&gt;quora&lt;/em&gt; and sometimes I must burst into a laugh because of some stupid questions and a plenty of ridiculous answers. That is why I create this post to keep those things.&lt;/p&gt;
 
-&lt;h4 id=&quot;question-1-by-hugos-friend-leolinkhttpmrleolinkgithubio&quot;&gt;Question 1 by Hugo&amp;#8217;s friend, &lt;a href=&quot;http://mrleolink.github.io/&quot;&gt;@LeoLink&lt;/a&gt;&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.quora.com/Operating-Systems/My-friend-asked-me-that-why-windows-didnt-base-on-linux-kernel-The-reason-he-gave-is-he-love-gaming-in-Windows-and-like-working-in-Linux-Any-idea-for-a-mixing-OS&quot;&gt;&lt;em&gt;My friend asked me that why windows didn&amp;#8217;t base on linux kernel. The reason he gave is he love gaming in Windows and like working in Linux. Any idea for a mixing OS?&lt;/em&gt;&lt;/a&gt;. Of course, there is no answer till this post is published. Predictably, it will stay in no-answer status for a long time until a crazy guy feels happy to give idea.&lt;/p&gt;
+&lt;h4 id=&quot;question-1-by-hugos-friend-leolinkhttpmrleolinkgithubio&quot;&gt;Question 1 by Hugo’s friend, &lt;a href=&quot;http://mrleolink.github.io/&quot;&gt;@LeoLink&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.quora.com/Operating-Systems/My-friend-asked-me-that-why-windows-didnt-base-on-linux-kernel-The-reason-he-gave-is-he-love-gaming-in-Windows-and-like-working-in-Linux-Any-idea-for-a-mixing-OS&quot;&gt;&lt;em&gt;My friend asked me that why windows didn’t base on linux kernel. The reason he gave is he love gaming in Windows and like working in Linux. Any idea for a mixing OS?&lt;/em&gt;&lt;/a&gt;. Of course, there is no answer till this post is published. Predictably, it will stay in no-answer status for a long time until a crazy guy feels happy to give idea.&lt;/p&gt;
 
 &lt;p&gt;(Next questions will be updated asap)&lt;/p&gt;
 </content>
@@ -1787,7 +1897,7 @@ Market your own services: If selling stuff makes your skin crawl, you can use a 
    <updated>2013-05-13T00:00:00+07:00</updated>
    <id>http://hugo53.github.io/business%20model/2013/05/13/mo-hinh-sinh-loi-nhuan-trong-linh-vc-web-va-mobile</id>
    <content type="html">
-&lt;p&gt;Thể theo nguyện vọng của bạn &lt;em&gt;boy2tay2sung&lt;/em&gt;, mình đưa bài viết này lên, là phiên bản tiếng Việt của bài viết &lt;em&gt;Web And Mobile Revenue Models&lt;/em&gt; vừa được post cách đây vài giờ đồng hồ. Cũng xin nói thêm một chút, nội dung của bài viết phỏng theo chia sẻ ở &lt;a href=&quot;https://hackpad.com/Web-And-Mobile-Revenue-Models-final-EgXuEtSibE7&quot;&gt;đây&lt;/a&gt; của Fred Wilson-một nhà đầu tư, chủ tịch quỹ đầu tư Union Square Ventures. Tuy nhiên, để có được bản tổng kết này, cũng có rất nhiều nhà đầu tư, CEO đóng góp cho bản thảo không chính thức của Fred, trong đó, cũng có một vài đóng góp của người Việt (&lt;a href=&quot;https://hackpad.com/Web-and-Mobile-Revenue-Models-Ch2paBpUyIU&quot;&gt;xem ở đây&lt;/a&gt;). Bạn có thể tìm hiểu thêm về Fred thông qua các kênh chia sẻ cá nhân của ông như &lt;a href=&quot;https://twitter.com/fredwilson&quot;&gt;Twitter&lt;/a&gt; hoặc &lt;a href=&quot;http://www.avc.com/&quot;&gt;blog&lt;/a&gt;. &lt;/p&gt;
+&lt;p&gt;Thể theo nguyện vọng của bạn &lt;em&gt;boy2tay2sung&lt;/em&gt;, mình đưa bài viết này lên, là phiên bản tiếng Việt của bài viết &lt;em&gt;Web And Mobile Revenue Models&lt;/em&gt; vừa được post cách đây vài giờ đồng hồ. Cũng xin nói thêm một chút, nội dung của bài viết phỏng theo chia sẻ ở &lt;a href=&quot;https://hackpad.com/Web-And-Mobile-Revenue-Models-final-EgXuEtSibE7&quot;&gt;đây&lt;/a&gt; của Fred Wilson-một nhà đầu tư, chủ tịch quỹ đầu tư Union Square Ventures. Tuy nhiên, để có được bản tổng kết này, cũng có rất nhiều nhà đầu tư, CEO đóng góp cho bản thảo không chính thức của Fred, trong đó, cũng có một vài đóng góp của người Việt (&lt;a href=&quot;https://hackpad.com/Web-and-Mobile-Revenue-Models-Ch2paBpUyIU&quot;&gt;xem ở đây&lt;/a&gt;). Bạn có thể tìm hiểu thêm về Fred thông qua các kênh chia sẻ cá nhân của ông như &lt;a href=&quot;https://twitter.com/fredwilson&quot;&gt;Twitter&lt;/a&gt; hoặc &lt;a href=&quot;http://www.avc.com/&quot;&gt;blog&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Về cơ bản, tổng hợp của Fred đã bao quát được tương đối đầy đủ phương thức &lt;em&gt;kiếm tiền&lt;/em&gt; thông qua cung cấp các dịch vụ trên nền Web cũng như nền tảng Mobile. Cách tiếp cận rất đơn giản, Fred Wilson gạch đầu dòng tên phương pháp, đi kèm với một số sản phẩm, công ty đã từng áp dụng thành công. Sau đây là phần nội dung chính.&lt;/p&gt;
 
@@ -1806,7 +1916,7 @@ Market your own services: If selling stuff makes your skin crawl, you can use a 
   &lt;li&gt;Quảng cáo dựa trên mạng chia sẻ đồ dùng dạng phân loại (Classifieds) -  Craiglist&lt;/li&gt;
   &lt;li&gt;Featured listings - e.g. Yelp, Super Pages;&lt;/li&gt;
   &lt;li&gt;Quảng cáo trong Email- Yahoo, MSN&lt;/li&gt;
-  &lt;li&gt;Quảng cáo định hướng người dùng (Ad Retargeting) -  Criteo &lt;/li&gt;
+  &lt;li&gt;Quảng cáo định hướng người dùng (Ad Retargeting) -  Criteo&lt;/li&gt;
   &lt;li&gt;Real-time Intent Ad Delivery (need more time to dig it)&lt;/li&gt;
   &lt;li&gt;Quảng cáo dựa trên định vị người dùng (Location-based) -  Foursquare&lt;/li&gt;
   &lt;li&gt;Quảng cáo dưới dạng nhà tài trợ (Sponsorships / Site Takeovers) -   Pandora&lt;/li&gt;
@@ -1928,7 +2038,7 @@ Market your own services: If selling stuff makes your skin crawl, you can use a 
 
 &lt;h2 id=&quot;what-about-official-tutorials-from-apple&quot;&gt;What about official tutorials from Apple?&lt;/h2&gt;
 &lt;p&gt;Ahh, Nothing to say about them. Very very very amazing and extremely useful. We can find those at &lt;a href=&quot;http://developer.apple.com/library/ios/#referencelibrary/GettingStarted/RoadMapiOS/&quot;&gt;here&lt;/a&gt;. Please pay attention to the horizontal axis where describes standard road to combat almost challenges of mobile development.
-A frequent question is that &lt;em&gt;What is the starting point?&lt;/em&gt;. It means that newbies doesn&amp;#8217;t know where should begin. In &lt;a href=&quot;http://developer.apple.com/library/ios/#referencelibrary/GettingStarted/RoadMapiOS/chapters/DesignYourAppwithCare/DesignYourAppWithCare/DesignYourAppWithCare.html&quot;&gt;&lt;em&gt;App Design&lt;/em&gt;&lt;/a&gt; section, Apple suggests that developers should make clearly their ideas firstly, then make action plan that may consider many parts of creating application process such as Data Model, rough interface, type of devices: iPhone or iPad or both, version OS supported: 4 or later, 5 or later, 6 or later, so forth. &lt;/p&gt;
+A frequent question is that &lt;em&gt;What is the starting point?&lt;/em&gt;. It means that newbies doesn’t know where should begin. In &lt;a href=&quot;http://developer.apple.com/library/ios/#referencelibrary/GettingStarted/RoadMapiOS/chapters/DesignYourAppwithCare/DesignYourAppWithCare/DesignYourAppWithCare.html&quot;&gt;&lt;em&gt;App Design&lt;/em&gt;&lt;/a&gt; section, Apple suggests that developers should make clearly their ideas firstly, then make action plan that may consider many parts of creating application process such as Data Model, rough interface, type of devices: iPhone or iPad or both, version OS supported: 4 or later, 5 or later, 6 or later, so forth.&lt;/p&gt;
 
 &lt;h2 id=&quot;main-training-resources&quot;&gt;Main training resources&lt;/h2&gt;
 &lt;p&gt;There is a fact that finding a valuable instruction is a hard task obviously. I usually question that what resource can be put our belief to pursue. As follows, I will list primary resources which I think they may helpful.&lt;/p&gt;
@@ -1948,12 +2058,12 @@ A frequent question is that &lt;em&gt;What is the starting point?&lt;/em&gt;. It
 &lt;h4 id=&quot;blog&quot;&gt;Blog&lt;/h4&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;http://zeroheroblog.com/&quot;&gt;Great blog by an IT Guru&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://maniacdev.com/&quot;&gt;Superb Blog&lt;/a&gt;. Show a lot of code, sample project, design strategy, &amp;#8230;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://maniacdev.com/&quot;&gt;Superb Blog&lt;/a&gt;. Show a lot of code, sample project, design strategy, …&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://www.honcheng.com/applications&quot;&gt;Template IOS&lt;/a&gt;. Several awesome templates were distributed via Github.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;ui-design&quot;&gt;UI Design&lt;/h2&gt;
-&lt;p&gt;Great great great book: &lt;em&gt;Designing the iPhone User Experience A User-Centered Approach to Sketching and Prototyping iPhone Apps&lt;/em&gt; by SUZANNE GINSBURG. This book has been using in Design Course at CMU. &lt;/p&gt;
+&lt;p&gt;Great great great book: &lt;em&gt;Designing the iPhone User Experience A User-Centered Approach to Sketching and Prototyping iPhone Apps&lt;/em&gt; by SUZANNE GINSBURG. This book has been using in Design Course at CMU.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -1972,7 +2082,7 @@ A frequent question is that &lt;em&gt;What is the starting point?&lt;/em&gt;. It
 
 &lt;h4 id=&quot;ui-pattern&quot;&gt;UI Pattern&lt;/h4&gt;
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://pttrns.com/&quot;&gt;pttrns&lt;/a&gt; Great source for iOS UI. &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://pttrns.com/&quot;&gt;pttrns&lt;/a&gt; Great source for iOS UI.&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://www.mobile-patterns.com/&quot;&gt;MOBILE PATTERNS&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://www.androidpatterns.com/&quot;&gt;Android Patterns&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://www.slideshare.net/theresaneil&quot;&gt;Theresa Neil&lt;/a&gt;. Slideshare of Theresa, a great UX Designer.&lt;/li&gt;
@@ -2002,7 +2112,7 @@ A frequent question is that &lt;em&gt;What is the starting point?&lt;/em&gt;. It
     &lt;p&gt;&lt;a href=&quot;http://developer.apple.com/library/ios/#documentation/iphone/conceptual/iphoneosprogrammingguide/AppDesignBasics/AppDesignBasics.html#//apple_ref/doc/uid/TP40007072-CH2-SW1&quot;&gt;Fundamental iOS Design Patterns&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;http://developer.apple.com/library/ios/#documentation/iphone/conceptual/iphoneosprogrammingguide/StatePreservation/StatePreservation.html#//apple_ref/doc/uid/TP40007072-CH11-SW13&quot;&gt;State Preservation and Restoration&lt;/a&gt;. For showing content at the last launch. &lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://developer.apple.com/library/ios/#documentation/iphone/conceptual/iphoneosprogrammingguide/StatePreservation/StatePreservation.html#//apple_ref/doc/uid/TP40007072-CH11-SW13&quot;&gt;State Preservation and Restoration&lt;/a&gt;. For showing content at the last launch.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;a href=&quot;http://developer.apple.com/library/ios/#documentation/iphone/conceptual/iphoneosprogrammingguide/TheiOSEnvironment/TheiOSEnvironment.html#//apple_ref/doc/uid/TP40007072-CH9-SW1&quot;&gt;Automatic Sleep Timer&lt;/a&gt;. You may need to disable the sleep timer.&lt;/p&gt;
@@ -2034,7 +2144,7 @@ A frequent question is that &lt;em&gt;What is the starting point?&lt;/em&gt;. It
     &lt;ul&gt;
       &lt;li&gt;
         &lt;p&gt;Advertisement at the beginning or ending points. 
-  &lt;em&gt;My experience is from running a cross-promotion network called AppFlood on Android. Banners ads are pointless&amp;#8230; the CTR is too low. If you implement a full screen interstitial correctly (at the beginning or end of a game/app) we have seen seen CTRs as high as 45%. However, we are well above the industry average for these ads which typically run 3-8% on other networks. A lot of it depends on how you integrate the advertisement.&lt;/em&gt;&lt;/p&gt;
+  &lt;em&gt;My experience is from running a cross-promotion network called AppFlood on Android. Banners ads are pointless… the CTR is too low. If you implement a full screen interstitial correctly (at the beginning or end of a game/app) we have seen seen CTRs as high as 45%. However, we are well above the industry average for these ads which typically run 3-8% on other networks. A lot of it depends on how you integrate the advertisement.&lt;/em&gt;&lt;/p&gt;
       &lt;/li&gt;
       &lt;li&gt;
         &lt;p&gt;Full-page ads. 
@@ -2052,7 +2162,7 @@ A frequent question is that &lt;em&gt;What is the starting point?&lt;/em&gt;. It
 
 &lt;h4 id=&quot;app-keywords&quot;&gt;App Keywords&lt;/h4&gt;
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://sensortower.com/&quot;&gt;Sensor Tower&lt;/a&gt;. Get any app&amp;#8217;s keywords. Just enter the app name and get its keywords. It also provides optimizing service for optimize app keyword.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://sensortower.com/&quot;&gt;Sensor Tower&lt;/a&gt;. Get any app’s keywords. Just enter the app name and get its keywords. It also provides optimizing service for optimize app keyword.&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://www.mobiledevhq.com/&quot;&gt;App Store Optimization Tool&lt;/a&gt;. Providing tool for ASO. Free for 1 app and charge fee if want to use for more app.&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://searchman.com/&quot;&gt;Search Man&lt;/a&gt;. Another ASO tool, allow tracking app and keywords.&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://www.appcodes.com/&quot;&gt;Appcodes&lt;/a&gt;. ASO tool, but require charging. No free!&lt;/li&gt;
@@ -2060,12 +2170,13 @@ A frequent question is that &lt;em&gt;What is the starting point?&lt;/em&gt;. It
 
 &lt;h4 id=&quot;market-research&quot;&gt;Market Research&lt;/h4&gt;
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://xyo.net/&quot;&gt;Xyo&lt;/a&gt;. Dividing popular apps into categories such as &lt;em&gt;Keep up with news&lt;/em&gt;, &lt;em&gt;Make friends&lt;/em&gt;, &lt;em&gt;Game&lt;/em&gt;, &lt;em&gt;Take photo&lt;/em&gt;, &lt;em&gt;Find music&lt;/em&gt;, &amp;#8230; Helpful for someone who want to see best app for a specific category. &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://xyo.net/&quot;&gt;Xyo&lt;/a&gt;. Dividing popular apps into categories such as &lt;em&gt;Keep up with news&lt;/em&gt;, &lt;em&gt;Make friends&lt;/em&gt;, &lt;em&gt;Game&lt;/em&gt;, &lt;em&gt;Take photo&lt;/em&gt;, &lt;em&gt;Find music&lt;/em&gt;, … Helpful for someone who want to see best app for a specific category.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;app-evaluation&quot;&gt;App Evaluation&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;http://howmuchtobuildanapp.com/#&quot;&gt;How Much To Build An App&lt;/a&gt;. A tool to help you estimate the cost to develop your iPhone, iPad, Android, Windows Phone, or Web app in seconds.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://fueled.com/blog/how-much-does-it-cost-to-develop-an-app/&quot;&gt;What does it cost to develop an app?&lt;/a&gt; by Fueled, an app maker agency, explaining more how to choose team to build a mobile application and how much it should cost.&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://www.quora.com/How-much-does-it-cost-to-build-an-iPhone-app&quot;&gt;How much does it cost to build an iPhone app?&lt;/a&gt;. A Quora question, bring us a lots knowledge.&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -2083,7 +2194,7 @@ A frequent question is that &lt;em&gt;What is the starting point?&lt;/em&gt;. It
    <id>http://hugo53.github.io/2013/05/11/hello-world</id>
    <content type="html">
 &lt;h1 id=&quot;kick-off&quot;&gt;Kick off.&lt;/h1&gt;
-&lt;p&gt;## Let&amp;#8217;s start blogging!&lt;/p&gt;
+&lt;p&gt;Let’s start blogging!&lt;/p&gt;
 </content>
  </entry>
  

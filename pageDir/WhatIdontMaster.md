@@ -82,11 +82,11 @@ In the Core Graphics framework, there are two ways to modify the CTM.
 You can also evaluate and invert affine transforms and use them to modify point, size, and rectangle values in your code. For more information on using affine transforms, see Quartz 2D Programming Guide and CGAffineTransform Reference.
 
 
-##18/12/2013
+## 18/12/2013
 - [Event Handling](https://developer.apple.com/library/ios/documentation/EventHandling/Conceptual/EventHandlingiPhoneOS/GestureRecognizer_basics/GestureRecognizer_basics.html#//apple_ref/doc/uid/TP40009541-CH2-SW2)
 - [Great book for practice](http://www.apeth.com/iOSBook/)
 
-##27/12/2013
+## 27/12/2013
 - [Internationalization and Localization](https://developer.apple.com/internationalization/)
 
 ## 03/01/2014
