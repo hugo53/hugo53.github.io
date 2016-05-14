@@ -5,8 +5,8 @@
         <description>Leading Beautiful Life - Hugo Nguyen</description>
         <link>http://hugo53.github.io</link>
         <link>http://hugo53.github.io</link>
-        <lastBuildDate>2016-05-15T00:57:12+07:00</lastBuildDate>
-        <pubDate>2016-05-15T00:57:12+07:00</pubDate>
+        <lastBuildDate>2016-05-15T01:04:46+07:00</lastBuildDate>
+        <pubDate>2016-05-15T01:04:46+07:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -29,11 +29,11 @@ sudo cp ~/Downloads/sleepwatcher_2.2/sleepwatcher.8 /usr/local/share/man/man8&lt
 
 &lt;h3 id=&quot;create-applescript&quot;&gt;Create AppleScript&lt;/h3&gt;
 &lt;p&gt;Before create AppleScript, be sure you have at least one playlist on iTunes. If not, go create it. Just a step using iTunes.
-Then now, we write a simple script to open iTunes and play a specific playlist automatically, named &lt;code&gt;.wakeup&lt;/code&gt;, looks like that:&lt;/p&gt;
+Then now, we write a simple script to open iTunes and play a specific playlist automatically, named &lt;code class=&quot;highlighter-rouge&quot;&gt;.wakeup&lt;/code&gt;, looks like that:&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;c&quot;&gt;#!/bin/bash &lt;/span&gt;
 
-osascript -e &lt;span class=&quot;s2&quot;&gt;&amp;quot;tell application \&amp;quot;iTunes\&amp;quot; to activate&amp;quot;&lt;/span&gt; -e &lt;span class=&quot;s2&quot;&gt;&amp;quot;tell application \&amp;quot;iTunes\&amp;quot; to play playlist \&amp;quot;Test1Playlist\&amp;quot;&amp;quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+osascript -e &lt;span class=&quot;s2&quot;&gt;&quot;tell application &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;iTunes&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; to activate&quot;&lt;/span&gt; -e &lt;span class=&quot;s2&quot;&gt;&quot;tell application &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;iTunes&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; to play playlist &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Test1Playlist&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;Tell Sleepwatcher wakeup configuration file.&lt;/p&gt;
 
@@ -78,11 +78,11 @@ launchctl load ~/Library/LaunchAgents/de.bernhard-baehr.sleepwatcher-20compatibi
 
 &lt;p&gt;I checked with &lt;a href=&quot;https://github.com/facebook/infer/tree/2bce7c6c3dbb22646e2d67a2c6ade77f060b4bca/examples/ios_hello&quot;&gt;sample project&lt;/a&gt; provided by Facebook. Just go to directory contains that project&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;cd ios_hello/&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;cd ios_hello/&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;then type in terminal&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;infer -- xcodebuild -target HelloWorldApp -configuration Debug -sdk iphonesimulator&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;infer -- xcodebuild -target HelloWorldApp -configuration Debug -sdk iphonesimulator&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;So, Infer takes several minutes to analyze full project and when finish, it will show us some cool stuffs, about MEMORY LEAK, RESOURCE_LEAK, PARAMETER_NOT_NULL_CHECKED, NULL_DEREFERENCE, PREMATURE_NIL_TERMINATION_ARGUMENT and so on. Absolutely awesome!&lt;/p&gt;
 
@@ -101,7 +101,7 @@ launchctl load ~/Library/LaunchAgents/de.bernhard-baehr.sleepwatcher-20compatibi
 &lt;p&gt;&lt;img src=&quot;http://hugo53.github.io/images/podUnitTest/before.png&quot; alt=&quot;alt text&quot; title=&quot;Error&quot; /&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;how-to-fix&quot;&gt;How to fix&lt;/h4&gt;
-&lt;p&gt;See the below image for more details. Choose &lt;code&gt;Pods.debug&lt;/code&gt; for &lt;code&gt;XYZTests&lt;/code&gt; in &lt;code&gt;Debug&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;See the below image for more details. Choose &lt;code class=&quot;highlighter-rouge&quot;&gt;Pods.debug&lt;/code&gt; for &lt;code class=&quot;highlighter-rouge&quot;&gt;XYZTests&lt;/code&gt; in &lt;code class=&quot;highlighter-rouge&quot;&gt;Debug&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://hugo53.github.io/images/podUnitTest/after.png&quot; alt=&quot;alt text&quot; title=&quot;Error&quot; /&gt;&lt;/p&gt;
 </description>
@@ -136,11 +136,11 @@ launchctl load ~/Library/LaunchAgents/de.bernhard-baehr.sleepwatcher-20compatibi
 
 &lt;p&gt;In fact, iOS 7 supports us an option for adjusting view by content inset. By default, it will be:&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-objectivec&quot; data-lang=&quot;objectivec&quot;&gt;&lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;automaticallyAdjustsScrollViewInsets&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;YES&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;// self is view controller&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-objectivec&quot; data-lang=&quot;objectivec&quot;&gt;self.automaticallyAdjustsScrollViewInsets = YES;  // self is view controller&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;Then, if you want to get rid of the that default, just do in view controller:&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-objectivec&quot; data-lang=&quot;objectivec&quot;&gt;&lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;automaticallyAdjustsScrollViewInsets&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;NO&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-objectivec&quot; data-lang=&quot;objectivec&quot;&gt;self.automaticallyAdjustsScrollViewInsets = NO;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;You also may face to this problem when do with table view, scroll view like an example &lt;a href=&quot;https://github.com/nicklockwood/SwipeView/issues/54#issuecomment-31060333&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
@@ -226,12 +226,12 @@ launchctl load ~/Library/LaunchAgents/de.bernhard-baehr.sleepwatcher-20compatibi
 &lt;h2 id=&quot;first-glance&quot;&gt;At First Glance&lt;/h2&gt;
 &lt;p&gt;iOS provides two primary ways for drawing: Core Graphics and Open GL. However, there are more API types of these frameworks. It is simple for OpenGL when it has some clear API named OpenGL ES, Cocos2d. For Core Graphics framework, it may lead junior developer to a confused: Quartz, Quartz 2D or QuartzCore. Firstly, Quartz is heart of CoreGraphics, someone likes to refer Core Graphics as Quartz. Secondly, Quartz 2D is a part of Core Graphics, can refer as an API. Finally, QuartzCore (also known as Core Animation) is for animation, image processing and video image manipulation. It extends some function from Quartz (Core Graphics) but not a part of Quartz. In additional, iOS also provides us UIKit which contains some high-level implementation of Core Graphics, ex. &lt;a href=&quot;https://developer.apple.com/library/ios/documentation/uikit/reference/UIBezierPath_class/Reference/Reference.html&quot;&gt;UIBezierPath&lt;/a&gt; is high-level implementation of &lt;a href=&quot;https://developer.apple.com/library/mac/documentation/graphicsimaging/reference/CGPath/Reference/reference.html&quot;&gt;CGPathRef&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Some terms we should familliar with at the first glance are &lt;code&gt;Drawing Context&lt;/code&gt;, &lt;code&gt;CTM&lt;/code&gt; (Current Transformation Matrix), &lt;code&gt;Core Graphics Coordinate&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Some terms we should familliar with at the first glance are &lt;code class=&quot;highlighter-rouge&quot;&gt;Drawing Context&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;CTM&lt;/code&gt; (Current Transformation Matrix), &lt;code class=&quot;highlighter-rouge&quot;&gt;Core Graphics Coordinate&lt;/code&gt;.&lt;/p&gt;
 
 &lt;h4 id=&quot;drawing-context&quot;&gt;Drawing Context&lt;/h4&gt;
 &lt;p&gt;Everytime you want to draw a path, a shape on screen, you have to know the current context of screen. It is easy to get the current context via:&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-objectivec&quot; data-lang=&quot;objectivec&quot;&gt;&lt;span class=&quot;n&quot;&gt;CGContextRef&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;context&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;UIGraphicsGetCurrentContext&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-objectivec&quot; data-lang=&quot;objectivec&quot;&gt;CGContextRef context = UIGraphicsGetCurrentContext();&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;However, the above line code just need to be written when we draw using CoreGraphics framework. For UIKit with UIBezierPath, this framework gets current context for us automatically.&lt;/p&gt;
@@ -241,8 +241,8 @@ launchctl load ~/Library/LaunchAgents/de.bernhard-baehr.sleepwatcher-20compatibi
 
 &lt;p&gt;In context, it has some significant properties. The most important property is CTM (which will discuss more below). We can get the CTM of current context by:&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-objectivec&quot; data-lang=&quot;objectivec&quot;&gt;&lt;span class=&quot;n&quot;&gt;CGContextRef&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;context&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;UIGraphicsGetCurrentContext&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-&lt;span class=&quot;bp&quot;&gt;CGAffineTransform&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ctm&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;CGContextGetCTM&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-objectivec&quot; data-lang=&quot;objectivec&quot;&gt;CGContextRef context = UIGraphicsGetCurrentContext();
+CGAffineTransform ctm =  CGContextGetCTM(context);&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;h4 id=&quot;ctm-current-transformation-context&quot;&gt;CTM (Current Transformation Context)&lt;/h4&gt;
 &lt;p&gt;Current Transformation Context is an Affine Transformation which plays a role in transforming coordinate, including translation, rotation, scale, flip. Everytime we want to transform coordinate, we must combine desired affine transformation with CTM to make a new CTM which describes right origin and direction of the coordinate.&lt;/p&gt;
@@ -289,42 +289,42 @@ launchctl load ~/Library/LaunchAgents/de.bernhard-baehr.sleepwatcher-20compatibi
 &lt;h4 id=&quot;fore-or-back-front&quot;&gt;Drawing fore-front of back-front?&lt;/h4&gt;
 &lt;p&gt;Core Graphics provides a functions and some options to configure the next drawing action is fore-font or back-front in current context.&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-objectivec&quot; data-lang=&quot;objectivec&quot;&gt;&lt;span class=&quot;n&quot;&gt;CGContextSaveGState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;CGContextSetBlendMode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;blend_option&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;CGContextRestoreGState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ctx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-objectivec&quot; data-lang=&quot;objectivec&quot;&gt;CGContextSaveGState(context);
+CGContextSetBlendMode(context, blend_option);
+CGContextRestoreGState(ctx);&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;Blend Options may be:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;code&gt;kCGBlendModeNormal&lt;/code&gt; next drawing is on fore-front&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;kCGBlendModeNormal&lt;/code&gt; next drawing is on fore-front&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-objectivec&quot; data-lang=&quot;objectivec&quot;&gt;&lt;span class=&quot;n&quot;&gt;CGContextSaveGState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-objectivec&quot; data-lang=&quot;objectivec&quot;&gt;CGContextSaveGState(context);
 
-&lt;span class=&quot;n&quot;&gt;CGContextSetBlendMode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;kCGBlendModeMultiply&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;// To draw yellow frame but not hide the text&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;drawHighlighFrame&lt;/span&gt; 	&lt;span class=&quot;c1&quot;&gt;// Yellow frame&lt;/span&gt;
+CGContextSetBlendMode(context, kCGBlendModeMultiply);// To draw yellow frame but not hide the text
+drawHighlighFrame 	// Yellow frame
 
-&lt;span class=&quot;n&quot;&gt;CGContextSetBlendMode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;kCGBlendModeNormal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;	&lt;span class=&quot;c1&quot;&gt;// To draw underline onto yellow frame&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;drawUnderline&lt;/span&gt;		&lt;span class=&quot;c1&quot;&gt;// Blue line&lt;/span&gt;
+CGContextSetBlendMode(context, kCGBlendModeNormal);	// To draw underline onto yellow frame
+drawUnderline		// Blue line
 
-&lt;span class=&quot;n&quot;&gt;CGContextRestoreGState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+CGContextRestoreGState(context);&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://hugo53.github.io/images/coregraphics/fore-front.png&quot; alt=&quot;alt text&quot; title=&quot;fore front&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;code&gt;kCGBlendModeMultiply&lt;/code&gt; next drawing is on back-front&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;kCGBlendModeMultiply&lt;/code&gt; next drawing is on back-front&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-objectivec&quot; data-lang=&quot;objectivec&quot;&gt;&lt;span class=&quot;n&quot;&gt;CGContextSaveGState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-objectivec&quot; data-lang=&quot;objectivec&quot;&gt;CGContextSaveGState(context);
 
-&lt;span class=&quot;n&quot;&gt;CGContextSetBlendMode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;kCGBlendModeMultiply&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;// To draw yellow frame but not hide the text&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;drawHighlighFrame&lt;/span&gt; 	&lt;span class=&quot;c1&quot;&gt;// Yellow frame&lt;/span&gt;
+CGContextSetBlendMode(context, kCGBlendModeMultiply);// To draw yellow frame but not hide the text
+drawHighlighFrame 	// Yellow frame
 
-&lt;span class=&quot;c1&quot;&gt;// CGContextSetBlendMode(context, kCGBlendModeNormal);// This line is commented. Thus, underline is drawn behind yellow frame&lt;/span&gt;
+// CGContextSetBlendMode(context, kCGBlendModeNormal);// This line is commented. Thus, underline is drawn behind yellow frame
 
-&lt;span class=&quot;n&quot;&gt;drawUnderline&lt;/span&gt;		&lt;span class=&quot;c1&quot;&gt;// Blue line&lt;/span&gt;
+drawUnderline		// Blue line
 
-&lt;span class=&quot;n&quot;&gt;CGContextRestoreGState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+CGContextRestoreGState(context);&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://hugo53.github.io/images/coregraphics/back-front.png&quot; alt=&quot;alt text&quot; title=&quot;back front&quot; /&gt;&lt;/p&gt;
 
@@ -354,7 +354,7 @@ launchctl load ~/Library/LaunchAgents/de.bernhard-baehr.sleepwatcher-20compatibi
 
 &lt;p&gt;&lt;img src=&quot;http://hugo53.github.io/images/huchart/huchart-gitarchive.png&quot; alt=&quot;alt text&quot; title=&quot;huchart archive top&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Suddenly, I saw my project called &lt;a href=&quot;https://github.com/hugo53/HUChart&quot;&gt;HUChart&lt;/a&gt; was in &lt;code&gt;Top New Repositories&lt;/code&gt;. It was really a surprise for me because that day was the first day my repo goes public. Although it received a little bit of stars, but I hope it will help someone and of course, will get more stars and forks.&lt;/p&gt;
+&lt;p&gt;Suddenly, I saw my project called &lt;a href=&quot;https://github.com/hugo53/HUChart&quot;&gt;HUChart&lt;/a&gt; was in &lt;code class=&quot;highlighter-rouge&quot;&gt;Top New Repositories&lt;/code&gt;. It was really a surprise for me because that day was the first day my repo goes public. Although it received a little bit of stars, but I hope it will help someone and of course, will get more stars and forks.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://hugo53.github.io/images/huchart/huchart-topnew.png&quot; alt=&quot;alt text&quot; title=&quot;huchart top&quot; /&gt;&lt;/p&gt;
 
@@ -389,18 +389,23 @@ launchctl load ~/Library/LaunchAgents/de.bernhard-baehr.sleepwatcher-20compatibi
 
 &lt;p&gt;You should push source code to remote repository first.&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;lineno&quot;&gt;1&lt;/span&gt; git add .
-&lt;span class=&quot;lineno&quot;&gt;2&lt;/span&gt; git commit -m &lt;span class=&quot;s2&quot;&gt;&amp;quot;Initial commit&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt;3&lt;/span&gt; git push origin -u master&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;git add .
+git commit -m &lt;span class=&quot;s2&quot;&gt;&quot;Initial commit&quot;&lt;/span&gt;
+git push origin -u master&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;h3 id=&quot;tagging&quot;&gt;Tagging&lt;/h3&gt;
 &lt;p&gt;A tag should be created for the source code because we will need tag version to config podspec file later.&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;lineno&quot;&gt;1&lt;/span&gt; git tag -a 1.0.0 -m &lt;span class=&quot;s2&quot;&gt;&amp;quot;Make v1.0.0&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt;2&lt;/span&gt; git push origin --tags&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;git tag -a 1.0.0 -m &lt;span class=&quot;s2&quot;&gt;&quot;Make v1.0.0&quot;&lt;/span&gt;
+git push origin --tags&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;h2 id=&quot;create-pod&quot;&gt;Create pod&lt;/h2&gt;
-&lt;p&gt;Change directory to project which you want to create a pod. In my case, I will go to &lt;code&gt;HUChartDemo&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;Change directory to project which you want to create a pod. In my case, I will go to &lt;code class=&quot;highlighter-rouge&quot;&gt;HUChartDemo&lt;/code&gt;:&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;HUChartDemo&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
@@ -408,9 +413,9 @@ launchctl load ~/Library/LaunchAgents/de.bernhard-baehr.sleepwatcher-20compatibi
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;pod spec create HUChart    // May need sudo&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Now, it’s time to config podspec file. See &lt;a href=&quot;https://github.com/CocoaPods/CocoaPods/wiki/A-pod-specification&quot;&gt;Pod specification&lt;/a&gt; to get further information. Just do like the example, it is OK. Note that &lt;code&gt;s.version&lt;/code&gt; should be set by a tag version like:&lt;/p&gt;
+&lt;p&gt;Now, it’s time to config podspec file. See &lt;a href=&quot;https://github.com/CocoaPods/CocoaPods/wiki/A-pod-specification&quot;&gt;Pod specification&lt;/a&gt; to get further information. Just do like the example, it is OK. Note that &lt;code class=&quot;highlighter-rouge&quot;&gt;s.version&lt;/code&gt; should be set by a tag version like:&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;s.version &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;1.0.0&amp;quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;s.version &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;1.0.0&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;open -e HUChart.podspec
 or
@@ -420,7 +425,7 @@ vi HUChart.podspec&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;pod spec lint HUChart.podspec    // May need sudo&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;At the end of terminal screen, &lt;code&gt;pod-name.podspec passes validation&lt;/code&gt; appears let you know that your pod is OK to publish.&lt;/p&gt;
+&lt;p&gt;At the end of terminal screen, &lt;code class=&quot;highlighter-rouge&quot;&gt;pod-name.podspec passes validation&lt;/code&gt; appears let you know that your pod is OK to publish.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://hugo53.github.io/images/huchart/hucharPodValidation.png&quot; alt=&quot;alt text&quot; title=&quot;pod validation top&quot; /&gt;&lt;/p&gt;
 
@@ -429,12 +434,12 @@ vi HUChart.podspec&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;p&gt;Next, go to do the last task, send a pull request (PR).&lt;/p&gt;
 
 &lt;h5 id=&quot;a-note-for-ssourcefiles-attribute-in-podspec-file&quot;&gt;A note for s.source_files attribute in podspec file&lt;/h5&gt;
-&lt;p&gt;It is to locate source files you want to publish. Thus, be sure that you provide the exact path for &lt;code&gt;s.source_files&lt;/code&gt; attribute. A legal path is a path from the root directory which contains &lt;code&gt;.git&lt;/code&gt; folder to destination file. For example, the below code show a path for &lt;code&gt;HUChartDemo&lt;/code&gt; project (but its repository name is &lt;a href=&quot;https://github.com/hugo53/HUChart&quot;&gt;HUChart&lt;/a&gt;, don’t be confused here, we need project’s root directory, not repository name).&lt;/p&gt;
+&lt;p&gt;It is to locate source files you want to publish. Thus, be sure that you provide the exact path for &lt;code class=&quot;highlighter-rouge&quot;&gt;s.source_files&lt;/code&gt; attribute. A legal path is a path from the root directory which contains &lt;code class=&quot;highlighter-rouge&quot;&gt;.git&lt;/code&gt; folder to destination file. For example, the below code show a path for &lt;code class=&quot;highlighter-rouge&quot;&gt;HUChartDemo&lt;/code&gt; project (but its repository name is &lt;a href=&quot;https://github.com/hugo53/HUChart&quot;&gt;HUChart&lt;/a&gt;, don’t be confused here, we need project’s root directory, not repository name).&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;s.source_files  &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;HUChart&amp;#39;&lt;/span&gt;, &lt;span class=&quot;s1&quot;&gt;&amp;#39;HUChartDemo/HUChart/*.{h,m}&amp;#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;s.source_files  &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;HUChart&#39;&lt;/span&gt;, &lt;span class=&quot;s1&quot;&gt;&#39;HUChartDemo/HUChart/*.{h,m}&#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;h2 id=&quot;send-a-pull-request-to-specshttpsgithubcomcocoapodsspecs&quot;&gt;Send a pull request to &lt;a href=&quot;https://github.com/CocoaPods/Specs&quot;&gt;Specs&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;After that, we must send a pull request to &lt;code&gt;Specs&lt;/code&gt; to make the pod is visible. To do that, follow these steps:&lt;/p&gt;
+&lt;p&gt;After that, we must send a pull request to &lt;code class=&quot;highlighter-rouge&quot;&gt;Specs&lt;/code&gt; to make the pod is visible. To do that, follow these steps:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Fork &lt;a href=&quot;https://github.com/CocoaPods/Specs&quot;&gt;Specs&lt;/a&gt; and clone it.&lt;/li&gt;
@@ -443,7 +448,7 @@ vi HUChart.podspec&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;git clone https://github.com/CocoaPods/Specs.git&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Change directory (cd) to &lt;code&gt;Specs&lt;/code&gt; folder.&lt;/li&gt;
+  &lt;li&gt;Change directory (cd) to &lt;code class=&quot;highlighter-rouge&quot;&gt;Specs&lt;/code&gt; folder.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;Specs&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
@@ -460,10 +465,10 @@ vi HUChart.podspec&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;mkdir -p HUChart/1.0.0&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Note that &lt;code&gt;1.0.0&lt;/code&gt; is version number which we set for &lt;code&gt;s.version = &quot;1.0.0&quot;&lt;/code&gt; in podspec file.&lt;/p&gt;
+&lt;p&gt;Note that &lt;code class=&quot;highlighter-rouge&quot;&gt;1.0.0&lt;/code&gt; is version number which we set for &lt;code class=&quot;highlighter-rouge&quot;&gt;s.version = &quot;1.0.0&quot;&lt;/code&gt; in podspec file.&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Copy .podspec file which we have already made some minutes ago to the version folder. In this case, version folder is &lt;code&gt;Specs/HUChart/1.0.0&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Copy .podspec file which we have already made some minutes ago to the version folder. In this case, version folder is &lt;code class=&quot;highlighter-rouge&quot;&gt;Specs/HUChart/1.0.0&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;cp path/to/.podspec-file Specs/HUChart/1.0.0 &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
@@ -472,12 +477,15 @@ vi HUChart.podspec&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
   &lt;li&gt;Do git add this file and commit with a clear comment. After that, push it to forked Specs repository.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;lineno&quot;&gt;1&lt;/span&gt; git add Specs/HUChart/1.0.0/*.podspec
-&lt;span class=&quot;lineno&quot;&gt;2&lt;/span&gt; git commit -m &lt;span class=&quot;s2&quot;&gt;&amp;quot;Added HUChart library to draw a semi circle chart.&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;lineno&quot;&gt;3&lt;/span&gt; git push origin -u master&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;git add Specs/HUChart/1.0.0/&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;.podspec
+git commit -m &lt;span class=&quot;s2&quot;&gt;&quot;Added HUChart library to draw a semi circle chart.&quot;&lt;/span&gt;
+git push origin -u master&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Lastly, go to &lt;a href=&quot;https://github.com/CocoaPods/Specs/pulls&quot;&gt;Specs pull page&lt;/a&gt; and press onto &lt;code&gt;New pull request&lt;/code&gt; and fill all require fields to create a pull request. Thereafter, wait for Specs’ developers merge this request. Once they approve the request and merge it, we can use our lib as a Pod by Podfile.&lt;/li&gt;
+  &lt;li&gt;Lastly, go to &lt;a href=&quot;https://github.com/CocoaPods/Specs/pulls&quot;&gt;Specs pull page&lt;/a&gt; and press onto &lt;code class=&quot;highlighter-rouge&quot;&gt;New pull request&lt;/code&gt; and fill all require fields to create a pull request. Thereafter, wait for Specs’ developers merge this request. Once they approve the request and merge it, we can use our lib as a Pod by Podfile.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;It is so easy, isn’t it? But for me, the first time I created a pod, I wonder how pod work and how many necessary steps to make a pod successfully. Now, you have an own pod. Congratulations! Take time to share it as far as possible!&lt;/p&gt;
@@ -544,8 +552,9 @@ vi HUChart.podspec&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;p&gt;The reason Apple raised for that is:
 	OS X includes a low-level command-line interface to the OpenSSL open-source cryptography toolkit; this interface is not available on iOS.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;Further, although OpenSSL is commonly used in the open source community, **it does not provide a stable API from version to version**. For this reason, the programmatic interface to OpenSSL is deprecated in OS X and is not provided in iOS. Use of the Apple-provided OpenSSL libraries by apps is strongly discouraged.
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Further, although OpenSSL is commonly used in the open source community, **it does not provide a stable API from version to version**. For this reason, the programmatic interface to OpenSSL is deprecated in OS X and is not provided in iOS. Use of the Apple-provided OpenSSL libraries by apps is strongly discouraged.
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;One of Apple Engineers said in details at &lt;a href=&quot;http://rentzsch.tumblr.com/post/33696323211/wherein-i-write-apples-technote-about-openssl-on-os-x&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
@@ -609,19 +618,19 @@ vi HUChart.podspec&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;According to Apple iOS documentation:&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;The Audio Toolbox framework &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;AudioToolbox.framework&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; provides interfaces &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; the mid- and high-level services in Core Audio. In iOS, this framework includes Audio Session Services, the interface &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; managing your application’s audio behavior in the context of a device that functions as a mobile phone and iPod.
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;The Audio Toolbox framework &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;AudioToolbox.framework&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; provides interfaces &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;the mid- and high-level services &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;Core Audio. In iOS, this framework includes Audio Session Services, the interface &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;managing your application’s audio behavior &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;the context of a device that functions as a mobile phone and iPod.
 
 The Audio Unit framework &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;AudioUnit.framework&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; lets applications work with audio plug-ins, including audio units and codecs.
 
-The AV Foundation framework &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;AVFoundation.framework&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;, available in iOS, provides the AVAudioPlayer class, a streamlined and simple Objective-C interface &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; audio playback.
+The AV Foundation framework &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;AVFoundation.framework&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;, available &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;iOS, provides the AVAudioPlayer class, a streamlined and simple Objective-C interface &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;audio playback.
 
-The Core Audio framework &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;CoreAudio.framework&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; supplies data types used across Core Audio as well as interfaces &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; the low-level services.
+The Core Audio framework &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;CoreAudio.framework&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; supplies data types used across Core Audio as well as interfaces &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;the low-level services.
 
-The Core Audio Kit framework &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;CoreAudioKit.framework&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; provides a small API &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; creating user interfaces &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; audio units. This framework is not available in iOS.
+The Core Audio Kit framework &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;CoreAudioKit.framework&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; provides a small API &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;creating user interfaces &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;audio units. This framework is not available &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;iOS.
 
-The Core MIDI framework &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;CoreMIDI.framework&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; lets applications work with MIDI data and configure MIDI networks. This framework is not available in iOS.
+The Core MIDI framework &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;CoreMIDI.framework&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; lets applications work with MIDI data and configure MIDI networks. This framework is not available &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;iOS.
 
-The Core MIDI Server framework &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;CoreMIDIServer.framework&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; lets MIDI drivers communicate with the OS X MIDI server. This framework is not available in iOS.
+The Core MIDI Server framework &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;CoreMIDIServer.framework&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; lets MIDI drivers communicate with the OS X MIDI server. This framework is not available &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;iOS.
 
 The OpenAL framework &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;OpenAL.framework&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; provides the interfaces to work with OpenAL, an open &lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt;, positional audio technology.&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
@@ -732,14 +741,14 @@ The OpenAL framework &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;OpenAL.framew
 &lt;p&gt;There are some ways to divide font type into bucket. We can base on how a font be organized or how a font can be drawn.&lt;/p&gt;
 
 &lt;p&gt;If using font structure, we have two kinds:
-- &lt;code&gt;Simple Font&lt;/code&gt;
-- &lt;code&gt;Composite Font&lt;/code&gt;&lt;/p&gt;
+- &lt;code class=&quot;highlighter-rouge&quot;&gt;Simple Font&lt;/code&gt;
+- &lt;code class=&quot;highlighter-rouge&quot;&gt;Composite Font&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;Only &lt;code&gt;Type 0&lt;/code&gt; is composite font. Others are of simple font, included: &lt;code&gt;Type 1&lt;/code&gt;, &lt;code&gt;Type 3&lt;/code&gt;, &lt;code&gt;TrueType&lt;/code&gt;, &lt;code&gt;CIDFont&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Only &lt;code class=&quot;highlighter-rouge&quot;&gt;Type 0&lt;/code&gt; is composite font. Others are of simple font, included: &lt;code class=&quot;highlighter-rouge&quot;&gt;Type 1&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;Type 3&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;TrueType&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;CIDFont&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;Or if using drawing method, we also have two buckets:
-- Bitmap-based font: &lt;code&gt;Type 3&lt;/code&gt;
-- Outline font (Raster font): &lt;code&gt;Type 0&lt;/code&gt;, &lt;code&gt;Type 1&lt;/code&gt;, &lt;code&gt;TrueType&lt;/code&gt;, &lt;code&gt;CIDFont&lt;/code&gt;.&lt;/p&gt;
+- Bitmap-based font: &lt;code class=&quot;highlighter-rouge&quot;&gt;Type 3&lt;/code&gt;
+- Outline font (Raster font): &lt;code class=&quot;highlighter-rouge&quot;&gt;Type 0&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;Type 1&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;TrueType&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;CIDFont&lt;/code&gt;.&lt;/p&gt;
 
 &lt;h5 id=&quot;font-and-cidfont&quot;&gt;Font and CIDFont&lt;/h5&gt;
 &lt;p&gt;Font is a collection of glyphs. CIDFont is also a set of glyphs. But, CIDFont is only used as a component of Type 0 font, cannot be used directly like other Fonts .&lt;/p&gt;
@@ -762,26 +771,28 @@ The OpenAL framework &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;OpenAL.framew
 
 &lt;p&gt;PDF uses &lt;em&gt;operators&lt;/em&gt; to determine what kind of text will be shown based on pre-defined format. However, it is so complex to understand how pdf is organized.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;BT % Begin text object
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;BT % Begin text object
 /F1 1 Tf % Set text font and size 
 64 0 0 64 7.1771 2.4414 Tm % Set text matrix 
 0 Tc % Set character spacing 
 0 Tw % Set word spacing
 ET
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;In the above block, you can see &lt;em&gt;Tf&lt;/em&gt;, &lt;em&gt;Tm&lt;/em&gt;, &lt;em&gt;Tc&lt;/em&gt;, &lt;em&gt;Tw&lt;/em&gt; are four operators which define font (and font size), text matrix, character spacing, word spacing are used. In clearly words, if you want to read and do some processing tasks relating to pdf content such as highlighting word or bolding word, you must handle with as much as possible operators to get exactly text block information for making your job be accurate as your desire. You may need to check &lt;a href=&quot;http://my.safaribooksonline.com/book/office-and-productivity-applications/0321304748/operator-summary/app01&quot;&gt;&lt;strong&gt;operator table&lt;/strong&gt;&lt;/a&gt; to know more about pdf operators.&lt;/p&gt;
 
 &lt;h3 id=&quot;scanner-stack&quot;&gt;Scanner Stack&lt;/h3&gt;
 &lt;p&gt;Stack is data structure to store PDF Objects when PDF file is being read. Prefix strategy is the method to read objects from object stack. Below is an example.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;BT % Begin text object
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;BT % Begin text object
 /F1 1 Tf % Set text font and size 
 64 0 0 64 7.1771 2.4414 Tm % Set text matrix 
 0 Tc % Set character spacing 
 0 Tw % Set word spacing
 ET
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Stack will be:&lt;/p&gt;
 
@@ -808,18 +819,18 @@ ET
 &lt;h2 id=&quot;parsing-pdf-content&quot;&gt;Parsing PDF Content&lt;/h2&gt;
 &lt;p&gt;To parse exactly PDF content, we need to read all plain PDF information. However, except some pure control data, all streams in PDF are usually represented in compressed format. That means we need to decompress them to get the pure text. The compress algorithm is given clearly in  stream description, for example:&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;m&quot;&gt;12&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; obj
-&amp;lt;&amp;lt; /Length &lt;span class=&quot;m&quot;&gt;13&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; R /N &lt;span class=&quot;m&quot;&gt;3&lt;/span&gt; /Alternate /DeviceRGB /Filter /FlateDecode &amp;gt;&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;12 0 obj
+&amp;lt;&amp;lt; /Length 13 0 R /N 3 /Alternate /DeviceRGB /Filter /FlateDecode &amp;gt;&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;/FlateDecode lets us that the encode algorithm is Flate and should use this algorithm to decode the stream.&lt;/p&gt;
 
 &lt;p&gt;As a standard, almost PDF creator use Flate Encoder to compress stream. Therefore, to decode that data, we can use some tools. In my experience, I usually use &lt;a href=&quot;http://www.pdflabs.com/tools/pdftk-server/&quot;&gt;PDFToolkit&lt;/a&gt; (Server version) like this:&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;pdftk compressedPDF.pdf output decompressedPDF.pdf uncompress&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;pdftk compressedPDF.pdf output decompressedPDF.pdf uncompress&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Then, use &lt;code&gt;less&lt;/code&gt; command to see decoded text:&lt;/p&gt;
+&lt;p&gt;Then, use &lt;code class=&quot;highlighter-rouge&quot;&gt;less&lt;/code&gt; command to see decoded text:&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;less decompressedPDF.pdf&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;less decompressedPDF.pdf&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;Do that, now we can see pure PDF text specification. Hence, we can parse PDF content based on PDF Operators Specification.&lt;/p&gt;
 
@@ -839,28 +850,28 @@ ET
 
 &lt;p&gt;&lt;a href=&quot;http://stackoverflow.com/questions/4255298/how-does-an-annot-cgpdfdictionary-rect-translate-to-objective-c-rect/4255586#4255586&quot;&gt;Get Text Rect&lt;/a&gt;&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-objectivec&quot; data-lang=&quot;objectivec&quot;&gt;&lt;span class=&quot;n&quot;&gt;CGPDFArrayRef&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rectArray&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CGPDFDictionaryGetArray&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;annotDict&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;Rect&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rectArray&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;//continue;&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;CGPDFReal&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;coords&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-objectivec&quot; data-lang=&quot;objectivec&quot;&gt;CGPDFArrayRef rectArray;
+if(CGPDFDictionaryGetArray(annotDict, &quot;Rect&quot;, &amp;amp;rectArray)) {
+    //continue;
+    CGPDFReal coords[4];
 
-    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;arrayCount&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;CGPDFObjectRef&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rectObj&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CGPDFArrayGetObject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rectArray&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rectObj&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;k&quot;&gt;continue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    for( int k = 0; k &amp;lt; arrayCount; ++k ) {
+        CGPDFObjectRef rectObj;
+        if(!CGPDFArrayGetObject(rectArray, k, &amp;amp;rectObj)) {
+            continue;
+        }
 
-        &lt;span class=&quot;n&quot;&gt;CGPDFReal&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;coord&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CGPDFObjectGetValue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rectObj&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;kCGPDFObjectTypeReal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;coord&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;k&quot;&gt;continue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+        CGPDFReal coord;
+        if(!CGPDFObjectGetValue(rectObj, kCGPDFObjectTypeReal, &amp;amp;coord)) {
+            continue;
+        }
 
-        &lt;span class=&quot;n&quot;&gt;coords&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;coord&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;      
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+        coords[k] = coord;
+    }      
+}
 
-&lt;span class=&quot;c1&quot;&gt;//blx,bly,trx,try&amp;gt;tlx,tly,w,h&lt;/span&gt;
-&lt;span class=&quot;bp&quot;&gt;CGRect&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rect&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CGRectMake&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;coords&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;coords&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;coords&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;coords&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;coords&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;coords&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+//blx,bly,trx,try&amp;gt;tlx,tly,w,h
+CGRect rect = CGRectMake(coords[0],coords[3],coords[2]-coords[0],coords[3]-coords[1]);&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;h2 id=&quot;some-add-on-elements-for-showing-pdf&quot;&gt;Some add-on elements for showing PDF&lt;/h2&gt;
 

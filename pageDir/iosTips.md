@@ -29,14 +29,13 @@ description: ""
 #### Get current orientation {#get-current-orientation}
 
 The below is not the best way. Sometimes, it may return ```UIDeviceOrientationUnknown``` value.
-{% highlight objectivec %}
-UIDeviceOrientation orientation = [[UIDevice currentDevice] orientation];
-{% endhighlight %}
+
+	UIDeviceOrientation orientation = [[UIDevice currentDevice] orientation];
+
 
 Using the below is better. Based on status bar orientation, we will get current orientation more accuracy.
-{% highlight objectivec %}
-UIInterfaceOrientation orientation = [[UIApplication sharedApplication] statusBarOrientation];
-{% endhighlight %}
+
+	UIInterfaceOrientation orientation = [[UIApplication sharedApplication] statusBarOrientation];
 
 ## Debugging {#debugging}
 
@@ -101,33 +100,31 @@ In Objective-C, there is no ```public```, ```protected``` or ```private``` scope
 
 ##### Using category
 
-{% highlight objectivec linenos %}
-/*We declare the category*/
-@interface  MyClass (private)
+	/*We declare the category*/
+	@interface  MyClass (private)
 
-@property (nonatomic, retain) Type *aPrivateProperty; 
-- (void)aPrivateMethod;
+	@property (nonatomic, retain) Type *aPrivateProperty; 
+	- (void)aPrivateMethod;
 
-@end
+	@end
 
-/*We implement it*/    
-@implementation MyClass (private)
+	/*We implement it*/    
+	@implementation MyClass (private)
 
-/*We cannot use synthesize in the category :-(*/
-@dynamic aPrivateProperty;
-- (Type *)aPrivateProperty {
-    //Getter code
-}
+	/*We cannot use synthesize in the category :-(*/
+	@dynamic aPrivateProperty;
+	- (Type *)aPrivateProperty {
+	    //Getter code
+	}
 
-- (void)setAPrivateProperty {
-    //Setter code
-}
+	- (void)setAPrivateProperty {
+	    //Setter code
+	}
 
-- (void)aPrivateMethod {        
-    //Some code there
-}
-@end
-{% endhighlight %}
+	- (void)aPrivateMethod {        
+	    //Some code there
+	}
+	@end
 
 > The above code is of [this post](http://www.benjaminloulier.com/posts/private-properties-methods-and-ivars-in-objective-c/). 
 
@@ -137,32 +134,28 @@ But this approach has some drawbacks:
 
 ##### Using class extension
 
-{% highlight objectivec linenos %}
+	/*We declare the class extension*/
+	@interface  MyClass () 
 
-/*We declare the class extension*/
-@interface  MyClass () 
+	@property (nonatomic, retain) Type *aPrivateProperty; 
+	- (void)aPrivateMethod;
 
-@property (nonatomic, retain) Type *aPrivateProperty; 
-- (void)aPrivateMethod;
+	@end
 
-@end
+	/*
+	We can use the main implementation block to implement our properties
+	and methods declared in the class extension.
+	*/
+	@implementation MyClass
 
-/*
-We can use the main implementation block to implement our properties
-and methods declared in the class extension.
-*/
-@implementation MyClass
+	/*Therefore we can use synthesize ;-)*/
+	@synthesize aPrivateProperty;
 
-/*Therefore we can use synthesize ;-)*/
-@synthesize aPrivateProperty;
+	- (void)aPrivateMethod {        
+	    //Some code there
+	}
 
-- (void)aPrivateMethod {        
-    //Some code there
-}
-
-@end
-
-{% endhighlight %}
+	@end
 
 > The above code is of [this post](http://www.benjaminloulier.com/posts/private-properties-methods-and-ivars-in-objective-c/).
 
@@ -173,11 +166,9 @@ In some cases, we need to know the version is lite or pro version. There are som
 We can set Preprocessor Macros in ```Target -> Buil Settings -> Apple LLVM 5.1 - Preprocessing``` and use some phrases like ```Target_LiteVersion``` or ```Target_ProVersion```. 
 Then, check in ```application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions``` with statement:
 
-{% highlight objectivec linenos %}
-#if defined (Target_ProVersion)
-    // Do somethings
-#endif
-{% endhighlight %}
+	#if defined (Target_ProVersion)
+	    // Do somethings
+	#endif
 
 
 
