@@ -11,7 +11,7 @@ By chance I got a tech question from my feed which was tagged an Software Archit
 
 We could say here, it's all about Heap and Stack Memory. 
 
-First, if local variable is an instance of scalar type (value type) (Int, Float, Bool, ...), it will be allocacted in Stack memory within its function statements. So, when function call is end, that block statment on stack will be poped for the next function statements (another function call) running. Of course, the local variable will be destroyed as a result.
+First, if local variable is an instance of scalar type (value type) (Int, Float, Bool, ...), it will be allocated in Stack memory. So, when codeblock is end, the variable on stack will be popped (Last In, First Out) for the next codeblock statements running. Of course, the local variable will be destroyed as a result.
 
 In another case, if local variable is an instance of reference type (object, such as Student, Class), it will be hold on Heap memory. Actually, we need to manage manually these variables (malloc/delete in C, or Automatic Reference Counting (ARC) in Objective-C do it for us). As Apple documentation said:
 
