@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Welcome to Voice of Hugo!
+title: Inner Place
 ---
 {% include JB/setup %}
 <ul class="posts">
