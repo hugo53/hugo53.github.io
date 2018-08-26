@@ -97,3 +97,5 @@ The next question is: **Which programs great enough to read?**
 - [http://wiki.c2.com/?TipsForReadingCode](http://wiki.c2.com/?TipsForReadingCode)
 - [https://blogs.msdn.microsoft.com/csliu/2009/03/04/how-to-read-source-code/](https://blogs.msdn.microsoft.com/csliu/2009/03/04/how-to-read-source-code/)
 - [http://himmele.blogspot.com/2012/01/how-do-you-read-source-code.html](http://himmele.blogspot.com/2012/01/how-do-you-read-source-code.html)
+- [https://www.skorks.com/2010/05/why-i-love-reading-other-peoples-code-and-you-should-too/](https://www.skorks.com/2010/05/why-i-love-reading-other-peoples-code-and-you-should-too/)
+- [http://www.gigamonkeys.com/code-reading/](http://www.gigamonkeys.com/code-reading/)
