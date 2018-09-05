@@ -2,7 +2,7 @@
 layout: post
 title: "Which programs great enough to read?"
 description: "An intensive research on which programs worth to go through"
-category: translation
+category: draft
 tags: [code, reading, skill]
 ---
 {% include JB/setup %}
