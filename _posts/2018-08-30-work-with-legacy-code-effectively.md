@@ -2,7 +2,7 @@
 layout: post
 title: "Working with legacy code effectively"
 description: ""
-category: draft 
+category: translation 
 tags: []
 ---
 {% include JB/setup %}

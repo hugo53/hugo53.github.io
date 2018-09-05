@@ -2,7 +2,7 @@
 layout: post
 title: "Loading large image"
 description: ""
-category: draft 
+category: translation 
 tags: []
 ---
 {% include JB/setup %}

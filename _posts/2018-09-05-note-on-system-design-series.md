@@ -2,7 +2,7 @@
 layout: post
 title: "Note on System Design series"
 description: ""
-category: draft
+category: translation
 tags: [system, design, architect]
 ---
 {% include JB/setup %}
