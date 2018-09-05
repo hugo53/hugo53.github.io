@@ -2,7 +2,7 @@
 layout: post
 title: "How to read the book Refactoring effectively?"
 description: ""
-category: translation 
+category: writing 
 tags: [refactoring]
 ---
 {% include JB/setup %}
