@@ -86,6 +86,10 @@ _Note: Step 3 maybe is Step 1 in several cases upon reading purpose. Sometimes w
 
 ### Step 9: Cleanup the codebase by refactoring skill
 
+<p align="center">
+  <img src="https://github.com/hugo53/hugo53.github.io/images/code-reading.png">
+</p>
+
 ### Tips
 #### Start at random position
 > Reading big random programs reminds me very much of exploring mazes in Angband. I start at some random position (maybe found by grep) and work my way around by traversing callees and callers until I've mapped out enough of the immediate vicinity to see what's going on and do my hack. If I explore enough directions for long enough, things start to connect up and give me a more "global" sense, but often I don't explore so widely. 
