@@ -27,6 +27,10 @@ tags: []
 
 In fact, Aggregation and Composition are two forms of Association relationship.
 
+<p align="center">
+![](https://cdncontribute.geeksforgeeks.org/wp-content/uploads/Associatn.png)
+</p>
+
 #### Aggregation
 ##### UML Notation
 ![](https://cdn.visual-paradigm.com/guide/uml/uml-aggregation-vs-composition/02-uml-aggregation.png)
