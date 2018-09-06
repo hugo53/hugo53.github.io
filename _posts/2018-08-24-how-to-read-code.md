@@ -87,7 +87,7 @@ _Note: Step 3 maybe is Step 1 in several cases upon reading purpose. Sometimes w
 ### Step 9: Cleanup the codebase by refactoring skill
 
 <p align="center">
-  <img src="https://github.com/hugo53/hugo53.github.io/images/code-reading.png">
+  <img src="https://raw.githubusercontent.com/hugo53/hugo53.github.io/master/images/code-reading.png">
 </p>
 
 ### Tips
