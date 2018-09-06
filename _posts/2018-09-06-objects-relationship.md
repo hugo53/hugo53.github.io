@@ -17,36 +17,52 @@ tags: []
 
 # Association
 #### UML Notation
-![](https://cdn.visual-paradigm.com/guide/uml/uml-aggregation-vs-composition/01-uml-association.png)
+<p align="center">
+  <img src="https://cdn.visual-paradigm.com/guide/uml/uml-aggregation-vs-composition/01-uml-association.png">
+</p>
 
-![](https://cdn.visual-paradigm.com/guide/uml/uml-aggregation-vs-composition/04-association-multiplicity-example-01.png)
+<p align="center">
+  <img src="https://cdn.visual-paradigm.com/guide/uml/uml-aggregation-vs-composition/04-association-multiplicity-example-01.png">
+</p>
 
-![](https://cdn.visual-paradigm.com/guide/uml/uml-aggregation-vs-composition/05-association-multiplicity-example-02.png)
+<p align="center">
+  <img src="https://cdn.visual-paradigm.com/guide/uml/uml-aggregation-vs-composition/05-association-multiplicity-example-02.png">
+</p>
 
-![](https://cdn.visual-paradigm.com/guide/uml/uml-aggregation-vs-composition/06-association-multiplicity-example-03.png)
+<p align="center">
+  <img src="https://cdn.visual-paradigm.com/guide/uml/uml-aggregation-vs-composition/06-association-multiplicity-example-03.png">
+</p>
 
 In fact, Aggregation and Composition are two forms of Association relationship.
 
-<center>
-![](https://cdncontribute.geeksforgeeks.org/wp-content/uploads/Associatn.png)
-</center>
+<p align="center">
+  <img src="https://cdncontribute.geeksforgeeks.org/wp-content/uploads/Associatn.png">
+</p>
 
 #### Aggregation
 ##### UML Notation
-![](https://cdn.visual-paradigm.com/guide/uml/uml-aggregation-vs-composition/02-uml-aggregation.png)
+<p align="center">
+  <img src="https://cdn.visual-paradigm.com/guide/uml/uml-aggregation-vs-composition/02-uml-aggregation.png">
+</p>
+
 ##### Relationship Type
 Has-A (weak dependency)
 
 #### Composition
 ##### UML Notation
-![](https://cdn.visual-paradigm.com/guide/uml/uml-aggregation-vs-composition/03-uml-composition.png)
+<p align="center">
+  <img src="https://cdn.visual-paradigm.com/guide/uml/uml-aggregation-vs-composition/03-uml-composition.png">
+</p>
+
 
 ##### Relationship Type
 Part-Of (strong dependency)
 
 # Generalization and Specialization
 ##### UML Notation
-![](https://cdn.visual-paradigm.com/guide/uml/uml-aggregation-vs-composition/09-generalization-and-specialization.png)
+<p align="center">
+  <img src="https://cdn.visual-paradigm.com/guide/uml/uml-aggregation-vs-composition/09-generalization-and-specialization.png">
+</p>
 
 ##### Relationship Type
 Is-A
