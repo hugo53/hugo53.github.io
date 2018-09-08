@@ -2,7 +2,7 @@
 layout: post
 title: "From C10K problem to C10M problem"
 description: ""
-category: translation, concurrency 
+category: translation 
 tags: []
 ---
 {% include JB/setup %}
