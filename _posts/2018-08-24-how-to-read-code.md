@@ -106,3 +106,4 @@ The next question is: **Which programs great enough to read?**
 - [http://himmele.blogspot.com/2012/01/how-do-you-read-source-code.html](http://himmele.blogspot.com/2012/01/how-do-you-read-source-code.html)
 - [https://www.skorks.com/2010/05/why-i-love-reading-other-peoples-code-and-you-should-too/](https://www.skorks.com/2010/05/why-i-love-reading-other-peoples-code-and-you-should-too/)
 - [http://www.gigamonkeys.com/code-reading/](http://www.gigamonkeys.com/code-reading/)
+- [http://automagical.rationalmind.net/2012/05/09/read-more-code/](http://automagical.rationalmind.net/2012/05/09/read-more-code/)
