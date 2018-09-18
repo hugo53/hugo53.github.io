@@ -56,7 +56,7 @@ At default setting, maximum table size is 64TB, with 65535 bytes row limit, then
 
 ## MongoDB
 - Document size limit: [16MB](https://docs.mongodb.com/manual/reference/limits/#bson-documents)
-- No specific limition on table size with WiredTiger storage engine, only depend on hardware disk capacity and sometimes RAM capacity
+- No specific limitation on table size with WiredTiger storage engine, only depend on hardware disk capacity and sometimes RAM capacity
 - MMAPv1 storage engine has lots of limitations but [it's depreciated from MongoDB 4.0 and will be removed in a future release](https://docs.mongodb.com/manual/core/mmapv1/).
 
 ## References
