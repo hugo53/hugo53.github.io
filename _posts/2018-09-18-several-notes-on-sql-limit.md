@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Several notes on SQL Limit"
-description: "Notes on MySQL, MongoDB Limit"
+title: "Several notes on SQL Limitation"
+description: "Notes on MySQL, MongoDB Limitation"
 category: 
 tags: [database, peformance]
 ---
