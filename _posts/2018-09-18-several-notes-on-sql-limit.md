@@ -8,7 +8,8 @@ tags: [database, peformance]
 {% include JB/setup %}
 
 ## MySQL
-- Row Limit: [65535 bytes](https://dev.mysql.com/doc/mysql-reslimits-excerpt/5.7/en/column-count-limit.html)
+### Row Limit: [65535 bytes](https://dev.mysql.com/doc/mysql-reslimits-excerpt/5.7/en/column-count-limit.html)
+
 ```
 mysql> CREATE TABLE t (a VARCHAR(10000), b VARCHAR(10000),
        c VARCHAR(10000), d VARCHAR(10000), e VARCHAR(10000),
@@ -26,7 +27,8 @@ table type, not counting BLOBs, is 65535. This includes storage overhead,
 check the manual. You have to change some columns to TEXT or BLOBs
 ```
 
-#### Solution
+**Solution**
+
 Use TEXT or BLOB instead of.
 ```
 mysql> CREATE TABLE t (a VARCHAR(10000), b VARCHAR(10000),
@@ -35,7 +37,7 @@ mysql> CREATE TABLE t (a VARCHAR(10000), b VARCHAR(10000),
 Query OK, 0 rows affected (0.02 sec)
 ```
 
-- Table Limit ([InnoDB](https://dev.mysql.com/doc/refman/5.7/en/innodb-restrictions.html#innodb-maximums-minimums))
+### Table Limit ([InnoDB](https://dev.mysql.com/doc/refman/5.7/en/innodb-restrictions.html#innodb-maximums-minimums))
 
     InnoDB Page Size ->	Maximum Tablespace Size
 
