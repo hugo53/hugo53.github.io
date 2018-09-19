@@ -10,6 +10,13 @@ tags: []
 ## HTTP Benchmark
 
 ### Using ```bombardier```
+##### Install
+Download at [https://github.com/codesenberg/bombardier/releases/download/v1.2/bombardier-darwin-386](https://github.com/codesenberg/bombardier/releases/download/v1.2/bombardier-darwin-386)
+
+```
+chmod 774 bombardier-darwin-386 
+```
+
 ##### JSON response
 ```
 ./bombardier-darwin-386 -H 'Content-Type: application/json' -c 125 -n 5000000 http://localhost:8080/
@@ -39,8 +46,9 @@ content-type: application/json; charset=UTF-8
 ```
 
 ### Using ```wrk```
-TODO
+##### Install
+```brew install wrk```
 
-### Example
+### Benchmarking Example
 - [https://github.com/jakubkulhan/hit-server-bench](https://github.com/jakubkulhan/hit-server-bench)
 
