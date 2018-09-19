@@ -9,7 +9,7 @@ tags: []
 
 [```htop```](https://hisham.hm/htop/) is super helpful tool to monitor system usage include cpu, memory, openning threads. As we can see, there are several colors in cpu/memory bar which make us confused their meaning. Fortunately, this [SO question](https://serverfault.com/questions/180711/what-exactly-do-the-colors-in-htop-status-bars-mean) clarifies. 
 
-![htop-screenshot](htop-screenshot)
+![htop-screenshot](https://raw.githubusercontent.com/hugo53/hugo53.github.io/master/images/htop-screenshot.png)
 
 #### Default mode
 
