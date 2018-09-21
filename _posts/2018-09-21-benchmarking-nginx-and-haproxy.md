@@ -179,6 +179,9 @@ Requests/sec:   6686.79
 Transfer/sec:      4.04MB
 ```
 
+## Fun-fact
+- [Arimo (prior Adatao) has used HAProxy from beginning](https://www.quora.com/Which-software-load-balancer-is-better-HAProxy-or-nginx/answer/Christopher-Cuong-Nguyen)
+- [To handle 500.000 rps, AppLovin needs around 1000 servers](https://www.infoworld.com/article/2868513/database/how-to-serve-billion-web-requests-per-day.html)
+
 ## References
 - [Another benchmark on NodeJS and JAVA AIO](http://www.olympum.com/java/java-aio-vs-nodejs/)
-- [Fun-fact: Arimo (prior Adatao) has used HAProxy from beginning](https://www.quora.com/Which-software-load-balancer-is-better-HAProxy-or-nginx/answer/Christopher-Cuong-Nguyen)
