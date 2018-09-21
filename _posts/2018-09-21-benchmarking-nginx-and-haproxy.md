@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Benchmarking NGINX and HAProxy"
-description: ""
+description: "Notes on benchmarking NGINX and HAProxy"
 category: translation
 tags: []
 ---
