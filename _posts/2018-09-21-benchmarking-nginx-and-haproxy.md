@@ -181,3 +181,4 @@ Transfer/sec:      4.04MB
 
 ## References
 - [Another benchmark on NodeJS and JAVA AIO](http://www.olympum.com/java/java-aio-vs-nodejs/)
+- [Fun-fact: Arimo (prior Adatao) has used HAProxy from beginning](https://www.quora.com/Which-software-load-balancer-is-better-HAProxy-or-nginx/answer/Christopher-Cuong-Nguyen)
