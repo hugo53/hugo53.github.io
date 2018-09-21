@@ -15,6 +15,40 @@ This post will list some useful commands which are usually used when you do with
 
 - Check for /Users/username/Library/Developer/Xcode/DerivedData/ to see why harddisk get full.
 
+### Switch user
+```
+➜  ~ dscl . list /Users | grep -v '^_'
+daemon
+geek
+Guest
+nobody
+root
+➜  ~ whoami
+geek
+➜  ~ sudo -i
+macmini:~ root# whoami
+root
+macmini:~ root# su - geek
+➜  ~ whoami
+geek
+```
+
+### Kill a range of consecutive processes
+```
+$ kill -9 {3457..3464}
+```
+
+Kill by process command (name)
+```
+~ sudo lsof -i :8080
+COMMAND  PID USER   FD   TYPE      DEVICE          SIZE/OFF NODE NAME
+nginx   5381 root    8u  IPv4 0xd68467d8b74c1095      0t0  TCP *:http-alt (LISTEN)
+nginx   5381 root    9u  IPv6 0xd68467d8b135a38d      0t0  TCP *:http-alt (LISTEN)
+nginx   5382 geek    8u  IPv4 0xd68467d8b74c1095      0t0  TCP *:http-alt (LISTEN)
+nginx   5382 geek    9u  IPv6 0xd68467d8b135a38d      0t0  TCP *:http-alt (LISTEN)
+
+~ sudo pkill nginx
+```
 
 
 
