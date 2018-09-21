@@ -178,3 +178,6 @@ Running 30s test @ http://localhost:8080
 Requests/sec:   6686.79
 Transfer/sec:      4.04MB
 ```
+
+## References
+- [Another benchmark on NodeJS and JAVA AIO](http://www.olympum.com/java/java-aio-vs-nodejs/)
