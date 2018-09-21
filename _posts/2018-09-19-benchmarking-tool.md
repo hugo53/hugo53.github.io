@@ -21,11 +21,22 @@ chmod 774 bombardier-darwin-386
 ```
 ./bombardier-darwin-386 -H 'Content-Type: application/json' -c 125 -n 5000000 http://localhost:8080/
 ```
+This runs a benchmark with 5M requests using maximum 125 concurrent connections.
 
 ##### Raw text response
 ```
 ./bombardier-darwin-386 -c 125 -n 5000000 http://localhost:8080/
 ```
+
+### Using ```wrk```
+##### Install
+```brew install wrk```
+##### Usage
+```
+wrk -t12 -c400 -d30s http://127.0.0.1:8080/
+```
+
+This runs a benchmark for 30 seconds, using 12 threads, and keeping 400 HTTP connections open.
 
 ### Monitoring benchmark
 To view http response, ```tcpdump``` is a great option.
@@ -41,10 +52,6 @@ content-type: application/json; charset=UTF-8
 
 {"data":"Hello world"}
 ```
-
-### Using ```wrk```
-##### Install
-```brew install wrk```
 
 ### Benchmarking Example
 - [Web Framework Benchmarks](http://www.techempower.com/benchmarks/) very details and benchmark regularly around 2 times a year.
