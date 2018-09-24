@@ -50,5 +50,26 @@ nginx   5382 geek    9u  IPv6 0xd68467d8b135a38d      0t0  TCP *:http-alt (LISTE
 ~ sudo pkill nginx
 ```
 
+### Manage connection
+- Count number of opening connections at specific port
+```
+netstat -ant | grep 1883 | grep EST | wc -l
+```
+
+- Show overview tcp connections
+```
+# ss -s (On Linux) (on Mac: netstat -s)
+Total: 1788 (kernel 3134)
+TCP:   1638 (estab 1409, closed 162, orphaned 0, synrecv 0, timewait 127/0), ports 0
+
+Transport Total     IP        IPv6
+*         3134      -         -        
+RAW       0         0         0        
+UDP       74        69        5        
+TCP       1476      1444      32       
+INET      1550      1513      37       
+FRAG      0         0         0     
+
+```
 
 
