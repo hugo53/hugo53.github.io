@@ -54,5 +54,12 @@ content-type: application/json; charset=UTF-8
 ```
 
 ### Benchmarking Example
-- [https://github.com/jakubkulhan/hit-server-bench](https://github.com/jakubkulhan/hit-server-bench)
+- [Web Framework Benchmarks](http://www.techempower.com/benchmarks/) very details and benchmark regularly around 2 times a year.
+- [Comparison of many HTTP servers raw hit performance
+](https://github.com/jakubkulhan/hit-server-bench)
+- [App Servers benchmarked for: Ruby, Python, JavaScript, Dart, Elixir, Java, C#, Crystal, Nim, GO, Rust
+](https://github.com/costajob/app-servers)
+- [Benchmarks for common embedded Java and Kotlin web frameworks
+](https://github.com/orangy/http-benchmarks)
+
 
