@@ -7,7 +7,7 @@ tags: []
 ---
 {% include JB/setup %}
 
-Using [HotswapAgent](https://github.com/HotswapProjects/HotswapAgent)
+Commercial tool [JRebel](https://zeroturnaround.com/software/jrebel/) does great but too expensive, around $550/license/year. So, another free solution [HotswapAgent](https://github.com/HotswapProjects/HotswapAgent) is better for team. However, it needs more extra steps to setup, not as easy as a pie like JRebel.
 
 ### Specification
 - Java 1.8.0_31 -> DCEVM-light-8u45-installer.jar (Try until column 'Installed altjvm' says YES)
