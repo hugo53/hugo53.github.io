@@ -40,3 +40,5 @@ Using [HotswapAgent](https://github.com/HotswapProjects/HotswapAgent)
 
 ### References
 - [https://groups.google.com/forum/#!topic/hotswapagent/BxAK_Clniss](https://groups.google.com/forum/#!topic/hotswapagent/BxAK_Clniss)
+- [https://www.javagists.com/spring-boot-devtools](https://www.javagists.com/spring-boot-devtools)
+- [https://blog.philipphauer.de/increase-jvm-development-productivity/](https://blog.philipphauer.de/increase-jvm-development-productivity/)
