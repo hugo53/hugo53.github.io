@@ -35,5 +35,8 @@ Using [HotswapAgent](https://github.com/HotswapProjects/HotswapAgent)
 
 ![](https://raw.githubusercontent.com/hugo53/hugo53.github.io/master/images/idea.png)
 
+- Change keymap:
+	- Preferences -> Keymap -> Search for 'Compile', then change Command + Shift + F9 to Command + Shift + S to recompile easier 
+
 ### References
 - [https://groups.google.com/forum/#!topic/hotswapagent/BxAK_Clniss](https://groups.google.com/forum/#!topic/hotswapagent/BxAK_Clniss)
