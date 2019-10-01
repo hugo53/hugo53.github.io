@@ -61,4 +61,4 @@ So, let dig deep in details. Just let you know, I have more than 20 books in my 
 *   [The Structure and Interpretation of Computer Programs (https://cs61a.org/)](https://cs61a.org/)
 *   [Nand2Tetris at https://www.coursera.org/learn/build-a-computer](https://www.coursera.org/learn/build-a-computer)
 
-> _This post is written 2 years ago._
+> _This post was written 2 years ago._
