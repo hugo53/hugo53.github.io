@@ -56,6 +56,8 @@ So, let dig deep in details. Just let you know, I have more than 20 books in my 
 *   Pragmatic Programmer
 *   Programming Pearls
 
+Another book list can be found at [here](https://github.com/Teamlizer/root/blob/master/personal-growth.md).
+
 ## **Courses**
 
 *   [The Structure and Interpretation of Computer Programs (https://cs61a.org/)](https://cs61a.org/)
