@@ -176,3 +176,14 @@
 .post-content-truncate img {
   max-width: 400px;
 }
+
+img[src*='#left'] {
+  float: left;
+}
+img[src*='#right'] {
+  float: right;
+}
+img[src*='#center'] {
+  display: block;
+  margin: auto;
+}
