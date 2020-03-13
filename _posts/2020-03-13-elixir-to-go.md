@@ -15,5 +15,11 @@ tags: []
     - List (# Keyword List)
     - Struct
 - Concurrent
+    - GenServer
+    - Supervisor
 
 
+## Books
+- Programming Elixir by Dave Thomas
+- Elixir in Action by Sasa Juric
+- Elixir Official Documentation
